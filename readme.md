@@ -4,15 +4,16 @@
 
 ## reCamera Core
 
-ReCamera Core is a core module design based on SG2002 open source chip.
+reCamera Core is a core module design based on SG2002 open source chip.
 SG2002 equipped with high-performance RISC-V and ARM cores, it provides a fully open-source, ecosystem-rich deep learning vision processor that delivers 1.0 TOPS computing power@INT8.
-
-![alt text](./statics/SG2002.png)
+s
+<a href="url"><img src="./statics/SG2002.png" height="auto" width="auto" style="border-radius:10px"></a>
 
 As the name suggests, this is an open source camera core board. The core board contains the core processor, EMMC storage, and WiFi chip. The core module led all the pins of the processor out through two BtoB sockets.
 Through this interface, junior electronics engineers can customize their exclusive cameras by designing SensorBoard and BaseBoard.
 
 ![alt text](./statics/BTB_Connector.png)
+
 
 
 ## Application:
