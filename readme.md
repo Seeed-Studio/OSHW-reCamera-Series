@@ -2,9 +2,9 @@
 
 <a href="url"><img src="./statics/reCamera-1.png" height="auto" width="auto" style="border-radius:40px"></a>
 
-## ReCamera Core
+## reCamera Core
 
-ReCamera Core is a core module design based on SG2002 open source chip.
+reCamera Core is a core module design based on SG2002 open source chip.
 SG2002 equipped with high-performance RISC-V and ARM cores, it provides a fully open-source, ecosystem-rich deep learning vision processor that delivers 1.0 TOPS computing power@INT8.
 s
 <a href="url"><img src="./statics/SG2002.png" height="auto" width="auto" style="border-radius:10px"></a>
