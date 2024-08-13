@@ -5,10 +5,6 @@
 
 **reCamera** is an open source AI camera. The project provides a convenient solution for people who use custom DIY cameras.The feature of this project is that not only does the **RISC-V** system provide an AI recognition solution for edge cameras, but we also open source the related application projects of the camera and the model design of the electronic circuit and 3D shell. We provide a **model transformation tool**, users can quantify and transplant the traditional recognition model according to their needs. In addition, we reserve all interfaces of the processor, and users can personalize the external interfaces according to their projects and requirements.
 
-## To do list
-
-
-
 ## reCamera Core
 
 reCamera Core is a core module design based on SG2002 open source chip.
@@ -25,6 +21,7 @@ Through this interface, junior electronics engineers can customize their exclusi
 
 ## Application:
 
+
 ### [reCamera Gimbal](https://github.com/AllenKon/Seeed_reCamera_Gimbal)
 
 Open source Gimbal solution made using reCamera.
@@ -36,6 +33,16 @@ Open source Gimbal solution made using reCamera.
 waiting...
 
 ## SensorBoard
+
+| Board         | Features                           | To do list                                                   |
+| ------------- | ---------------------------------- | ------------------------------------------------------------ |
+| [S1_OV5647](./S1_OV5647/) | 500w pixels  <br />Rolling Shutter | Home Surveillance<br />PTZ Camera<br />Handheld Camera       |
+| S2_IMX335     | 500w pixels  <br />Rolling Shutter | Machine Vision Systems<br />Robot<br />Biometrics            |
+| S3_SC130GS    | 100w pixels<br />Global Shutter    | Machine Vision Systems,<br />IoT Camera,<br />Industrial Camera |
+
+
+
+
 
 ### S1_OV5647
 
@@ -91,6 +98,21 @@ waiting...
 - 1 x microphone
 - 1 x speaker
 - 3 x LED indicator
+
+### S2_IMX335
+> overview
+
+>schematic
+
+> features:
+
+### S3_SC130GS
+
+> overview
+
+>schematic
+
+> features:
 
 ## BaseBoard
 ### B1_Default
