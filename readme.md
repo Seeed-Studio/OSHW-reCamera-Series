@@ -3,11 +3,15 @@
 <a href="url"><img src="./statics/reCamera-1.png" height="auto" width="auto" style="border-radius:40px"></a>
 
 
-**ReCamera** is an open source AI camera. The project provides a convenient solution for people who use custom DIY cameras.The feature of this project is that not only does the **RISC-V** system provide an AI recognition solution for edge cameras, but we also open source the related application projects of the camera and the model design of the electronic circuit and 3D shell. We provide a **model transformation tool**, users can quantify and transplant the traditional recognition model according to their needs. In addition, we reserve all interfaces of the processor, and users can personalize the external interfaces according to their projects and requirements.
+**reCamera** is an open source AI camera. The project provides a convenient solution for people who use custom DIY cameras.The feature of this project is that not only does the **RISC-V** system provide an AI recognition solution for edge cameras, but we also open source the related application projects of the camera and the model design of the electronic circuit and 3D shell. We provide a **model transformation tool**, users can quantify and transplant the traditional recognition model according to their needs. In addition, we reserve all interfaces of the processor, and users can personalize the external interfaces according to their projects and requirements.
 
-## ReCamera Core
+## To do list
 
-ReCamera Core is a core module design based on SG2002 open source chip.
+
+
+## reCamera Core
+
+reCamera Core is a core module design based on SG2002 open source chip.
 SG2002 equipped with high-performance RISC-V and ARM cores, it provides a fully open-source, ecosystem-rich deep learning vision processor that delivers 1.0 TOPS computing power@INT8.
 
 
