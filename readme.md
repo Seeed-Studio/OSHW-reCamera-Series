@@ -171,6 +171,24 @@ While the on-board antenna cannot have a good long-range performace, you could a
 - The board supports PoE (Power over Ethernet) for power supply, which allows power to be transmitted over Ethernet cables and simplifies the power supply for network devices.
 - The board supports serial communication, allowing bidirectional communication with other devices through a serial interface and facilitating interaction between the board and makers.
 
+### B2_POE
+
+> overview
+
+<center class="third">
+  <img src="./statics/B1_Default_Upper.png" width="200"><img src="./statics/B1_Default_Bottom.png" width="200">
+</center>
+
+
+>schematic
+
+![img](./statics/B1_POE_sch.png)
+
+> features:
+
+- The board supports PoE (Power over Ethernet) for power supply, which allows power to be transmitted over Ethernet cables and simplifies the power supply for network devices.
+- The board supports serial communication, allowing bidirectional communication with other devices through a serial interface and facilitating interaction between the board and makers.
+
 
 ## reCamera Softwares
 
