@@ -114,61 +114,41 @@ waiting...
 ### B1_Default
 
 > overview
-> 
-![img](./statics/S1_ov5647.png)
+>
+
+<center class="third">
+  <img src="./statics/B1_Default_Upper.png" width="200"><img src="./statics/B1_Default_Bottom.png" width="200">
+</center>
+
 
 >schematic
 
-![img](./statics/S1_ov5647_Sch.png)
+![img](./statics/B1_Default_sch.png)
 
 > features:
 
-<div>
-
-<table ><tbody>
-<tr >
-    <td >SENSOR</td>
-    <td class="dbon">ov5647</td>
-    <td class="dbon">CMOS SIZE</td>
-    <td class="dbon">1/4 inch</td>
-</tr>
-<tr >
-    <td class="dbon">PIXELS</td>
-    <td class="dbon">5MP</td>
-    <td class="dbon">APERTURE</td>
-    <td class="dbon">F2.4</td>
-</tr>
-<tr >
-    <td >FOCAL LENGTL</td>
-    <td class="dbon">3.89mm</td>
-    <td class="dbon">FIELD OF VIEW</td>
-    <td >72.9°</td>
-</tr>
-<tr >
-    <td >DISTORTION</td>
-    <td >&lt;1.5%</td>
-    <td >DEPTH OF FIELD</td>
-    <td >20cm ~∞</td>
-</tr>
-<tr >
-    <td >IMAGE</td>
-    <td  colspan="3">2592 x 1944 still picture resolution</td>
-</tr>
-<tr >
-    <td >VIDEO</td>
-    <td  colspan="3">1920 x 1080p @30, 1280 x 720p @60, 640 x 480p @60, 640 x 480p @90</td>
-</tr></tbody>
-</table>
-</div>
-
-- 4 x LED fill lights
-- 1 x microphone
-- 1 x speaker
-- 3 x LED indicator
+- 4 x type-c
+- 1 x Single Port Transformer Module
+- 1 x SD card reader
 
 ### B2_POE
 
+> overview
 
+<center class="third">
+  <img src="./statics/B1_Default_Upper.png" width="200"><img src="./statics/B1_Default_Bottom.png" width="200">
+</center>
+
+
+>schematic
+
+![img](./statics/B1_Default_sch.png)
+
+> features:
+
+- 4 x type-c
+- 1 x Single Port Transformer Module
+- 1 x SD card reader
 
 
 
