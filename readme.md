@@ -29,7 +29,7 @@ And after we could build up this hardware platform and ecosystem, other applicat
 | C1_2002       | eMMC <br />Extra SDIO to base board <br /> Extra UART to base board | WIP |
 
 #### C1_2002w
-This core board utilized the SOC SG2002. In addition to the on-board eMMC, there are also on-board wireless solution ready for use. The wireless module along with the on-board antenna could provides you the basic WIFI/BLE connection ability.
+This core board utilized the RISC-V SOC SG2002. In addition to the on-board eMMC, there are also on-board wireless solution ready for use. The wireless module along with the on-board antenna could provides you the basic WIFI/BLE connection ability.
 
 While the on-board antenna cannot have a good long-range performace, you could also choose to use external antenna with the IPEX connector on-board.
 
