@@ -37,7 +37,7 @@ While the on-board antenna cannot have a good long-range performace, you could a
   
 Up             |  Bottom
 :-------------------------:|:-------------------------:
-![Up](statics\C1_2002w_Up.png)  |  ![Bottom](statics\C1_2002w_Bottom.png)
+![Up](./statics/C1_2002w_Up.png)  |  ![Bottom](./statics/C1_2002w_Bottom.png)
 
 
 >schematic
