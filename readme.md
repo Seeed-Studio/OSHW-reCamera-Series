@@ -130,9 +130,11 @@ Up             |  Bottom
 > overview
 >
 
-<center class="third">
-  <img src="./statics/B1_Default_Upper.png" width="200"><img src="./statics/B1_Default_Bottom.png" width="200">
-</center>
+Up             |  Bottom
+:-------------------------:|:-------------------------:
+![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
+
+
 
 
 >schematic
@@ -149,9 +151,10 @@ Up             |  Bottom
 
 > overview
 
-<center class="third">
-  <img src="./statics/B1_Default_Upper.png" width="200"><img src="./statics/B1_Default_Bottom.png" width="200">
-</center>
+Up             |  Bottom
+:-------------------------:|:-------------------------:
+![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
+
 
 
 >schematic
@@ -167,9 +170,10 @@ Up             |  Bottom
 
 > overview
 
-<center class="third">
-  <img src="./statics/B1_Default_Upper.png" width="200"><img src="./statics/B1_Default_Bottom.png" width="200">
-</center>
+Up             |  Bottom
+:-------------------------:|:-------------------------:
+![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
+
 
 
 >schematic
