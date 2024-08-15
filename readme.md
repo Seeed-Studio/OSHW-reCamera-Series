@@ -23,10 +23,10 @@ And after we could build up this hardware platform and ecosystem, other applicat
 
 ## Core Board
 
-| Board         | Features                           |
-| ------------- | ---------------------------------- |
-| [C1_2002w]    | eMMC <br />WIFI/BLE module <br /> OnBoard antenna <br /> External antenna connector|
-| [C1_2002]     | eMMC |
+| Board         | Features                           | Version Info |
+| ------------- | ---------------------------------- | ------------ |
+| [C1_2002w]    | eMMC <br />WIFI/BLE module <br /> OnBoard antenna <br /> External antenna connector| 1.0 |
+| C1_2002       | eMMC <br />Extra SDIO to base board <br /> Extra UART to base board | WIP |
 
 #### C1_2002w
 This core board utilized the SOC SG2002. In addition to the on-board eMMC, there are also on-board wireless solution ready for use. The wireless module along with the on-board antenna could provides you the basic WIFI/BLE connection ability.
@@ -34,21 +34,11 @@ This core board utilized the SOC SG2002. In addition to the on-board eMMC, there
 While the on-board antenna cannot have a good long-range performace, you could also choose to use external antenna with the IPEX connector on-board.
 
 > overview
+  
+Up             |  Bottom
+:-------------------------:|:-------------------------:
+![Up](statics\C1_2002w_Up.png)  |  ![Bottom](statics\C1_2002w_Bottom.png)
 
-<a href="url"><img src="./statics/SG2002.png" height="auto" width="auto" style="border-radius:10px"></a>
-
->schematic
-
-<a href="url"><img src="./statics/BTB_Connector.png" height="auto" width="auto" style="border-radius:10px"></a>
-
-#### C1_2002
-This core board utilized the SOC SG2002. In addition to the on-board eMMC, there are also on-board wireless solution ready for use. The wireless module along with the on-board antenna could provides you the basic WIFI/BLE connection ability.
-
-While the on-board antenna cannot have a good long-range performace, you could also choose to use external antenna with the IPEX connector on-board.
-
-> overview
-
-<a href="url"><img src="./statics/SG2002.png" height="auto" width="auto" style="border-radius:10px"></a>
 
 >schematic
 
