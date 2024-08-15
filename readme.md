@@ -3,7 +3,7 @@
 <a href="url"><img src="./statics/reCamera-1.png" height="auto" width="auto" style="border-radius:40px"></a>
 
 
-**reCamera** is an open source AI camera. The project provides a convenient solution for people who use custom DIY cameras.The feature of this project is that not only does the **RISC-V** system provide an AI recognition solution for edge cameras, but we also open source the related application projects of the camera and the model design of the electronic circuit and 3D shell. We provide a **model transformation tool**, users can quantify and transplant the traditional recognition model according to their needs. In addition, we reserve all interfaces of the processor, and users can personalize the external interfaces according to their projects and requirements.
+**reCamera** is an open source AI camera. The project provides a convenient solution for people who use custom DIY cameras. The feature of this project is that not only does the **RISC-V** system provide an AI recognition solution for edge cameras, but we also open source the related application projects of the camera and the model design of the electronic circuit and 3D shell. We provide a **model transformation tool**, users can quantify and transplant the traditional recognition model according to their needs. In addition, we reserve all interfaces of the processor, and users can personalize the external interfaces according to their projects and requirements.
 
 ## reCamera Core
 
@@ -39,10 +39,6 @@ waiting...
 | [S1_OV5647](./S1_OV5647/) | 500w pixels  <br />Rolling Shutter | Home Surveillance<br />PTZ Camera<br />Handheld Camera       |
 | S2_IMX335     | 500w pixels  <br />Rolling Shutter | Machine Vision Systems<br />Robot<br />Biometrics            |
 | S3_SC130GS    | 100w pixels<br />Global Shutter    | Machine Vision Systems,<br />IoT Camera,<br />Industrial Camera |
-
-
-
-
 
 ### S1_OV5647
 
@@ -102,7 +98,7 @@ waiting...
 ### S2_IMX335
 > overview
 
->schematic
+> schematic
 
 > features:
 
@@ -110,7 +106,7 @@ waiting...
 
 > overview
 
->schematic
+> schematic
 
 > features:
 
@@ -125,4 +121,13 @@ waiting...
 
 ## Related Porjects:
 
-[sscma Link](https://github.com/Seeed-Studio/sscma-example-sg200x)
+### [reCamera OS](https://github.com/Seeed-Studio/reCamera-OS)
+
+This is the default buildroot system running in reCamera.
+
+### [reCamera Web]
+
+- [Backend](https://github.com/Seeed-Studio/sscma-example-sg200x)
+- [Frontend]()
+
+This is the default Web backend running in reCamera OS. It provides user with a web interface for network configuration, live view, web ssh and other security configuration.
