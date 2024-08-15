@@ -126,11 +126,13 @@ Up             |  Bottom
 
 ## Base Board
 
-| Board         | Features                           | Latest Version                                                   |
-| ------------- | ---------------------------------- | ------------------------------------------------------------ |
-| [B1_Default](./B1_Deault/) |  | 1.0 |
-| B2_POE    |  | 0.1 |
-| B3_Gyro    |  | 0.1 |
+
+| Board         | Features                           | Version Info |
+| ------------- | ---------------------------------- | ------------ |
+| B1_Default    | Single Port Transformer Module <br /> SD card reader <br /> Type-C port <br /> UART| 1.0 |
+| B2_Vertical-mounted Type-C      | Single Port Transformer Module <br /> SD card reader <br /> Type-C port <br /> UART| 0.1 |
+| B3_POE    | Power over Ethernet <br /> UART| 0.1 |
+| B4_Gyro      | DC-DC converter <br /> CAN port <br /> UART | 0.1 |
 
 ### B1_Default
 
@@ -154,7 +156,27 @@ Up             |  Bottom
 - 1 x Single Port Transformer Module for Ethernet communication support.
 - 1 x SD card reader for data storage and exchange.
 
-### B2_POE
+### B2_Vertical-mounted Type-C
+
+> overview
+>
+
+Up             |  Bottom
+:-------------------------:|:-------------------------:
+![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
+
+
+>schematic
+
+![img](./statics/B2_Vertical-mounted Type-C.png)
+
+> features:
+
+- 1 x Type-C port for power input and communication.
+- 1 x Single Port Transformer Module for Ethernet communication support.
+- 1 x SD card reader for data storage and exchange.
+
+### B3_POE
 
 > overview
 
@@ -166,14 +188,14 @@ Up             |  Bottom
 
 >schematic
 
-![img](./statics/B1_POE_sch.png)
+![img](./statics/B3_POE_sch.png)
 
 > features:
 
 - The board supports PoE (Power over Ethernet) for power supply, which allows power to be transmitted over Ethernet cables and simplifies the power supply for network devices.
 - The board supports serial communication, allowing bidirectional communication with other devices through a serial interface and facilitating interaction between the board and makers.
 
-### B2_POE
+### B4_Gyro
 
 > overview
 
@@ -182,10 +204,9 @@ Up             |  Bottom
 ![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
 
 
-
 >schematic
 
-![img](./statics/B1_POE_sch.png)
+![img](./statics/B3_POE_sch.png)
 
 > features:
 
