@@ -2,48 +2,70 @@
 
 <a href="url"><img src="./statics/reCamera-1.png" height="auto" width="auto" style="border-radius:40px"></a>
 
+## What's reCamera?
 
-**reCamera** is an open source AI camera. The project provides a convenient solution for people who use custom DIY cameras. The feature of this project is that not only does the **RISC-V** system provide an AI recognition solution for edge cameras, but we also open source the related application projects of the camera and the model design of the electronic circuit and 3D shell. We provide a **model transformation tool**, users can quantify and transplant the traditional recognition model according to their needs. In addition, we reserve all interfaces of the processor, and users can personalize the external interfaces according to their projects and requirements.
+reCamera is the combination of a **processor** with a **camera sensor**.
 
-## reCamera Core
+This combination makes reCamera a standalone system which could handle some basic detection & control tasks along.
 
-reCamera Core is a core module design based on SG2002 open source chip.
-SG2002 equipped with high-performance RISC-V and ARM cores, it provides a fully open-source, ecosystem-rich deep learning vision processor that delivers 1.0 TOPS computing power@INT8.
+## Why we make reCamera?
 
+Today, as the processors (both SOC and MCU) are becoming smaller and powerful, putting the processor together with camera sensors are becoming doable. Indeed many IPCs (IP camera) are already using this design to acclerate AI detection on edge devices. 
+
+So today we make reCamera, this open-source camera platform for everyone to play with. And we split this project into 3 changable parts:
+- Core Board
+- Sensor Board
+- Base Board
+
+This design will let you to easily change the interfaces, camera sensors to the ones you want to use. And we hope these componenets could be freely used as any combination.  
+
+And after we could build up this hardware platform and ecosystem, other applications could grow on these platform without a worriness of changing from platform to platform in the future.
+
+## Core Board
+
+| Board         | Features                           |
+| ------------- | ---------------------------------- |
+| [C1_2002w]    | eMMC <br />WIFI/BLE module <br /> OnBoard antenna <br /> External antenna connector|
+| [C1_2002]     | eMMC |
+
+#### C1_2002w
+This core board utilized the SOC SG2002. In addition to the on-board eMMC, there are also on-board wireless solution ready for use. The wireless module along with the on-board antenna could provides you the basic WIFI/BLE connection ability.
+
+While the on-board antenna cannot have a good long-range performace, you could also choose to use external antenna with the IPEX connector on-board.
+
+> overview
 
 <a href="url"><img src="./statics/SG2002.png" height="auto" width="auto" style="border-radius:10px"></a>
 
-As the name suggests, this is an open source camera core board. The core board contains the core processor, EMMC storage, and WiFi chip. The core module led all the pins of the processor out through two BtoB sockets.
-Through this interface, junior electronics engineers can customize their exclusive cameras by designing SensorBoard and BaseBoard.
+>schematic
 
 <a href="url"><img src="./statics/BTB_Connector.png" height="auto" width="auto" style="border-radius:10px"></a>
 
+#### C1_2002
+This core board utilized the SOC SG2002. In addition to the on-board eMMC, there are also on-board wireless solution ready for use. The wireless module along with the on-board antenna could provides you the basic WIFI/BLE connection ability.
 
-## Application:
+While the on-board antenna cannot have a good long-range performace, you could also choose to use external antenna with the IPEX connector on-board.
 
+> overview
 
-### [reCamera Gimbal](https://github.com/AllenKon/Seeed_reCamera_Gimbal)
+<a href="url"><img src="./statics/SG2002.png" height="auto" width="auto" style="border-radius:10px"></a>
 
-Open source Gimbal solution made using reCamera.
+>schematic
 
-<a href="url"><img src="./statics/reCamera-Gimbal-1.png" height="auto" width="auto" style="border-radius:40px"></a>
+<a href="url"><img src="./statics/BTB_Connector.png" height="auto" width="auto" style="border-radius:10px"></a>
 
-### [reCamera Robot Arm]()
+## Sensor Board
 
-waiting...
-
-## SensorBoard
-
-| Board         | Features                           | To do list                                                   |
+| Board         | Features                           | Latest Version                                                   |
 | ------------- | ---------------------------------- | ------------------------------------------------------------ |
-| [S1_OV5647](./S1_OV5647/) | 500w pixels  <br />Rolling Shutter | Home Surveillance<br />PTZ Camera<br />Handheld Camera       |
-| S2_IMX335     | 500w pixels  <br />Rolling Shutter | Machine Vision Systems<br />Robot<br />Biometrics            |
-| S3_SC130GS    | 100w pixels<br />Global Shutter    | Machine Vision Systems,<br />IoT Camera,<br />Industrial Camera |
+| [S1_OV5647](./S1_OV5647/) | 5MP  <br />Rolling Shutter | 1.0 |
+| S2_IMX335     | 5MP  <br />Rolling Shutter | WIP |
+| S3_SC130GS    | 1MP <br />Global Shutter    | WIP |
 
 ### S1_OV5647
 
 > overview
-> 
+
 ![img](./statics/S1_ov5647.png)
 
 >schematic
@@ -110,7 +132,7 @@ waiting...
 
 > features:
 
-## BaseBoard
+## Base Board
 ### B1_Default
 
 > overview
@@ -172,7 +194,7 @@ waiting...
 
 
 
-## Related Porjects:
+## reCamera Softwares
 
 ### [reCamera OS](https://github.com/Seeed-Studio/reCamera-OS)
 
@@ -184,3 +206,15 @@ This is the default buildroot system running in reCamera.
 - [Frontend]()
 
 This is the default Web backend running in reCamera OS. It provides user with a web interface for network configuration, live view, web ssh and other security configuration.
+
+## Related Projects
+
+### [reCamera Gimbal](https://github.com/AllenKon/Seeed_reCamera_Gimbal)
+
+Open source Gimbal solution made using reCamera.
+
+<a href="url"><img src="./statics/reCamera-Gimbal-1.png" height="auto" width="auto" style="border-radius:40px"></a>
+
+### [reCamera Robot Arm]()
+
+waiting...
