@@ -125,6 +125,13 @@ Up             |  Bottom
 > features:
 
 ## Base Board
+
+| Board         | Features                           | Latest Version                                                   |
+| ------------- | ---------------------------------- | ------------------------------------------------------------ |
+| [B1_Default](./B1_Deault/) |  | 1.0 |
+| B2_POE    |  | 0.1 |
+| B3_Gyro    |  | 0.1 |
+
 ### B1_Default
 
 > overview
