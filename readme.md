@@ -127,9 +127,9 @@ waiting...
 
 > features:
 
-- 4 x type-c
-- 1 x Single Port Transformer Module
-- 1 x SD card reader
+- 1 x Type-C port for power input and communication.
+- 1 x Single Port Transformer Module for Ethernet communication support.
+- 1 x SD card reader for data storage and exchange.
 
 ### B2_POE
 
@@ -142,14 +142,12 @@ waiting...
 
 >schematic
 
-![img](./statics/B1_Default_sch.png)
+![img](./statics/B1_POE_sch.png)
 
 > features:
 
-- 4 x type-c
-- 1 x Single Port Transformer Module
-- 1 x SD card reader
-
+- The board supports PoE (Power over Ethernet) for power supply, which allows power to be transmitted over Ethernet cables and simplifies the power supply for network devices.
+- The board supports serial communication, allowing bidirectional communication with other devices through a serial interface and facilitating interaction between the board and makers.
 
 
 ## Related Porjects:
