@@ -2,13 +2,13 @@
 
 <a href="url"><img src="./statics/reCamera-1.png" height="auto" width="auto" style="border-radius:40px"></a>
 
-## What's reCamera?
+## ✨ What's reCamera? 
 
 reCamera is the combination of a **processor** with a **camera sensor**.
 
 This combination makes reCamera a standalone system which could handle some basic detection & control tasks along.
 
-## Why we make reCamera?
+## 💡 Why we make reCamera? 
 
 Today, as the processors (both SOC and MCU) are becoming smaller and powerful, putting the processor together with camera sensors are becoming doable. Indeed many IPCs (IP camera) are already using this design to acclerate AI detection on edge devices. 
 
@@ -52,24 +52,24 @@ Up             |  Bottom
 | S2_IMX335     | 5MP  <br />Rolling Shutter | WIP |
 | S3_SC130GS    | 1MP <br />Global Shutter    | WIP |
 
-### S1_OV5647
-
-> overview
+### 💡 S1_OV5647
+---
+### ⚙️ overview
 
 ![img](./statics/S1_ov5647.png)
 
->schematic
+### ⚙️ schematic
 
 ![img](./statics/S1_ov5647_Sch.png)
 
-> features:
+### ⚙️ features:
 
 <div>
 
 <table ><tbody>
 <tr >
     <td >SENSOR</td>
-    <td class="dbon">ov5647</td>
+    <td class="dbon">OV5647</td>
     <td class="dbon">CMOS SIZE</td>
     <td class="dbon">1/4 inch</td>
 </tr>
@@ -109,6 +109,8 @@ Up             |  Bottom
 
 ### S2_IMX335
 > overview
+
+
 
 > schematic
 
