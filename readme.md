@@ -110,6 +110,7 @@ Up             |  Bottom
 ### 💡 S2_IMX335
 ### ⚙️ overview
 
+![image](./statics/S2_IMX335_overview.png)
 
 ### ⚙️ schematic
 ![alt text](./statics/S2_IMX335_Sch.png)
@@ -154,7 +155,7 @@ Up             |  Bottom
 
 ### ⚙️ overview
 
-
+![image](./statics/S3_SC130GS_overview.png)
 
 ### ⚙️ schematic
 
@@ -214,12 +215,7 @@ Sensor Board             |  BtoB Board
 
 ### ⚙️ overview
 
-Up             |  Bottom
-:-------------------------:|:-------------------------:
-![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
-
-
-
+![image](./statics/B1_Default_overview.png)
 
 ### ⚙️ schematic
 
@@ -318,5 +314,7 @@ Open source Gimbal solution made using reCamera.
 WIP..
 
 ### [reCamera Robot Arm]()
+
+![image](./statics/reCamera_Robot_Arm.JPG)
 
 WIP..
