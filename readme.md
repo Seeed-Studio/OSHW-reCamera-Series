@@ -190,8 +190,8 @@ Up             |  Bottom
 
 ### ⚙️ features:
 
-- The board supports PoE (Power over Ethernet) for power supply, which allows power to be transmitted over Ethernet cables and simplifies the power supply for network devices.
-- The board supports serial communication, allowing bidirectional communication with other devices through a serial interface and facilitating interaction between the board and makers.
+- 1 x RJ45 port for 802.3af PSE.
+- 1 x UART port.
 
 ### 💡 B4_Gyro
 
@@ -209,8 +209,9 @@ Up             |  Bottom
 
 ### ⚙️ features:
 
-- The board supports PoE (Power over Ethernet) for power supply, which allows power to be transmitted over Ethernet cables and simplifies the power supply for network devices.
-- The board supports serial communication, allowing bidirectional communication with other devices through a serial interface and facilitating interaction between the board and makers.
+- 1 x CAN port.
+- 1 x Gyroscope sensor.
+- 1 x UART port.
 
 
 ## reCamera Softwares
