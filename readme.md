@@ -28,19 +28,19 @@ And after we could build up this hardware platform and ecosystem, other applicat
 | [C1_2002w]    | eMMC <br />WIFI/BLE module <br /> OnBoard antenna <br /> External antenna connector| 1.0 |
 | C1_2002       | eMMC <br />Extra SDIO to base board <br /> Extra UART to base board | WIP |
 
-#### C1_2002w
+### 💡 C1_2002w
 This core board utilized the SOC SG2002. In addition to the on-board eMMC, there are also on-board wireless solution ready for use. The wireless module along with the on-board antenna could provides you the basic WIFI/BLE connection ability.
 
 While the on-board antenna cannot have a good long-range performace, you could also choose to use external antenna with the IPEX connector on-board.
 
-> overview
+### ⚙️ overview
   
 Up             |  Bottom
 :-------------------------:|:-------------------------:
 ![Up](statics\C1_2002w_Up.png)  |  ![Bottom](statics\C1_2002w_Bottom.png)
 
 
->schematic
+### ⚙️ schematic
 
 <a href="url"><img src="./statics/BTB_Connector.png" height="auto" width="auto" style="border-radius:10px"></a>
 
@@ -97,7 +97,7 @@ Up             |  Bottom
 </tr>
 <tr >
     <td >VIDEO</td>
-    <td  colspan="3">1920 x 1080p @30, 1280 x 720p @60, 640 x 480p @60, 640 x 480p @90</td>
+    <td  colspan="3">1920 x 1080p @30fps, 1280 x 720p @60fps, 640 x 480p @60fps, 640 x 480p @90fps</td>
 </tr></tbody>
 </table>
 </div>
@@ -107,22 +107,98 @@ Up             |  Bottom
 - 1 x speaker
 - 3 x LED indicator
 
-### S2_IMX335
-> overview
+### 💡 S2_IMX335
+### ⚙️ overview
+
+
+### ⚙️ schematic
+![alt text](./statics/S2_IMX335_Sch.png)
+
+### ⚙️ features:
+
+
+<div>
+
+<table ><tbody>
+<tr >
+    <td >SENSOR</td>
+    <td class="dbon">IMX335</td>
+    <td class="dbon">CMOS SIZE</td>
+    <td class="dbon">1/2.8 inch</td>
+</tr>
+<tr >
+    <td class="dbon">PIXELS</td>
+    <td class="dbon">5MP</td>
+    <td >Focusing</td>
+    <td >manually focusing</td>
+</tr>
+<tr >
+    <td >FOCAL LENGTL</td>
+    <td class="dbon">3.91mm</td>
+    <td class="dbon">FIELD OF VIEW</td>
+    <td >106°(D) 92.6°(H) 48.6°(V)</td>
+</tr>
+<tr >
+    <td >IMAGE</td>
+    <td  colspan="3">2592 x 1944 still picture resolution</td>
+</tr>
+<tr >
+    <td >VIDEO</td>
+    <td  colspan="3">2592 × 1944p @20fps;1920 × 1080p @30fps;1280 × 720p @30fps</td>
+</tr></tbody>
+</table>
+</div>
+
+
+### 💡 S3_SC130GS
+
+### ⚙️ overview
 
 
 
-> schematic
+### ⚙️ schematic
 
-> features:
+Sensor Board             |  BtoB Board
+:-------------------------:|:-------------------------:
+![alt text](./statics/S3_Sensor_Board.png)  |  ![alt text](./statics/S3_BtoB_Board.png)
 
-### S3_SC130GS
 
-> overview
 
-> schematic
+### ⚙️ features:
 
-> features:
+
+<div>
+
+<table ><tbody>
+<tr >
+    <td >SENSOR</td>
+    <td class="dbon">SC130GS</td>
+    <td class="dbon">CMOS SIZE</td>
+    <td class="dbon">1/2.7 inch</td>
+</tr>
+<tr >
+    <td class="dbon">PIXELS</td>
+    <td class="dbon">1.3MP</td>
+    <td >Output Format</td>
+    <td >RAW MONO/RGB</td>
+</tr>
+<tr >
+    <td >Package</td>
+    <td class="dbon">64 pin CLCC</td>
+    <td class="dbon">Package Size</td>
+    <td >13mm x 13mm</td>
+</tr>
+<tr >
+    <td >IMAGE</td>
+    <td  colspan="3"> 1280H x 1024</td>
+</tr>
+<tr >
+    <td >VIDEO</td>
+    <td  colspan="3"> 1280H x 1024 @240fps</td>
+</tr></tbody>
+</table>
+</div>
+
 
 ## Base Board
 ### B1_Default
@@ -203,6 +279,12 @@ Open source Gimbal solution made using reCamera.
 
 <a href="url"><img src="./statics/reCamera-Gimbal-1.png" height="auto" width="auto" style="border-radius:40px"></a>
 
+### reCamera Industrial 
+
+![image](./statics/industrial.jpg)
+
+WIP..
+
 ### [reCamera Robot Arm]()
 
-waiting...
+WIP..
