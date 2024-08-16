@@ -29,7 +29,7 @@ And after we could build up this hardware platform and ecosystem, other applicat
 | C1_2002       | eMMC <br />Extra SDIO to base board <br /> Extra UART to base board | WIP |
 
 ### 💡 C1_2002w
-This core board utilized the SOC SG2002. In addition to the on-board eMMC, there are also on-board wireless solution ready for use. The wireless module along with the on-board antenna could provides you the basic WIFI/BLE connection ability.
+This core board utilized the RISC-V SOC SG2002. In addition to the on-board eMMC, there are also on-board wireless solution ready for use. The wireless module along with the on-board antenna could provides you the basic WIFI/BLE connection ability.
 
 While the on-board antenna cannot have a good long-range performace, you could also choose to use external antenna with the IPEX connector on-board.
 
@@ -37,7 +37,7 @@ While the on-board antenna cannot have a good long-range performace, you could a
   
 Up             |  Bottom
 :-------------------------:|:-------------------------:
-![Up](statics\C1_2002w_Up.png)  |  ![Bottom](statics\C1_2002w_Bottom.png)
+![Up](./statics/C1_2002w_Up.png)  |  ![Bottom](./statics/C1_2002w_Bottom.png)
 
 
 ### ⚙️ schematic
@@ -201,61 +201,93 @@ Sensor Board             |  BtoB Board
 
 
 ## Base Board
-### B1_Default
-
-> overview
->
-
-<center class="third">
-  <img src="./statics/B1_Default_Upper.png" width="200"><img src="./statics/B1_Default_Bottom.png" width="200">
-</center>
 
 
->schematic
+| Board         | Features                           | Version Info |
+| ------------- | ---------------------------------- | ------------ |
+| B1_Default    | Single Port Transformer Module <br /> SD card reader <br /> Type-C port <br /> UART| 1.0 |
+| B2_Vertical-mounted Type-C      | Single Port Transformer Module <br /> SD card reader <br /> Type-C port <br /> UART| 0.1 |
+| B3_POE    | Power over Ethernet(POE) <br /> UART| 0.1 |
+| B4_Gyro      | DC-DC converter <br /> CAN port <br /> UART | 0.1 |
+
+### 💡 B1_Default
+
+### ⚙️ overview
+
+Up             |  Bottom
+:-------------------------:|:-------------------------:
+![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
+
+
+
+
+### ⚙️ schematic
 
 ![img](./statics/B1_Default_sch.png)
 
-> features:
+
+### ⚙️ features:
 
 - 1 x Type-C port for power input and communication.
 - 1 x Single Port Transformer Module for Ethernet communication support.
 - 1 x SD card reader for data storage and exchange.
 
-### B2_POE
+### 💡 B2_Vertical-mounted Type-C
 
-> overview
+### ⚙️ overview
 
-<center class="third">
-  <img src="./statics/B1_Default_Upper.png" width="200"><img src="./statics/B1_Default_Bottom.png" width="200">
-</center>
-
-
->schematic
-
-![img](./statics/B1_POE_sch.png)
-
-> features:
-
-- The board supports PoE (Power over Ethernet) for power supply, which allows power to be transmitted over Ethernet cables and simplifies the power supply for network devices.
-- The board supports serial communication, allowing bidirectional communication with other devices through a serial interface and facilitating interaction between the board and makers.
-
-### B2_POE
-
-> overview
-
-<center class="third">
-  <img src="./statics/B1_Default_Upper.png" width="200"><img src="./statics/B1_Default_Bottom.png" width="200">
-</center>
+Up             |  Bottom
+:-------------------------:|:-------------------------:
+![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
 
 
->schematic
+### ⚙️ schematic
 
-![img](./statics/B1_POE_sch.png)
+![img](./statics\B2_Vertical-mounted Type-C.png)
 
-> features:
+### ⚙️ features:
 
-- The board supports PoE (Power over Ethernet) for power supply, which allows power to be transmitted over Ethernet cables and simplifies the power supply for network devices.
-- The board supports serial communication, allowing bidirectional communication with other devices through a serial interface and facilitating interaction between the board and makers.
+- 1 x Type-C port for power input and communication.
+- 1 x Single Port Transformer Module for Ethernet communication support.
+- 1 x SD card reader for data storage and exchange.
+
+### 💡 B3_POE
+
+### ⚙️ overview
+
+Up             |  Bottom
+:-------------------------:|:-------------------------:
+![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
+
+
+### ⚙️ schematic
+
+![img](./statics/B3_POE_sch.png)
+
+### ⚙️ features:
+
+- 1 x RJ45 port for 802.3af PSE.
+- 1 x UART port.
+
+### 💡 B4_Gyro
+
+### ⚙️ overview
+
+
+Up             |  Bottom
+:-------------------------:|:-------------------------:
+![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
+
+
+### ⚙️ schematic
+
+![img](./statics/B4_Gyro.png)
+
+### ⚙️ features:
+
+- 1 x CAN port.
+- 1 x Gyroscope sensor.
+- 1 x UART port.
 
 
 ## reCamera Softwares
