@@ -49,8 +49,8 @@ Up             |  Bottom
 | Board         | Features                           | Latest Version                                                   |
 | ------------- | ---------------------------------- | ------------------------------------------------------------ |
 | [S1_OV5647](./S1_OV5647/) | 5MP  <br />Rolling Shutter | 1.0 |
-| S2_IMX335     | 5MP  <br />Rolling Shutter | WIP |
-| S3_SC130GS    | 1MP <br />Global Shutter    | WIP |
+| [S2_IMX335](./S2_IMX335/)     | 5MP  <br />Rolling Shutter | WIP |
+| [S3_SC130GS](./S3_SC130GS/)    | 1MP <br />Global Shutter    | WIP |
 
 ### 💡 S1_OV5647
 ---
@@ -232,10 +232,7 @@ Sensor Board             |  BtoB Board
 
 ### ⚙️ overview
 
-Up             |  Bottom
-:-------------------------:|:-------------------------:
-![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
-
+![images](./statics/B2_Vertical-mounted_Type-C_overview.png)
 
 ### ⚙️ schematic
 
@@ -269,11 +266,7 @@ Up             |  Bottom
 
 ### ⚙️ overview
 
-
-Up             |  Bottom
-:-------------------------:|:-------------------------:
-![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
-
+![images](./statics/B4_Gyro_overview.png)
 
 ### ⚙️ schematic
 
