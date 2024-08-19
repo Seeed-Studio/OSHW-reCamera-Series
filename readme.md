@@ -236,7 +236,7 @@ Sensor Board             |  BtoB Board
 
 ### ⚙️ schematic
 
-![img](./statics\B2_Vertical-mounted Type-C.png)
+![img](./statics/B2_Vertical-mounted%20Type-C.png)
 
 ### ⚙️ features:
 
@@ -250,7 +250,7 @@ Sensor Board             |  BtoB Board
 
 Up             |  Bottom
 :-------------------------:|:-------------------------:
-![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
+![Up](./statics/B3_POE_Upper.png)  |  ![Bottom](./statics/B3_POE_Bottom.png)
 
 
 ### ⚙️ schematic
