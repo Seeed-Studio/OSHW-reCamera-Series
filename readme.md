@@ -285,10 +285,10 @@ Up             |  Bottom
 
 This is the default buildroot system running in reCamera.
 
-### [reCamera Web]
+### reCamera Web
 
 - [Backend](https://github.com/Seeed-Studio/sscma-example-sg200x)
-- [Frontend]()
+- [Frontend]
 
 This is the default Web backend running in reCamera OS. It provides user with a web interface for network configuration, live view, web ssh and other security configuration.
 
