@@ -25,8 +25,8 @@ And after we could build up this hardware platform and ecosystem, other applicat
 
 | Board         | Features                           | Version Info |
 | ------------- | ---------------------------------- | ------------ |
-| [C1_2002w]    | eMMC <br />WIFI/BLE module <br /> OnBoard antenna <br /> External antenna connector| 1.0 |
-| C1_2002       | eMMC <br />Extra SDIO to base board <br /> Extra UART to base board | WIP |
+| [C1_2002w](./C1_2002/)    | eMMC <br />WIFI/BLE module <br /> OnBoard antenna <br /> External antenna connector| 1.0 |
+| [C1_2002](./C1_2002/)       | eMMC <br />Extra SDIO to base board <br /> Extra UART to base board | WIP |
 
 ### 💡 C1_2002w
 This core board utilized the RISC-V SOC SG2002. In addition to the on-board eMMC, there are also on-board wireless solution ready for use. The wireless module along with the on-board antenna could provides you the basic WIFI/BLE connection ability.
