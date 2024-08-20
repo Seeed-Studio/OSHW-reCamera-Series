@@ -4,22 +4,22 @@
 
 ## ✨ What's reCamera? 
 
-reCamera is the combination of a **processor** with a **camera sensor**.
+reCamera is a combination of a **processor** and a **camera sensor**.
 
-This combination makes reCamera a standalone system which could handle some basic detection & control tasks along.
+This combination makes reCamera a standalone system that can handle basic detection and control tasks on its own.
 
 ## 💡 Why we make reCamera? 
 
-Today, as the processors (both SOC and MCU) are becoming smaller and powerful, putting the processor together with camera sensors are becoming doable. Indeed many IPCs (IP camera) are already using this design to acclerate AI detection on edge devices. 
+Today, as processors (both SOC and MCU) are becoming smaller and more powerful, it is now possible to combine the processor with camera sensors. In fact, many IPCs (IP cameras) are already using this design to accelerate AI detection on edge devices.
 
-So today we make reCamera, this open-source camera platform for everyone to play with. And we split this project into 3 changable parts:
+So today, we introduce reCamera, an open-source camera platform for everyone to play with. We have divided this project into 3 interchangeable parts:
 - Core Board
 - Sensor Board
 - Base Board
 
-This design will let you to easily change the interfaces, camera sensors to the ones you want to use. And we hope these componenets could be freely used as any combination.  
+This design allows you to easily change the interfaces and camera sensors to suit your needs. We hope that these components can be freely combined in any way.
 
-And after we could build up this hardware platform and ecosystem, other applications could grow on these platform without a worriness of changing from platform to platform in the future.
+By building this hardware platform and ecosystem, we enable other applications to grow on this platform without the need to worry about changing from one platform to another in the future.
 
 ## Core Board
 
