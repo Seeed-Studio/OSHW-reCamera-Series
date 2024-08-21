@@ -21,6 +21,10 @@ This design allows you to easily change the interfaces and camera sensors to sui
 
 By building this hardware platform and ecosystem, we enable other applications to grow on this platform without the need to worry about changing from one platform to another in the future.
 
+The engineering focus on modularity, high performance, and ease of use ensures that reCamera serves as a powerful platform for developers and makers. This design streamlines complex hardware processes, allowing users to integrate vision AI capabilities into their systems efficiently and creatively. 
+
+We've taken care of the intricate hardware work, freeing up time for user innovation. The modular design enables users to rapidly switch cameras and customize interfaces, transforming development from months to weeks only!
+
 ## Core Board
 
 | Board         | Features                           | Version Info |
@@ -298,7 +302,7 @@ This is the default Web backend running in reCamera OS. It provides user with a 
 
 Open source Gimbal solution made using reCamera.
 
-<a href="url"><img src="./statics/reCamera-Gimbal-1.png" height="auto" width="auto" style="border-radius:40px"></a>
+![image](./statics/reCamera-Gimbal.jpg)
 
 ### reCamera Industrial 
 
