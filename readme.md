@@ -55,6 +55,8 @@ Up             |  Bottom
 | [S1_OV5647](./S1_OV5647/) | 5MP  <br />Rolling Shutter | 1.0 |
 | [S2_IMX335](./S2_IMX335/)     | 5MP  <br />Rolling Shutter | WIP |
 | [S3_SC130GS](./S3_SC130GS/)    | 1MP <br />Global Shutter    | WIP |
+----
+[Sensor Driver Support List](./Sensor_Suppoeted_List.md)
 
 ### 💡 S1_OV5647
 ---
