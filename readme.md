@@ -27,7 +27,7 @@ We've taken care of the intricate hardware work, freeing up time for user innova
 
 Join our group:
 
-[![](https://dcbadge.limes.pink/api/server/INVITE)](https://discord.gg/j3DHc9zS)
+[![Discord](https://img.shields.io/discord/667044843901681675.svg?color=768AD4&label=discord&logo=https%3A%2F%2Fdiscordapp.com%2Fassets%2F8c9701b98ad4372b58f13fd9f65f966e.svg)](https://discord.gg/agHdBMYGZK)
 
 ## Core Board
 
