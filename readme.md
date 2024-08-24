@@ -21,6 +21,10 @@ This design allows you to easily change the interfaces and camera sensors to sui
 
 By building this hardware platform and ecosystem, we enable other applications to grow on this platform without the need to worry about changing from one platform to another in the future.
 
+Join our group:
+
+[![](https://dcbadge.limes.pink/api/server/INVITE)](https://discord.gg/j3DHc9zS)
+
 ## Core Board
 
 | Board         | Features                           | Version Info |
