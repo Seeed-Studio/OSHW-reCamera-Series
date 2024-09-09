@@ -4,29 +4,37 @@
 
 ## ✨ What's reCamera? 
 
-reCamera is the combination of a **processor** with a **camera sensor**.
+reCamera is a combination of a **processor** and a **camera sensor**.
 
-This combination makes reCamera a standalone system which could handle some basic detection & control tasks along.
+This combination makes reCamera a standalone system that can handle basic detection and control tasks on its own.
 
 ## 💡 Why we make reCamera? 
 
-Today, as the processors (both SOC and MCU) are becoming smaller and powerful, putting the processor together with camera sensors are becoming doable. Indeed many IPCs (IP camera) are already using this design to acclerate AI detection on edge devices. 
+Today, as processors (both SOC and MCU) are becoming smaller and more powerful, it is now possible to combine the processor with camera sensors. In fact, many IPCs (IP cameras) are already using this design to accelerate AI detection on edge devices.
 
-So today we make reCamera, this open-source camera platform for everyone to play with. And we split this project into 3 changable parts:
+So today, we introduce reCamera, an open-source camera platform for everyone to play with. We have divided this project into 3 interchangeable parts:
 - Core Board
 - Sensor Board
 - Base Board
 
-This design will let you to easily change the interfaces, camera sensors to the ones you want to use. And we hope these componenets could be freely used as any combination.  
+This design allows you to easily change the interfaces and camera sensors to suit your needs. We hope that these components can be freely combined in any way.
 
-And after we could build up this hardware platform and ecosystem, other applications could grow on these platform without a worriness of changing from platform to platform in the future.
+By building this hardware platform and ecosystem, we enable other applications to grow on this platform without the need to worry about changing from one platform to another in the future.
+
+The engineering focus on modularity, high performance, and ease of use ensures that reCamera serves as a powerful platform for developers and makers. This design streamlines complex hardware processes, allowing users to integrate vision AI capabilities into their systems efficiently and creatively. 
+
+We've taken care of the intricate hardware work, freeing up time for user innovation. The modular design enables users to rapidly switch cameras and customize interfaces, transforming development from months to weeks only!
+
+Join our group:
+
+[![Discord](https://img.shields.io/discord/667044843901681675.svg?color=768AD4&label=discord&logo=https%3A%2F%2Fdiscordapp.com%2Fassets%2F8c9701b98ad4372b58f13fd9f65f966e.svg)](https://discord.gg/agHdBMYGZK)
 
 ## Core Board
 
 | Board         | Features                           | Version Info |
 | ------------- | ---------------------------------- | ------------ |
-| [C1_2002w]    | eMMC <br />WIFI/BLE module <br /> OnBoard antenna <br /> External antenna connector| 1.0 |
-| C1_2002       | eMMC <br />Extra SDIO to base board <br /> Extra UART to base board | WIP |
+| [C1_2002w](./C1_2002/)    | eMMC <br />WIFI/BLE module <br /> OnBoard antenna <br /> External antenna connector| 1.0 |
+| [C1_2002](./C1_2002/)       | eMMC <br />Extra SDIO to base board <br /> Extra UART to base board | WIP |
 
 ### 💡 C1_2002w
 This core board utilized the RISC-V SOC SG2002. In addition to the on-board eMMC, there are also on-board wireless solution ready for use. The wireless module along with the on-board antenna could provides you the basic WIFI/BLE connection ability.
@@ -51,6 +59,8 @@ Up             |  Bottom
 | [S1_OV5647](./S1_OV5647/) | 5MP  <br />Rolling Shutter | 1.0 |
 | [S2_IMX335](./S2_IMX335/)     | 5MP  <br />Rolling Shutter | WIP |
 | [S3_SC130GS](./S3_SC130GS/)    | 1MP <br />Global Shutter    | WIP |
+----
+[Sensor Driver Support List](./Sensor_Suppoeted_List.md)
 
 ### 💡 S1_OV5647
 ---
@@ -298,7 +308,7 @@ This is the default Web backend running in reCamera OS. It provides user with a 
 
 Open source Gimbal solution made using reCamera.
 
-<a href="url"><img src="./statics/reCamera-Gimbal-1.png" height="auto" width="auto" style="border-radius:40px"></a>
+![image](./statics/reCamera-Gimbal.jpg)
 
 ### reCamera Industrial 
 
