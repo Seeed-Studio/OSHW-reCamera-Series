@@ -315,7 +315,6 @@ Open source Gimbal solution made using reCamera.
 
 In order to make reCamera last longer, we developed a matching battery compartment, the reCamera Pocket, which is divided into vertical and horizontal, allowing reCamera to be mounted on it at different angles.
 
-
 ![image](./statics/reCamera_Pocket.JPG)
 
 ### reCamera Industrial 
