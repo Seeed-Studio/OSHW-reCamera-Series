@@ -302,13 +302,6 @@ This is the default buildroot system running in reCamera.
 
 This is the default Web backend running in reCamera OS. It provides user with a web interface for network configuration, live view, web ssh and other security configuration.
 
-## reCamera Pocket
-
-In order to make reCamera last longer, we developed a matching battery compartment, the reCamera Pocket, which is divided into vertical and horizontal, allowing reCamera to be mounted on it at different angles.
-
-
-![image](./statics/reCamera_Pocket.JPG)
-
 
 ## Related Projects
 
@@ -317,6 +310,13 @@ In order to make reCamera last longer, we developed a matching battery compartme
 Open source Gimbal solution made using reCamera.
 
 ![image](./statics/reCamera-Gimbal.jpg)
+
+### [reCamera Pocket](https://github.com/AllenKon/Seeed_reCamera_Gimbal)
+
+In order to make reCamera last longer, we developed a matching battery compartment, the reCamera Pocket, which is divided into vertical and horizontal, allowing reCamera to be mounted on it at different angles.
+
+
+![image](./statics/reCamera_Pocket.JPG)
 
 ### reCamera Industrial 
 
