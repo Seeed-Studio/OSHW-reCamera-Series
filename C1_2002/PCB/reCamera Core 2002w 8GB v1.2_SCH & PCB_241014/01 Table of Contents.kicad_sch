@@ -1,0 +1,363 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "3bb174e5-a984-46d2-8826-af8c808de5ae")
+	(paper "A4")
+	(title_block
+		(title "ReCamera Core")
+		(date "2024-04-25")
+		(rev "V1.0")
+	)
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 81.28 17.78) (xy 81.28 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "03d6b046-f487-40c4-8ae7-4424492e34b6")
+	)
+	(polyline
+		(pts
+			(xy 21.59 25.4) (xy 242.57 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "0a2f643b-9db7-46ba-ad1e-8c84262c397d")
+	)
+	(polyline
+		(pts
+			(xy 41.91 17.78) (xy 41.91 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "0e6c72b6-a360-4a87-9a49-c95581cdd527")
+	)
+	(polyline
+		(pts
+			(xy 21.59 55.88) (xy 242.57 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "3347deea-ff6e-4f46-b85c-ed5eaa6aeb72")
+	)
+	(polyline
+		(pts
+			(xy 21.59 63.5) (xy 242.57 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "36c2dfc4-04c6-47ba-ab25-57345d2ee218")
+	)
+	(polyline
+		(pts
+			(xy 62.23 17.78) (xy 62.23 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "4f5afabd-e055-4721-b624-b6f89e35e601")
+	)
+	(polyline
+		(pts
+			(xy 21.59 33.02) (xy 242.57 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "91dc19a7-2052-4e8b-9e5f-8ef00fe92f97")
+	)
+	(polyline
+		(pts
+			(xy 21.59 17.78) (xy 21.59 163.83)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "aa32a354-cde6-4bd0-88e0-981135fa6367")
+	)
+	(polyline
+		(pts
+			(xy 21.59 17.78) (xy 242.57 17.78)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "ae93eb0b-e1cf-4419-bb19-05d68ad04030")
+	)
+	(polyline
+		(pts
+			(xy 242.57 163.83) (xy 21.59 163.83)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "b3d68901-bf12-444a-ba6e-b361e34b3658")
+	)
+	(polyline
+		(pts
+			(xy 242.57 17.78) (xy 242.57 163.83)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "d6b152f6-b216-4bb1-b915-5019aa4501e2")
+	)
+	(text "Vincent\n"
+		(exclude_from_sim no)
+		(at 72.39 59.182 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "04cdfa14-b645-4e4d-865b-d98262255f49")
+	)
+	(text "3. Change C29 C30 to 15pF"
+		(exclude_from_sim no)
+		(at 104.648 45.974 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "05f2c18d-1091-47cc-9688-c75e2fa59c18")
+	)
+	(text "Author\n"
+		(exclude_from_sim no)
+		(at 71.628 22.352 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "0a4c280d-88b5-45d1-a0a1-0484720b1e79")
+	)
+	(text "Date"
+		(exclude_from_sim no)
+		(at 51.562 22.606 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "15feaf2e-b9cf-403b-ba71-240826727d5d")
+	)
+	(text "v1.2"
+		(exclude_from_sim no)
+		(at 32.258 59.182 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "2684adcc-0d99-41b9-b0f8-5b6165297f63")
+	)
+	(text "v1.1"
+		(exclude_from_sim no)
+		(at 32.258 36.576 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "2d30ce76-18bf-448f-952b-513f8af4305c")
+	)
+	(text "4/28/24"
+		(exclude_from_sim no)
+		(at 52.832 29.718 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "718a5450-b73c-45ca-bc25-4e88908d3564")
+	)
+	(text "First release\n"
+		(exclude_from_sim no)
+		(at 93.98 29.464 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "7980e8be-d632-4790-9bd8-f0cb18003884")
+	)
+	(text "1. Change R96 to 47k\n2. Change C72 to 100nF"
+		(exclude_from_sim no)
+		(at 83.82 59.944 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "81fd3c95-247b-4042-9217-45b5908e5874")
+	)
+	(text "2. Add a 32.768KHz ocsilicator for WiFi module"
+		(exclude_from_sim no)
+		(at 119.634 41.402 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "834b8270-2de9-40ec-9850-203276b4ed44")
+	)
+	(text "Vincent\n"
+		(exclude_from_sim no)
+		(at 71.628 36.83 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "83bdfdf5-2c00-4121-b981-c419d25e7da9")
+	)
+	(text "Vincent\n"
+		(exclude_from_sim no)
+		(at 71.628 29.718 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "96aa6a67-ace2-4346-b8c4-04e28ae7fc70")
+	)
+	(text "10/12/24"
+		(exclude_from_sim no)
+		(at 52.07 59.436 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "97cbaf26-5704-4041-a5a3-d3bad2ca73a5")
+	)
+	(text "5. Add a 0R at AUC_MIC port"
+		(exclude_from_sim no)
+		(at 105.41 53.34 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "a4366e74-297f-402c-a2af-1c7b4a03796d")
+	)
+	(text "1. Add IPEX connector"
+		(exclude_from_sim no)
+		(at 99.822 37.084 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "a85d7ecf-a034-4e76-ad97-e3fb4864022c")
+	)
+	(text "Revision\n"
+		(exclude_from_sim no)
+		(at 32.258 22.606 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "b49d87eb-da90-4cf6-960b-5747e7a04643")
+	)
+	(text "v1.0\n"
+		(exclude_from_sim no)
+		(at 32.004 29.464 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "c08397ff-2f28-405e-8664-fc8052107c57")
+	)
+	(text "Description\n"
+		(exclude_from_sim no)
+		(at 160.782 21.59 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "c543fad2-f501-421e-9fd1-682bb52b4c12")
+	)
+	(text "8/23/24"
+		(exclude_from_sim no)
+		(at 52.832 36.83 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "f3f0aad2-2b8b-47d2-9a80-c207d6b6a87c")
+	)
+	(text "4. Change reset circuit of WiFi module"
+		(exclude_from_sim no)
+		(at 112.776 49.53 0)
+		(effects
+			(font
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "fa2cb6d8-b01f-497a-aad1-090d8d782cf9")
+	)
+)
