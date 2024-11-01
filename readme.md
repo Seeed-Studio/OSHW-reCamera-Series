@@ -2,6 +2,27 @@
 
 <a href="url"><img src="./statics/reCamera-1.png" height="auto" width="auto" style="border-radius:40px"></a>
 
+<div align="center">
+<a href="https://discord.gg/agHdBMYGZK"><img alt="Discord" src="https://img.shields.io/discord/862602258452578314?label=Join%20Community"></a>
+<a href="https://x.com/seeedstudio" ><img src="https://img.shields.io/twitter/follow/seeedstudio.svg?style=social" /> </a>
+<br>
+<a href="https://www.reddit.com/r/Seeed_Studio/submit/?type=TEXT" target="_blank"><img alt="Share on Reddit" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fwww.reddit.com%2Fr%2FSeeed_Studio%2F&style=social&logo=Reddit&label=Reddit"></a>&nbsp;
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//github.com/Seeed-Studio/OSHW-reCamera-Series" target="_blank"><img alt="Share on LinkedIn" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F1475165%2Fadmin%2Fdashboard%2F&style=social&logo=LinkedIn&label=LinkedIn"></a>&nbsp;
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//github.com/Seeed-Studio/OSHW-reCamera-Series" target="_blank"><img alt="Share on Facebook" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fwww.facebook.com%2Fseeedstudiosz%2F&style=social&logo=Facebook&label=Facebook"></a>&nbsp;
+<a href="https://t.me/share/url?text=Awesome%20communication%20engine!&url=https%3A%2F%2Fgithub.com%2FSeeed-Studio%2FOSHW-reCamera-Series" target="_blank"><img alt="Share on Telegram" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fwww.facebook.com%2Fseeedstudiosz%2F&style=social&logo=Telegram&label=Telegram"></a>&nbsp;
+<a href="https://wa.me/?text=Awesome%20communication%20engine!%5Cn%20https%3A%2F%2Fgithub.com%2FSeeed-Studio%2FOSHW-reCamera-Series" target="_blank"><img alt="Share on Whatsapp" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fwww.facebook.com%2Fseeedstudiosz%2F&style=social&logo=Whatsapp&label=Whatsapp"></a>&nbsp;
+<a href="mailto:?subject=Awesome%20Physical%20AI%20Agent&body=Checkout%20this%20awesome%20physical%20ai%20agent%3A%0Ahttps%3A//github.com/Seeed-Studio/OSHW-reCamera-Series" target="_blank"><img alt="Share on Mail" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fwww.facebook.com%2Fseeedstudiosz%2F&style=social&logo=GMail&label=GMail"></a>
+<br>
+<a href="https://github.com/Seeed-Studio/OSHW-reCamera-Series/stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Seeed-Studio/OSHW-reCamera-Series"></a>
+<a href="https://github.com/Seeed-Studio/OSHW-reCamera-Series/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/Seeed-Studio/OSHW-reCamera-Series">
+</a>
+<a href="https://github.com/Seeed-Studio/OSHW-reCamera-Series/pulls"><img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/Seeed-Studio/OSHW-reCamera-Series?label=pull%20request"></a>
+<a href="https://github.com/Seeed-Studio/OSHW-reCamera-Series/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/Seeed-Studio/OSHW-reCamera-Series"></a>
+<a href="https://github.com/Seeed-Studio/OSHW-reCamera-Series/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Seeed-Studio/OSHW-reCamera-Series"></a>
+<a href="https://github.com/Seeed-Studio/OSHW-reCamera-Series/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/Seeed-Studio/OSHW-reCamera-Series"></a>
+
+</div>
+
 ## ✨ What's reCamera? 
 
 reCamera is a combination of a **processor** and a **camera sensor**.
@@ -24,10 +45,6 @@ By building this hardware platform and ecosystem, we enable other applications t
 The engineering focus on modularity, high performance, and ease of use ensures that reCamera serves as a powerful platform for developers and makers. This design streamlines complex hardware processes, allowing users to integrate vision AI capabilities into their systems efficiently and creatively. 
 
 We've taken care of the intricate hardware work, freeing up time for user innovation. The modular design enables users to rapidly switch cameras and customize interfaces, transforming development from months to weeks only!
-
-Join our group:
-
-[![Discord](https://img.shields.io/discord/667044843901681675.svg?color=768AD4&label=discord&logo=https%3A%2F%2Fdiscordapp.com%2Fassets%2F8c9701b98ad4372b58f13fd9f65f966e.svg)](https://discord.gg/agHdBMYGZK)
 
 ## Core Board
 
