@@ -7,3 +7,7 @@
 ![image](./static/model.png)
 
 ![image](./static/pcb.png)
+
+### ⚙️ schematic
+
+![img](../statics/B2_Vertical-mounted%20Type-C.png)
