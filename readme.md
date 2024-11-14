@@ -236,7 +236,8 @@ Up             |  Bottom
 - 1 x Single Port Transformer Module for Ethernet communication support.
 - 1 x SD card reader for data storage and exchange.
 
-### 💡 [B2_Vertical-mounted Type-C](./B2_Vertical Type-C\B2_Readme.md)
+### 💡 [B2_Vertical-mounted Type-C](./B2_Vertical%20Type-C/B2_Readme.md)
+
 
 ### ⚙️ overview
 
