@@ -1,6 +1,6 @@
 # Introduction
 
-<a href="url"><img src="./statics/reCamera-1.png" height="auto" width="auto" style="border-radius:40px"></a>
+<a href="url"><img src="./statics/reCamera-2.png" height="auto" width="auto" style="border-radius:40px"></a>
 
 <div align="center">
 <a href="https://discord.gg/agHdBMYGZK"><img alt="Discord" src="https://img.shields.io/discord/862602258452578314?label=Join%20Community"></a>
