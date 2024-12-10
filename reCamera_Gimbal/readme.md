@@ -4,26 +4,26 @@
 
 Welcome to reCamera Gimbal Programmable Development Kit V1.1. We provide sample code to debug the gimbal motor's operation and status output. We offer program entry points to drive the gimbal motor using CAN, enabling precise control and functionality.
 
-![reCamera](static/reCamera-Gimbal-3.png)
+<img src="static/reCamera-Gimbal-3.png" alt="reCamera" style="zoom: 15%;" />
 
 ## Gimbal STL
 
 You can [download the STP file](./Model) of this gimbal for 3D printing and assemble it. 
 
-![reCamera](static/image-1.png)
+<img src="static/image-1.png" alt="reCamera" style="zoom:45%;" />
 
 | Preview | Models |
 | ------- | ------ |
-| ![image](image.png)        | [Download](./Model/recamera-yantai_arm_30.stp)       |
-| ![alt text](image-1.png)   | [Download](./Model/platform-box_29.stp)              |
-| ![alt text](image-2.png)   | [Download](./Model/bottom-plate_10.stp)              |
-| ![alt text](image-3.png)   | [Download](./Model/brushlessmotor-ms3506_4.stp)      |
-| ![alt text](image-4.png)   | [Download](./Model/brushlessmotor-ms3008v2_2.stp)    |
-| ![alt text](image-5.png)   | [Download](./Model/recamera-gimbalcover-4040_20.stp) |
-| ![alt text](image-6.png)   | [Download](./Model/can-case_3.stp)                   |
-| ![alt text](image-7.png)   | [Download](./Model/recamera-middleframe-4040-1_27.stp)|
-| ![alt text](image-8.png)   | [Download](./Model/recamera-sensorcover-4040-1_36.stp)|
-| ![alt text](image-9.png)   | [Download](./Model/glass-4040_6.stp)                 |
+| <img src="image.png" alt="image" style="zoom:33%;" /> | [Download](./Model/recamera-yantai_arm_30.stp)       |
+| <img src="image-1.png" alt="alt text" style="zoom:33%;" /> | [Download](./Model/platform-box_29.stp)              |
+| <img src="image-2.png" alt="alt text" style="zoom:33%;" /> | [Download](./Model/bottom-plate_10.stp)              |
+| <img src="image-3.png" alt="alt text" style="zoom:33%;" /> | [Download](./Model/brushlessmotor-ms3506_4.stp)      |
+| <img src="image-4.png" alt="alt text" style="zoom:33%;" /> | [Download](./Model/brushlessmotor-ms3008v2_2.stp)    |
+| <img src="image-5.png" alt="alt text" style="zoom:33%;" /> | [Download](./Model/recamera-gimbalcover-4040_20.stp) |
+| <img src="image-6.png" alt="alt text" style="zoom:33%;" /> | [Download](./Model/can-case_3.stp)                   |
+| <img src="image-7.png" alt="alt text" style="zoom:33%;" /> | [Download](./Model/recamera-middleframe-4040-1_27.stp)|
+| <img src="image-8.png" alt="alt text" style="zoom:33%;" /> | [Download](./Model/recamera-sensorcover-4040-1_36.stp)|
+| <img src="image-9.png" alt="alt text" style="zoom:33%;" /> | [Download](./Model/glass-4040_6.stp)                 |
 
 
 
