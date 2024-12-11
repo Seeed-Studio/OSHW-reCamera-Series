@@ -298,7 +298,7 @@ This is the default Web backend running in reCamera OS. It provides user with a 
 
 Open source Gimbal solution made using reCamera.
 
-![image](./reCamera_Gimbal/static/reCamera-Gimbal-3.png)
+![image](./reCamera_Gimbal/static/reCamera-Gimbal.png)
 
 ### reCamera Industrial 
 
