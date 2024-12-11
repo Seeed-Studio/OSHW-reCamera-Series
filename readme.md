@@ -294,11 +294,11 @@ This is the default Web backend running in reCamera OS. It provides user with a 
 
 ## Related Projects
 
-### [reCamera Gimbal](https://github.com/AllenKon/Seeed_reCamera_Gimbal)
+### [reCamera Gimbal](reCamera_Gimbal/readme.md)
 
 Open source Gimbal solution made using reCamera.
 
-![image](./statics/reCamera-Gimbal.jpg)
+![image](./reCamera_Gimbal/static/reCamera-Gimbal-3.png)
 
 ### reCamera Industrial 
 

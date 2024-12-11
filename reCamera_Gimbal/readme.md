@@ -4,53 +4,27 @@
 
 Welcome to reCamera Gimbal Programmable Development Kit V1.1. We provide sample code to debug the gimbal motor's operation and status output. We offer program entry points to drive the gimbal motor using CAN, enabling precise control and functionality.
 
-![reCamera](static/reCamera-Gimbal-3.png)
+<img src="static/reCamera-Gimbal-3.png" alt="reCamera" style="width: 80%;" />
 
-## Gimbal STL
-
-You can [download the STP file](./Model) of this gimbal for 3D printing and assemble it. 
-
-![reCamera](static/image-1.png)
-
-| Preview | Models |
-| ------- | ------ |
-| ![image](image.png)        | [Download](./Model/recamera-yantai_arm_30.stp)       |
-| ![alt text](image-1.png)   | [Download](./Model/platform-box_29.stp)              |
-| ![alt text](image-2.png)   | [Download](./Model/bottom-plate_10.stp)              |
-| ![alt text](image-3.png)   | [Download](./Model/brushlessmotor-ms3506_4.stp)      |
-| ![alt text](image-4.png)   | [Download](./Model/brushlessmotor-ms3008v2_2.stp)    |
-| ![alt text](image-5.png)   | [Download](./Model/recamera-gimbalcover-4040_20.stp) |
-| ![alt text](image-6.png)   | [Download](./Model/can-case_3.stp)                   |
-| ![alt text](image-7.png)   | [Download](./Model/recamera-middleframe-4040-1_27.stp)|
-| ![alt text](image-8.png)   | [Download](./Model/recamera-sensorcover-4040-1_36.stp)|
-| ![alt text](image-9.png)   | [Download](./Model/glass-4040_6.stp)                 |
-
-
-
-## Instructions for using
+## 🎈Instructions for using
 
 ### Motor ID Set
 
-![Connect of Devices](static/Connect.png)
+![Connect of Devices](static/connection.png)
 
-ID changes can be made using MS_Motor/LK motor tool V2.35.exe. Connect the PC (Windows) to the USB-RS485 module, with A, B, and GND of the USB-RS485 module connected to A, B, and V- of the motor. Connect the positive and negative terminals of a 12V power supply to V+ and V- of the motor to enable parameter changes. For further instructions on using LK motor tool V2.35.exe, refer to MS_Motor/Upper_monitor_motor_debuging_instruction.pdf. 
+ID changes can be made using MS_Motor/LK motor tool [V2.35.exe](MotorTools/CN/KY%20motor%20tool%20V2.35.exe). Connect the PC (Windows) to the USB-CAN module, with H, L, and GND of the USB-CAN module connected to H, L, and V- of the motor. Connect the positive and negative terminals of a 12V power supply to V+ and V- of the motor to enable parameter changes. For further instructions on using LK motor tool V2.35.exe, refer to MotorTools/EN/Upper_monitor_motor_debuging_instruction.pdf. 
 
 Only two motors are used in this head, so it is sufficient to set the IDs of the two motors to 01 and 02 respectively.
-
-### USB-RS485 Analyzer
-
-If you want a RS485 Bus Analyzer to debug your RS485 Bus, this [USB-RS485 Analyzer](https://www.seeedstudio.com/USB-TO-RS232--RS485--TTL-Industrial-Isolated-Converter-p-3231.html) is recommended.
-
-<p float="left">
-  <img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/h/t/httpsstatics3.seeedstudio.comseeedfile2018-12bazaar1004130_usbtors232485ttl01.jpg" width="300" />
-</p>
 
 
 ## Hardware Overview
 
-To enable the reCamera to drive the gimbal motor, the reCamera's base board needs to be replaced to [B4_Gyro](https://github.com/Seeed-Studio/OSHW-reCamera-Series) to enable CAN communication.
+To enable the reCamera to drive the gimbal motor, the reCamera's base board needs to be replaced to [B4_CAN](https://github.com/Seeed-Studio/OSHW-reCamera-Series) to enable CAN communication.
 
-![B4_Gyro_Overview](static/B4_Gyro_overview.png)
+Up             |  Bottom
+:-------------------------:|:-------------------------:
+![Up](./static/Gimbal_A.png)  |  ![Bottom](./static/Gimbal_B.png)
+
 
 You can use the Debugging Port connections to control the motor and communicate with the reCamera via the upper monitor. Alternatively, you can control the motor directly through the reCamera.
 
@@ -224,4 +198,23 @@ g++ Deploy_Linux.cpp -o Deploy_Linux
 
 
 ----
+
+## 🔥Gimbal STP
+
+You can [download the STP file](./Model) of this gimbal for 3D printing and assemble it. 
+
+<img src="static/image-10.png" alt="reCamera" style="width:75%;" />
+
+| Preview | Models |
+| ------- | ------ |
+| <img src="static/image.png" alt="image" style="width:33%;" /> | [Download](./Model/recamera-yantai_arm_30.stp)       |
+| <img src="static/image-1.png" alt="image" style="width:33%;" /> | [Download](./Model/platform-box_29.stp)              |
+| <img src="static/image-2.png" alt="image" style="width:33%;" /> | [Download](./Model/bottom-plate_10.stp)              |
+| <img src="static/image-3.png" alt="image" style="width:33%;" /> | [Download](./Model/brushlessmotor-ms3506_4.stp)      |
+| <img src="static/image-4.png" alt="image" style="width:33%;" /> | [Download](./Model/brushlessmotor-ms3008v2_2.stp)    |
+| <img src="static/image-5.png" alt="image" style="width:33%;" /> | [Download](./Model/recamera-gimbalcover-4040_20.stp) |
+| <img src="static/image-6.png" alt="image" style="width:33%;" /> | [Download](./Model/can-case_3.stp)                   |
+| <img src="static/image-7.png" alt="image" style="width:33%;" /> | [Download](./Model/recamera-middleframe-4040-1_27.stp)|
+| <img src="static/image-8.png" alt="image" style="width:33%;" /> | [Download](./Model/recamera-sensorcover-4040-1_36.stp)|
+| <img src="static/image-9.png" alt="image" style="width:33%;" /> | [Download](./Model/glass-4040_6.stp)                 |
 
