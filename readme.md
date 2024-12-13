@@ -286,6 +286,13 @@ Up             |  Bottom
 
 This is the default buildroot system running in reCamera.
 
+### [reCamera Dashboard V0.5](./Dashboard/readme.md)
+
+reCamera Dashboard is a visual Demo built on the node-red framework. It provides user with a web interface for network configuration, live view, web ssh, system information and other security configuration. You can change the Dashboard at any time in node-red to customize the functionality. [Preview Link](https://youtu.be/8inW10l_-wo)
+
+![reCamera Dashboard](./statics/Image-Dashboard.png)
+
+
 ### reCamera Web
 
 Currently remaking with Node-red Dashboard.
