@@ -29,6 +29,8 @@ reCamera is a combination of a **processor** and a **camera sensor**.
 
 This combination makes reCamera a standalone system that can handle basic detection and control tasks on its own.
 
+[reCamera Software and hardware iteration roadmap.](./roadmap.md)
+
 ## 💡 Why we make reCamera? 
 
 Today, as processors (both SOC and MCU) are becoming smaller and more powerful, it is now possible to combine the processor with camera sensors. In fact, many IPCs (IP cameras) are already using this design to accelerate AI detection on edge devices.
@@ -47,6 +49,23 @@ By building this hardware platform and ecosystem, we enable other applications t
 The engineering focus on modularity, high performance, and ease of use ensures that reCamera serves as a powerful platform for developers and makers. This design streamlines complex hardware processes, allowing users to integrate vision AI capabilities into their systems efficiently and creatively. 
 
 We've taken care of the intricate hardware work, freeing up time for user innovation. The modular design enables users to rapidly switch cameras and customize interfaces, transforming development from months to weeks only!
+
+### [reCamera Gimbal](reCamera_Gimbal/readme.md)
+
+Open source Gimbal solution made using reCamera.
+
+![image](./reCamera_Gimbal/static/reCamera-Gimbal.png)
+
+| reCamera Gimbal        | **reCamera Gimbal 2002w 8GB** | **reCamera Gimbal 2002w 64GB** |
+| ---------------------- | ----------------------------- | ------------------------------ |
+| **Core Board**         | Core 2002w 8GB                | Core 2002w 64GB                |
+| **Sensor Board**       | S101(OV5647)                  | S101(OV5647)                   |
+| **Base Board**         | B401                          | B401                           |
+| **Wireless(Wi-Fi/BT)** | ☑️                             | ☑️                              |
+| **Mounting Method**    | Vertical                      | Vertical                       |
+| **Power Supply**       | DC Jack cable/XT30(2+2)       | DC Jack cable/XT30(2+2)        |
+
+
 
 ## Core Board
 
