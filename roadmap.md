@@ -20,11 +20,11 @@ The reCamera Gimbal is currently under software development. The data progress i
 
 | Board                    | Description                                              | Date    |
 | ------------------------ | -------------------------------------------------------- | ------- |
-| B4_CAN                   | A base plate that provides a CAN communication interface | 2025/02 |
-| S2_imx335                | cmos = 1/2.8 inch sensor module                          | 2025/04 |
-| S3_SC130GS               | A 100W pixel global shutter camera                       | 2025/04 |
-| B2_Vertical Type-C       | type-c back base plate                                   | 2025/04 |
-| B3_POE                   | POE powered baseboard                                    | 2025/04 |
+| B401_CAN                   | A base plate that provides a CAN communication interface | 2025/02 |
+| S201_imx335                | cmos = 1/2.8 inch sensor module                          | 2025/04 |
+| S301_SC130GS               | A 100W pixel global shutter camera                       | 2025/04 |
+| B201_Vertical Type-C       | type-c back base plate                                   | 2025/04 |
+| B301_POE                   | POE powered baseboard                                    | 2025/04 |
 | S_Thermal imaging camera | Industrial thermal imaging camera                        | WIP..   |
 | B_Thermal imaging screen | Use with thermal imaging camera                          | WIP..   |
 
