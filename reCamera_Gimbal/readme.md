@@ -6,6 +6,15 @@ Welcome to reCamera Gimbal Programmable Development Kit V1.1. We provide sample 
 
 <img src="static/reCamera-Gimbal-3.png" alt="reCamera" style="width: 80%;" />
 
+## Gimbal Preview
+![alt text](./static/image-11.png)
+
+Gimbal Dashboard includes camera preview, model confidence Settings, gimbal control, gimbal calibration, object tracking and motor sleep.
+
+You can download the [flow.json file](./src/Dashboard/Gimbal_DashboardV0.1.json) to deploy to your reCamera device.
+
+To run this routine, [download](./src/Executable%20program/) and copy the file from the `reCamera_Gimbal\src\Executable program\` directory to `/home/recamera/` on your device. 
+The source code for these programs can be found [here](./src/).
 ## 🎈Instructions for using
 
 ### Motor ID Set
@@ -27,6 +36,58 @@ Up             |  Bottom
 
 
 You can use the Debugging Port connections to control the motor and communicate with the reCamera via the upper monitor. Alternatively, you can control the motor directly through the reCamera.
+
+
+
+| **Processing System**                |                                                         |                                                         |
+| ------------------------------------ | ------------------------------------------------------- | ------------------------------------------------------- |
+| SOC                                  | SG2002                                                  |                                                         |
+| CPU                                  | C906@1GHZ + C906@700MHz                                 |                                                         |
+| AI Performance                       | 1 Tops @ Int8                                           |                                                         |
+| MCU                                  | 8051 @ 8KB SRAM                                         |                                                         |
+| Operating System                     | Linux                                                   |                                                         |
+| Memory                               | 256 MB                                                  |                                                         |
+| Video Encoder                        | 5MP @ 30Fps                                             |                                                         |
+| **Basic**                            |                                                         |                                                         |
+| Camera Sensor                        | OV5647                                                  |                                                         |
+| eMMC                                 | 8GB / 64GB                                              |                                                         |
+| Power Supply                         | 12-24V DC Jack to XT30 connector                        |                                                         |
+| Power Consumption(static)            | 12V,185mA; 24V,150mA                                    |                                                         |
+| **Interface**                        |                                                         |                                                         |
+| USB                                  | USB 2.0 Type-C                                          |                                                         |
+| Wireless                             | Wi-Fi 2.4G/5G Bluetooth 4.2/5.0                         |                                                         |
+| Button                               | 1 x Reboot Button, 1 x User Button                      |                                                         |
+| Fill LEDs                            | 4 x 0.3w White Light                                    |                                                         |
+| LED                                  | 1 x Power Indicator, 2 x IO programmable indicator      |                                                         |
+| Mic                                  | On-Board Mic                                            |                                                         |
+| Speaker                              | External Speaker                                        |                                                         |
+| **Motor Spec**                       | MS3008                                                  | MS3506                                                  |
+| Turns                                | 54                                                      | 60                                                      |
+| Rated Voltage(V)                     | 12                                                      | 12                                                      |
+| Max Speed(rpm)                       | 2000                                                    | 2100                                                    |
+| Rated Torque(N.m)                    | 0.04                                                    | 0.05                                                    |
+| Rated Speed(rpm)                     | 1160                                                    | 1250                                                    |
+| Rated Current(A)                     | 0.64                                                    | 0.79                                                    |
+| Max Power(W)                         | 4.6                                                     | 6.4                                                     |
+| Motor Poles                          | 14                                                      | 14                                                      |
+| Operating temperature (℃)            | -25~60                                                  | -25~60                                                  |
+| Motor Weight(g)                      | 49                                                      | 63                                                      |
+| Drive Input Voltage (V)              | 6~16                                                    | 6~16                                                    |
+| Communication                        | CAN                                                     | CAN                                                     |
+| Communication Frequency (Hz)         | CAN@1Mbps:2KHz                                          | CAN@1Mbps:2KHz                                          |
+| Encoder                              | 15 bit Magnetic Encoder                                 | 15 bit Magnetic Encoder                                 |
+| CAN Baut Rate                        | 100K、125K、250K、500K、1M                              | 100K、125K、250K、500K、1M                              |
+| Control Mode                         | Open Loop(24KHz) /Speed Loop(4KHz) /Position Loop(2KHz) | Open Loop(24KHz) /Speed Loop(4KHz) /Position Loop(2KHz) |
+| **Ambient Conditions**               |                                                         |                                                         |
+| Operating Temperature                | -20～50 ℃                                               |                                                         |
+| Operating Humidity                   | 0～90%                                                  |                                                         |
+| **Others**                           |                                                         |                                                         |
+| Heat Dissipation                     | Fanless                                                 |                                                         |
+| Warranty                             | 1 years                                                 |                                                         |
+| **Mechanical**                       |                                                         |                                                         |
+| Finished ProductDimension(W x H x D) | 68x112x71mm                                             |                                                         |
+| Enclosure                            | Polyamide(PA) Nylon                                     |                                                         |
+| Weight(Net)                          | 230g                                                    |                                                         |
 
 ## Deploy in reCamera
 
