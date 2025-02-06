@@ -381,7 +381,7 @@ Up             |  Bottom
 
 Up             |  Bottom
 :-------------------------:|:-------------------------:
-![Up](./statics/B4_CAN_top.png)  |  ![Bottom](./statics/B4_CAN_Bottom.png)
+![Up](./statics/B4_CAN_top.png)  |  ![Bottom](./statics/B4_CAN_bottom.png)
 
 
 ##### ⚙️ Features:
