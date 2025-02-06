@@ -34,13 +34,17 @@
 - [Core Board](#core-board)
 - [Sensor Board](#sensor-board)
 - [Base Board](#base-board)
-- [reCamera Softerwares](#recamera-softwares)
+- [reCamera Softwares](#recamera-softwares)
 - [Related Projects](#related-projects)
 - [Application Demo](#-application-demo)
 - [reCamera Roadmap](#recamera-roadmap)
   
 
 ## ✨ What's reCamera? 
+
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/MfnjmFO-WWo" title="Customize Hardware + Deploy Ultralytics YOLO11 with Node-RED Dashboard=Build Vision AI with reCamera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 reCamera is a combination of a **processor** and a **camera sensor**.
 
