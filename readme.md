@@ -507,7 +507,6 @@ If you have suggestions for improvements or bugs in the current system, please f
 
 ### 💡Hardware
 
-The reCamera Gimbal is currently under software development. The data progress is synchronized in the project. It will be available on February 20.
 
 | Board                   |Board Type   | Description                                              | Date    |
 | ------------------------ |----------- | -------------------------------------------------------- | ------- |
