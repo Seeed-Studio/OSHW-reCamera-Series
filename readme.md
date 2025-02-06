@@ -27,15 +27,16 @@
 
 ## Table of Contents
 
-- [✨ What's reCamera?](#✨-whats-recamera)
-- [🔖 Product Series](#🔖-product-series)
-- [🚀 Launch Notification--reCamera Gimbal](#🚀-launch-notification--recamera-gimbal)
-- [⚙️ Hardware Overview](#⚙️-hardware-overview)
-- [Base Board](#base-board)
+- [✨ What's reCamera?](#-whats-recamera)
+- [🔖 Product Series](#-product-series)
+- [🚀 Launch Notification--reCamera Gimbal](#-launch-notification--recamera-gimbal)
+- [⚙️ Hardware Overview](#%EF%B8%8F-hardware-overview)
 - [Core Board](#core-board)
 - [Sensor Board](#sensor-board)
+- [Base Board](#base-board)
+- [reCamera Softerwares](#recamera-softwares)
 - [Related Projects](#related-projects)
-- [Application Demo](#application-demo)
+- [Application Demo](#-application-demo)
 - [reCamera Roadmap](#recamera-roadmap)
   
 
