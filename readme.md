@@ -48,7 +48,6 @@ This combination makes reCamera a standalone system that can handle basic detect
 
 The first reCamera series - reCamera SG2002 is an open-source and tiny size AI camera, programmable and customizable, powered by an RISC-V SoC, delivering on-device 1 TOPS AI performance with video encoding 5MP @30 FPS. The modular hardware design and expandable interfaces offers the most versatile platform for developers building vision AI systems. 
 
-[reCamera Software and hardware iteration roadmap.](./roadmap.md)
 
 ## 🔖 Product Series
 
