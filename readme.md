@@ -42,7 +42,7 @@
 
 ## ✨ What's reCamera? 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MfnjmFO-WWo?si=B-LXnmeX5ri3H53c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<a href="url"><img src="./statics/6-102991896-reCamera-2002w-8GB-all.jpg" height="auto" width="auto" style="border-radius:40px"></a>
 
 reCamera is a combination of a **processor** and a **camera sensor**.
 
@@ -422,6 +422,9 @@ The reCamera has been perfectly integrated with the Sensecraft AI platform. The 
 
 
 ## Related Projects
+
+<a href="url"><img src="./statics/demo.png" height="auto" width="auto" style="border-radius:40px"></a>
+
 
 ### reCamera Gimbal-Coming Soon
 
