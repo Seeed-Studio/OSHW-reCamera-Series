@@ -1,6 +1,6 @@
 # Introduction
 
-<a href="url"><img src="./statics/reCamera-2.png" height="auto" width="auto" style="border-radius:40px"></a>
+<a href="url"><img src="./statics/reCamera_landingpage.jpeg" height="auto" width="auto" style="border-radius:40px"></a>
 
 <div align="center">
 <a href="https://discord.gg/agHdBMYGZK"><img alt="Discord" src="https://img.shields.io/discord/862602258452578314?label=Join%20Community"></a>
@@ -23,13 +23,99 @@
 
 </div>
 
+----
+
+## Table of Contents
+
+- [✨ What's reCamera?](#✨-whats-recamera)
+- [🔖 Product Series](#🔖-product-series)
+- [🚀 Launch Notification--reCamera Gimbal](#🚀-launch-notification--recamera-gimbal)
+- [⚙️ Hardware Overview](#⚙️-hardware-overview)
+- [Base Board](#base-board)
+- [Core Board](#core-board)
+- [Sensor Board](#sensor-board)
+- [Related Projects](#related-projects)
+- [Application Demo](#application-demo)
+- [reCamera Roadmap](#recamera-roadmap)
+  
+
 ## ✨ What's reCamera? 
 
 reCamera is a combination of a **processor** and a **camera sensor**.
 
 This combination makes reCamera a standalone system that can handle basic detection and control tasks on its own.
 
+The first reCamera series - reCamera SG2002 is an open-source and tiny size AI camera, programmable and customizable, powered by an RISC-V SoC, delivering on-device 1 TOPS AI performance with video encoding 5MP @30 FPS. The modular hardware design and expandable interfaces offers the most versatile platform for developers building vision AI systems. 
+
 [reCamera Software and hardware iteration roadmap.](./roadmap.md)
+
+## 🔖 Product Series
+
+<table border="1">
+    <tr>
+        <th> </th>
+        <th>reCamera Gimbal 2002w 8GB</th>
+        <th>reCamera Gimbal 2002w 64GB</th>
+        <th>reCamera 2002 8GB</th>
+        <th>reCamera 2002 64GB</th>
+        <th>reCamera 2002w 8GB</th>
+        <th>reCamera 2002w 64GB</th>
+    </tr>
+    <tr>
+        <td>Core Board</td>
+        <td>Core 2002w 8GB</td>
+        <td>Core 2002w 64GB</td>
+        <td>Core 2002 8GB</td>
+        <td>Core 2002 64GB</td>
+        <td>Core 2002w 8GB</td>
+        <td>Core 2002w 64GB</td>
+    </tr>
+    <tr>
+        <td>Sensor Board</td>
+        <td>S101(OV5647)</td>
+        <td>S101(OV5647)</td>
+        <td>S101(OV5647)</td>
+        <td>S101(OV5647)</td>
+        <td>S101(OV5647)</td>
+        <td>S101(OV5647)</td>
+    </tr>
+    <tr>
+        <td>Base Board</td>
+        <td>B401</td>
+        <td>B401</td>
+        <td>B101</td>
+        <td>B101</td>
+        <td>B101</td>
+        <td>B101</td>
+    </tr>
+    <tr>
+        <td>Wireless<br>(Wi - Fi/BT)</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td> </td>
+        <td> </td>
+        <td>✅</td>
+        <td>✅</td>
+    </tr>
+    <tr>
+        <td>Mounting Method</td>
+        <td>Vertical</td>
+        <td>Vertical</td>
+        <td>Magnetic/Camera Bracket Mount</td>
+        <td>Magnetic/Camera Bracket Mount</td>
+        <td>Magnetic/Camera Bracket Mount</td>
+        <td>Magnetic/Camera Bracket Mount</td>
+    </tr>
+    <tr>
+        <td>Power Supply</td>
+        <td>DC Jack cable/XT30(2+2)</td>
+        <td>DC Jack cable/XT30(2+2)</td>
+        <td>Type - C cable</td>
+        <td>Type - C cable</td>
+        <td>Type - C cable</td>
+        <td>Type - C cable</td>
+    </tr>
+</table>
 
 ## 💡 Why we make reCamera? 
 
@@ -38,6 +124,7 @@ Today, as processors (both SOC and MCU) are becoming smaller and more powerful, 
 So today, we introduce reCamera, an open-source camera platform for everyone to play with. We have divided this project into 3 interchangeable parts:
 
 <a href="url"><img src="./statics/Modular_Design.png" height="auto" width="auto" style="border-radius:40px"></a>
+
 - Core Board
 - Sensor Board
 - Base Board
@@ -50,249 +137,253 @@ The engineering focus on modularity, high performance, and ease of use ensures t
 
 We've taken care of the intricate hardware work, freeing up time for user innovation. The modular design enables users to rapidly switch cameras and customize interfaces, transforming development from months to weeks only!
 
-### [reCamera Gimbal](reCamera_Gimbal/readme.md)
 
-Open source Gimbal solution made using reCamera.
+### 🚀 Launch Notification--reCamera Gimbal
 
-![image](./reCamera_Gimbal/static/reCamera-Gimbal.png)
+We are excited to announce that the reCamera Gimbal will be released at the end of February! Stay tuned and follow the [Seeed Studio official website](https://www.seeedstudio.com/) for the latest updates.
 
-| reCamera Gimbal        | **reCamera Gimbal 2002w 8GB** | **reCamera Gimbal 2002w 64GB** |
-| ---------------------- | ----------------------------- | ------------------------------ |
-| **Core Board**         | Core 2002w 8GB                | Core 2002w 64GB                |
-| **Sensor Board**       | S101(OV5647)                  | S101(OV5647)                   |
-| **Base Board**         | B401                          | B401                           |
-| **Wireless(Wi-Fi/BT)** | ☑️                             | ☑️                              |
-| **Mounting Method**    | Vertical                      | Vertical                       |
-| **Power Supply**       | DC Jack cable/XT30(2+2)       | DC Jack cable/XT30(2+2)        |
+<a href="url"><img src="./reCamera_Gimbal/static/reCamera-Gimbal.png" height="auto" width="600" style="border-radius:40px"></a>
+
+The reCamera gimbal 2002 series is the first open-source camera control system, composed of one tiny AI camera - reCamera 2002w 8GB/64GB, and one compatible 2-Axis gimbal basement with 2 brushless motors. It is powered by an RISC-V SoC, providing 1 TOPS AI performance with video encoding at 5MP @ 30 FPS. It offers a Lego-like self-assembly package and integrates the Sensecraft AI platform and Node-RED platform for smooth graphical programming and pipeline construction, enabling rapid self-training, model conversion, and deployment of AI models such as Yolo v5/v8/11.
+
+For more information, please visit [reCamera Gimbal](reCamera_Gimbal/readme.md) and [User manual](reCamera_Gimbal/static/reCamera_Gimbal_User_manual_V1.0.pdf).
 
 
 
-## Core Board
+----
 
-| Board         | Features                           | Version Info |
+## ⚙️ Hardware Overview
+
+
+### Core Board
+
+💡 Here is the [introduction](./reCamera_Core_Board/C1_2002/C1_Readme.md) of reCamera SG2002 series. So far we launched reCamera SG2002, [Click to have one](https://www.seeedstudio.com/recamera)!
+
+| Board         | Features                           | Version |
 | ------------- | ---------------------------------- | ------------ |
-| [C1_2002w](./C1_2002/)    | eMMC <br />WIFI/BLE module <br /> OnBoard antenna <br /> External antenna connector| 1.2 |
-| [C1_2002](./C1_2002/)       | eMMC <br />Extra SDIO to base board <br /> Extra UART to base board | 1.2 |
-
-### 💡 [C1_2002w](./C1_2002(w)/C1_Readme.md)
+| [C1_2002w](./reCamera_Core_Board/C1_2002/)    | - eMMC <br /> - WiFi/BLE module <br /> - Onboard antenna <br /> - External antenna connector| 1.2 |
+| [C1_2002](./reCamera_Core_Board/C1_2002/)       | - eMMC <br /> - Extra SDIO to base board <br /> - Extra UART to base board | 1.2 |
 
 
-### ⚙️ overview
   
-Up             |  Bottom
+Top View             |  Bottom View
 :-------------------------:|:-------------------------:
 ![Up](./statics/C1_2002w_Up.png)  |  ![Bottom](./statics/C1_2002w_Bottom.png)
 
 
-## Sensor Board
+### Sensor Board
+
+💡 [Sensor Driver Support List](./Sensor_Supported_List.md) for Core Board C1 is provided for reference.
 
 | Board         | Features                           | Latest Version                                                   |
 | ------------- | ---------------------------------- | ------------------------------------------------------------ |
-| [S1_OV5647](./S1_OV5647/) | 5MP  <br />Rolling Shutter | 1.2 |
-| [S2_IMX335](./S2_IMX335/)     | 5MP  <br />Rolling Shutter | 1.0 |
-| [S3_SC130GS](./S3_SC130GS/)    | 1MP <br />Global Shutter    | 1.0 |
-----
-[Sensor Driver Support List](./Sensor_Suppoeted_List.md)
+| [S1_OV5647](./reCamera_Sensor_Board/S1_OV5647/S1_Readme.md) | - 5MP  <br /> - Rolling Shutter | 1.2 |
+| [S2_IMX335](./reCamera_Sensor_Board/S2_IMX335/)     | - 5MP  <br /> - Rolling Shutter | 1.0 |
+| [S3_SC130GS](./reCamera_Sensor_Board/S3_SC130GS/)    | - 1MP <br /> - Global Shutter    | 1.0 |
 
-### 💡 [S1_OV5647](./S1_OV5647/S1_Readme.md)
----
-### ⚙️ overview
+#### 💡 [S1_OV5647](./reCamera_Sensor_Board/S1_OV5647/S1_Readme.md)
 
-Up             |  Bottom
+
+Top View             |  Bottom View
 :-------------------------:|:-------------------------:
 ![Up](./statics/S1_ov5647_UP.png)  |  ![Bottom](./statics/S1_ov5647_Bottom.png)
 
-### ⚙️ features:
+##### ⚙️ Features:
 
 <div>
 
 <table ><tbody>
 <tr >
-    <td >SENSOR</td>
+    <td style="font-weight: bold;">Sensor</td>
     <td class="dbon">OV5647</td>
-    <td class="dbon">CMOS SIZE</td>
+    <td style="font-weight: bold;">CMOS Size</td>
     <td class="dbon">1/4 inch</td>
 </tr>
 <tr >
-    <td class="dbon">PIXELS</td>
+    <td style="font-weight: bold;">Pixels</td>
     <td class="dbon">5MP</td>
-    <td class="dbon">APERTURE</td>
+    <td style="font-weight: bold;">Aperture</td>
     <td class="dbon">F2.4</td>
 </tr>
 <tr >
-    <td >FOCAL LENGTL</td>
+    <td style="font-weight: bold;">Focal Length</td>
     <td class="dbon">3.89mm</td>
-    <td class="dbon">FIELD OF VIEW</td>
+    <td style="font-weight: bold;">Field of View</td>
     <td >72.9°</td>
 </tr>
 <tr >
-    <td >DISTORTION</td>
+    <td style="font-weight: bold;">Distortion</td>
     <td >&lt;1.5%</td>
-    <td >DEPTH OF FIELD</td>
+    <td style="font-weight: bold;">Depth of Field</td>
     <td >20cm ~∞</td>
 </tr>
 <tr >
-    <td >IMAGE</td>
+    <td style="font-weight: bold;">Image</td>
     <td  colspan="3">2592 x 1944 still picture resolution</td>
 </tr>
 <tr >
-    <td >VIDEO</td>
+    <td style="font-weight: bold;">Video</td>
     <td  colspan="3">1920 x 1080p @30fps, 1280 x 720p @60fps, 640 x 480p @60fps, 640 x 480p @90fps</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Interfaces</td>
+    <td  colspan="3">- 4 x LED fill lights <br />
+                    - 1 x microphone<br />
+                    - 1 x speaker<br />
+                    - 3 x LED indicator</td>
 </tr></tbody>
 </table>
 </div>
 
-- 4 x LED fill lights
-- 1 x microphone
-- 1 x speaker
-- 3 x LED indicator
+#### 💡 [S2_IMX335](./reCamera_Sensor_Board/S2_IMX335/readme.md)
 
-### 💡 [S2_IMX335](./S2_IMX335\readme.md)
-### ⚙️ overview
-
-![image](./statics/S2_IMX335_overview.png)
+Top View             |  Bottom View
+:-------------------------:|:-------------------------:
+![Up](./statics/S2_IMX335_top.png)  |  ![Bottom](./statics/S2_IMX335_bottom.png)
 
 
 
-### ⚙️ features:
+##### ⚙️ Features:
 
 
 <div>
 
 <table ><tbody>
 <tr >
-    <td >SENSOR</td>
+    <td style="font-weight: bold;" >Sensor</td>
     <td class="dbon">IMX335</td>
-    <td class="dbon">CMOS SIZE</td>
+    <td style="font-weight: bold;">CMOS Size</td>
     <td class="dbon">1/2.8 inch</td>
 </tr>
 <tr >
-    <td class="dbon">PIXELS</td>
+    <td style="font-weight: bold;">Pixels</td>
     <td class="dbon">5MP</td>
-    <td >Focusing</td>
+    <td style="font-weight: bold;">Focusing Mode</td>
     <td >manually focusing</td>
 </tr>
 <tr >
-    <td >FOCAL LENGTL</td>
+    <td style="font-weight: bold;">Focal Length</td>
     <td class="dbon">3.91mm</td>
-    <td class="dbon">FIELD OF VIEW</td>
+    <td style="font-weight: bold;">Field of View</td>
     <td >106°(D) 92.6°(H) 48.6°(V)</td>
 </tr>
 <tr >
-    <td >IMAGE</td>
+    <td style="font-weight: bold;">Image</td>
     <td  colspan="3">2592 x 1944 still picture resolution</td>
 </tr>
 <tr >
-    <td >VIDEO</td>
+    <td style="font-weight: bold;">Video</td>
     <td  colspan="3">2592 × 1944p @20fps;1920 × 1080p @30fps;1280 × 720p @30fps</td>
 </tr></tbody>
 </table>
 </div>
 
 
-### 💡 [S3_SC130GS](./S3_SC130GS\readme.md)
-
-### ⚙️ overview
-
-![image](./statics/S3_SC130GS_overview.png)
+#### 💡 [S3_SC130GS](./reCamera_Sensor_Board/S3_SC130GS/readme.md)
 
 
-### ⚙️ features:
+Top View             |  Bottom View
+:-------------------------:|:-------------------------:
+![Top](./statics/S3_SC130GS_top.png)  |  ![Bottom](./statics/S3_SC130GS_bottom.png)
+
+
+
+##### ⚙️ Features:
 
 
 <div>
 
 <table ><tbody>
 <tr >
-    <td >SENSOR</td>
+    <td style="font-weight: bold;">Sensor</td>
     <td class="dbon">SC130GS</td>
-    <td class="dbon">CMOS SIZE</td>
+    <td style="font-weight: bold;">CMOS Size</td>
     <td class="dbon">1/2.7 inch</td>
 </tr>
 <tr >
-    <td class="dbon">PIXELS</td>
+    <td style="font-weight: bold;">Pixels</td>
     <td class="dbon">1.3MP</td>
-    <td >Output Format</td>
+    <td style="font-weight: bold;">Output Format</td>
     <td >RAW MONO/RGB</td>
 </tr>
 <tr >
-    <td >Package</td>
+    <td style="font-weight: bold;">Package</td>
     <td class="dbon">64 pin CLCC</td>
-    <td class="dbon">Package Size</td>
+    <td style="font-weight: bold;">Package Size</td>
     <td >13mm x 13mm</td>
 </tr>
 <tr >
-    <td >IMAGE</td>
+    <td style="font-weight: bold;">Image</td>
     <td  colspan="3"> 1280H x 1024</td>
 </tr>
 <tr >
-    <td >VIDEO</td>
+    <td style="font-weight: bold;">Video</td>
     <td  colspan="3"> 1280H x 1024 @240fps</td>
 </tr></tbody>
 </table>
 </div>
 
 
-## Base Board
+### Base Board
 
 
-| Board         | Features                           | Version Info |
+
+| Board         | Features                           | Version |
 | ------------- | ---------------------------------- | ------------ |
-| B1_Default    | Single Port Transformer Module <br /> SD card reader <br /> Type-C port <br /> UART| 1.2 |
-| B2_Vertical-mounted Type-C      | Single Port Transformer Module <br /> SD card reader <br /> Type-C port <br /> UART| 0.1 |
-| B3_POE    | Power over Ethernet(POE) <br /> UART| 0.1 |
-| B4_Gyro      | DC-DC converter <br /> CAN port <br /> UART | 0.1 |
+| B101_Default    | - Single Port Transformer Module <br /> - SD card reader <br /> - Type-C port <br /> - UART| 1.2 |
+| B201_Vertical-mounted Type-C      | - Single Port Transformer Module <br /> - SD card reader <br /> - Type-C port <br /> - UART| 0.1 |
+| B301_POE    | - Power over Ethernet(POE) <br /> - UART| 0.1 |
+| B401_CAN      | - DC-DC converter <br /> - CAN port <br /> - UART | 0.1 |
 
-### 💡 [B1_Default](./B1_Default/B1_Readme.md)
+#### 💡 [B1_Default](./reCamera_Base_Board/B1_Default/B1_Readme.md)
 
-### ⚙️ overview
 
-Up             |  Bottom
+Top View             |  Bottom View
 :-------------------------:|:-------------------------:
 ![Up](./statics/B1_Default_Upper.png)  |  ![Bottom](./statics/B1_Default_Bottom.png)
 
 
 
-### ⚙️ features:
+##### ⚙️ Features:
 
 - 1 x Type-C port for power input and communication.
 - 1 x Single Port Transformer Module for Ethernet communication support.
 - 1 x SD card reader for data storage and exchange.
 
-### 💡 [B2_Vertical-mounted Type-C](./B2_Vertical%20Type-C/B2_Readme.md)
+#### 💡 [B2_Vertical-mounted Type-C](./reCamera_Base_Board/B2_Vertical%20Type-C/B2_Readme.md)
+
+Top View             |  Bottom View
+:-------------------------:|:-------------------------:
+![Up](./statics/B2_Vertical-mounted_Type-C_top.png)  |  ![Bottom](./statics/B2_Vertical-mounted_Type-C_bottom.png)
 
 
-### ⚙️ overview
-
-![images](./statics/B2_Vertical-mounted_Type-C_overview.png)
-
-### ⚙️ features:
+##### ⚙️ Features:
 
 - 1 x Type-C port for power input and communication.
 - 1 x Single Port Transformer Module for Ethernet communication support.
 - 1 x SD card reader for data storage and exchange.
 
-### 💡 [B3_POE](./B3_POE/B3_Readme.md)
+#### 💡 [B3_POE](./reCamera_Base_Board/B3_POE/B3_Readme.md)
 
-### ⚙️ overview
 
 Up             |  Bottom
 :-------------------------:|:-------------------------:
 ![Up](./statics/B3_POE_Upper.png)  |  ![Bottom](./statics/B3_POE_Bottom.png)
 
 
-### ⚙️ features:
+##### ⚙️ Features:
 
 - 1 x RJ45 port for 802.3af PSE.
 - 1 x UART port.
 
-### 💡 [B4_Gyro](./B4_CAN/B4_Readme.md)
+#### 💡 [B4_CAN](./reCamera_Base_Board/B4_CAN/B4_Readme.md)
 
-### ⚙️ overview
+Up             |  Bottom
+:-------------------------:|:-------------------------:
+![Up](./statics/B4_CAN_top.png)  |  ![Bottom](./statics/B4_CAN_Bottom.png)
 
-![images](./statics/B4_Gyro_overview.png)
 
-### ⚙️ features:
+##### ⚙️ Features:
 
 - 1 x CAN port.
 - 1 x Gyroscope sensor.
@@ -301,39 +392,125 @@ Up             |  Bottom
 
 ## reCamera Softwares
 
+The reCamera is a ready-to-use device right after startup. It comes with a stable reCamera OS that supports firmware OTA updates. Additionally, Node-RED is integrated into the Sensecraft AI platform. This integration offers novice developers a modular programming experience based on Node-RED nodes. For advanced developers, the terminal is open, enabling in-depth Linux-based development.
+We warmly welcome developers proficient in JavaScript, Linux OS, buildroot, Python, and Node-RED, as well as geeks, students, and beginners, to engage in further development and explore applications.
+
 ### [reCamera OS](https://github.com/Seeed-Studio/reCamera-OS)
 
 This is the default buildroot system running in reCamera.
+The reCamera OS update nofitication can be reviewed [here](https://github.com/Seeed-Studio/reCamera-OS/releases/tag/0.1.5).
 
-### [reCamera Dashboard V1.0](./Dashboard/readme.md)
+### reCamera Dashboard
 
-reCamera Dashboard is a visual Demo built on the node-red framework. It provides user with a web interface for network configuration, live view, web ssh, system information and other security configuration. You can change the Dashboard at any time in node-red to customize the functionality. [Preview Link](https://youtu.be/8inW10l_-wo)
+| Dashboard     | Support Devices                 | Version |
+| ------------- | ---------------------------------- |---------------------------------- |
+| [reCamera Dashboard](./Dashboard/readme.md) | reCamera 2002(w) 8GB/64GB | V1.0|
+| reCamera Gimbal Dashboard(coming soon) | reCamera Gimbal |V1.0|
 
-![reCamera Dashboard](./statics/Image-Dashboard-1.png)
+
+reCamera Dashboard is a visual Demo built on the Node-RED framework. It provides user with a web interface for network configuration, live view, web ssh, system information and other security configuration. You can change the Dashboard at any time in node-red to customize the functionality. [Preview Link](https://youtu.be/8inW10l_-wo)
 
 
-### reCamera Web
+<a href="url"><img src="./statics/Image-Dashboard-1.png" height="auto" width="auto" style="border-radius:40px"></a>
 
-Currently remaking with Node-red Dashboard.
 
-This is the default Web backend running in reCamera OS. It provides user with a web interface for network configuration, live view, web ssh and other security configuration.
+### [SenseCraft AI](https://sensecraft.seeed.cc/ai/#/home)
+
+The reCamera has been perfectly integrated with the Sensecraft AI platform. The Sensecraft AI platform is a platform that enables the rapid training and deployment of AI models. It also provides [Node-RED application](https://sensecraft.seeed.cc/ai/#/recamera) containers for the reCamera and reCamera Gimbal, offering a convenient one-click deployment function. Currently, the Sensecraft AI platform has provided over 400 pre-trained models for deployment.
+
 
 ## Related Projects
 
-### [reCamera Gimbal](reCamera_Gimbal/readme.md)
+### reCamera Gimbal-Coming Soon
 
-Open source Gimbal solution made using reCamera.
+Effortlessly transform your gimbal with AI-powered control by connecting this camera module. Gain precise, two-axis movement—up, down, left, right—without any coding to start. Using the intuitive Node-RED platform, you can easily integrate and fine-tune the system, allowing computer vision via YOLO v11 to enhance your gimbal's tracking capabilities. Just set up your preferred model in Node-RED, make a few adjustments, and experience the full potential of computer vision in your gimbal.
 
-![image](./reCamera_Gimbal/static/reCamera-Gimbal.png)
 
-### reCamera Industrial 
+<a href="url"><img src="./reCamera_Gimbal/static/reCamera-Gimbal.png" height="auto" width="600" style="border-radius:40px"></a>
 
-![image](./statics/industrial.jpg)
 
-WIP..
+### reCamera Industrial-Work in progress
 
-### [reCamera Robot Arm]()
+We are excited to announce that the reCamera Industrial is working in progress! This version will feature EVS cameras and infrared thermal camera modules, providing enhanced capabilities for industrial applications.
 
-![image](./statics/reCamera_Robot_Arm.JPG)
+We are also working on compatibility with Neurala, a software that helps manufacturers automate visual quality inspection and control processes with vision AI. This integration will enable reCamera Industrial to offer advanced visual inspection and control features, making it an ideal solution for industrial scenarios.
 
-WIP..
+Stay tuned for the release of reCamera Industrial and experience the power of vision AI in industrial applications.
+
+<a href="url"><img src="./statics/industrial.jpg" height="auto" width="600" style="border-radius:40px"></a>
+
+
+### reCamera Robot Arm-work in progress
+
+Enhance your robotic arm’s capabilities with seamless AI integration through this advanced camera module. Featuring flexible interface expansion and the open-source reCamera OS, this module adds powerful computer vision to your robotics setup for precise control and intelligent object recognition. Tailor it to your specific needs, and let the versatile interface handle complex tasks with advanced vision and adaptability.
+
+<a href="url"><img src="./statics/reCamera_Robot_Arm.JPG" height="auto" width="600" style="border-radius:40px"></a>
+
+## 🧱 Application Demo
+
+The reCamera offers a wide range of application demos, demonstrating its versatility and potential in various fields. Here are some of the application demos which we are working in progress:
+
+### Email Notification with Detection Frame
+- When a target is detected, an email containing the detection frame is sent. 
+
+### Sound Playback upon Target Detection
+- When a target is detected, a sound is played. 
+
+### Home Assistant Integration
+- The reCamera can be integrated with Home Assistant, enabling seamless control and automation within a smart home environment.
+
+### IP Camera Functionality
+- Multiple cameras can be used to transmit data.
+- Data is automatically deleted after storage.
+
+### Nighttime Detection with Timed Light Activation
+- Lights are turned on at night for detection purposes.
+
+### Arduino Integration
+- When a specific condition is detected, the Arduino executes a corresponding action using MQTT.
+
+### Posture Detection
+- The reCamera can be used for posture detection, enabling applications such as fitness tracking and ergonomic analysis.
+
+### Gesture Detection
+- The reCamera can be used for gesture detection, enabling intuitive user interfaces and interaction.
+
+### Low Power Consumption
+- (Pending camera node modification)
+
+### Local Storage of Video Stream/Photos upon Target Detection
+- When a target is detected, the video stream or photos are stored locally using the save node. 
+
+These application demos showcase the capabilities of the reCamera and provide a starting point for further development and customization.
+
+
+## reCamera Roadmap
+
+If you have suggestions for improvements or bugs in the current system, please file an **Issue**. It will help us get feedback on the user experience and advancing project iterations.
+
+### 💡Software
+
+
+| Firmware Version | Description                                                  | Iterative version |
+| ---------------- | ------------------------------------------------------------ | ----------------- |
+| 0.1.4            | The node-red save node passes a parameter to save the video stream. | 0.1.5             |
+| 0.1.4            | Node-red recamera nodes reference enabled camera on and off  | WIP..             |
+| 0.1.4            | The Node that adds CAN_Send, CAN_Receive, and CAN_Config for Gimbal | 0.1.6             |
+| 0.1.4            | Add the Gimbal Dashboard Application                         | 0.1.6             |
+
+
+
+### 💡Hardware
+
+The reCamera Gimbal is currently under software development. The data progress is synchronized in the project. It will be available on February 20.
+
+| Board                    | Description                                              | Date    |
+| ------------------------ | -------------------------------------------------------- | ------- |
+| B401_CAN                   | A base plate that provides a CAN communication interface | 2025/02 |
+| S201_imx335                | cmos = 1/2.8 inch sensor module                          | 2025/04 |
+| S301_SC130GS               | A 100W pixel global shutter camera                       | 2025/04 |
+| B201_Vertical Type-C       | type-c back base plate                                   | 2025/04 |
+| B301_POE                   | POE powered baseboard                                    | 2025/04 |
+| S_Thermal imaging camera | Industrial thermal imaging camera                        | WIP..   |
+| B_Thermal imaging screen | Use with thermal imaging camera                          | WIP..   |
+
