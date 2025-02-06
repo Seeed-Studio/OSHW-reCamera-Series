@@ -42,8 +42,9 @@
 
 ## ✨ What's reCamera? 
 
-
+<!-- 下面是嵌入的YouTube视频 -->
 <iframe width="800" height="500" src="https://www.youtube.com/embed/MfnjmFO-WWo" title="Customize Hardware + Deploy Ultralytics YOLO11 with Node-RED Dashboard=Build Vision AI with reCamera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 
 reCamera is a combination of a **processor** and a **camera sensor**.
