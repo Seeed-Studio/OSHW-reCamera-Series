@@ -382,7 +382,7 @@ Up             |  Bottom
 
 Up             |  Bottom
 :-------------------------:|:-------------------------:
-![Up](./statics/B4_CAN_top.png)  |  ![Bottom](./statics/B4_CAN_bottom.png)
+![Up](./statics/Gimbal_A.png)  |  ![Bottom](./statics/Gimbal_B.png)
 
 
 ##### ⚙️ Features:
