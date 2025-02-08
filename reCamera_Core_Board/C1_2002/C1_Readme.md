@@ -8,6 +8,6 @@ While the on-board antenna cannot have a good long-range performace, you could a
 
 The difference between C1_2002W and C1_2002 is whether there is an onboard WIFI chip. They are from the same PCB design. The difference is that C1_2002 does not attach WIFI module.
 
-### ⚙️ [Download  schematic PDF](reCamera_Core_2002w_8GB_v1.2_SCH_PDF_241014.pdf)
+### ⚙️ [Download  schematic PDF](./static/reCamera_Core_2002w_8GB_v1.2_SCH_PDF_241014.pdf)
 
-<a href="url"><img src="../statics/BTB_Connector.png" height="auto" width="auto" style="border-radius:10px"></a>
+<a href="url"><img src="./statics/BTB_Connector.png" height="auto" width="auto" style="border-radius:10px"></a>
