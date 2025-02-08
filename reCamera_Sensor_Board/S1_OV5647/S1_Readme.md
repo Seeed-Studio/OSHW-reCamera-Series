@@ -12,4 +12,4 @@ You can use this project to make your own PCB, and the design drawing can also b
 
 ### ⚙️ schematic
 
-![img](../statics/S1_ov5647_Sch.png)
+![img](./static/S1_ov5647_Sch.png)
