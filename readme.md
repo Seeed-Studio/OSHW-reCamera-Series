@@ -394,32 +394,60 @@ Up             |  Bottom
 
 ## reCamera Softwares
 
-The reCamera is a ready-to-use device right after startup. It comes with a stable reCamera OS that supports firmware OTA updates. Additionally, Node-RED is integrated into the Sensecraft AI platform. This integration offers novice developers a modular programming experience based on Node-RED nodes. For advanced developers, the terminal is open, enabling in-depth Linux-based development.
-We warmly welcome developers proficient in JavaScript, Linux OS, buildroot, Python, and Node-RED, as well as geeks, students, and beginners, to engage in further development and explore applications.
+The reCamera is a ready-to-use device right after startup. It comes with a stable reCamera OS that supports firmware OTA updates. Additionally, Node-RED and Sensecraft AI platform is integrated in the device for easier deployment experience. This integration offers novice developers a modular programming experience based on Node-RED nodes. For advanced developers, the in-depth Linux-based development and python are also there for twist and play.
+We warmly welcome developers proficient in JavaScript, C/C++, Python, Linux OS, buildroot, as well as geeks, students, and beginners, to engage in further development and explore applications.
 
 ### [reCamera OS](https://github.com/Seeed-Studio/reCamera-OS)
 
-This is the default buildroot system running in reCamera.
-The reCamera OS update nofitication can be reviewed [here](https://github.com/Seeed-Studio/reCamera-OS/releases/tag/0.1.5).
+A Buildroot-based embedded system with integrated services for intelligent camera applications. The reCamera OS update nofitication can be reviewed [here](https://github.com/Seeed-Studio/reCamera-OS/releases/tag/0.1.5).
 
-### reCamera Dashboard
+This is an embedded operating system built on Buildroot, integrating services supervisor, sscma (Seeed SenseCraft Model Assistant), and Node-RED. 
+The architecture diagram is shown below
+<a href="url"><img src="./statics/recam_OS_structure.png" height="auto" width="auto" style="border-radius:40px"></a>
 
-| Dashboard     | Support Devices                 | Version |
-| ------------- | ---------------------------------- |---------------------------------- |
-| [reCamera Dashboard](./Dashboard/readme.md) | reCamera 2002(w) 8GB/64GB | V1.0|
-| reCamera Gimbal Dashboard(coming soon) | reCamera Gimbal |V1.0|
+#### 🧩 [Supervisor](https://github.com/Seeed-Studio/sscma-example-sg200x/tree/main/solutions/supervisor)
+The foundational system service providing:
+- System Services:
+    - Device management: Identify and configure connected devices, storage devices, etc.
+    - User Management: Manage user accounts, credentials, and SSH keys.
+    - Network configuration: Configure wired and wireless network connections.
+    - File system operations: Manage device files.
+    - Device Discovery: Uses mDNS to broadcast device information. The device hostname is recamera.local.When a web interface sends a request, the recamera device scans the local network for other recamera devices via mDNS, generates a list of discovered devices, formats the data, and returns it to the web interface. (Note: Currently, only one device’s information is returned.)
 
+- Update Service:
+    - Package/firmware download management
+    - Security verification
+    - Installation automation
 
-reCamera Dashboard is a visual Demo built on the Node-RED framework. It provides user with a web interface for network configuration, live view, web ssh, system information and other security configuration. You can change the Dashboard at any time in node-red to customize the functionality. [Preview Link](https://youtu.be/8inW10l_-wo)
+- Daemon Service:
+    - System health monitoring
+    - Automatic application recovery
 
+- Logging Service:
+    - Runtime status tracking
+    - Error diagnostics
 
-<a href="url"><img src="./statics/Image-Dashboard-1.png" height="auto" width="auto" style="border-radius:40px"></a>
+- Application Service:
+    - Application Deployment
+    - Application Packaging
 
+#### 🧩 Node-RED Modules
+- [sscma-node (Server-side)](https://github.com/Seeed-Studio/sscma-example-sg200x/tree/main)
+    - Image processing service
+    - AI model management
+    - Media streaming service
+    - Data storage service
 
-### [SenseCraft AI](https://sensecraft.seeed.cc/ai/#/home)
+- [node-red-sscma](https://github.com/Seeed-Studio/node-red-contrib-sscma) 
+<a href="url"><img src="./statics/vision_inference.png" height="auto" width="auto" style="border-radius:40px"></a>
 
-The reCamera has been perfectly integrated with the Sensecraft AI platform. The Sensecraft AI platform is a platform that enables the rapid training and deployment of AI models. It also provides [Node-RED application](https://sensecraft.seeed.cc/ai/#/recamera) containers for the reCamera and reCamera Gimbal, offering a convenient one-click deployment function. Currently, the Sensecraft AI platform has provided over 400 pre-trained models for deployment.
+- Prebuilt nodes: Camera, Model, Stream, Save, Preview, Light (More to come...)
 
+If you are not familiar with Node-Red, you can watch this [tutorial](https://www.youtube.com/watch?v=DFNv91TTt68) to learn how to use nodes to achieve different functions and building UI.
+
+### SenseCraft Workspace and [SenseCraft AI](https://sensecraft.seeed.cc/ai/#/home)
+- Multi-Application management: Node-Red flow can be stored on SenseCraft Cloud Service. Super easy one click to deploy different application on the device.
+<a href="url"><img src="./statics/sensecraft_applications.png" height="auto" width="auto" style="border-radius:40px"></a>
 
 ## Related Projects
 
@@ -452,8 +480,20 @@ Enhance your robotic arm’s capabilities with seamless AI integration through t
 <a href="url"><img src="./statics/reCamera_Robot_Arm.JPG" height="auto" width="600" style="border-radius:40px"></a>
 
 ## 🧱 Application Demo
-
 The reCamera offers a wide range of application demos, demonstrating its versatility and potential in various fields. Here are some of the application demos which we are working in progress:
+
+### Web Interface Example: Dashboard
+| Dashboard     | Support Devices                 | Version |
+| ------------- | ---------------------------------- |---------------------------------- |
+| [reCamera Dashboard](./Dashboard/readme.md) | reCamera 2002(w) 8GB/64GB | V1.0|
+| reCamera Gimbal Dashboard(coming soon) | reCamera Gimbal |V1.0|
+
+
+Node-Red dashboard2 Palette supports UI nodes to build a dashboard. With this integrated ability, You can change the Dashboard to any way of interactions at any time in node-red to customize the functionality of this stand-alone device. [Preview Link](https://youtu.be/8inW10l_-wo)
+
+
+<a href="url"><img src="./statics/Image-Dashboard-1.png" height="auto" width="auto" style="border-radius:40px"></a>
+
 
 ### Email Notification with Detection Frame
 - When a target is detected, an email containing the detection frame is sent. 
@@ -513,6 +553,7 @@ If you have suggestions for improvements or bugs in the current system, please f
 | B401_CAN                   |Base Board| A base plate that provides a CAN communication interface | 2025/02 |
 | S201_imx335               |Sensor Board  | cmos = 1/2.8 inch sensor module                          | 2025/04 |
 | S301_SC130GS              |Sensor Board  | A 100W pixel global shutter camera                       | 2025/04 |
+| S401_GENX320              |Sensor Board  | 320x320 Pixel EVS (Event-based Vision Sensor)                       | 2025/04 |
 | B201_Vertical Type-C      |Base Board | type-c back base plate                                   | 2025/04 |
 | B301_POE                  |Base Board | POE powered baseboard                                    | 2025/04 |
 | S_Thermal imaging camera|Sensor Board | Industrial thermal imaging camera                        | WIP..   |
