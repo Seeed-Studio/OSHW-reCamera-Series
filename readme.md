@@ -382,7 +382,7 @@ Up             |  Bottom
 
 Up             |  Bottom
 :-------------------------:|:-------------------------:
-![Up](./statics/Gimbal_A.png)  |  ![Bottom](./statics/Gimbal_B.png)
+![Up](./statics/Gimbal_font.png)  |  ![Bottom](./statics/Gimbal_back.png)
 
 
 ##### ⚙️ Features:
