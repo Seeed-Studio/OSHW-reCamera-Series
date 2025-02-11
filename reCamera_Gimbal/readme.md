@@ -32,7 +32,7 @@ To enable the reCamera to drive the gimbal motor, the reCamera's base board need
 
 Up             |  Bottom
 :-------------------------:|:-------------------------:
-![Up](./static/Gimbal_A.png)  |  ![Bottom](./static/Gimbal_B.png)
+![Up](./static/Gimbal_font.png)  |  ![Bottom](./static/Gimbal_back.png)
 
 
 You can use the Debugging Port connections to control the motor and communicate with the reCamera via the upper monitor. Alternatively, you can control the motor directly through the reCamera.
