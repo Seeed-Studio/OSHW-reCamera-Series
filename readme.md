@@ -438,7 +438,7 @@ The foundational system service providing:
     - Media streaming service
     - Data storage service
 
-- [node-red-sscma](https://github.com/Seeed-Studio/node-red-contrib-sscma) 
+- [node-red-sscma](https://github.com/Seeed-Studio/node-red-contrib-sscma): example of Camera and Model Node.
 <a href="url"><img src="./statics/vision_inference.png" height="auto" width="auto" style="border-radius:40px"></a>
 
 - Prebuilt nodes: Camera, Model, Stream, Save, Preview, Light (More to come...)
@@ -485,14 +485,14 @@ The reCamera offers a wide range of application demos, demonstrating its versati
 ### Web Interface Example: Dashboard
 | Dashboard     | Support Devices                 | Version |
 | ------------- | ---------------------------------- |---------------------------------- |
-| [reCamera Dashboard](./Dashboard/readme.md) | reCamera 2002(w) 8GB/64GB | V1.0|
+| [reCamera Dashboard](./Node-RED_Flow/readme.md) | reCamera 2002(w) 8GB/64GB | V1.0|
 | reCamera Gimbal Dashboard(coming soon) | reCamera Gimbal |V1.0|
 
 
 Node-Red dashboard2 Palette supports UI nodes to build a dashboard. With this integrated ability, You can change the Dashboard to any way of interactions at any time in node-red to customize the functionality of this stand-alone device. [Preview Link](https://youtu.be/8inW10l_-wo)
 
 
-<a href="url"><img src="./statics/Image-Dashboard-1.png" height="auto" width="auto" style="border-radius:40px"></a>
+<a href="url"><img src="./statics/Image-Dashboard.png" height="auto" width="auto" style="border-radius:40px"></a>
 
 
 ### Email Notification with Detection Frame
