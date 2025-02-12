@@ -5,4 +5,4 @@ can_send:can_send.c
 	    $(CC) $(CFLAGS) -o $@ $^ 
 
 clean:
-	    $(RM) can_send .*.sw?
+	    $(RM) Gimbal_init .*.sw?
