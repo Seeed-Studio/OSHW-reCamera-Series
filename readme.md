@@ -31,13 +31,13 @@
 - [🔖 Product Series](#-product-series)
 - [🚀 Launch Notification--reCamera Gimbal](#-launch-notification--recamera-gimbal)
 - [⚙️ Hardware Overview](#%EF%B8%8F-hardware-overview)
-- [Core Board](#core-board)
-- [Sensor Board](#sensor-board)
-- [Base Board](#base-board)
-- [reCamera Softwares](#recamera-softwares)
-- [Related Projects](#related-projects)
-- [Application Demo](#-application-demo)
-- [reCamera Roadmap](#recamera-roadmap)
+    - [Core Board](#core-board)
+    - [Sensor Board](#sensor-board)
+    - [Base Board](#base-board)
+- [💾 reCamera Softwares](#recamera-softwares)
+- [🔩 Related Projects](#related-projects)
+- [🧱 Application Demo](#-application-demo)
+- [🎳 reCamera Roadmap](#recamera-roadmap)
   
 
 ## ✨ What's reCamera? 
@@ -438,7 +438,7 @@ The foundational system service providing:
     - Media streaming service
     - Data storage service
 
-- [node-red-sscma](https://github.com/Seeed-Studio/node-red-contrib-sscma) 
+- [node-red-sscma](https://github.com/Seeed-Studio/node-red-contrib-sscma): example of Camera and Model Node.
 <a href="url"><img src="./statics/vision_inference.png" height="auto" width="auto" style="border-radius:40px"></a>
 
 - Prebuilt nodes: Camera, Model, Stream, Save, Preview, Light (More to come...)
@@ -449,7 +449,7 @@ If you are not familiar with Node-Red, you can watch this [tutorial](https://www
 - Multi-Application management: Node-Red flow can be stored on SenseCraft Cloud Service. Super easy one click to deploy different application on the device.
 <a href="url"><img src="./statics/sensecraft_applications.png" height="auto" width="auto" style="border-radius:40px"></a>
 
-## Related Projects
+## 🔩 Related Projects
 
 <a href="url"><img src="./statics/demo.png" height="auto" width="auto" style="border-radius:40px"></a>
 
@@ -485,14 +485,14 @@ The reCamera offers a wide range of application demos, demonstrating its versati
 ### Web Interface Example: Dashboard
 | Dashboard     | Support Devices                 | Version |
 | ------------- | ---------------------------------- |---------------------------------- |
-| [reCamera Dashboard](./Dashboard/readme.md) | reCamera 2002(w) 8GB/64GB | V1.0|
+| [reCamera Dashboard](./Node-RED_Flow/readme.md) | reCamera 2002(w) 8GB/64GB | V1.0|
 | reCamera Gimbal Dashboard(coming soon) | reCamera Gimbal |V1.0|
 
 
 Node-Red dashboard2 Palette supports UI nodes to build a dashboard. With this integrated ability, You can change the Dashboard to any way of interactions at any time in node-red to customize the functionality of this stand-alone device. [Preview Link](https://youtu.be/8inW10l_-wo)
 
 
-<a href="url"><img src="./statics/Image-Dashboard-1.png" height="auto" width="auto" style="border-radius:40px"></a>
+<a href="url"><img src="./statics/Image-Dashboard.png" height="auto" width="auto" style="border-radius:40px"></a>
 
 
 ### Email Notification with Detection Frame
@@ -529,7 +529,7 @@ Node-Red dashboard2 Palette supports UI nodes to build a dashboard. With this in
 These application demos showcase the capabilities of the reCamera and provide a starting point for further development and customization.
 
 
-## reCamera Roadmap
+## 🎳 reCamera Roadmap
 
 If you have suggestions for improvements or bugs in the current system, please file an **Issue**. It will help us get feedback on the user experience and advancing project iterations.
 
