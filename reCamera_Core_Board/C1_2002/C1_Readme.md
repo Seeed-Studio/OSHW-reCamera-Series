@@ -10,4 +10,4 @@ The difference between C1_2002W and C1_2002 is whether there is an onboard WIFI 
 
 ### ⚙️ [Download  schematic PDF](./static/reCamera_Core_2002w_8GB_v1.2_SCH_PDF_241014.pdf)
 
-<a href="url"><img src="./statics/BTB_Connector.png" height="auto" width="auto" style="border-radius:10px"></a>
+<a href="url"><img src="./static/BTB_Connector.png" height="auto" width="auto" style="border-radius:10px"></a>
