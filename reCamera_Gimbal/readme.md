@@ -91,15 +91,19 @@ You can use the Debugging Port connections to control the motor and communicate 
 
 ## Deploy in reCamera
 
-It is recommended to use **Ubuntu 20.04** to configure this gimbal, as it will be needed for the cross-compilation part. If you don't have Ubuntu 20.04, you can configure [**TinyCC**](https://community.milkv.io/t/tinycc-milkv-duo-c/271) on reCamera.
+First, you need to prepare a linux operating system to compile the program.
+To compile a binary that can run on reCamera, [the cross-compiler tool](https://github.com/sophgo/host-tools/tree/bd66fcc8ed918eac4d6ac076ff8b1da7290b66cb) for riscv needs to be downloaded. 
+
 
 
 ### Cross-Compilation
 
 Open a terminal in any directory on your Ubuntu system.
+You can download host-tools by running this command on your linux system:
 
-```
+```bash
 sudo apt install vim
+sudo apt install git
 git clone https://github.com/sophgo/host-tools.git
 ```
 
@@ -140,125 +144,30 @@ Click esc and type “:wq” to save the .bashrc.
 source .bashrc
 ```
 
-Go back to the Seeed_reCamera_Gimbal directory. Compile Deploy_Linux_CAN_Final.c and run it.
+Go back to the OSHW-reCamera-Series/reCamera_Gimbal/src/send directory. Compile can_send.c and run it.
 
 ```
-riscv64-unknown-linux-musl-gcc -o Deploy Deploy_Linux_CAN_Final.c
+riscv64-unknown-linux-musl-gcc can_send.c -o can_send
 ```
 
-Open a terminal in the directory where Deploy is stored.
+Open a terminal in the directory where can_send is stored.
 
 ```
-scp ./Deploy root@192.168.42.1:~/
-```
-
-```
-ssh root@192.168.42.1
-```
-
-
-```
-./Deploy <degree1> <degree2>
-
-Example: ./Deploy 0 0
-```
-
-
-### TinyCC Compilation
-
-Open a terminal in the directory where Deploy_Linux.c is stored.
-
-```
-cd ./reCamera_Deploy
-scp ./Deploy_Linux_CAN_Final.c root@192.168.42.1:~/
+scp ./can_send root@192.168.42.1:~/
 ```
 
 ```
 ssh root@192.168.42.1
 ```
 
-The serial port name can be obtained by terminal. It is usually ttyS0.
 
 ```
-ls /dev/ttyS*
+touch Angle.txt 
+./can_send
+
+echo "1_90_90+2_90_90" >> Angle.txt
 ```
 
-Open Deploy_Linux_CAN_Final.c and change the serial port name on line 160. 
-
-```
-vi ./Deploy_Linux_CAN_Final.c
-```
-
-<p float="left">
-  <img src="static/TF4.png" width="500" />
-</p>
-
-Compile Deploy_Linux_CAN_Final and run it.
-
-```
-cd ~/
-tcc -o test Deploy_Linux.c
-./test
-```
-
-
-<p float="left">
-  <img src="static/TF2.png" width="300" />
-  <img src="static/TF3.png" width="300" />
-</p>
-
-
-## Deploy to Upper Monitor
-
-
-### Upper Monitor Control
-
-#### Python
-
-Open a terminal in the root directory while making sure Python is installed.
-
-```
-python Deploy_Python.py
-```
-
-Then just enter the angle (0-360 degrees) for both motors.
-
-<p float="left">
-  <img src="static/TF1.jpg" width="300" />
-</p>
-
-#### C++
-
-Make sure your system ([Win](https://cloud.tencent.com/developer/article/1500352) or Linux) has g++ installed, open a terminal in the root directory.
-
-*Win*
-
-Open Deploy_Win.cpp and change the serial port name on line 125. The serial port name can be obtained by opening the Device Manager.
-
-```
-g++ Deploy_Win.cpp -o Deploy_Win.exe
-```
-
-*Linux*
-
-Open Deploy_Linux.cpp and change the serial port name on line 160. The serial port name can be obtained by terminal.
-
-```
-ls /dev/ttyUSB*
-```
-
-```
-g++ Deploy_Linux.cpp -o Deploy_Linux
-./Deploy_Linux
-```
-
-<p float="left">
-  <img src="static/TF2.png" width="300" />
-  <img src="static/TF3.png" width="300" />
-</p>
-
-
-----
 
 ## 🔥Gimbal STP
 
