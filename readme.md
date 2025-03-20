@@ -199,29 +199,25 @@ Top View             |  Bottom View
     <td style="font-weight: bold;">Sensor</td>
     <td class="dbon">OV5647</td>
     <td style="font-weight: bold;">CMOS Size</td>
-    <td class="dbon">1/4 inch</td>
+    <td class="dbon">1/4"</td>
 </tr>
 <tr >
     <td style="font-weight: bold;">Pixels</td>
     <td class="dbon">5MP</td>
     <td style="font-weight: bold;">Aperture</td>
-    <td class="dbon">F2.4</td>
+    <td class="dbon">F2.8</td>
 </tr>
 <tr >
     <td style="font-weight: bold;">Focal Length</td>
-    <td class="dbon">3.89mm</td>
+    <td class="dbon">3.46mm</td>
     <td style="font-weight: bold;">Field of View</td>
-    <td >72.9°</td>
+    <td >65°</td>
 </tr>
 <tr >
     <td style="font-weight: bold;">Distortion</td>
-    <td >&lt;1.5%</td>
-    <td style="font-weight: bold;">Depth of Field</td>
-    <td >20cm ~∞</td>
-</tr>
-<tr >
+    <td >&lt;1%</td>
     <td style="font-weight: bold;">Image</td>
-    <td  colspan="3">2592 x 1944 still picture resolution</td>
+    <td >2592 x 1944(still picture)</td>
 </tr>
 <tr >
     <td style="font-weight: bold;">Video</td>
