@@ -199,29 +199,25 @@ Top View             |  Bottom View
     <td style="font-weight: bold;">Sensor</td>
     <td class="dbon">OV5647</td>
     <td style="font-weight: bold;">CMOS Size</td>
-    <td class="dbon">1/4 inch</td>
+    <td class="dbon">1/4"</td>
 </tr>
 <tr >
     <td style="font-weight: bold;">Pixels</td>
     <td class="dbon">5MP</td>
     <td style="font-weight: bold;">Aperture</td>
-    <td class="dbon">F2.4</td>
+    <td class="dbon">F2.8</td>
 </tr>
 <tr >
     <td style="font-weight: bold;">Focal Length</td>
-    <td class="dbon">3.89mm</td>
+    <td class="dbon">3.46mm</td>
     <td style="font-weight: bold;">Field of View</td>
-    <td >72.9°</td>
+    <td >65°</td>
 </tr>
 <tr >
     <td style="font-weight: bold;">Distortion</td>
-    <td >&lt;1.5%</td>
-    <td style="font-weight: bold;">Depth of Field</td>
-    <td >20cm ~∞</td>
-</tr>
-<tr >
+    <td >&lt;1%</td>
     <td style="font-weight: bold;">Image</td>
-    <td  colspan="3">2592 x 1944 still picture resolution</td>
+    <td >2592 x 1944(still picture)</td>
 </tr>
 <tr >
     <td style="font-weight: bold;">Video</td>
@@ -391,63 +387,70 @@ Up             |  Bottom
 - 1 x Gyroscope sensor.
 - 1 x UART port.
 
+---
 
-## reCamera Softwares
+## reCamera Software Development Guide
 
-The reCamera is a ready-to-use device right after startup. It comes with a stable reCamera OS that supports firmware OTA updates. Additionally, Node-RED and Sensecraft AI platform is integrated in the device for easier deployment experience. This integration offers novice developers a modular programming experience based on Node-RED nodes. For advanced developers, the in-depth Linux-based development and python are also there for twist and play.
+The reCamera comes with a stable reCamera OS that supports firmware OTA updates. Additionally, Node-RED and Sensecraft AI platform is integrated in the device for easier deployment experience. This integration offers novice developers a modular programming experience based on Node-RED nodes. For advanced developers, the in-depth Linux-based development and python are also there for twist and play.
 We warmly welcome developers proficient in JavaScript, C/C++, Python, Linux OS, buildroot, as well as geeks, students, and beginners, to engage in further development and explore applications.
 
-### [reCamera OS](https://github.com/Seeed-Studio/reCamera-OS)
-
-A Buildroot-based embedded system with integrated services for intelligent camera applications. The reCamera OS update nofitication can be reviewed [here](https://github.com/Seeed-Studio/reCamera-OS/releases/tag/0.1.5).
-
-This is an embedded operating system built on Buildroot, integrating services supervisor, sscma (Seeed SenseCraft Model Assistant), and Node-RED. 
 The architecture diagram is shown below
 <a href="url"><img src="./statics/recam_OS_structure.png" height="auto" width="auto" style="border-radius:40px"></a>
 
-#### 🧩 [Supervisor](https://github.com/Seeed-Studio/sscma-example-sg200x/tree/main/solutions/supervisor)
-The foundational system service providing:
-- System Services:
-    - Device management: Identify and configure connected devices, storage devices, etc.
-    - User Management: Manage user accounts, credentials, and SSH keys.
-    - Network configuration: Configure wired and wireless network connections.
-    - File system operations: Manage device files.
-    - Device Discovery: Uses mDNS to broadcast device information. The device hostname is recamera.local.When a web interface sends a request, the recamera device scans the local network for other recamera devices via mDNS, generates a list of discovered devices, formats the data, and returns it to the web interface. (Note: Currently, only one device’s information is returned.)
+Below is a structured guide to its core software components and full-stack development resources.
 
-- Update Service:
-    - Package/firmware download management
-    - Security verification
-    - Installation automation
+### 1. Hardware & Project Portal
+**Repository**: [OSHW-reCamera-Series](https://github.com/Seeed-Studio/OSHW-reCamera-Series)  
 
-- Daemon Service:
-    - System health monitoring
-    - Automatic application recovery
+Here, developers can obtain hardware update information, learn about the improvements and new features of hardware components such as the core board, sensor board, and base board, as well as the application updates of the reCamera. 
 
-- Logging Service:
-    - Runtime status tracking
-    - Error diagnostics
+- **Hardware Documentation**: Specifications, revision history, and design files for core boards, sensor modules, and expansion baseboards.  
+- **Application Templates**: Pre-built Node-RED workflows (object detection, data logging, etc.) for rapid hardware validation.  
+- **Community Contributions**: Open hardware specifications for developers to submit custom module designs.  
 
-- Application Service:
-    - Application Deployment
-    - Application Packaging
 
-#### 🧩 Node-RED Modules
-- [sscma-node (Server-side)](https://github.com/Seeed-Studio/sscma-example-sg200x/tree/main)
-    - Image processing service
-    - AI model management
-    - Media streaming service
-    - Data storage service
+### 2. Operating System & Tools  
+**Repository**: [reCamera-OS](https://github.com/Seeed-Studio/reCamera-OS)  
 
-- [node-red-sscma](https://github.com/Seeed-Studio/node-red-contrib-sscma): example of Camera and Model Node.
-<a href="url"><img src="./statics/vision_inference.png" height="auto" width="auto" style="border-radius:40px"></a>
+Provides detailed operation procedures for building, compiling, and flashing the image, as well as project dependency libraries.
 
-- Prebuilt nodes: Camera, Model, Stream, Save, Preview, Light (More to come...)
+- **Custom OS**: RISC-V optimized firmware with OTA updates and recovery mode.  
+- **Cross-Platform Development**: Ubuntu setup guides and **pre-configured Docker images** for streamlined compilation.  
+- **Multi-Storage Deployment**: Supports eMMC/SD card flashing with Windows/Linux/macOS compatible tools.  
 
-If you are not familiar with Node-Red, you can watch this [tutorial](https://www.youtube.com/watch?v=DFNv91TTt68) to learn how to use nodes to achieve different functions and building UI.
 
-### SenseCraft Workspace and [SenseCraft AI](https://sensecraft.seeed.cc/ai/#/home)
+### 3. Application Development & AI Integration  
+**Repository**: [sscma-example-sg200x](https://github.com/Seeed-Studio/sscma-example-sg200x)  
+
+This repository provides open-sourced the relevant codes of web and upper-layer application services.
+
+- **Model APIs**: Standardized interfaces for vision AI models.  
+- **Protocol Specifications**: HTTP/MQTT communication guides with Python examples.  
+- **Remote Deployment**: OTA application updates via `scp` and `opkg` package manager.  
+
+
+### 4. Development of Node-RED Nodes 
+**Repository**: [node-red-contrib-nodes](https://github.com/Seeed-Studio/node-red-contrib-nodes)  
+It includes multiple nodes such as `node-red-contrib-sscma` and `node-red-contrib-seeed-canbus`, which are respectively used for functions such as AI model deployment and CAN bus integration.
+- **AI Nodes**: Drag-and-drop workflow components for model inference and result processing.  
+- **Hardware Control**: Integrated nodes for CAN bus, GPIO, and sensor interactions.  
+- **Seamless Installation**: One-click node installation via Node-RED UI or npm.  
+
+
+### 5. SenseCraft Workspace and [SenseCraft AI](https://sensecraft.seeed.cc/ai/#/home)
 - Multi-Application management: Node-Red flow can be stored on SenseCraft Cloud Service. Super easy one click to deploy different application on the device.
 <a href="url"><img src="./statics/sensecraft_applications.png" height="auto" width="auto" style="border-radius:40px"></a>
+
+
+## Tech Support 
+- **Technical Issues**: Submit via repository Issues.  
+- **Developer Community**: [reCamera Forum](https://forum.seeedstudio.com/)
+- **Email**: https://www.seeedstudio.com/contacts
+- **Discord**: https://discord.gg/eWkprNDMU7
+
+
+
+---
 
 ## 🔩 Related Projects
 
@@ -478,6 +481,8 @@ Stay tuned for the release of reCamera Industrial and experience the power of vi
 Enhance your robotic arm’s capabilities with seamless AI integration through this advanced camera module. Featuring flexible interface expansion and the open-source reCamera OS, this module adds powerful computer vision to your robotics setup for precise control and intelligent object recognition. Tailor it to your specific needs, and let the versatile interface handle complex tasks with advanced vision and adaptability.
 
 <a href="url"><img src="./statics/reCamera_Robot_Arm.JPG" height="auto" width="600" style="border-radius:40px"></a>
+
+---
 
 ## 🧱 Application Demo
 The reCamera offers a wide range of application demos, demonstrating its versatility and potential in various fields. Here are some of the application demos which we are working in progress:
@@ -528,6 +533,7 @@ Node-Red dashboard2 Palette supports UI nodes to build a dashboard. With this in
 
 These application demos showcase the capabilities of the reCamera and provide a starting point for further development and customization.
 
+---
 
 ## 🎳 reCamera Roadmap
 
