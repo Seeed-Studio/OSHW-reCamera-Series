@@ -34,7 +34,7 @@
     - [Core Board](#core-board)
     - [Sensor Board](#sensor-board)
     - [Base Board](#base-board)
-- [💾 reCamera Softwares](#recamera-softwares)
+- [💾 reCamera Softwares](#recamera-software-development-guide)
 - [🔩 Related Projects](#related-projects)
 - [🧱 Application Demo](#-application-demo)
 - [🎳 reCamera Roadmap](#recamera-roadmap)
