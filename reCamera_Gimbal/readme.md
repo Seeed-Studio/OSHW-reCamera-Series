@@ -1,34 +1,39 @@
-# reCamera Gimbal Programmable Development Kit V1.1🎨
+# 🎨 reCamera Gimbal Programmable Development Kit 
 
 ## 🔥Introduction
-
-Welcome to reCamera Gimbal Programmable Development Kit V1.1. We provide sample code to debug the gimbal motor's operation and status output. We offer program entry points to drive the gimbal motor using CAN, enabling precise control and functionality.
+Welcome to the reCamera Gimbal Programmable Development Kit. This kit provides resources and tools for developers to control and customize the reCamera Gimbal. It includes sample code for debugging gimbal motor operations and status outputs, offering program entry points to drive the gimbal motor using CAN for precise control and functionality.
 
 <img src="static/reCamera-Gimbal-3.png" alt="reCamera" style="width: 80%;" />
 
-## Gimbal Preview
-![alt text](./static/image-11.png)
+## Table of Contents
 
-Gimbal Dashboard includes camera preview, model confidence Settings, gimbal control, gimbal calibration, object tracking and motor sleep.
+- [🔩 Pre-requisite](#-pre-requisite)
+- [🪢 Gimbal Dashboard Preview with Node-RED ](#-gimbal-dashboard-preview-with-node-red)
+- [⚙️ Hardware Overview](#-hardware-overview)
+- [💡 Custom Development](#-custom-development)
+- [🔥 Gimbal STP](#-gimbal-stp)
+- [📀 Flash motors firmware](#-flash-motors-firmware)
 
-You can download the [flow.json file](./src/Dashboard/Gimbal_DashboardV0.1.json) to deploy to your reCamera device.
 
-To run this routine, [download](./src/Executable%20program/) and copy the file from the `reCamera_Gimbal\src\Executable program\` directory to `/home/recamera/` on your device. 
-The source code for these programs can be found [here](./src/).
-## 🎈Instructions for using
+## 🔩 Pre-requisite
+- reCamera OS 0.2.0
+- 12V 2A power supply
+- USB Type-C cable
 
-### Motor ID Set
+## 🪢 Gimbal Dashboard Preview with Node-RED
+![alt text](./static/gimbal_dashboard_preview.png)
 
-![Connect of Devices](static/connection.png)
+Gimbal Node-REd Dashboard includes camera preview, model confidence/IoU Settings, gimbal manual control, object auto-tracking and shortcut buttons such as sleep, standby, calibration and Emergency Stop. The PID settings are also included for fine-tuning as each device is self-assembled.
 
-ID changes can be made using MS_Motor/LK motor tool [V2.35.exe](MotorTools/CN/KY%20motor%20tool%20V2.35.exe). Connect the PC (Windows) to the USB-CAN module, with H, L, and GND of the USB-CAN module connected to H, L, and V- of the motor. Connect the positive and negative terminals of a 12V power supply to V+ and V- of the motor to enable parameter changes. For further instructions on using LK motor tool V2.35.exe, refer to MotorTools/EN/Upper_monitor_motor_debuging_instruction.pdf. 
+You can see how to deploy json flow on Node-RED [here](https://github.com/jby5122/OSHW-reCamera-Series/tree/main/Node-RED_Flow#%EF%B8%8F-how-to-deploy-dashboard-flow). 
 
-Only two motors are used in this head, so it is sufficient to set the IDs of the two motors to 01 and 02 respectively.
+- View [Gimbal Dashboard V1.0.json](./src/Dashboard/Gimbal_DashboardV1.0.json) (PID settings are also included)
+- View [Motor_PID_Config.json](./src/Dashboard/Motor_PID_Config.json) (Individual PID settings for each motor in case you want to add this to your own flow)
 
 
 ## Hardware Overview
 
-To enable the reCamera to drive the gimbal motor, the reCamera's base board needs to be replaced to [B4_CAN](https://github.com/Seeed-Studio/OSHW-reCamera-Series) to enable CAN communication.
+To enable the reCamera to drive the gimbal motor, the reCamera's base board needs to be replaced to [B4_CAN](https://github.com/Seeed-Studio/OSHW-reCamera-Series/tree/main/reCamera_Base_Board/B4_CAN) to enable CAN communication.
 
 Up             |  Bottom
 :-------------------------:|:-------------------------:
@@ -89,7 +94,7 @@ You can use the Debugging Port connections to control the motor and communicate 
 | Enclosure                            | Polyamide(PA) Nylon                                     |                                                         |
 | Weight(Net)                          | 230g                                                    |                                                         |
 
-## Deploy in reCamera
+## 💡 Custom Development
 
 First, you need to prepare a linux operating system to compile the program.
 To compile a binary that can run on reCamera, [the cross-compiler tool](https://github.com/sophgo/host-tools/tree/bd66fcc8ed918eac4d6ac076ff8b1da7290b66cb) for riscv needs to be downloaded. 
@@ -169,22 +174,34 @@ echo "1_90_90+2_90_90" >> Angle.txt
 ```
 
 
-## 🔥Gimbal STP
+## 🔥 Gimbal STP
 
-You can [download the STP file](./Model) of this gimbal for 3D printing and assemble it. 
+You can [download the STP file](./3D_Printed_Case) of this gimbal for 3D printing and assemble it. 
 
 <img src="static/image-10.png" alt="reCamera" style="width:75%;" />
 
 | Preview | Models |
 | ------- | ------ |
-| <img src="static/image.png" alt="image" style="width:33%;" /> | [Download](./Model/recamera-yantai_arm_30.stp)       |
-| <img src="static/image-1.png" alt="image" style="width:33%;" /> | [Download](./Model/platform-box_29.stp)              |
-| <img src="static/image-2.png" alt="image" style="width:33%;" /> | [Download](./Model/bottom-plate_10.stp)              |
-| <img src="static/image-3.png" alt="image" style="width:33%;" /> | [Download](./Model/brushlessmotor-ms3506_4.stp)      |
-| <img src="static/image-4.png" alt="image" style="width:33%;" /> | [Download](./Model/brushlessmotor-ms3008v2_2.stp)    |
-| <img src="static/image-5.png" alt="image" style="width:33%;" /> | [Download](./Model/recamera-gimbalcover-4040_20.stp) |
-| <img src="static/image-6.png" alt="image" style="width:33%;" /> | [Download](./Model/can-case_3.stp)                   |
-| <img src="static/image-7.png" alt="image" style="width:33%;" /> | [Download](./Model/recamera-middleframe-4040-1_27.stp)|
-| <img src="static/image-8.png" alt="image" style="width:33%;" /> | [Download](./Model/recamera-sensorcover-4040-1_36.stp)|
-| <img src="static/image-9.png" alt="image" style="width:33%;" /> | [Download](./Model/glass-4040_6.stp)                 |
+| <img src="static/image.png" alt="image" style="width:33%;" /> | [Download](./3D_Printed_Case/recamera-yantai_arm_30.stp)       |
+| <img src="static/image-1.png" alt="image" style="width:33%;" /> | [Download](./3D_Printed_Case/platform-box_29.stp)              |
+| <img src="static/image-2.png" alt="image" style="width:33%;" /> | [Download](./3D_Printed_Case/bottom-plate_10.stp)              |
+| <img src="static/image-3.png" alt="image" style="width:33%;" /> | [Download](./3D_Printed_Case/brushlessmotor-ms3506_4.stp)      |
+| <img src="static/image-4.png" alt="image" style="width:33%;" /> | [Download](./3D_Printed_Case/brushlessmotor-ms3008v2_2.stp)    |
+| <img src="static/image-5.png" alt="image" style="width:33%;" /> | [Download](./3D_Printed_Case/recamera-gimbalcover-4040_20.stp) |
+| <img src="static/image-6.png" alt="image" style="width:33%;" /> | [Download](./3D_Printed_Case/can-case_3.stp)                   |
+| <img src="static/image-7.png" alt="image" style="width:33%;" /> | [Download](./3D_Printed_Case/recamera-middleframe-4040-1_27.stp)|
+| <img src="static/image-8.png" alt="image" style="width:33%;" /> | [Download](./3D_Printed_Case/recamera-sensorcover-4040-1_36.stp)|
+| <img src="static/image-9.png" alt="image" style="width:33%;" /> | [Download](./3D_Printed_Case/glass-4040_6.stp)                 |
 
+## 📀 Flash motors firmware
+
+### Motor ID Set
+
+![Connect of Devices](static/connection.png)
+
+ID changes can be made using MS_Motor/LK motor tool [V2.35.exe](MotorTools/CN/KY%20motor%20tool%20V2.35.exe). Connect the PC (Windows) to the USB-CAN module, with H, L, and GND of the USB-CAN module connected to H, L, and V- of the motor. Connect the positive and negative terminals of a 12V power supply to V+ and V- of the motor to enable parameter changes. For further instructions on using LK motor tool V2.35.exe, refer to MotorTools/EN/Upper_monitor_motor_debuging_instruction.pdf. 
+
+Only two motors are used in this head, so it is sufficient to set the IDs of the two motors to 01 and 02 respectively.
+
+### How to update motor firmware
+WIP...
