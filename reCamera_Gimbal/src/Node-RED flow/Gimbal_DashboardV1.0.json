@@ -8,11 +8,19 @@
         "env": []
     },
     {
+        "id": "cc4fa65c792db7e2",
+        "type": "tab",
+        "label": "PID Control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "f7d5cf3810421cf3",
         "type": "subflow",
         "name": "Default Pages",
         "info": "",
-        "category": "Vision AI",
+        "category": "reCamera",
         "in": [],
         "out": [],
         "env": [],
@@ -24,7 +32,7 @@
         "type": "subflow",
         "name": "Device Info Pages",
         "info": "",
-        "category": "Vision AI",
+        "category": "reCamera",
         "in": [],
         "out": [],
         "env": [],
@@ -32,14 +40,142 @@
         "color": "#DDAA99"
     },
     {
-        "id": "b97fc673d9180980",
-        "type": "sscma",
-        "host": "localhost",
-        "mqttport": "1883",
-        "apiport": "80",
-        "clientid": "recamera",
-        "username": "",
-        "password": ""
+        "id": "38da0acbee7571dc",
+        "type": "group",
+        "z": "5924433263ceb70d",
+        "name": "Model setting",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9e3e342695458112",
+            "5c78727dc73b9fa9",
+            "f40cb9db86bef8a5",
+            "54283c013e16973b"
+        ],
+        "x": 34,
+        "y": 99,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "6a5cf1c769c6da07",
+        "type": "group",
+        "z": "5924433263ceb70d",
+        "name": "Dashboard UI display",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a932a077674095f2",
+            "60a867cb500cf15d"
+        ],
+        "x": 474,
+        "y": 99,
+        "w": 232,
+        "h": 122
+    },
+    {
+        "id": "119948d614ce5694",
+        "type": "group",
+        "z": "5924433263ceb70d",
+        "name": "Auto tracking with target",
+        "style": {
+            "label": true,
+            "color": "#92d04f"
+        },
+        "nodes": [
+            "dce4bb179705c28b",
+            "20b650629e914eea",
+            "662618524569fbc6",
+            "16faeb961ec1bf39",
+            "eda0c03f08759525",
+            "95d8a68a011bdc6c",
+            "b5f7115f8da75f5a",
+            "77f7fb1af5e3bb02",
+            "2d0b2295ce249f05",
+            "45d7334c4a7d3a34",
+            "4df7444990c143f0"
+        ],
+        "x": 334,
+        "y": 279,
+        "w": 852,
+        "h": 282
+    },
+    {
+        "id": "cbb96dd983baabd8",
+        "type": "group",
+        "z": "5924433263ceb70d",
+        "name": "Manual control motors",
+        "style": {
+            "label": true,
+            "color": "#92d04f"
+        },
+        "nodes": [
+            "4f05d0e436acc7c0",
+            "1528e53340ceac14",
+            "45dd35115125460f",
+            "141a718c4aca75ea",
+            "42c6325966560571",
+            "c01033b112727fe9",
+            "702aeefba5d6d7a4",
+            "2aa592079c263c56",
+            "b46762af1a17c573",
+            "4541eae5ac491f49",
+            "7b2ebdcba29e8f34",
+            "893b35e696c89eb1",
+            "31a3c5b36ad3e791"
+        ],
+        "x": 34,
+        "y": 599,
+        "w": 692,
+        "h": 322
+    },
+    {
+        "id": "e289c04a151c2b21",
+        "type": "group",
+        "z": "5924433263ceb70d",
+        "name": "Shortcut buttons control motors",
+        "style": {
+            "label": true,
+            "color": "#92d04f"
+        },
+        "nodes": [
+            "cf76f4d691c14470",
+            "e0c3e26dcba0a1d0",
+            "030f888e2b794a0f",
+            "fcd487b208f2ef92",
+            "c1634d85e3127ba7",
+            "3b88e350fe5a51cf",
+            "06e1b8aac3611769",
+            "aa73b695851dbf8e"
+        ],
+        "x": 34,
+        "y": 939,
+        "w": 632,
+        "h": 329.5
+    },
+    {
+        "id": "bc455cac092dd743",
+        "type": "group",
+        "z": "5924433263ceb70d",
+        "name": "Example of using CAN nodes",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "87d339d9e90222dd",
+            "4ba6f9f525c85918",
+            "b05400b8dc9abf80",
+            "253630de7cd7906c",
+            "0a455be92c7a44aa",
+            "45ca963c27191100",
+            "a3993838b918ee4e"
+        ],
+        "x": 34,
+        "y": 1299,
+        "w": 712,
+        "h": 182
     },
     {
         "id": "8d2cf2d27a8855ae",
@@ -128,7 +264,7 @@
                 "cols": "12"
             }
         ],
-        "order": 4,
+        "order": 5,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -164,7 +300,7 @@
                 "cols": "12"
             }
         ],
-        "order": 2,
+        "order": 3,
         "className": "",
         "visible": true,
         "disabled": false
@@ -200,7 +336,7 @@
                 "cols": "12"
             }
         ],
-        "order": 5,
+        "order": 6,
         "className": "",
         "visible": true,
         "disabled": false
@@ -292,7 +428,7 @@
                 "cols": "12"
             }
         ],
-        "order": 3,
+        "order": 4,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -402,8 +538,96 @@
         ],
         "order": 1,
         "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "af20bfd61d0a6dd1",
+        "type": "sscma",
+        "host": "localhost",
+        "mqttport": "1883",
+        "apiport": "80",
+        "clientid": "recamera",
+        "username": "",
+        "password": ""
+    },
+    {
+        "id": "eb68b89500627338",
+        "type": "ui-group",
+        "name": "Yaw Axis",
+        "page": "c315d27890fbd048",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
         "visible": "true",
-        "disabled": "false"
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "944f240637232c4b",
+        "type": "ui-group",
+        "name": "Pitch Axis",
+        "page": "c315d27890fbd048",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "800d559a9f15602f",
+        "type": "ui-group",
+        "name": "Send Config",
+        "page": "c315d27890fbd048",
+        "width": "12",
+        "height": "1",
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "c315d27890fbd048",
+        "type": "ui-page",
+        "name": "PID Control",
+        "ui": "e2f7615831d73e4b",
+        "path": "/pid_control",
+        "icon": "tune",
+        "layout": "grid",
+        "theme": "f5ee49967f8103a8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "4d040b9fa3995f53",
@@ -1035,7 +1259,7 @@
         "id": "bfaa44172ab5326f",
         "type": "exec",
         "z": "22d80629fd354a7c",
-        "command": "top -d 0.5 -b -n2 | grep \"Cpu(s)\"|tail -n 1 | awk '{print ($2 + $4) / 100}'",
+        "command": "top -bn1 | grep \"CPU:\" | awk '{print $2 + $4}' | head -n1",
         "addpay": false,
         "append": "",
         "useSpawn": "",
@@ -1447,11 +1671,12 @@
         "id": "9e3e342695458112",
         "type": "ui-slider",
         "z": "5924433263ceb70d",
+        "g": "38da0acbee7571dc",
         "group": "37a6e7f9304e351c",
         "name": "Confidence",
         "label": "Confidence",
         "tooltip": "",
-        "order": 5,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -1470,8 +1695,8 @@
         "colorTrack": "",
         "colorThumb": "",
         "showTextField": false,
-        "x": 131.4286003112793,
-        "y": 280.0000190734863,
+        "x": 130,
+        "y": 180,
         "wires": [
             [
                 "f40cb9db86bef8a5"
@@ -1482,11 +1707,12 @@
         "id": "5c78727dc73b9fa9",
         "type": "ui-slider",
         "z": "5924433263ceb70d",
+        "g": "38da0acbee7571dc",
         "group": "37a6e7f9304e351c",
         "name": "IoU",
         "label": "IoU",
         "tooltip": "",
-        "order": 4,
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -1506,7 +1732,7 @@
         "colorThumb": "",
         "showTextField": false,
         "x": 110,
-        "y": 200,
+        "y": 140,
         "wires": [
             [
                 "54283c013e16973b"
@@ -1514,33 +1740,10 @@
         ]
     },
     {
-        "id": "6b934f208a637406",
-        "type": "ui-template",
-        "z": "5924433263ceb70d",
-        "group": "37a6e7f9304e351c",
-        "page": "",
-        "ui": "",
-        "name": "Preview Page",
-        "order": 3,
-        "width": "5",
-        "height": "3",
-        "head": "",
-        "format": "<template>\n    <div :id=\"containerId\" style=\"width: 100%; height: 100%\">\n        <svg :id=\"svgId\" viewBox=\"0 50 640 640\"></svg>\n    </div>\n</template>\n\n<script>\n    export default {\n        computed: {\n            containerId() {\n                return `container`;\n            },\n            svgId() {\n                return `svg`;\n            },\n        },\n        methods: {\n            createSVGElement(type, attributes = {}) {\n                const element = document.createElementNS(\"http://www.w3.org/2000/svg\", type);\n                Object.keys(attributes).forEach((attr) => element.setAttribute(attr, attributes[attr]));\n                return element;\n            },\n            getColor(index, opacity = 1) {\n                const COLORS = [\n                    \"#FF0000\",\n                    \"#FF4500\",\n                    \"#FF6347\",\n                    \"#FF8C00\",\n                    \"#FFA500\",\n                    \"#FFD700\",\n                    \"#32CD32\",\n                    \"#006400\",\n                    \"#4169E1\",\n                    \"#0000FF\",\n                    \"#1E90FF\",\n                    \"#00FFFF\",\n                    \"#00CED1\",\n                    \"#20B2AA\",\n                    \"#FF1493\",\n                    \"#FF69B4\",\n                    \"#800080\",\n                    \"#8A2BE2\",\n                    \"#9400D3\",\n                    \"#9932CC\",\n                ];\n                const color = COLORS[index % COLORS.length];\n                if (opacity < 1 && opacity >= 0) {\n                    const r = parseInt(color.slice(1, 3), 16);\n                    const g = parseInt(color.slice(3, 5), 16);\n                    const b = parseInt(color.slice(5, 7), 16);\n                    return `rgba(${r}, ${g}, ${b}, ${opacity})`;\n                }\n                return color;\n            },\n            renderImage(container, group, data) {\n                if (data.image) {\n                    let img = document.getElementById(`image-output-img`);\n                    if (!img) {\n                        img = this.createSVGElement(\"image\", {\n                            id: `image-output-img`,\n                            x: \"0\",\n                            y: \"50\",\n                        });\n                        img.addEventListener(\"click\", () => this.removeGroup(group), { once: false });\n                        container.prepend(img);\n                    }\n                    img.setAttribute(\"href\", `data:image/jpeg;base64,${data.image}`);\n                } else if (data?.resolution) {\n                    const rect = this.createSVGElement(\"rect\", {\n                        x: \"0\",\n                        y: \"0\",\n                        width: data.resolution[0],\n                        height: data.resolution[1],\n                        fill: \"black\",\n                    });\n                    const text = this.createSVGElement(\"text\", {\n                        x: 10,\n                        y: 20,\n                        \"font-size\": \"16\",\n                        fill: \"yellow\",\n                        stroke: \"yellow\",\n                        \"font-family\": \"Arial\",\n                    });\n                    text.textContent = \"Warning: Please enable the model node's debug mode to display the actual image.\";\n                    group.appendChild(rect);\n                    group.appendChild(text);\n                }\n            },\n            renderLines(group, data) {\n                if (data?.lines) {\n                    data.lines.forEach((line, i) => {\n                        const x1 = line[0] * 0.01 * data.resolution[0];\n                        const y1 = line[1] * 0.01 * data.resolution[1];\n                        const x2 = line[2] * 0.01 * data.resolution[0];\n                        const y2 = line[3] * 0.01 * data.resolution[1];\n                        const color = this.getColor(i);\n                        const lineElement = this.createSVGElement(\"line\", {\n                            x1,\n                            y1,\n                            x2,\n                            y2,\n                            stroke: color,\n                            \"stroke-width\": \"1\",\n                        });\n                        group.appendChild(lineElement);\n                    });\n                }\n            },\n            renderBoxes(group, data) {\n                if (data?.boxes) {\n                    data.boxes.forEach((box, i) => {\n                        if (box?.length === 6) {\n                            const [x, y, w, h, score, tar] = box;\n                            const color = this.getColor(tar);\n                            const tarStr = data.labels?.[i] ?? `NA-${tar}`;\n                            const rect = this.createSVGElement(\"rect\", {\n                                x: x - w / 2,\n                                y: y - h / 2,\n                                width: w,\n                                height: h,\n                                fill: \"none\",\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(rect);\n\n                            const rectText = this.createSVGElement(\"rect\", {\n                                x: x - w / 2,\n                                y: y - h / 2 - 14,\n                                width: w,\n                                height: 16,\n                                fill: color,\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(rectText);\n\n                            const text = this.createSVGElement(\"text\", {\n                                x: x - w / 2 + 5,\n                                y: y - h / 2 - 2,\n                                \"font-size\": \"14\",\n                                fill: \"white\",\n                                \"font-family\": \"Arial\",\n                            });\n                            text.textContent = data?.tracks ? `#${data.tracks[i]}: ${tarStr}(${score})` : `${tarStr}(${score})`;\n                            group.appendChild(text);\n                        }\n                    });\n                }\n            },\n            renderClasses(group, data) {\n                if (data?.classes) {\n                    const rectHeight = data.resolution[1] / 16;\n                    data.classes.forEach(([score, tar], i) => {\n                        const tarStr = data.labels?.[i] ?? `NA-${tar}`;\n                        const rectWidth = data.resolution[0] / data.classes.length;\n                        const rect = this.createSVGElement(\"rect\", {\n                            x: rectWidth * i,\n                            y: 0,\n                            width: rectWidth,\n                            height: rectHeight,\n                            fill: this.getColor(tar),\n                            \"fill-opacity\": 0.3,\n                        });\n                        group.appendChild(rect);\n\n                        const text = this.createSVGElement(\"text\", {\n                            x: rectWidth * i,\n                            y: data.resolution[1] / 24,\n                            \"font-size\": data.resolution[1] / 24,\n                            \"font-weight\": \"bold\",\n                            \"font-family\": \"arial\",\n                            fill: \"#ffffff\",\n                        });\n                        text.textContent = `${tarStr}: ${score}`;\n                        group.appendChild(text);\n                    });\n                }\n            },\n            renderSegments(group, data) {\n                if (data?.segments) {\n                    data.segments.forEach((segment, i) => {\n                        const box = segment[0];\n                        const polygon = segment[1];\n                        let color = this.getColor(i);\n                        let rgba = this.getColor(i, 0.3);\n                        if (box?.length === 6) {\n                            const [x, y, w, h, score, tar] = box;\n                            color = this.getColor(tar);\n                            rgba = this.getColor(tar, 0.3);\n                            const tarStr = data.labels?.[i] ?? `NA-${tar}`;\n                            const rect = this.createSVGElement(\"rect\", {\n                                x: x - w / 2,\n                                y: y - h / 2,\n                                width: w,\n                                height: h,\n                                fill: \"none\",\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(rect);\n\n                            const rectText = this.createSVGElement(\"rect\", {\n                                x: x - w / 2,\n                                y: y - h / 2 - 14,\n                                width: w,\n                                height: 16,\n                                fill: color,\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(rectText);\n\n                            const text = this.createSVGElement(\"text\", {\n                                x: x - w / 2 + 5,\n                                y: y - h / 2 - 2,\n                                \"font-size\": \"14\",\n                                fill: \"white\",\n                                \"font-family\": \"Arial\",\n                            });\n                            text.textContent = data?.tracks ? `#${data.tracks[i]}: ${tarStr}(${score})` : `${tarStr}(${score})`;\n                            group.appendChild(text);\n                        }\n                        if (polygon) {\n                            function convertToPoints(polygon) {\n                                let points = \"\";\n                                for (let i = 0; i < polygon.length; i += 2) {\n                                    points += `${polygon[i]},${polygon[i + 1]} `;\n                                }\n                                return points.trim();\n                            }\n\n                            // Convert the data array to SVG points format\n                            const points = convertToPoints(polygon);\n\n                            const polygonElement = this.createSVGElement(\"polygon\", {\n                                points: points,\n                                fill: rgba,\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(polygonElement);\n                        }\n                    });\n                }\n            },\n            renderKeypoints(group, data) {\n                if (!data?.keypoints) {\n                    return;\n                }\n                data.keypoints.forEach((keypoint, i) => {\n                    const box = keypoint[0];\n                    const keypoints = keypoint[1];\n                    let points = new Set();\n                    if (box?.length === 6) {\n                        const [x, y, w, h, score, tar] = box;\n                        const color = this.getColor(tar);\n                        const tarStr = data.labels?.[i] ?? `NA-${tar}`;\n                        const rect = this.createSVGElement(\"rect\", {\n                            x: x - w / 2,\n                            y: y - h / 2,\n                            width: w,\n                            height: h,\n                            fill: \"none\",\n                            stroke: color,\n                            \"stroke-width\": \"2\",\n                        });\n                        group.appendChild(rect);\n\n                        const rectText = this.createSVGElement(\"rect\", {\n                            x: x - w / 2,\n                            y: y - h / 2 - 14,\n                            width: w,\n                            height: 16,\n                            fill: color,\n                            stroke: color,\n                            \"stroke-width\": \"2\",\n                        });\n                        group.appendChild(rectText);\n\n                        const text = this.createSVGElement(\"text\", {\n                            x: x - w / 2 + 5,\n                            y: y - h / 2 - 2,\n                            \"font-size\": \"14\",\n                            fill: \"white\",\n                            stroke: \"white\",\n                            \"font-family\": \"Arial\",\n                        });\n                        text.textContent = data?.tracks ? `#${data.tracks[i]}: ${tarStr}(${score})` : `${tarStr}(${score})`;\n                        group.appendChild(text);\n                    }\n\n                    for (let j = 0; j < keypoints.length; j += 1) {\n                        const point = keypoints[j];\n                        const x = point[0];\n                        const y = point[1];\n                        const target = point[3] ? point[3] : j;\n                        // draw if point in the box\n                        if (x > box[0] - box[2] / 2 && x < box[0] + box[2] / 2 && y > box[1] - box[3] / 2 && y < box[1] + box[3] / 2) {\n                            points.add(target);\n                        }\n                    }\n\n                    if (keypoints?.length === 17) {\n                        // nose to left eye\n                        if (points.has(0) && points.has(1)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[0][0],\n                                y1: keypoints[0][1],\n                                x2: keypoints[1][0],\n                                y2: keypoints[1][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // nose to right eye\n                        if (points.has(0) && points.has(2)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[0][0],\n                                y1: keypoints[0][1],\n                                x2: keypoints[2][0],\n                                y2: keypoints[2][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left eye to left ear\n                        if (points.has(1) && points.has(3)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[1][0],\n                                y1: keypoints[1][1],\n                                x2: keypoints[3][0],\n                                y2: keypoints[3][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right eye to right ear\n                        if (points.has(2) && points.has(4)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[2][0],\n                                y1: keypoints[2][1],\n                                x2: keypoints[4][0],\n                                y2: keypoints[4][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left ear to left shoulder\n                        if (points.has(3) && points.has(5)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[3][0],\n                                y1: keypoints[3][1],\n                                x2: keypoints[5][0],\n                                y2: keypoints[5][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right ear to right shoulder\n                        if (points.has(4) && points.has(6)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[4][0],\n                                y1: keypoints[4][1],\n                                x2: keypoints[6][0],\n                                y2: keypoints[6][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left shoulder to right shoulder\n                        if (points.has(5) && points.has(6)) {\n                            const color = this.getColor(1);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[5][0],\n                                y1: keypoints[5][1],\n                                x2: keypoints[6][0],\n                                y2: keypoints[6][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left shoulder to left hip\n                        if (points.has(5) && points.has(11)) {\n                            const color = this.getColor(2);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[5][0],\n                                y1: keypoints[5][1],\n                                x2: keypoints[11][0],\n                                y2: keypoints[11][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right shoulder to right hip\n                        if (points.has(6) && points.has(12)) {\n                            const color = this.getColor(2);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[6][0],\n                                y1: keypoints[6][1],\n                                x2: keypoints[12][0],\n                                y2: keypoints[12][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left hip to right hip\n                        if (points.has(11) && points.has(12)) {\n                            const color = this.getColor(2);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[11][0],\n                                y1: keypoints[11][1],\n                                x2: keypoints[12][0],\n                                y2: keypoints[12][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left shoulder to left elbow\n                        if (points.has(5) && points.has(7)) {\n                            const color = this.getColor(1);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[5][0],\n                                y1: keypoints[5][1],\n                                x2: keypoints[7][0],\n                                y2: keypoints[7][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left elbow to left wrist\n                        if (points.has(7) && points.has(9)) {\n                            const color = this.getColor(1);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[7][0],\n                                y1: keypoints[7][1],\n                                x2: keypoints[9][0],\n                                y2: keypoints[9][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right shoulder to right elbow\n                        if (points.has(6) && points.has(8)) {\n                            const color = this.getColor(6);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[6][0],\n                                y1: keypoints[6][1],\n                                x2: keypoints[8][0],\n                                y2: keypoints[8][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right elbow to right wrist\n                        if (points.has(8) && points.has(10)) {\n                            const color = this.getColor(1);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[8][0],\n                                y1: keypoints[8][1],\n                                x2: keypoints[10][0],\n                                y2: keypoints[10][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left hip to left knee\n                        if (points.has(11) && points.has(13)) {\n                            const color = this.getColor(3);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[11][0],\n                                y1: keypoints[11][1],\n                                x2: keypoints[13][0],\n                                y2: keypoints[13][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left knee to left ankle\n                        if (points.has(13) && points.has(15)) {\n                            const color = this.getColor(3);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[13][0],\n                                y1: keypoints[13][1],\n                                x2: keypoints[15][0],\n                                y2: keypoints[15][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right hip to right knee\n                        if (points.has(12) && points.has(14)) {\n                            const color = this.getColor(3);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[12][0],\n                                y1: keypoints[12][1],\n                                x2: keypoints[14][0],\n                                y2: keypoints[14][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right knee to right ankle\n                        if (points.has(14) && points.has(16)) {\n                            const color = this.getColor(3);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[14][0],\n                                y1: keypoints[14][1],\n                                x2: keypoints[16][0],\n                                y2: keypoints[16][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                    }\n\n                    for (let j = 0; j < keypoints.length; j += 1) {\n                        const point = keypoints[j];\n                        const x = point[0];\n                        const y = point[1];\n                        const target = point[3] ? point[3] : j;\n                        // draw if point in the box\n                        if (x > box[0] - box[2] / 2 && x < box[0] + box[2] / 2 && y > box[1] - box[3] / 2 && y < box[1] + box[3] / 2) {\n                            const color = this.getColor(target);\n                            const circle = this.createSVGElement(\"circle\", {\n                                cx: x,\n                                cy: y,\n                                r: 3,\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                                fill: color,\n                            });\n                            group.appendChild(circle);\n                        }\n                    }\n                });\n            },\n            renderAll() {\n                const container = document.getElementById(this.containerId);\n                const svg = document.getElementById(this.svgId);\n                if (!container || !svg) return;\n\n                let group = document.getElementById(`image-output-group`);\n                if (!group) {\n                    group = this.createSVGElement(\"g\", {\n                        id: `image-output-group`,\n                        transform: \"translate(0, 50)\",\n                    });\n                    svg.appendChild(group);\n                }\n                group.innerHTML = \"\"; // Clear existing content\n\n                const previewData = this.msg?.payload?.data;\n                if (!previewData) {\n                    return;\n                }\n                this.renderImage(svg, group, previewData);\n                this.renderLines(group, previewData);\n                this.renderBoxes(group, previewData);\n                this.renderClasses(group, previewData);\n                this.renderSegments(group, previewData);\n                this.renderKeypoints(group, previewData);\n            },\n        },\n        watch: {\n            msg() {\n                this.renderAll();\n            },\n        },\n    };\n</script>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 760,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "f40cb9db86bef8a5",
         "type": "function",
         "z": "5924433263ceb70d",
+        "g": "38da0acbee7571dc",
         "name": "send_confidence",
         "func": "const tscore = Number((Number(msg.payload)/100).toFixed(2))\nmsg.payload = {tscore}\nreturn msg;",
         "outputs": 1,
@@ -1549,11 +1752,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 351.4286003112793,
-        "y": 280.0000190734863,
+        "x": 310,
+        "y": 180,
         "wires": [
             [
-                "968bf19f1a58b202"
+                "4df7444990c143f0"
             ]
         ]
     },
@@ -1561,6 +1764,7 @@
         "id": "54283c013e16973b",
         "type": "function",
         "z": "5924433263ceb70d",
+        "g": "38da0acbee7571dc",
         "name": "send_iou",
         "func": "const tiou = Number((Number(msg.payload)/100).toFixed(2))\nmsg.payload = {tiou}\nreturn msg;",
         "outputs": 1,
@@ -1569,59 +1773,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 200,
+        "x": 280,
+        "y": 140,
         "wires": [
             [
-                "968bf19f1a58b202"
-            ]
-        ]
-    },
-    {
-        "id": "c0d6cb01240e42a2",
-        "type": "ui-text",
-        "z": "5924433263ceb70d",
-        "group": "37a6e7f9304e351c",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Current Model is: ",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "wrapText": false,
-        "className": "",
-        "x": 970,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "7f6c63e058eccb5f",
-        "type": "ui-template",
-        "z": "5924433263ceb70d",
-        "group": "37a6e7f9304e351c",
-        "page": "",
-        "ui": "",
-        "name": "Get Current Model",
-        "order": 2,
-        "width": "3",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n    <div style=\"display: none\"></div>\n</template>\n\n<script>\n    export default {\n        data() {\n            // define variables available component-wide\n            // (in <template> and component functions)\n            return {\n                name: 0\n            }\n        },\n        watch: {\n            // watch for any changes of \"count\"\n            name: function () {\n                this.send({payload: this.name})\n            }\n        },\n        async mounted() {\n            // const response = await fetch(`http://192.168.42.1/api/deviceMgr/getModelInfo`)\n            const response = await fetch(`http://${window.location.hostname}/api/deviceMgr/getModelInfo`)\n            const data = await response.json()\n            const modelInfo = JSON.parse(data.data.model_info)\n            this.name = modelInfo.model_name\n        },\n    }\n</script>\n<style>\n</style>",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 770,
-        "y": 320,
-        "wires": [
-            [
-                "c0d6cb01240e42a2"
+                "4df7444990c143f0"
             ]
         ]
     },
@@ -1631,49 +1787,25 @@
         "z": "5924433263ceb70d",
         "name": "Preview Demo",
         "info": "This is the demo for reCamera Gimbal.\n\nWe created a dashboard for gimbal for users \nto get a idea of how you can use nodes to \ncontrol the gimbal. Feel free to modify\nthe flow at your wish.\n\nJust be mindful that the device does have\nsome CPU limitation.\n\nPrinting out multiple debugs or using multiple\nCAN nodes will result in a high CPU and cause\nthe crash of the device.",
-        "x": 133.92860412597656,
-        "y": 50.00002479553223,
+        "x": 110,
+        "y": 60,
         "wires": []
-    },
-    {
-        "id": "db8d760bf9e0f487",
-        "type": "delay",
-        "z": "5924433263ceb70d",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "15",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": true,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 560,
-        "y": 380,
-        "wires": [
-            [
-                "6b934f208a637406"
-            ]
-        ]
     },
     {
         "id": "dce4bb179705c28b",
         "type": "function",
         "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
         "name": "get_target_box",
-        "func": "const TRACK_TARGETS = {\n    PERSON: 0,\n    CAT: 15,\n    DOG: 16,\n    BOTTLE: 39,\n    CUP: 41,\n    CELLPHONE: 67\n};\nconst trackEnabled = global.get('trackEnabled');\nif (!trackEnabled) {\n    return null;\n}\nlet currentTarget = global.get(\"trackTarget\");\nif (currentTarget === undefined) {\n    currentTarget = TRACK_TARGETS.PERSON\n}\n\n// check current topic and payload\nconst topic = msg.topic;\nconst payload = msg.payload;\n\n// get all the boxes\nlet boxes = payload.data?.boxes;\n\n// check if all boxes and not null\nif (!boxes || boxes.length === 0) {\n    payload.selectedBox = false; // if no boxes detected，set selectedBox to false\n    return msg;\n}\n// filtered out the desired detecting object with options\nlet filteredBoxes = boxes.filter(box => box[5] === parseInt(currentTarget)); // box[5] is the class ID\n\nif (filteredBoxes.length === 0) {\n    payload.selectedBox = false; \n    return msg;\n}\n\n// Calculate box area and select max box\nlet maxAreaBox = filteredBoxes.reduce((maxBox, currentBox) => {\n    // calculate current box area\n    let currentArea = currentBox[2] * currentBox[3]; // box[2] is width，box[3] is height\n    let maxArea = maxBox[2] * maxBox[3]; // maxBox's area\n\n    return currentArea > maxArea ? currentBox : maxBox; // comparison area\n}, filteredBoxes[0]);\n\n// parse info for after process in the next node\nmsg.payload.selectedBox = maxAreaBox;\n\n\nreturn msg;\n",
+        "func": "const TRACK_TARGETS = {\n    PERSON: 0,\n    CAT: 15,\n    DOG: 16,\n    BOTTLE: 39,\n    CUP: 41,\n    CELLPHONE: 67,\n    CAR: 2\n};\nconst trackEnabled = global.get('trackEnabled');\nif (!trackEnabled) {\n    return null;\n}\nlet currentTarget = global.get(\"trackTarget\");\nif (currentTarget === undefined) {\n    currentTarget = TRACK_TARGETS.PERSON\n}\n\n// check current topic and payload\nconst topic = msg.topic;\nconst payload = msg.payload;\n\n// get all the boxes\nlet boxes = payload.data?.boxes;\n\n// check if all boxes and not null\nif (!boxes || boxes.length === 0) {\n    payload.selectedBox = false; // if no boxes detected，set selectedBox to false\n    return msg;\n}\n// filtered out the desired detecting object with options\nlet filteredBoxes = boxes.filter(box => box[5] === parseInt(currentTarget)); // box[5] is the class ID\n\nif (filteredBoxes.length === 0) {\n    payload.selectedBox = false; \n    return msg;\n}\n\n// Calculate box area and select max box\nlet maxAreaBox = filteredBoxes.reduce((maxBox, currentBox) => {\n    // calculate current box area\n    let currentArea = currentBox[2] * currentBox[3]; // box[2] is width，box[3] is height\n    let maxArea = maxBox[2] * maxBox[3]; // maxBox's area\n\n    return currentArea > maxArea ? currentBox : maxBox; // comparison area\n}, filteredBoxes[0]);\n\n// parse info for after process in the next node\nmsg.payload.selectedBox = maxAreaBox;\nmsg.payload.resolution = payload.data?.resolution;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 560,
-        "y": 460,
+        "x": 640,
+        "y": 320,
         "wires": [
             [
                 "77f7fb1af5e3bb02"
@@ -1681,34 +1813,10 @@
         ]
     },
     {
-        "id": "19a3ce9968f1d35a",
-        "type": "delay",
-        "z": "5924433263ceb70d",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "5",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": true,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 330,
-        "y": 460,
-        "wires": [
-            [
-                "dce4bb179705c28b"
-            ]
-        ]
-    },
-    {
         "id": "16faeb961ec1bf39",
         "type": "ui-button-group",
         "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
         "name": "Track Enable",
         "group": "c5fbe89b47b4f853",
         "order": 6,
@@ -1737,8 +1845,8 @@
         ],
         "topic": "topic",
         "topicType": "msg",
-        "x": 370,
-        "y": 620,
+        "x": 650,
+        "y": 460,
         "wires": [
             [
                 "95d8a68a011bdc6c"
@@ -1749,6 +1857,7 @@
         "id": "eda0c03f08759525",
         "type": "ui-dropdown",
         "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
         "group": "c5fbe89b47b4f853",
         "name": "Track Target",
         "label": "Track Object Option:",
@@ -1790,6 +1899,11 @@
                 "label": "Cell Phone",
                 "value": 67,
                 "type": "num"
+            },
+            {
+                "label": "car",
+                "value": "2",
+                "type": "str"
             }
         ],
         "payload": "",
@@ -1798,8 +1912,8 @@
         "className": "",
         "typeIsComboBox": true,
         "msgTrigger": "onChange",
-        "x": 130,
-        "y": 620,
+        "x": 650,
+        "y": 400,
         "wires": [
             [
                 "b5f7115f8da75f5a"
@@ -1810,6 +1924,7 @@
         "id": "b5f7115f8da75f5a",
         "type": "function",
         "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
         "name": "save_track_target",
         "func": "global.set(\"trackTarget\", msg.payload);\nreturn msg;",
         "outputs": 1,
@@ -1818,8 +1933,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 150,
-        "y": 700,
+        "x": 870,
+        "y": 400,
         "wires": [
             []
         ]
@@ -1828,6 +1943,7 @@
         "id": "4f05d0e436acc7c0",
         "type": "ui-text",
         "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
         "group": "c5fbe89b47b4f853",
         "order": 1,
         "width": 0,
@@ -1843,13 +1959,14 @@
         "wrapText": false,
         "className": "",
         "x": 140,
-        "y": 920,
+        "y": 880,
         "wires": []
     },
     {
         "id": "cf76f4d691c14470",
         "type": "ui-text",
         "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
         "group": "c5fbe89b47b4f853",
         "order": 8,
         "width": 0,
@@ -1864,8 +1981,8 @@
         "color": "#717171",
         "wrapText": false,
         "className": "",
-        "x": 840,
-        "y": 920,
+        "x": 140,
+        "y": 980,
         "wires": []
     },
     {
@@ -1873,8 +1990,8 @@
         "type": "subflow:22d80629fd354a7c",
         "z": "5924433263ceb70d",
         "name": "",
-        "x": 350,
-        "y": 1520,
+        "x": 130,
+        "y": 1620,
         "wires": []
     },
     {
@@ -1882,18 +1999,377 @@
         "type": "subflow:f7d5cf3810421cf3",
         "z": "5924433263ceb70d",
         "name": "",
-        "x": 130,
-        "y": 1520,
+        "x": 110,
+        "y": 1580,
         "wires": []
     },
     {
         "id": "e0c3e26dcba0a1d0",
         "type": "ui-button",
         "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
         "group": "c5fbe89b47b4f853",
         "name": "Sleep",
         "label": "Sleep",
         "order": 9,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"yaw_angle\":180, \"yaw_speed\":360, \"pitch_angle\":175, \"pitch_speed\":360}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 110,
+        "y": 1040,
+        "wires": [
+            [
+                "aa73b695851dbf8e",
+                "45d7334c4a7d3a34"
+            ]
+        ]
+    },
+    {
+        "id": "1528e53340ceac14",
+        "type": "ui-slider",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "group": "c5fbe89b47b4f853",
+        "name": "Yaw",
+        "label": "Yaw Absolute Angle",
+        "tooltip": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "true",
+        "min": "1",
+        "max": "345",
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": true,
+        "x": 350,
+        "y": 700,
+        "wires": [
+            [
+                "45d7334c4a7d3a34",
+                "c01033b112727fe9"
+            ]
+        ]
+    },
+    {
+        "id": "45dd35115125460f",
+        "type": "ui-slider",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "group": "c5fbe89b47b4f853",
+        "name": "Pitch",
+        "label": "Pitch Absolute Angle",
+        "tooltip": "",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "true",
+        "min": "1",
+        "max": "175",
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": true,
+        "x": 350,
+        "y": 760,
+        "wires": [
+            [
+                "45d7334c4a7d3a34",
+                "702aeefba5d6d7a4"
+            ]
+        ]
+    },
+    {
+        "id": "141a718c4aca75ea",
+        "type": "ui-slider",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "group": "c5fbe89b47b4f853",
+        "name": "Speed",
+        "label": "Motors Speed",
+        "tooltip": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "true",
+        "min": "1",
+        "max": "720",
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": true,
+        "x": 350,
+        "y": 820,
+        "wires": [
+            [
+                "2aa592079c263c56",
+                "b46762af1a17c573"
+            ]
+        ]
+    },
+    {
+        "id": "030f888e2b794a0f",
+        "type": "ui-button",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "group": "c5fbe89b47b4f853",
+        "name": "Standby",
+        "label": "Standby",
+        "order": 10,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"yaw_angle\":180, \"yaw_speed\":360,\"pitch_angle\":90, \"pitch_speed\":360}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 120,
+        "y": 1100,
+        "wires": [
+            [
+                "aa73b695851dbf8e",
+                "45d7334c4a7d3a34"
+            ]
+        ]
+    },
+    {
+        "id": "42c6325966560571",
+        "type": "ui-template",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "group": "c5fbe89b47b4f853",
+        "page": "",
+        "ui": "",
+        "name": "joystick",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": "<template>\n  <div>\n    <div id=\"joystick-container\" class=\"joystick-container\" />\n    <div v-if=\"errorMessage\" class=\"error-message\" @click=\"retryLoading\">{{ errorMessage }}</div>\n  </div>\n</template>\n\n<script>\n  export default {\n  name: 'JoystickControl',\n\n  data() {\n    return {\n      // Motor angle range constants\n      YAW_MIN_ANGLE: -20,    // Min yaw angle offset from center\n      YAW_MAX_ANGLE: 20,     // Max yaw angle offset from center\n      PITCH_MIN_ANGLE: -10,  // Min pitch angle offset from center\n      PITCH_MAX_ANGLE: 10,   // Max pitch angle offset from center\n      joystick: null,        // Joystick instance\n      errorMessage: null,    // Error message for loading failure\n      throttleInterval: 200, // Throttle interval in milliseconds\n      intervalId: null,      // Timer ID for continuous output\n      isActive: false,       // Joystick active state\n      lastPosition: null,    // Last known joystick position\n      lastMoveTime: 0,       // Timestamp of last move event\n      lastSentTime: 0,       // Timestamp of last sent position\n      pendingMove: false,    // Flag to track if there's a pending move to process\n    }\n  },\n\n  mounted() {\n    this.loadNippleJS();\n  },\n\n  beforeDestroy() {\n    this.cleanup();\n  },\n\n  methods: {\n    loadNippleJS() {\n      // Check if already loaded\n      if (window.nipplejs) {\n        this.initializeJoystick();\n        return;\n      }\n\n      const script = document.createElement('script');\n      script.src = '/nipplejs.min.js';\n      script.onload = () => {\n        this.errorMessage = null;\n        this.initializeJoystick();\n      };\n      script.onerror = () => {\n        this.errorMessage = \"Failed to load joystick. Click here to retry.\";\n      };\n      document.head.appendChild(script);\n    },\n\n    retryLoading() {\n      if (this.errorMessage) {\n        this.errorMessage = \"Retrying to load joystick...\";\n        this.loadNippleJS();\n      }\n    },\n\n    initializeJoystick() {\n      if (!window.nipplejs) return;\n      const container = document.getElementById('joystick-container');\n      if (!container) return;\n\n      // Destroy existing instance if any\n      if (this.joystick) {\n        this.joystick.destroy();\n      }\n\n      this.joystick = nipplejs.create({\n        zone: container,\n        mode: 'static',\n        position: { left: '50%', top: '50%' },\n        color: 'green',\n        size: 96,\n        lockX: false,\n        lockY: false\n      });\n\n      // Event listeners\n      this.joystick\n        .on('start', this.handleStart)\n        .on('move', this.throttledHandleMove)\n        .on('end', this.handleEnd);\n    },\n\n    // Throttled version of handleMove\n    throttledHandleMove(evt, data) {\n      const now = Date.now();\n      \n      // Always update the last position\n      if (data?.vector) {\n        this.lastPosition = {\n          x: data.vector.x,\n          y: data.vector.y\n        };\n        this.lastMoveTime = now;\n      }\n      \n      // Check if we should throttle this event\n      if (now - this.lastSentTime < this.throttleInterval) {\n        // If we're throttling, mark that there's a pending move\n        this.pendingMove = true;\n        return;\n      }\n      \n      // Process the move and update sent time\n      this.processMove();\n    },\n    \n    // Process the actual move and send position\n    processMove() {\n      if (!this.lastPosition) return;\n      \n      // Send the position\n      this.sendPosition(this.lastPosition);\n      \n      // Update the last sent time\n      this.lastSentTime = Date.now();\n      \n      // Clear the pending flag\n      this.pendingMove = false;\n      \n      // If there was a move during throttle period, schedule another send\n      if (this.pendingMove) {\n        setTimeout(() => {\n          this.processMove();\n        }, this.throttleInterval);\n      }\n    },\n\n    handleStart() {\n      this.isActive = true;\n      // Start continuous output\n      this.startContinuousOutput();\n    },\n\n    handleEnd() {\n      this.isActive = false;\n      this.stopContinuousOutput();\n      \n      this.lastPosition = null;\n      this.lastMoveTime = 0;\n      this.pendingMove = false;\n    },\n\n    startContinuousOutput() {\n      // Clear any existing interval first\n      this.stopContinuousOutput();\n      \n      this.intervalId = setInterval(() => {\n        if (this.lastPosition && this.isActive) {\n          // Only send from interval if no recent move event\n          const now = Date.now();\n          if (now - this.lastMoveTime > this.throttleInterval && \n              now - this.lastSentTime > this.throttleInterval) {\n            this.sendPosition(this.lastPosition);\n            this.lastSentTime = now;\n          }\n        }\n      }, this.throttleInterval);\n    },\n\n    stopContinuousOutput() {\n      if (this.intervalId) {\n        clearInterval(this.intervalId);\n        this.intervalId = null;\n      }\n    },\n\n    clampAngle(angle, minAngle, maxAngle) {\n      return Math.max(minAngle, Math.min(maxAngle, angle));\n    },\n\n    calculateOffsets(vector) {\n      if (!vector) return { yaw: 0, pitch: 0 };\n\n      return {\n        yaw: Math.round(vector.x * Math.abs(this.YAW_MAX_ANGLE)),\n        pitch: Math.round(-vector.y * Math.abs(this.PITCH_MAX_ANGLE))\n      };\n    },\n\n    sendPosition(vector) {\n      const offsets = this.calculateOffsets(vector);\n      const yawOffset = -this.clampAngle(offsets.yaw, this.YAW_MIN_ANGLE, this.YAW_MAX_ANGLE);\n      const pitchOffset = this.clampAngle(offsets.pitch, this.PITCH_MIN_ANGLE, this.PITCH_MAX_ANGLE);\n\n      this.send({\n        payload: {\n          yaw_angle: yawOffset,\n          pitch_angle: pitchOffset\n        }\n      });\n    },\n\n    cleanup() {\n      if (this.joystick) {\n        this.joystick.destroy();\n        this.joystick = null;\n      }\n      this.stopContinuousOutput();\n    }\n  }\n};\n</script>\n\n<style scoped>\n  .joystick-container {\n    display: flex;\n    width: 100px;\n    height: 100px;\n    position: relative;\n    margin: auto;\n    border: 0px solid #0094CE;\n    background-color: #ffffff;\n    border-radius: 50%;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n    cursor: pointer;\n  }\n\n  .error-message {\n    color: red;\n    text-align: center;\n    margin: auto;\n    cursor: pointer;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "45d7334c4a7d3a34",
+                "4541eae5ac491f49"
+            ]
+        ]
+    },
+    {
+        "id": "95d8a68a011bdc6c",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "save_track_enabled",
+        "func": "global.set('trackEnabled', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "662618524569fbc6",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "get_track_enabled",
+        "func": "let trackEnabled = global.get('trackEnabled') ? true : false;\nglobal.set(\"trackEnabled\", trackEnabled);\nmsg.payload = trackEnabled;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "16faeb961ec1bf39"
+            ]
+        ]
+    },
+    {
+        "id": "20b650629e914eea",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "get_track_target",
+        "func": "let trackTarget = global.get('trackTarget')\nconst TRACK_TARGETS = {\n    PERSON: 0,\n    CAT: 15,\n    DOG: 16,\n    BOTTLE: 39,\n    CUP: 41,\n    CELLPHONE: 67\n};\n\nif (trackTarget === undefined) {\n    trackTarget = TRACK_TARGETS.PERSON\n    global.set(\"trackTarget\", trackTarget);\n}\nmsg.payload = trackTarget;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 400,
+        "wires": [
+            [
+                "eda0c03f08759525"
+            ]
+        ]
+    },
+    {
+        "id": "3abd7a7f8c64fdaf",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "name": "get_init_motor_state",
+        "func": "let initState = context.get('initState')\nif (!initState) {\n    context.set(\"initState\", true);\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 480,
+        "wires": [
+            [
+                "20b650629e914eea",
+                "662618524569fbc6",
+                "31a3c5b36ad3e791",
+                "893b35e696c89eb1",
+                "7b2ebdcba29e8f34"
+            ]
+        ]
+    },
+    {
+        "id": "77f7fb1af5e3bb02",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "control_motor",
+        "func": "// Constants\nconst DEFAULT_CENTER_X = 320;   // Default center X coordinate\nconst DEFAULT_CENTER_Y = 320;   // Default center Y coordinate\nconst THROTTLE_INTERVAL = 300;  // Reduced throttle interval for more responsive control\nconst DEAD_ZONE = 5;          // Increased dead zone for better stability\nconst MAX_SPEED = 2000;          // Maximum movement speed\nconst MIN_SPEED = 10;          // Minimum movement speed\n\n// Camera parameters for smoother motion\nconst HORIZONTAL_FOV = 60;     // Horizontal field of view in degrees\nconst VERTICAL_FOV = 40;       // Vertical field of view in degrees\nconst ANGLE_SCALE_FAR = 0.4;   // Scale factor for targets far from center\nconst ANGLE_SCALE_NEAR = 0.2;  // Scale factor for targets near center\nconst MAX_ANGLE = 15;          // Reduced maximum angle for more precise control\nconst TRANSITION_ZONE = 10;   // Pixel distance for transition between far and near scaling\n\n// PID control parameters\nconst KP = 0.8;                // Proportional gain\nconst KI = 0.05;               // Integral gain\nconst KD = 0.2;                // Derivative gain\nconst MAX_INTEGRAL = 10;       // Maximum integral value to prevent windup\n\n// Convert pixel offset to angle with adaptive scaling\nconst pixelToAngle = (pixelOffset, fov, resolution) => {\n    // Calculate base angle using tangent relationship\n    const fovRadians = (fov * Math.PI) / 180;\n    const angleRadians = Math.atan(pixelOffset * 2 * Math.tan(fovRadians / 2) / resolution);\n    const baseAngle = (angleRadians * 180 / Math.PI);\n\n    // Apply adaptive scaling based on distance from center\n    const absOffset = Math.abs(pixelOffset);\n    let scale;\n    if (absOffset <= DEAD_ZONE) {\n        return 0; // Inside dead zone, no movement\n    } else if (absOffset <= TRANSITION_ZONE) {\n        // Linear interpolation between near and far scaling factors\n        const t = (absOffset - DEAD_ZONE) / (TRANSITION_ZONE - DEAD_ZONE);\n        scale = ANGLE_SCALE_NEAR + t * (ANGLE_SCALE_FAR - ANGLE_SCALE_NEAR);\n    } else {\n        scale = ANGLE_SCALE_FAR;\n    }\n\n    return baseAngle * scale;\n};\n\n// Calculate speed based on offset with exponential curve for better control\nconst calculateSpeed = (offset, maxOffset) => {\n    const normalizedOffset = Math.abs(offset) / maxOffset;\n    // Exponential curve gives more precise control for small movements\n    const speed = Math.round((Math.pow(normalizedOffset, 1.5) * (MAX_SPEED - MIN_SPEED)) + MIN_SPEED);\n    return Math.min(Math.max(speed, MIN_SPEED), MAX_SPEED);\n};\n\n// Apply PID control to angle offset\nconst applyPIDControl = (offset, axis) => {\n    // Get previous values from context\n    const prevError = context.get(`prev_error_${axis}`) || 0;\n    const integral = context.get(`integral_${axis}`) || 0;\n\n    // Calculate PID terms\n    const error = offset;\n    const newIntegral = Math.max(-MAX_INTEGRAL, Math.min(MAX_INTEGRAL, integral + error));\n    const derivative = error - prevError;\n\n    // Calculate PID output\n    const output = (KP * error) + (KI * newIntegral) + (KD * derivative);\n\n    // Store values for next iteration\n    context.set(`prev_error_${axis}`, error);\n    context.set(`integral_${axis}`, newIntegral);\n\n    return output;\n};\n\n// Calculate angle offset with dead zone, limits and PID control\nconst calculateAngleOffset = (offset, fov, resolution, axis) => {\n    if (Math.abs(offset) <= DEAD_ZONE) {\n        // Reset integral when in dead zone to prevent drift\n        context.set(`integral_${axis}`, 0);\n        return 0;\n    }\n\n    const angle = pixelToAngle(offset, fov, resolution);\n    const pidAngle = applyPIDControl(angle, axis);\n\n    return Math.max(-MAX_ANGLE, Math.min(MAX_ANGLE, pidAngle));\n};\n\n// Get selected bounding box\nconst selectedBox = msg.payload.selectedBox;\nif (!selectedBox) return null;\n\n// Get resolution or use defaults\nconst resolution = msg.payload.resolution || [DEFAULT_CENTER_X * 2, DEFAULT_CENTER_Y * 2];\nconst [imageCenterX, imageCenterY] = resolution.map(dim => Math.round(dim / 2));\n\n// Calculate center point offsets\nconst [boxCenterX, boxCenterY] = selectedBox;\nconst offsetX = boxCenterX - imageCenterX;\nconst offsetY = boxCenterY - imageCenterY;\n\n// Generate control data with more precise rounding\nconst generateControl = () => {\n    // Calculate yaw (horizontal) and pitch (vertical) offsets with PID control\n    const yawOffset = -calculateAngleOffset(offsetX, HORIZONTAL_FOV, resolution[0], 'yaw');\n    const pitchOffset = calculateAngleOffset(offsetY, VERTICAL_FOV, resolution[1], 'pitch');\n\n    return {\n        yaw_angle: Math.round(yawOffset * 100) / 100,\n        yaw_speed: calculateSpeed(offsetX, imageCenterX),\n        pitch_angle: Math.round(pitchOffset * 100) / 100,\n        pitch_speed: calculateSpeed(offsetY, imageCenterY),\n        // // Add debug info\n        // debug: {\n        //     offsetX,\n        //     offsetY,\n        //     inDeadZone: Math.abs(offsetX) <= DEAD_ZONE && Math.abs(offsetY) <= DEAD_ZONE\n        // }\n    };\n};\n\n// Throttle control output\nconst now = Date.now();\nconst lastSendTime = context.get('lastSendTime') || 0;\n\nif (now - lastSendTime >= THROTTLE_INTERVAL) {\n    context.set('lastSendTime', now);\n    return { payload: generateControl() };\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 320,
+        "wires": [
+            [
+                "2d0b2295ce249f05"
+            ]
+        ]
+    },
+    {
+        "id": "45d7334c4a7d3a34",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "disable_auto_tracking",
+        "func": "//When manually controlling gimbal, de-select auto tracking.\n\nglobal.set('trackEnabled', false);\nmsg.payload = false;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 520,
+        "wires": [
+            [
+                "16faeb961ec1bf39"
+            ]
+        ]
+    },
+    {
+        "id": "a8516ce533be8ea5",
+        "type": "comment",
+        "z": "5924433263ceb70d",
+        "name": "Can delete if no needs",
+        "info": "This is the basic webs of reCamera gimbal\nsuch as Wi-Fi, ssh, or terminal.\n\nYou can delete this two subflows if you \ndo not need them to show in the dashboard.",
+        "x": 140,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "fcd487b208f2ef92",
+        "type": "ui-button",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "group": "c5fbe89b47b4f853",
+        "name": "Calibrate",
+        "label": "Calibrate",
+        "order": 11,
         "width": "2",
         "height": "1",
         "emulateClick": false,
@@ -1917,337 +2393,24 @@
         "enablePointerup": false,
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
-        "x": 810,
-        "y": 980,
-        "wires": [
-            [
-                "c3a9da7d7a5a2746",
-                "45d7334c4a7d3a34"
-            ]
-        ]
-    },
-    {
-        "id": "c3a9da7d7a5a2746",
-        "type": "function",
-        "z": "5924433263ceb70d",
-        "name": "sleep_angle",
-        "func": "msg.payload = {\n    yaw_angle: 180,\n    pitch_angle: 175\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1030,
-        "y": 980,
-        "wires": [
-            [
-                "991e22b67a81b078",
-                "e87995bc13f50329"
-            ]
-        ]
-    },
-    {
-        "id": "1528e53340ceac14",
-        "type": "ui-slider",
-        "z": "5924433263ceb70d",
-        "group": "c5fbe89b47b4f853",
-        "name": "Yaw",
-        "label": "Yaw Absolute Angle",
-        "tooltip": "",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "all",
-        "topic": "yaw",
-        "topicType": "msg",
-        "thumbLabel": "true",
-        "showTicks": "true",
-        "min": "1",
-        "max": "355",
-        "step": 1,
-        "className": "",
-        "iconPrepend": "",
-        "iconAppend": "",
-        "color": "",
-        "colorTrack": "",
-        "colorThumb": "",
-        "showTextField": true,
-        "x": 110,
-        "y": 980,
-        "wires": [
-            [
-                "a646cd3459196008",
-                "45d7334c4a7d3a34"
-            ]
-        ]
-    },
-    {
-        "id": "45dd35115125460f",
-        "type": "ui-slider",
-        "z": "5924433263ceb70d",
-        "group": "c5fbe89b47b4f853",
-        "name": "Pitch",
-        "label": "Pitch Absolute Angle",
-        "tooltip": "",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "all",
-        "topic": "pitch",
-        "topicType": "msg",
-        "thumbLabel": "true",
-        "showTicks": "true",
-        "min": "1",
-        "max": "180",
-        "step": 1,
-        "className": "",
-        "iconPrepend": "",
-        "iconAppend": "",
-        "color": "",
-        "colorTrack": "",
-        "colorThumb": "",
-        "showTextField": true,
-        "x": 110,
-        "y": 1040,
-        "wires": [
-            [
-                "91f5df07f39d7f9c",
-                "45d7334c4a7d3a34"
-            ]
-        ]
-    },
-    {
-        "id": "141a718c4aca75ea",
-        "type": "ui-slider",
-        "z": "5924433263ceb70d",
-        "group": "c5fbe89b47b4f853",
-        "name": "Speed",
-        "label": "Motors Speed",
-        "tooltip": "",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "all",
-        "topic": "speed",
-        "topicType": "msg",
-        "thumbLabel": "true",
-        "showTicks": "true",
-        "min": "1",
-        "max": "360",
-        "step": 1,
-        "className": "",
-        "iconPrepend": "",
-        "iconAppend": "",
-        "color": "",
-        "colorTrack": "",
-        "colorThumb": "",
-        "showTextField": false,
-        "x": 110,
-        "y": 1100,
-        "wires": [
-            [
-                "88b1ceb3c6ddfd23",
-                "30d2fe6d5fa334fa",
-                "45d7334c4a7d3a34"
-            ]
-        ]
-    },
-    {
-        "id": "61d4f5fd8e5ad959",
-        "type": "can-write",
-        "z": "5924433263ceb70d",
-        "name": "",
-        "client": "1c58e9752c4bdfcb",
-        "x": 1160,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "1dca133b04f8d0db",
-        "type": "can-write",
-        "z": "5924433263ceb70d",
-        "name": "",
-        "client": "1c58e9752c4bdfcb",
-        "x": 1500,
-        "y": 1040,
-        "wires": []
-    },
-    {
-        "id": "dd117be66b38f9b0",
-        "type": "can-write",
-        "z": "5924433263ceb70d",
-        "name": "",
-        "client": "1c58e9752c4bdfcb",
-        "x": 640,
-        "y": 1020,
-        "wires": []
-    },
-    {
-        "id": "a646cd3459196008",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Yaw Angle",
-        "input": "payload",
-        "input-type": "msg",
-        "output": "0",
-        "outputs": 1,
-        "x": 460,
-        "y": 980,
-        "wires": [
-            [
-                "dd117be66b38f9b0"
-            ]
-        ]
-    },
-    {
-        "id": "91f5df07f39d7f9c",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Pitch Angle",
-        "input": "payload",
-        "input-type": "msg",
-        "output": "2",
-        "outputs": 1,
-        "x": 460,
-        "y": 1040,
-        "wires": [
-            [
-                "dd117be66b38f9b0"
-            ]
-        ]
-    },
-    {
-        "id": "88b1ceb3c6ddfd23",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Yaw Speed",
-        "input": "payload",
-        "input-type": "msg",
-        "output": "1",
-        "outputs": 0,
-        "x": 460,
-        "y": 1100,
-        "wires": []
-    },
-    {
-        "id": "30d2fe6d5fa334fa",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Pitch Speed",
-        "input": "payload",
-        "input-type": "msg",
-        "output": "3",
-        "outputs": 0,
-        "x": 460,
+        "x": 120,
         "y": 1160,
-        "wires": []
-    },
-    {
-        "id": "991e22b67a81b078",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Yaw Angle",
-        "input": "payload.yaw_angle",
-        "input-type": "msg",
-        "output": "0",
-        "outputs": 1,
-        "x": 1300,
-        "y": 1000,
         "wires": [
             [
-                "1dca133b04f8d0db"
+                "3b88e350fe5a51cf",
+                "45d7334c4a7d3a34"
             ]
         ]
     },
     {
-        "id": "e87995bc13f50329",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Pitch Angle",
-        "input": "payload.pitch_angle",
-        "input-type": "msg",
-        "output": "2",
-        "outputs": 1,
-        "x": 1300,
-        "y": 1060,
-        "wires": [
-            [
-                "1dca133b04f8d0db"
-            ]
-        ]
-    },
-    {
-        "id": "8ed9939e194a81f1",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Yaw Angle",
-        "input": "payload.yaw_angle",
-        "input-type": "msg",
-        "output": "0",
-        "outputs": 1,
-        "x": 960,
-        "y": 460,
-        "wires": [
-            [
-                "61d4f5fd8e5ad959"
-            ]
-        ]
-    },
-    {
-        "id": "616e214469932ff9",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Yaw Speed",
-        "input": "payload.yaw_speed",
-        "input-type": "msg",
-        "output": "1",
-        "outputs": 0,
-        "x": 960,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "eff04f88aa68f420",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Pitch Angle",
-        "input": "payload.pitch_angle",
-        "input-type": "msg",
-        "output": "2",
-        "outputs": 1,
-        "x": 960,
-        "y": 520,
-        "wires": [
-            [
-                "61d4f5fd8e5ad959"
-            ]
-        ]
-    },
-    {
-        "id": "ba920d03ad796891",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Pitch Speed",
-        "input": "payload.pitch_speed",
-        "input-type": "msg",
-        "output": "3",
-        "outputs": 0,
-        "x": 960,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "030f888e2b794a0f",
+        "id": "c1634d85e3127ba7",
         "type": "ui-button",
         "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
         "group": "c5fbe89b47b4f853",
-        "name": "Standby",
-        "label": "Standby",
-        "order": 10,
+        "name": "Emergency Stop",
+        "label": "Emergency Stop",
+        "order": 12,
         "width": "2",
         "height": "1",
         "emulateClick": false,
@@ -2257,10 +2420,840 @@
         "className": "",
         "icon": "",
         "iconPosition": "left",
-        "payload": "1_180_90+2_90_90",
+        "payload": "",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
+        "buttonColor": "#DB544D",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 1220,
+        "wires": [
+            [
+                "06e1b8aac3611769",
+                "45d7334c4a7d3a34"
+            ]
+        ]
+    },
+    {
+        "id": "3b88e350fe5a51cf",
+        "type": "exec",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "command": "gimbal cali",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 470,
+        "y": 1160,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "06e1b8aac3611769",
+        "type": "exec",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "command": "gimbal stop 1; gimbal stop 2",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 520,
+        "y": 1220,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c01033b112727fe9",
+        "type": "set-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "set yaw angle",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "0",
+        "unit": "0",
+        "x": 580,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "702aeefba5d6d7a4",
+        "type": "set-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "set pitch angle",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "2",
+        "unit": "0",
+        "x": 580,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "2aa592079c263c56",
+        "type": "set-motor-speed",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "set yaw speed",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "0",
+        "x": 580,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "b46762af1a17c573",
+        "type": "set-motor-speed",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "set pitch speed",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "1",
+        "x": 580,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "87d339d9e90222dd",
+        "type": "can-read",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "",
+        "client": "1c58e9752c4bdfcb",
+        "filter": "A8",
+        "x": 140,
+        "y": 1380,
+        "wires": [
+            [
+                "b05400b8dc9abf80"
+            ]
+        ]
+    },
+    {
+        "id": "4541eae5ac491f49",
+        "type": "set-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "set dual motor offset",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "5",
+        "unit": "0",
+        "x": 600,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "aa73b695851dbf8e",
+        "type": "set-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "name": "set dual motor angle",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "4",
+        "unit": "0",
+        "x": 500,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "a932a077674095f2",
+        "type": "ui-template",
+        "z": "5924433263ceb70d",
+        "g": "6a5cf1c769c6da07",
+        "group": "37a6e7f9304e351c",
+        "page": "",
+        "ui": "",
+        "name": "Get Current Model",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "head": "",
+        "format": "<div style=\"margin-left: 8px; margin-right: 8px; display: flex;\">\n    <div style=\"font-size: 1rem; font-weight: 400; align-self: center;\">\n        Current Model is: <span id=\"model-name\" style=\"font-weight: bold;\">Loading...</span>\n    </div>\n</div>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n    fetchModelInfo();\n});\n\nif (document.readyState === 'complete' || document.readyState === 'interactive') {\n    setTimeout(fetchModelInfo, 100);\n}\n\n// 获取模型信息的函数\nasync function fetchModelInfo() {\n    try {\n        // 获取当前主机名\n        const hostname = window.location.hostname || \"192.168.42.1\";\n        \n        // 显示加载状态\n        document.getElementById(\"model-name\").textContent = \"Loading...\";\n        \n        // 发起API请求\n        const response = await fetch(`http://${hostname}/api/deviceMgr/getModelInfo`);\n        \n        // 检查请求是否成功\n        if (!response.ok) {\n            throw new Error(`HTTP error! status: ${response.status}`);\n        }\n        \n        // 解析响应数据\n        const data = await response.json();\n        \n        // 解析模型信息\n        if (data && data.data && data.data.model_info) {\n            const modelInfo = JSON.parse(data.data.model_info);\n            const modelName = modelInfo.model_name || \"Unknown\";\n            \n            // 更新显示\n            document.getElementById(\"model-name\").textContent = modelName;\n            \n        } else {\n            throw new Error(\"Invalid response format\");\n        }\n    } catch (error) {\n        // 显示错误消息\n        document.getElementById(\"model-name\").textContent = \"Error loading model\";\n        console.error(\"Error fetching model info:\", error);\n    }\n}\n</script>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 590,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60a867cb500cf15d",
+        "type": "ui-template",
+        "z": "5924433263ceb70d",
+        "g": "6a5cf1c769c6da07",
+        "group": "37a6e7f9304e351c",
+        "page": "",
+        "ui": "",
+        "name": "Preview Page",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div :id=\"containerId\" style=\"width: 100%; height: 100%\">\n        <svg :id=\"svgId\" viewBox=\"0 50 640 640\"></svg>\n        <p v-if=\"connectionStatus\" :style=\"{ color: connectionStatus === 'Connected' ? 'green' : 'red' }\">\n            WebSocket: {{ connectionStatus }}\n        </p>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                ws: null,\n                connectionStatus: 'Disconnected',\n                socketURL: `ws://${window.location.hostname}:8090`,\n                previewData: null\n            }\n        },\n        computed: {\n            containerId() {\n                return `container`;\n            },\n            svgId() {\n                return `svg`;\n            },\n        },\n        methods: {\n            // WebSocket相关方法\n            initializeWebSocket() {\n                if (this.ws) {\n                    this.ws.close();\n                }\n\n                this.ws = new WebSocket(this.socketURL);\n                this.ws.binaryType = 'arraybuffer';\n\n                this.ws.addEventListener('open', () => {\n                    this.connectionStatus = 'Connected';\n                });\n\n                this.ws.addEventListener('message', (event) => {\n                    try {\n                        const buffer = event.data;\n                        const uint8Array = new Uint8Array(buffer);\n                        \n                        // 将 Uint8Array 转换为字符串\n                        const string = new TextDecoder().decode(uint8Array);\n                        \n                        const obj = JSON.parse(string);\n                        // 更新预览数据并触发渲染\n                        this.previewData = obj.data || obj;\n                        this.$nextTick(() => {\n                            this.renderAll();\n                        });\n                    } catch (e) {\n                        console.error('Error processing data:', e);\n                    }\n                });\n\n                this.ws.addEventListener('error', (e) => {\n                    console.error('WebSocket Error:', e);\n                    this.connectionStatus = 'Error';\n                });\n\n                this.ws.addEventListener('close', () => {\n                    this.connectionStatus = 'Disconnected';\n                    setTimeout(() => this.initializeWebSocket(), 5000);\n                });\n            },\n\n            // SVG绘图相关方法\n            createSVGElement(type, attributes = {}) {\n                const element = document.createElementNS(\"http://www.w3.org/2000/svg\", type);\n                Object.keys(attributes).forEach((attr) => element.setAttribute(attr, attributes[attr]));\n                return element;\n            },\n            getColor(index, opacity = 1) {\n                const COLORS = [\n                    \"#FF0000\",\n                    \"#FF4500\",\n                    \"#FF6347\",\n                    \"#FF8C00\",\n                    \"#FFA500\",\n                    \"#FFD700\",\n                    \"#32CD32\",\n                    \"#006400\",\n                    \"#4169E1\",\n                    \"#0000FF\",\n                    \"#1E90FF\",\n                    \"#00FFFF\",\n                    \"#00CED1\",\n                    \"#20B2AA\",\n                    \"#FF1493\",\n                    \"#FF69B4\",\n                    \"#800080\",\n                    \"#8A2BE2\",\n                    \"#9400D3\",\n                    \"#9932CC\",\n                ];\n                const color = COLORS[index % COLORS.length];\n                if (opacity < 1 && opacity >= 0) {\n                    const r = parseInt(color.slice(1, 3), 16);\n                    const g = parseInt(color.slice(3, 5), 16);\n                    const b = parseInt(color.slice(5, 7), 16);\n                    return `rgba(${r}, ${g}, ${b}, ${opacity})`;\n                }\n                return color;\n            },\n            renderImage(container, group, data) {\n                if (data.image) {\n                    let img = document.getElementById(`image-output-img`);\n                    if (!img) {\n                        img = this.createSVGElement(\"image\", {\n                            id: `image-output-img`,\n                            x: \"0\",\n                            y: \"50\",\n                        });\n                        img.addEventListener(\"click\", () => this.removeGroup(group), { once: false });\n                        container.prepend(img);\n                    }\n                    img.setAttribute(\"href\", `data:image/jpeg;base64,${data.image}`);\n                } else if (data?.resolution) {\n                    const rect = this.createSVGElement(\"rect\", {\n                        x: \"0\",\n                        y: \"0\",\n                        width: data.resolution[0],\n                        height: data.resolution[1],\n                        fill: \"black\",\n                    });\n                    const text = this.createSVGElement(\"text\", {\n                        x: 10,\n                        y: 20,\n                        \"font-size\": \"16\",\n                        fill: \"yellow\",\n                        stroke: \"yellow\",\n                        \"font-family\": \"Arial\",\n                    });\n                    text.textContent = \"Warning: Please enable the model node's debug mode to display the actual image.\";\n                    group.appendChild(rect);\n                    group.appendChild(text);\n                }\n            },\n            renderLines(group, data) {\n                if (data?.lines) {\n                    data.lines.forEach((line, i) => {\n                        const x1 = line[0] * 0.01 * data.resolution[0];\n                        const y1 = line[1] * 0.01 * data.resolution[1];\n                        const x2 = line[2] * 0.01 * data.resolution[0];\n                        const y2 = line[3] * 0.01 * data.resolution[1];\n                        const color = this.getColor(i);\n                        const lineElement = this.createSVGElement(\"line\", {\n                            x1,\n                            y1,\n                            x2,\n                            y2,\n                            stroke: color,\n                            \"stroke-width\": \"1\",\n                        });\n                        group.appendChild(lineElement);\n                    });\n                }\n            },\n            renderBoxes(group, data) {\n                if (data?.boxes) {\n                    data.boxes.forEach((box, i) => {\n                        if (box?.length === 6) {\n                            const [x, y, w, h, score, tar] = box;\n                            const color = this.getColor(tar);\n                            const tarStr = data.labels?.[i] ?? `NA-${tar}`;\n                            const rect = this.createSVGElement(\"rect\", {\n                                x: x - w / 2,\n                                y: y - h / 2,\n                                width: w,\n                                height: h,\n                                fill: \"none\",\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(rect);\n\n                            const rectText = this.createSVGElement(\"rect\", {\n                                x: x - w / 2,\n                                y: y - h / 2 - 14,\n                                width: w,\n                                height: 16,\n                                fill: color,\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(rectText);\n\n                            const text = this.createSVGElement(\"text\", {\n                                x: x - w / 2 + 5,\n                                y: y - h / 2 - 2,\n                                \"font-size\": \"14\",\n                                fill: \"white\",\n                                \"font-family\": \"Arial\",\n                            });\n                            text.textContent = data?.tracks ? `#${data.tracks[i]}: ${tarStr}(${score})` : `${tarStr}(${score})`;\n                            group.appendChild(text);\n                        }\n                    });\n                }\n            },\n            renderClasses(group, data) {\n                if (data?.classes) {\n                    const rectHeight = data.resolution[1] / 16;\n                    data.classes.forEach(([score, tar], i) => {\n                        const tarStr = data.labels?.[i] ?? `NA-${tar}`;\n                        const rectWidth = data.resolution[0] / data.classes.length;\n                        const rect = this.createSVGElement(\"rect\", {\n                            x: rectWidth * i,\n                            y: 0,\n                            width: rectWidth,\n                            height: rectHeight,\n                            fill: this.getColor(tar),\n                            \"fill-opacity\": 0.3,\n                        });\n                        group.appendChild(rect);\n\n                        const text = this.createSVGElement(\"text\", {\n                            x: rectWidth * i,\n                            y: data.resolution[1] / 24,\n                            \"font-size\": data.resolution[1] / 24,\n                            \"font-weight\": \"bold\",\n                            \"font-family\": \"arial\",\n                            fill: \"#ffffff\",\n                        });\n                        text.textContent = `${tarStr}: ${score}`;\n                        group.appendChild(text);\n                    });\n                }\n            },\n            renderSegments(group, data) {\n                if (data?.segments) {\n                    data.segments.forEach((segment, i) => {\n                        const box = segment[0];\n                        const polygon = segment[1];\n                        let color = this.getColor(i);\n                        let rgba = this.getColor(i, 0.3);\n                        if (box?.length === 6) {\n                            const [x, y, w, h, score, tar] = box;\n                            color = this.getColor(tar);\n                            rgba = this.getColor(tar, 0.3);\n                            const tarStr = data.labels?.[i] ?? `NA-${tar}`;\n                            const rect = this.createSVGElement(\"rect\", {\n                                x: x - w / 2,\n                                y: y - h / 2,\n                                width: w,\n                                height: h,\n                                fill: \"none\",\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(rect);\n\n                            const rectText = this.createSVGElement(\"rect\", {\n                                x: x - w / 2,\n                                y: y - h / 2 - 14,\n                                width: w,\n                                height: 16,\n                                fill: color,\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(rectText);\n\n                            const text = this.createSVGElement(\"text\", {\n                                x: x - w / 2 + 5,\n                                y: y - h / 2 - 2,\n                                \"font-size\": \"14\",\n                                fill: \"white\",\n                                \"font-family\": \"Arial\",\n                            });\n                            text.textContent = data?.tracks ? `#${data.tracks[i]}: ${tarStr}(${score})` : `${tarStr}(${score})`;\n                            group.appendChild(text);\n                        }\n                        if (polygon) {\n                            function convertToPoints(polygon) {\n                                let points = \"\";\n                                for (let i = 0; i < polygon.length; i += 2) {\n                                    points += `${polygon[i]},${polygon[i + 1]} `;\n                                }\n                                return points.trim();\n                            }\n\n                            // Convert the data array to SVG points format\n                            const points = convertToPoints(polygon);\n\n                            const polygonElement = this.createSVGElement(\"polygon\", {\n                                points: points,\n                                fill: rgba,\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(polygonElement);\n                        }\n                    });\n                }\n            },\n            renderKeypoints(group, data) {\n                if (!data?.keypoints) {\n                    return;\n                }\n                data.keypoints.forEach((keypoint, i) => {\n                    const box = keypoint[0];\n                    const keypoints = keypoint[1];\n                    let points = new Set();\n                    if (box?.length === 6) {\n                        const [x, y, w, h, score, tar] = box;\n                        const color = this.getColor(tar);\n                        const tarStr = data.labels?.[i] ?? `NA-${tar}`;\n                        const rect = this.createSVGElement(\"rect\", {\n                            x: x - w / 2,\n                            y: y - h / 2,\n                            width: w,\n                            height: h,\n                            fill: \"none\",\n                            stroke: color,\n                            \"stroke-width\": \"2\",\n                        });\n                        group.appendChild(rect);\n\n                        const rectText = this.createSVGElement(\"rect\", {\n                            x: x - w / 2,\n                            y: y - h / 2 - 14,\n                            width: w,\n                            height: 16,\n                            fill: color,\n                            stroke: color,\n                            \"stroke-width\": \"2\",\n                        });\n                        group.appendChild(rectText);\n\n                        const text = this.createSVGElement(\"text\", {\n                            x: x - w / 2 + 5,\n                            y: y - h / 2 - 2,\n                            \"font-size\": \"14\",\n                            fill: \"white\",\n                            stroke: \"white\",\n                            \"font-family\": \"Arial\",\n                        });\n                        text.textContent = data?.tracks ? `#${data.tracks[i]}: ${tarStr}(${score})` : `${tarStr}(${score})`;\n                        group.appendChild(text);\n                    }\n\n                    for (let j = 0; j < keypoints.length; j += 1) {\n                        const point = keypoints[j];\n                        const x = point[0];\n                        const y = point[1];\n                        const target = point[3] ? point[3] : j;\n                        // draw if point in the box\n                        if (x > box[0] - box[2] / 2 && x < box[0] + box[2] / 2 && y > box[1] - box[3] / 2 && y < box[1] + box[3] / 2) {\n                            points.add(target);\n                        }\n                    }\n\n                    if (keypoints?.length === 17) {\n                        // 绘制人体骨架连接线 (COCO格式)\n                        // 这里保留了原代码中的所有连接线逻辑\n                        // nose to left eye\n                        if (points.has(0) && points.has(1)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[0][0],\n                                y1: keypoints[0][1],\n                                x2: keypoints[1][0],\n                                y2: keypoints[1][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // 其他连接线代码保持不变...\n                        // nose to right eye\n                        if (points.has(0) && points.has(2)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[0][0],\n                                y1: keypoints[0][1],\n                                x2: keypoints[2][0],\n                                y2: keypoints[2][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left eye to left ear\n                        if (points.has(1) && points.has(3)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[1][0],\n                                y1: keypoints[1][1],\n                                x2: keypoints[3][0],\n                                y2: keypoints[3][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right eye to right ear\n                        if (points.has(2) && points.has(4)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[2][0],\n                                y1: keypoints[2][1],\n                                x2: keypoints[4][0],\n                                y2: keypoints[4][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left ear to left shoulder\n                        if (points.has(3) && points.has(5)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[3][0],\n                                y1: keypoints[3][1],\n                                x2: keypoints[5][0],\n                                y2: keypoints[5][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right ear to right shoulder\n                        if (points.has(4) && points.has(6)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[4][0],\n                                y1: keypoints[4][1],\n                                x2: keypoints[6][0],\n                                y2: keypoints[6][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left shoulder to right shoulder\n                        if (points.has(5) && points.has(6)) {\n                            const color = this.getColor(1);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[5][0],\n                                y1: keypoints[5][1],\n                                x2: keypoints[6][0],\n                                y2: keypoints[6][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left shoulder to left hip\n                        if (points.has(5) && points.has(11)) {\n                            const color = this.getColor(2);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[5][0],\n                                y1: keypoints[5][1],\n                                x2: keypoints[11][0],\n                                y2: keypoints[11][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right shoulder to right hip\n                        if (points.has(6) && points.has(12)) {\n                            const color = this.getColor(2);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[6][0],\n                                y1: keypoints[6][1],\n                                x2: keypoints[12][0],\n                                y2: keypoints[12][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left hip to right hip\n                        if (points.has(11) && points.has(12)) {\n                            const color = this.getColor(2);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[11][0],\n                                y1: keypoints[11][1],\n                                x2: keypoints[12][0],\n                                y2: keypoints[12][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left shoulder to left elbow\n                        if (points.has(5) && points.has(7)) {\n                            const color = this.getColor(1);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[5][0],\n                                y1: keypoints[5][1],\n                                x2: keypoints[7][0],\n                                y2: keypoints[7][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left elbow to left wrist\n                        if (points.has(7) && points.has(9)) {\n                            const color = this.getColor(1);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[7][0],\n                                y1: keypoints[7][1],\n                                x2: keypoints[9][0],\n                                y2: keypoints[9][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right shoulder to right elbow\n                        if (points.has(6) && points.has(8)) {\n                            const color = this.getColor(6);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[6][0],\n                                y1: keypoints[6][1],\n                                x2: keypoints[8][0],\n                                y2: keypoints[8][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right elbow to right wrist\n                        if (points.has(8) && points.has(10)) {\n                            const color = this.getColor(1);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[8][0],\n                                y1: keypoints[8][1],\n                                x2: keypoints[10][0],\n                                y2: keypoints[10][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left hip to left knee\n                        if (points.has(11) && points.has(13)) {\n                            const color = this.getColor(3);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[11][0],\n                                y1: keypoints[11][1],\n                                x2: keypoints[13][0],\n                                y2: keypoints[13][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left knee to left ankle\n                        if (points.has(13) && points.has(15)) {\n                            const color = this.getColor(3);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[13][0],\n                                y1: keypoints[13][1],\n                                x2: keypoints[15][0],\n                                y2: keypoints[15][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right hip to right knee\n                        if (points.has(12) && points.has(14)) {\n                            const color = this.getColor(3);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[12][0],\n                                y1: keypoints[12][1],\n                                x2: keypoints[14][0],\n                                y2: keypoints[14][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right knee to right ankle\n                        if (points.has(14) && points.has(16)) {\n                            const color = this.getColor(3);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[14][0],\n                                y1: keypoints[14][1],\n                                x2: keypoints[16][0],\n                                y2: keypoints[16][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                    }\n\n                    // 绘制关键点\n                    for (let j = 0; j < keypoints.length; j += 1) {\n                        const point = keypoints[j];\n                        const x = point[0];\n                        const y = point[1];\n                        const target = point[3] ? point[3] : j;\n                        // draw if point in the box\n                        if (x > box[0] - box[2] / 2 && x < box[0] + box[2] / 2 && y > box[1] - box[3] / 2 && y < box[1] + box[3] / 2) {\n                            const color = this.getColor(target);\n                            const circle = this.createSVGElement(\"circle\", {\n                                cx: x,\n                                cy: y,\n                                r: 3,\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                                fill: color,\n                            });\n                            group.appendChild(circle);\n                        }\n                    }\n                });\n            },\n            renderAll() {\n                const container = document.getElementById(this.containerId);\n                const svg = document.getElementById(this.svgId);\n                if (!container || !svg) return;\n\n                let group = document.getElementById(`image-output-group`);\n                if (!group) {\n                    group = this.createSVGElement(\"g\", {\n                        id: `image-output-group`,\n                        transform: \"translate(0, 50)\",\n                    });\n                    svg.appendChild(group);\n                }\n                group.innerHTML = \"\"; // Clear existing content\n\n                if (!this.previewData) {\n                    return;\n                }\n                \n                this.renderImage(svg, group, this.previewData);\n                this.renderLines(group, this.previewData);\n                this.renderBoxes(group, this.previewData);\n                this.renderClasses(group, this.previewData);\n                this.renderSegments(group, this.previewData);\n                this.renderKeypoints(group, this.previewData);\n            },\n            removeGroup(group) {\n                if (group && group.parentNode) {\n                    group.parentNode.removeChild(group);\n                }\n            }\n        },\n        mounted() {\n            this.initializeWebSocket();\n        },\n        unmounted() {\n            if (this.ws) {\n                this.ws.close();\n                this.ws = null;\n            }\n        }\n    };\n</script>\n\n<style>\n    #container {\n        position: relative;\n        width: 100%;\n        height: 100%;\n    }\n\n    svg {\n        width: 100%;\n        height: 100%;\n        background-color: #000;\n    }\n\n    p {\n        position: absolute;\n        bottom: 10px;\n        left: 10px;\n        margin: 0;\n        padding: 5px;\n        background-color: rgba(0, 0, 0, 0.5);\n        border-radius: 4px;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ba6f9f525c85918",
+        "type": "angle-to-can",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "1",
+        "unit": "0",
+        "x": 470,
+        "y": 1440,
+        "wires": [
+            [
+                "0a455be92c7a44aa"
+            ]
+        ]
+    },
+    {
+        "id": "b05400b8dc9abf80",
+        "type": "can-to-angle",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "",
+        "input": "payload",
+        "input-type": "msg",
+        "unit": "0",
+        "x": 350,
+        "y": 1380,
+        "wires": [
+            [
+                "45ca963c27191100"
+            ]
+        ]
+    },
+    {
+        "id": "253630de7cd7906c",
+        "type": "inject",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "Move 30 degrees counterclockwise",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "30",
+        "payloadType": "num",
+        "x": 220,
+        "y": 1440,
+        "wires": [
+            [
+                "4ba6f9f525c85918"
+            ]
+        ]
+    },
+    {
+        "id": "0a455be92c7a44aa",
+        "type": "can-write",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "",
+        "client": "1c58e9752c4bdfcb",
+        "x": 660,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d0b2295ce249f05",
+        "type": "set-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "set dual motor offset",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "5",
+        "unit": "0",
+        "x": 1060,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "7b2ebdcba29e8f34",
+        "type": "get-motor-speed",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "get init motor speed",
+        "output": "0",
+        "x": 160,
+        "y": 820,
+        "wires": [
+            [
+                "141a718c4aca75ea"
+            ]
+        ]
+    },
+    {
+        "id": "893b35e696c89eb1",
+        "type": "get-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "get init pitch angle",
+        "output": "1",
+        "unit": "0",
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "45dd35115125460f"
+            ]
+        ]
+    },
+    {
+        "id": "31a3c5b36ad3e791",
+        "type": "get-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "get init yaw angle",
+        "output": "0",
+        "unit": "0",
+        "x": 150,
+        "y": 700,
+        "wires": [
+            [
+                "1528e53340ceac14"
+            ]
+        ]
+    },
+    {
+        "id": "4df7444990c143f0",
+        "type": "model",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "",
+        "uri": "",
+        "model": "YOLO11n Detection",
+        "tscore": 0.45,
+        "tiou": 0.25,
+        "debug": false,
+        "trace": false,
+        "counting": false,
+        "classes": "person,bicycle,car,motorcycle,airplane,bus,train,truck,boat,traffic light,fire hydrant,stop sign,parking meter,bench,bird,cat,dog,horse,sheep,cow,elephant,bear,zebra,giraffe,backpack,umbrella,handbag,tie,suitcase,frisbee,skis,snowboard,sports ball,kite,baseball bat,baseball glove,skateboard,surfboard,tennis racket,bottle,wine glass,cup,fork,knife,spoon,bowl,banana,apple,sandwich,orange,broccoli,carrot,hot dog,pizza,donut,cake,chair,couch,potted plant,bed,dining table,toilet,tv,laptop,mouse,remote,keyboard,cell phone,microwave,oven,toaster,sink,refrigerator,book,clock,vase,scissors,teddy bear,hair drier,toothbrush",
+        "splitter": "0,0,0,0",
+        "client": "af20bfd61d0a6dd1",
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "dce4bb179705c28b"
+            ]
+        ]
+    },
+    {
+        "id": "a914565b1ca6c076",
+        "type": "camera",
+        "z": "5924433263ceb70d",
+        "option": 0,
+        "client": "af20bfd61d0a6dd1",
+        "audio": true,
+        "volume": 80,
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "4df7444990c143f0",
+                "3abd7a7f8c64fdaf"
+            ]
+        ]
+    },
+    {
+        "id": "45ca963c27191100",
+        "type": "debug",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "a3993838b918ee4e",
+        "type": "comment",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "141 means yaw (motor 1), 142 means pitch (motor 2)",
+        "info": "",
+        "x": 270,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "486ca54827378f08",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "name": "Yaw angle kp",
+        "label": "Yaw angle kp",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "topic": "yawAngleKp",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "b4f5a7c749aaf50b",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "name": "Yaw angle ki",
+        "label": "Yaw angle ki",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "topic": "yawAngleKi",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "9bbda02a3f464b9c",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "name": "Yaw angle kd",
+        "label": "Yaw angle kd",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "yawAngleKd",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "Usually not needed",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "238754ae8ef4fe4d",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "name": "Yaw speed kp",
+        "label": "Yaw speed kp",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "topic": "yawSpeedKp",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "4b84ecf3ba7ec5fe",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "name": "Yaw speed ki",
+        "label": "Yaw speed ki",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "topic": "yawSpeedKi",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 150,
+        "y": 320,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "887584e5c2a1a232",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "name": "Yaw speed kd",
+        "label": "Yaw speed kd",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "topic": "yawSpeedKd",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "Usually not needed",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 360,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "372914c6ec32df4e",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "name": "Pitch angle kp",
+        "label": "Pitch angle kp",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "topic": "pitchAngleKp",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 460,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "6efa572a3dce8635",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "name": "Pitch angle ki",
+        "label": "Pitch angle ki",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "topic": "pitchAngleKi",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 500,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "ed858ab093332ace",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "name": "Pitch angle kd",
+        "label": "Pitch angle kd",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "pitchAngleKd",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "Usually not needed",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 540,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "9ec2abda6b790f54",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "name": "Pitch speed kp",
+        "label": "Pitch speed kp",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "topic": "pitchSpeedKp",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 660,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "8e84cd5ae33d92e2",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "name": "Pitch speed ki",
+        "label": "Pitch speed ki",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "topic": "pitchSpeedKi",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 700,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "59d46006e8c6d39b",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "name": "Pitch speed kd",
+        "label": "Pitch speed kd",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "topic": "pitchSpeedKd",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "Usually not needed",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 740,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "4d5a3b8e.4c1b3",
+        "type": "ui-button",
+        "z": "cc4fa65c792db7e2",
+        "group": "800d559a9f15602f",
+        "name": "Save PID Settings",
+        "label": "Save PID Settings",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "save_pid",
+        "topicType": "str",
         "buttonColor": "",
         "textColor": "",
         "iconColor": "",
@@ -2271,370 +3264,155 @@
         "enablePointerup": false,
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
-        "x": 820,
-        "y": 1080,
+        "x": 510,
+        "y": 420,
         "wires": [
             [
-                "016abb5e9eec282c",
-                "45d7334c4a7d3a34"
+                "e51b9162051b9a96"
             ]
         ]
     },
     {
-        "id": "016abb5e9eec282c",
+        "id": "d1f3c8b3.9c3b9",
         "type": "function",
-        "z": "5924433263ceb70d",
-        "name": "standby_angle",
-        "func": "msg.payload = {\n    yaw_angle: 180,\n    pitch_angle: 90\n}\nreturn msg;",
+        "z": "cc4fa65c792db7e2",
+        "name": "Generate PID Config",
+        "func": "// 初始化 PID 参数对象（存储在 context 中，避免全局污染）\ncontext.global.pidParams = context.global.pidParams || {\n    yawAngle: { Kp: 50, Ki: 0, Kd: 0 },\n    yawSpeed: { Kp: 200, Ki: 20, Kd: 0 },\n    pitchAngle: { Kp: 50, Ki: 0, Kd: 0 },\n    pitchSpeed: { Kp: 100, Ki: 20, Kd: 0 }\n};\n\n// 提取 msg.topic 中的参数类型（例如 \"yawAngleKp\" -> [\"yawAngle\", \"Kp\"]）\nconst topicParts = msg.topic.match(/(yaw|pitch)(Angle|Speed)(Kp|Ki|Kd)/i);\nif (topicParts) {\n    const [_, type, mode, param] = topicParts; // 解构匹配结果\n    const key = `${type.toLowerCase()}${mode}`; // 例如 \"yawAngle\"\n\n    // 动态更新对应的 PID 参数（如果输入为空，则设置为 '^'）\n    if (context.global.pidParams[key]) {\n        const value = msg.payload.trim(); // 去除前后空格\n        context.global.pidParams[key][param] = (value === \"\") ? \"^\" : parseFloat(value);\n    }\n}\n\n// 生成配置行（处理可能的 '^' 符号）\nconst { yawAngle, yawSpeed, pitchAngle, pitchSpeed } = context.global.pidParams;\n\n// 辅助函数：将值转换为字符串（如果是 '^' 则直接使用，否则转为数字）\nconst formatValue = (val) => (val === \"^\") ? \"^\" : val;\n\nconst yawAnglePIDLine = `1 0A ${formatValue(yawAngle.Kp)} ${formatValue(yawAngle.Ki)} ${formatValue(yawAngle.Kd)}`;\nconst yawSpeedPIDLine = `1 0B ${formatValue(yawSpeed.Kp)} ${formatValue(yawSpeed.Ki)} ${formatValue(yawSpeed.Kd)}`;\nconst pitchAnglePIDLine = `2 0A ${formatValue(pitchAngle.Kp)} ${formatValue(pitchAngle.Ki)} ${formatValue(pitchAngle.Kd)}`;\nconst pitchSpeedPIDLine = `2 0B ${formatValue(pitchSpeed.Kp)} ${formatValue(pitchSpeed.Ki)} ${formatValue(pitchSpeed.Kd)}`;\n\n// 合并为多行字符串\nmsg.payload = [\n    yawAnglePIDLine,\n    yawSpeedPIDLine,\n    pitchAnglePIDLine,\n    pitchSpeedPIDLine\n].join(\"\\n\");\n\nreturn msg;",
         "outputs": 1,
-        "timeout": 0,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1040,
-        "y": 1080,
-        "wires": [
-            [
-                "991e22b67a81b078",
-                "e87995bc13f50329"
-            ]
-        ]
-    },
-    {
-        "id": "42c6325966560571",
-        "type": "ui-template",
-        "z": "5924433263ceb70d",
-        "group": "c5fbe89b47b4f853",
-        "page": "",
-        "ui": "",
-        "name": "joystick",
-        "order": 2,
-        "width": "0",
-        "height": "0",
-        "head": "",
-        "format": "<template>\n  <div>\n    <div id=\"joystick-container\" class=\"joystick-container\" />\n  </div>\n</template>\n\n<script>\n  export default {\n  name: 'JoystickControl',\n  \n  data() {\n    return {\n      // 电机角度范围常量\n      YAW_MIN_ANGLE: 0,\n      YAW_MAX_ANGLE: 355,\n      YAW_MID_ANGLE: 177.5,\n      PITCH_MIN_ANGLE: 0,\n      PITCH_MAX_ANGLE: 175,\n      PITCH_MID_ANGLE: 87.5,\n      // 速度相关常量\n      MAX_DISTANCE: 48,\n      MAX_SPEED: 90,\n      // 节流时间间隔（毫秒）\n      THROTTLE_INTERVAL: 100,  // 1秒10次 = 100ms间隔\n      lastSendTime: 0\n    }\n  },\n\n  mounted() {\n    this.loadNippleJS();\n  },\n\n  methods: {\n    loadNippleJS() {\n      const script = document.createElement('script');\n      script.src = 'https://cdn.jsdelivr.net/npm/nipplejs@0.9.0/dist/nipplejs.min.js';\n      script.onload = this.initializeJoystick;\n      document.head.appendChild(script);\n    },\n\n    initializeJoystick() {\n      const joystickContainer = document.getElementById('joystick-container');\n      if (!joystickContainer) return;\n\n      const joystick = nipplejs.create({\n        zone: joystickContainer,\n        mode: 'static',\n        position: { left: '50%', top: '50%' },\n        color: 'green',\n        size: 96\n      });\n\n      joystick.on('move', this.throttledMove);\n    },\n\n    clampAngle(angle, minAngle, maxAngle) {\n      return Math.max(minAngle, Math.min(maxAngle, angle));\n    },\n\n    calculateSpeed(distance) {\n      const speedRatio = Math.min(distance / this.MAX_DISTANCE, 1);\n      return Math.round(speedRatio * this.MAX_SPEED);\n    },\n\n    calculateAngles(vector) {\n      return {\n        yaw: Math.round(this.YAW_MID_ANGLE + (vector.x * this.YAW_MID_ANGLE)),\n        pitch: Math.round(this.PITCH_MID_ANGLE + (-vector.y * this.PITCH_MID_ANGLE))\n      };\n    },\n\n    // 节流函数\n    throttledMove(evt, data) {\n      const now = Date.now();\n      if (now - this.lastSendTime >= this.THROTTLE_INTERVAL) {\n        this.handleMove(evt, data);\n        this.lastSendTime = now;\n      }\n    },\n\n    handleMove(evt, data) {\n      if (!data?.vector) return;\n\n      const angles = this.calculateAngles(data.vector);\n      const speed = this.calculateSpeed(data.distance || 0);\n      console.log(angles,speed)\n      this.send({\n        payload: {\n          yaw_angle: this.clampAngle(angles.yaw, this.YAW_MIN_ANGLE, this.YAW_MAX_ANGLE),\n          pitch_angle: this.clampAngle(angles.pitch, this.PITCH_MIN_ANGLE, this.PITCH_MAX_ANGLE),\n          yaw_speed: speed,\n          pitch_speed: speed\n        }\n      });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  .joystick-container {\n    width: 100px;\n    height: 100px;\n    position: relative;\n    margin: auto;\n    border: 0px solid #0094CE;\n    background-color: #ffffff;\n  }\n</style>",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 120,
-        "y": 1300,
-        "wires": [
-            [
-                "614bfa4961c5c326",
-                "6eeacf15b570e832",
-                "463d3b9d4fcf1b9e",
-                "9c39149589ecd239",
-                "45d7334c4a7d3a34",
-                "07c3fd04801eae01"
-            ]
-        ]
-    },
-    {
-        "id": "a9be4cfdc49cf45a",
-        "type": "can-write",
-        "z": "5924433263ceb70d",
-        "name": "",
-        "client": "1c58e9752c4bdfcb",
-        "x": 640,
-        "y": 1240,
-        "wires": []
-    },
-    {
-        "id": "614bfa4961c5c326",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Yaw Angle",
-        "input": "payload.yaw_angle",
-        "input-type": "msg",
-        "output": "0",
-        "outputs": 1,
-        "x": 460,
-        "y": 1220,
-        "wires": [
-            [
-                "a9be4cfdc49cf45a"
-            ]
-        ]
-    },
-    {
-        "id": "463d3b9d4fcf1b9e",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Yaw Speed",
-        "input": "payload.yaw_speed",
-        "input-type": "msg",
-        "output": "1",
-        "outputs": 0,
-        "x": 460,
-        "y": 1340,
-        "wires": []
-    },
-    {
-        "id": "6eeacf15b570e832",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Pitch Angle",
-        "input": "payload.pitch_angle",
-        "input-type": "msg",
-        "output": "2",
-        "outputs": 1,
-        "x": 460,
-        "y": 1280,
-        "wires": [
-            [
-                "a9be4cfdc49cf45a"
-            ]
-        ]
-    },
-    {
-        "id": "9c39149589ecd239",
-        "type": "motor-config",
-        "z": "5924433263ceb70d",
-        "name": "Set Pitch Speed",
-        "input": "payload.pitch_speed",
-        "input-type": "msg",
-        "output": "3",
-        "outputs": 0,
-        "x": 460,
-        "y": 1400,
-        "wires": []
-    },
-    {
-        "id": "95d8a68a011bdc6c",
-        "type": "function",
-        "z": "5924433263ceb70d",
-        "name": "save_track_enabled",
-        "func": "global.set('trackEnabled', msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 400,
-        "y": 700,
+        "x": 520,
+        "y": 340,
         "wires": [
             []
         ]
     },
     {
-        "id": "662618524569fbc6",
+        "id": "a1b2c3d4.5678e9",
+        "type": "file",
+        "z": "cc4fa65c792db7e2",
+        "name": "Save PID Config",
+        "filename": "/home/recamera/.gimbal_pid",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 500,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e51b9162051b9a96",
         "type": "function",
-        "z": "5924433263ceb70d",
-        "name": "get_track_enabled",
-        "func": "let trackEnabled = global.get('trackEnabled') ? true : false;\nglobal.set(\"trackEnabled\", trackEnabled);\nmsg.payload = trackEnabled;\nreturn msg;\n",
+        "z": "cc4fa65c792db7e2",
+        "name": "Send PID Config",
+        "func": "// 生成配置行\nconst { yawAngle, yawSpeed, pitchAngle, pitchSpeed } = context.global.pidParams;\n// 生成四行配置\nconst yawAnglePIDLine = `1 0A ${yawAngle.Kp} ${yawAngle.Ki} ${yawAngle.Kd}`;\nconst yawSpeedPIDLine = `1 0B ${yawSpeed.Kp} ${yawSpeed.Ki} ${yawSpeed.Kd}`;\nconst pitchAnglePIDLine = `2 0A ${pitchAngle.Kp} ${pitchAngle.Ki} ${pitchAngle.Kd}`;\nconst pitchSpeedPIDLine = `2 0B ${pitchSpeed.Kp} ${pitchSpeed.Ki} ${pitchSpeed.Kd}`;\n\n// 合并为多行字符串\nmsg.payload = [\n    yawAnglePIDLine,\n    yawSpeedPIDLine,\n    pitchAnglePIDLine,\n    pitchSpeedPIDLine\n].join(\"\\n\"); // 用换行符连接\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 540,
+        "x": 510,
+        "y": 500,
         "wires": [
             [
-                "16faeb961ec1bf39"
+                "a1b2c3d4.5678e9"
             ]
         ]
     },
     {
-        "id": "20b650629e914eea",
-        "type": "function",
-        "z": "5924433263ceb70d",
-        "name": "get_track_target",
-        "func": "let trackTarget = global.get('trackTarget')\nconst TRACK_TARGETS = {\n    PERSON: 0,\n    CAT: 15,\n    DOG: 16,\n    BOTTLE: 39,\n    CUP: 41,\n    CELLPHONE: 67\n};\n\nif (trackTarget === undefined) {\n    trackTarget = TRACK_TARGETS.PERSON\n    global.set(\"trackTarget\", trackTarget);\n}\nmsg.payload = trackTarget;\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 140,
-        "y": 540,
-        "wires": [
-            [
-                "eda0c03f08759525"
-            ]
-        ]
-    },
-    {
-        "id": "3abd7a7f8c64fdaf",
-        "type": "function",
-        "z": "5924433263ceb70d",
-        "name": "init_state",
-        "func": "let initState = global.get('initState')\nif (!initState) {\n    global.set(\"initState\", true);\n    return msg;\n}\nreturn null;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 120,
-        "y": 460,
-        "wires": [
-            [
-                "20b650629e914eea",
-                "662618524569fbc6"
-            ]
-        ]
-    },
-    {
-        "id": "77f7fb1af5e3bb02",
-        "type": "function",
-        "z": "5924433263ceb70d",
-        "name": "control_motor",
-        "func": "\nconst THROTTLE_INTERVAL = 80; //Minimum sending interval (ms)\n\n// Get last send time from context\nlet lastSendTime = context.get('lastSendTime') || 0;\n\n// Get selected bounding box\nlet selectedBox = msg.payload.selectedBox;\nif (selectedBox === false) {\n    return null;\n}\n\n// Constant definitions\nconst IMAGE_CENTER_X = 320;\nconst IMAGE_CENTER_Y = 321;\nconst SPEED_CONFIG = {\n    MAX_SPEED: 20,\n    MIN_SPEED: 1,\n    MAX_ERROR: 320\n};\n\n// Calculate center point error of the target box\nconst boxCenterX = selectedBox[0];\nconst boxCenterY = selectedBox[1];\nconst errorX = boxCenterX - IMAGE_CENTER_X;\nconst errorY = boxCenterY - IMAGE_CENTER_Y;\n\nconst calculateSpeed = (error) => {\n    const { MAX_SPEED, MIN_SPEED, MAX_ERROR } = SPEED_CONFIG;\n\n    // Use square function to reduce speed when error is small\n    let speed = Math.round((Math.pow(Math.abs(error), 2) / Math.pow(MAX_ERROR, 2)) * (MAX_SPEED - MIN_SPEED)) + MIN_SPEED;\n    \n    // Clamp speed between MIN_SPEED and MAX_SPEED\n    return Math.min(Math.max(speed, MIN_SPEED), MAX_SPEED);\n};\n\n// Generate control command\nconst generateControl = () => {\n    const speedX = calculateSpeed(errorX);\n    const speedY = calculateSpeed(errorY);\n\n    // Calculate yaw angle\n    let yaw_angle;\n    if (errorX < -8) {\n        //if object is on the left, gimbal needs to go right\n        yaw_angle = 260;\n    } else if (errorX > 8) {\n        //if object is on the right, gimbal needs to go left\n        yaw_angle = 80;\n    } else {\n        //gimbal remains in the middle\n        yaw_angle = 180;\n    }\n\n    // Calculate pitch angle\n    let pitch_angle;\n    if (speedY < -3) {\n        //if object is on the top, gimbal needs to go up\n        pitch_angle = 10;\n    } else if (speedY > 3) {\n        //if object is on the botttom, gimbal needs to go down\n        pitch_angle = 170;\n    } else {\n        //gimbal remains in the middle\n        pitch_angle = 90;\n    }\n    //this is a really rought example just to demonstrate the effect,\n    //you can use better tracking algorithm to play with gimbal.\n\n    return {\n        yaw_angle,\n        yaw_speed: speedX,\n        pitch_angle,\n        pitch_speed: speedY\n    };\n};\n\n// Check if ready to send\nconst now = Date.now();\nif (now - lastSendTime >= THROTTLE_INTERVAL) {\n    // Update send timestamp\n    context.set('lastSendTime', now);\n    \n    // Generate and send control command\n    const control = generateControl();\n    return { payload: control };\n} else {\n    // Command dropped due to throttle interval\n    node.warn(`Command dropped, time since last send: ${now - lastSendTime}ms`);\n    return null;\n}",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 760,
-        "y": 460,
-        "wires": [
-            [
-                "8ed9939e194a81f1",
-                "eff04f88aa68f420",
-                "616e214469932ff9",
-                "ba920d03ad796891"
-            ]
-        ]
-    },
-    {
-        "id": "26a31406213e5e42",
-        "type": "camera",
-        "z": "5924433263ceb70d",
-        "option": 0,
-        "client": "b97fc673d9180980",
-        "audio": true,
-        "volume": 80,
-        "x": 120,
-        "y": 380,
-        "wires": [
-            [
-                "3abd7a7f8c64fdaf",
-                "968bf19f1a58b202"
-            ]
-        ]
-    },
-    {
-        "id": "968bf19f1a58b202",
-        "type": "model",
-        "z": "5924433263ceb70d",
-        "name": "",
-        "uri": "",
-        "model": "YOLO11n Detection",
-        "tscore": 0.45,
-        "tiou": 0.25,
-        "debug": true,
-        "trace": false,
-        "counting": false,
-        "classes": "person,bicycle,car,motorcycle,airplane,bus,train,truck,boat,traffic light,fire hydrant,stop sign,parking meter,bench,bird,cat,dog,horse,sheep,cow,elephant,bear,zebra,giraffe,backpack,umbrella,handbag,tie,suitcase,frisbee,skis,snowboard,sports ball,kite,baseball bat,baseball glove,skateboard,surfboard,tennis racket,bottle,wine glass,cup,fork,knife,spoon,bowl,banana,apple,sandwich,orange,broccoli,carrot,hot dog,pizza,donut,cake,chair,couch,potted plant,bed,dining table,toilet,tv,laptop,mouse,remote,keyboard,cell phone,microwave,oven,toaster,sink,refrigerator,book,clock,vase,scissors,teddy bear,hair drier,toothbrush",
-        "splitter": "0,0,0,0",
-        "client": "b97fc673d9180980",
-        "x": 310,
-        "y": 380,
-        "wires": [
-            [
-                "db8d760bf9e0f487",
-                "19a3ce9968f1d35a"
-            ]
-        ]
-    },
-    {
-        "id": "45d7334c4a7d3a34",
-        "type": "function",
-        "z": "5924433263ceb70d",
-        "name": "Disable Auto Tracking",
-        "func": "//When manually controlling gimbal, de-select auto tracking.\n\nglobal.set('trackDisabled', false);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 400,
-        "y": 760,
-        "wires": [
-            [
-                "16faeb961ec1bf39"
-            ]
-        ]
-    },
-    {
-        "id": "d3aabadf0a0895f8",
-        "type": "comment",
-        "z": "5924433263ceb70d",
-        "name": "Model Settings",
-        "info": "This are the Confidence and IoU settings\nsliders of the computer vision model.",
-        "x": 140,
-        "y": 160,
+        "id": "63a60476f1f25797",
+        "type": "ui-text",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Yaw Angle Recommend PID",
+        "label": "Angle PID Recommended: Kp = 50; Ki = 0; Kd = 0; If leave empty, it will use the current motor pid parameter.",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 200,
+        "y": 40,
         "wires": []
     },
     {
-        "id": "bf457c2e1d6dca2e",
-        "type": "comment",
-        "z": "5924433263ceb70d",
-        "name": "Auto tracking with Detection",
-        "info": "This part is in charge of the auto tracking\nwith the detection.\n\nUsing the output box width and height to get\nthe center of the detection object, then\nask gimbal to move accordingly.",
-        "x": 620,
-        "y": 540,
+        "id": "6e6a453706f099be",
+        "type": "ui-text",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Yaw Speed Recommend PID",
+        "label": "Speed PID Recommended: Kp = 260; Ki = 20; Kd = 0; If leave empty, it will use the current motor pid parameter.",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 200,
+        "y": 240,
         "wires": []
     },
     {
-        "id": "632a599256a63d19",
-        "type": "comment",
-        "z": "5924433263ceb70d",
-        "name": "Manual Control",
-        "info": "This part demonstrates an example of using\nslider widget to control the gimbal.\n\nPlease noted once manually control the gimbal,\nthe auto tracking will stop.",
-        "x": 140,
-        "y": 880,
+        "id": "986642415d11c6f2",
+        "type": "ui-text",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Pitch Angle Recommend PID",
+        "label": "Angle PID Recommended: Kp = 50; Ki = 0; Kd = 0; If leave empty, it will use the current motor pid parameter.",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 200,
+        "y": 420,
         "wires": []
     },
     {
-        "id": "363d2cc3188a0542",
-        "type": "comment",
-        "z": "5924433263ceb70d",
-        "name": "Short cut move",
-        "info": "This part demonstrates an example of using\nbuttons to control the gimbal movement.\n\nStandby means the angle position is\n(180,90) to locate in the middle.\n\nPlease noted once manually control the gimbal,\nthe auto tracking will stop.",
-        "x": 840,
-        "y": 880,
-        "wires": []
-    },
-    {
-        "id": "07c3fd04801eae01",
-        "type": "function",
-        "z": "5924433263ceb70d",
-        "name": "Sync Joystick with Slider",
-        "func": "// 获取 Joystick 的输出值\nconst yawAngle = msg.payload.yaw_angle;\nconst pitchAngle = msg.payload.pitch_angle;\nconst speed = msg.payload.yaw_speed;\n\n// 创建三个消息对象，分别对应 Yaw、Pitch 和 Speed Slider\nconst yawMsg = { topic: \"yaw\", payload: yawAngle };\nconst pitchMsg = { topic: \"pitch\", payload: pitchAngle };\nconst speedMsg = { topic: \"speed\", payload: speed };\n\n// 返回多个消息对象\nreturn [yawMsg, pitchMsg, speedMsg];",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 170,
-        "y": 1220,
-        "wires": [
-            [
-                "141a718c4aca75ea",
-                "45dd35115125460f",
-                "1528e53340ceac14"
-            ]
-        ]
-    },
-    {
-        "id": "a8516ce533be8ea5",
-        "type": "comment",
-        "z": "5924433263ceb70d",
-        "name": "Can delete if no needs",
-        "info": "This is the basic webs of reCamera gimbal\nsuch as Wi-Fi, ssh, or terminal.\n\nYou can delete this two subflows if you \ndo not need them to show in the dashboard.",
-        "x": 160,
-        "y": 1480,
+        "id": "1798f80fcc4b79b0",
+        "type": "ui-text",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Pitch Speed Recommend PID",
+        "label": "Speed PID Recommended: Kp = 100; Ki = 20; Kd = 0; If leave empty, it will use the current motor pid parameter.",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 210,
+        "y": 620,
         "wires": []
     }
 ]
