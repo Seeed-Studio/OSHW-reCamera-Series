@@ -3,6 +3,8 @@
 
 This board is designed for reCamera Gimbal.
 
+![B4_CAN](./static/image-3.png)
+
 ### ⚙️ schematic
 
 ![B4_CAN_SCH](./static/image.png)
