@@ -142,7 +142,28 @@ We've taken care of the intricate hardware work, freeing up time for user innova
 
 ### 🚀 Launch Notification--reCamera Gimbal
 
-We are excited to announce that the reCamera Gimbal will be released at the end of February! Stay tuned and follow the [Seeed Studio official website](https://www.seeedstudio.com/) for the latest updates.
+The reCamera Gimbal is now available for pre-order with 10% OFF EARLY-BIRD COUPON! 🎫
+
+🛒 Be among the first 200 to grab 10% OFF with code **Gimbal10** at checkout! Don’t miss this limited-time deal—perfect for AI, Camera and Gimbal developers and enthusiasts.
+
+
+🌟 Pre-order Now:
+
+- [reCamera Gimbal 8GB](https://www.seeedstudio.com/reCamera-Gimbal-2002w-8GB-p-6402.html)
+
+- [reCamera Gimbal 64GB](https://www.seeedstudio.com/reCamera-Gimbal-2002w-64GB-p-6403.html)
+  
+- [reCamera Gimbal Bundle Option](https://www.seeedstudio.com/reCamera-gimbal-2002w-optional-accessories.html) (🔌Power Adapter + USB Cable)
+
+Don’t miss out on the first open-source AI camera gimbal with 360° yaw & 180° pitch coverage!
+
+⏰ EARLY-BIRD DETAILS:
+✅ 200 coupons only (first-come, first-served!)
+✅ Apply code **Gimbal10** at checkout for 10% OFF
+✅ Valid on all reCamera Gimbal versions & the bundle—no minimum purchase!
+✅ Available from April 10th to May 10th
+
+📲 Follow [Seeed Studio official website](https://www.seeedstudio.com/) for updates and technical resources.
 
 <a href="url"><img src="./reCamera_Gimbal/static/reCamera-Gimbal.png" height="auto" width="600" style="border-radius:40px"></a>
 
