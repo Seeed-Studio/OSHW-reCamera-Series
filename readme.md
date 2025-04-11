@@ -158,9 +158,13 @@ The reCamera Gimbal is now available for pre-order with 10% OFF EARLY-BIRD COUPO
 Don’t miss out on the first open-source AI camera gimbal with 360° yaw & 180° pitch coverage!
 
 ⏰ EARLY-BIRD DETAILS:
+
 ✅ 200 coupons only (first-come, first-served!)
+
 ✅ Apply code **Gimbal10** at checkout for 10% OFF
+
 ✅ Valid on all reCamera Gimbal versions & the bundle—no minimum purchase!
+
 ✅ Available from April 10th to May 10th
 
 📲 Follow [Seeed Studio official website](https://www.seeedstudio.com/) for updates and technical resources.
