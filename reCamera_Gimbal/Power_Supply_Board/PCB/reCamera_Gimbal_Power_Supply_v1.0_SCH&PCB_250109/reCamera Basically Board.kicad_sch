@@ -1,0 +1,131 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "35101730-b39c-4f85-9829-ee8a0f4a4272")
+	(paper "A3")
+	(title_block
+		(date "2024-10-22")
+		(rev "v0.9")
+	)
+	(lib_symbols)
+	(sheet
+		(at 27.94 49.53)
+		(size 27.94 13.97)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0d09a803-6659-4c7d-add4-827d1eb9c975")
+		(property "Sheetname" "02 Block"
+			(at 27.94 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "02 Block.kicad_sch"
+			(at 27.94 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "reCamera Basically Board"
+				(path "/35101730-b39c-4f85-9829-ee8a0f4a4272"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 27.94 27.94)
+		(size 27.94 13.97)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6f7b0825-76c5-4523-a765-f10420d34e13")
+		(property "Sheetname" "01 Description"
+			(at 27.94 27.2284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "01 Description.kicad_sch"
+			(at 27.94 42.4946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "reCamera Basically Board"
+				(path "/35101730-b39c-4f85-9829-ee8a0f4a4272"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 27.94 71.12)
+		(size 27.94 13.97)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ccd00fef-f34d-462c-9a9c-e9a475e0c708")
+		(property "Sheetname" "03 Power"
+			(at 27.94 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "03 Power.kicad_sch"
+			(at 27.94 85.6746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "reCamera Basically Board"
+				(path "/35101730-b39c-4f85-9829-ee8a0f4a4272"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
