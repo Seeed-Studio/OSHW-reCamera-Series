@@ -1,0 +1,238 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "832cb026-c6dd-4ec3-917d-190aba257bc9")
+	(paper "A3")
+	(title_block
+		(title "01 Description")
+		(date "2024-10-22")
+		(rev "v0.9")
+	)
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 30.48 101.6) (xy 386.08 101.6)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "22ca4869-0a3b-4120-89bb-b31ffa388bac")
+	)
+	(polyline
+		(pts
+			(xy 30.48 40.64) (xy 386.08 40.64)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "3ea21d17-0c8c-454e-af8d-f3a6323e1abd")
+	)
+	(polyline
+		(pts
+			(xy 309.88 33.02) (xy 309.88 236.22)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "58d787de-e347-404d-9aa6-0372e1c629ce")
+	)
+	(polyline
+		(pts
+			(xy 55.88 33.02) (xy 55.88 236.22)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "a6f47119-ac8f-42e7-b8a5-e4ad48db86f5")
+	)
+	(polyline
+		(pts
+			(xy 350.52 33.02) (xy 350.52 236.22)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "bf9f87e4-81a7-4f8b-8489-4880d10c1011")
+	)
+	(polyline
+		(pts
+			(xy 30.48 127) (xy 386.08 127)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "d45b316a-c421-45fc-8aed-ba73547a8274")
+	)
+	(polyline
+		(pts
+			(xy 30.48 60.96) (xy 386.08 60.96)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "ed1e8109-0ea9-41d9-b90f-a5157af5ea2f")
+	)
+	(polyline
+		(pts
+			(xy 30.48 48.26) (xy 386.08 48.26)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "f19122a2-d924-4f7d-b3d2-0243161e8cc8")
+	)
+	(rectangle
+		(start 30.48 33.02)
+		(end 386.08 236.22)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 1463027d-f69e-424e-acd1-c9ae76e3f3cc)
+	)
+	(text "Date"
+		(exclude_from_sim no)
+		(at 325.12 38.1 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "197451d6-f07e-4335-a68d-08ba0f7aaf87")
+	)
+	(text "Descriptions"
+		(exclude_from_sim no)
+		(at 144.78 38.1 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.4064)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b6fc382-621c-4fcb-a854-e33f11788af6")
+	)
+	(text "Version"
+		(exclude_from_sim no)
+		(at 35.56 38.1 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.4064)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "41bc0250-8cb5-46ab-8090-1d4685e69dd0")
+	)
+	(text "Name"
+		(exclude_from_sim no)
+		(at 368.3 36.83 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+			)
+		)
+		(uuid "438adfc1-b8e9-4f13-80b1-94e24247988b")
+	)
+	(text "v1.1"
+		(exclude_from_sim no)
+		(at 38.1 55.88 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "49a7bb45-6064-488c-b161-1029faef36ad")
+	)
+	(text "v1.0"
+		(exclude_from_sim no)
+		(at 38.1 45.72 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "725dccdd-66a5-4e40-bb29-591dccb5f217")
+	)
+	(text "v1.2"
+		(exclude_from_sim no)
+		(at 38.1 68.58 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "73e1c3dd-42ea-4f5d-b629-6bb6e6a35bd7")
+	)
+	(text "Linus.Liao"
+		(exclude_from_sim no)
+		(at 360.68 45.72 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "85a2b656-8598-4a69-8c22-9c07e5fea1bb")
+	)
+	(text "2024/6/7"
+		(exclude_from_sim no)
+		(at 322.58 45.72 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c64e6312-df14-4caf-b9b0-71ed82ec7eeb")
+	)
+	(text "Initial version"
+		(exclude_from_sim no)
+		(at 68.58 45.72 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "d9dddc5a-3133-4834-9940-9b577cec1336")
+	)
+	(text "v1.3"
+		(exclude_from_sim no)
+		(at 38.1 109.22 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e85e31ad-a981-40ca-a57b-625a4076072b")
+	)
+)
