@@ -1,0 +1,60 @@
+:root:root {
+	--adm-color-primary: #8fc31f;
+}
+
+.adm-list-default .adm-list-body {
+	border-top: 0;
+	/* border-bottom: 0; */
+}
+
+.adm-form-item.adm-form-item-vertical .adm-form-item-label {
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.9);
+}
+
+.adm-list-item {
+	padding-left: 0;
+}
+
+.adm-input-element {
+	font-size: 16px;
+}
+
+
+.adm-list-item-content {
+	padding-right: 0;
+	position: relative;
+}
+
+.adm-list-item-content-extra {
+	position: absolute;
+	right: 30px;
+	top: 26px;
+}
+
+.adm-text-area {
+	border: 1px solid #dcdcdc;
+	padding: 6px 8px;
+	border-radius: 3px;
+}
+
+.adm-form-item.adm-form-item-vertical .adm-form-item-label {
+	margin-bottom: 10px;
+}
+
+.adm-text-area-element {
+	font-size: 16px;
+}
+
+.border-b-0 {
+	.adm-list-default .adm-list-body {
+		border-top: 0;
+		border-bottom: 0;
+	}
+}
+
+.adm-button-danger {
+	background: #FFC7C7;
+	color: #EA0000;
+	border: transparent
+}

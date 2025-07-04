@@ -1,0 +1,35 @@
+@import url(./antd-reset.scss);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+}
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	background: #f1f3f5;
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.9);
+}
+#root {
+	height: 100%;
+	width: 100%;
+}
+
+img,
+svg {
+	display: inline-block;
+}
+
+.adm-popup-body-position-bottom{
+	max-height: 80%;
+	overflow-y: auto;
+}

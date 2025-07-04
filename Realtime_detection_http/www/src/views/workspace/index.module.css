@@ -1,0 +1,44 @@
+.collapse {
+    position: absolute;
+    right: 0;
+    top: calc(50% - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 60px;
+    border-radius: 8px 0 0 8px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.expand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 60px;
+    border-radius: 0 8px 8px 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+.wiki {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: #8fc31f;
+    border: none;
+}
+
+.dashboard {
+    position: absolute;
+    top: 8px;
+    right: 280px;
+    border-radius: 0;
+}
+
+.networkModal {
+    max-height: 70vh;
+    overflow-y: auto;
+}

@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+if [ -f /etc/init.d/S93sscma-supervisor ]; then
+    /etc/init.d/S93sscma-supervisor stop
+fi
+
+exit 0
+
