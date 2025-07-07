@@ -1,0 +1,3418 @@
+[
+    {
+        "id": "5924433263ceb70d",
+        "type": "tab",
+        "label": "Gimbal Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cc4fa65c792db7e2",
+        "type": "tab",
+        "label": "PID Control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f7d5cf3810421cf3",
+        "type": "subflow",
+        "name": "Default Pages",
+        "info": "",
+        "category": "Vision AI",
+        "in": [],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "22d80629fd354a7c",
+        "type": "subflow",
+        "name": "Device Info Pages",
+        "info": "",
+        "category": "Vision AI",
+        "in": [],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "38da0acbee7571dc",
+        "type": "group",
+        "z": "5924433263ceb70d",
+        "name": "Model setting",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9e3e342695458112",
+            "5c78727dc73b9fa9",
+            "f40cb9db86bef8a5",
+            "54283c013e16973b"
+        ],
+        "x": 34,
+        "y": 99,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "6a5cf1c769c6da07",
+        "type": "group",
+        "z": "5924433263ceb70d",
+        "name": "Dashboard UI display",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a932a077674095f2",
+            "60a867cb500cf15d"
+        ],
+        "x": 474,
+        "y": 99,
+        "w": 232,
+        "h": 122
+    },
+    {
+        "id": "119948d614ce5694",
+        "type": "group",
+        "z": "5924433263ceb70d",
+        "name": "Auto tracking with target",
+        "style": {
+            "label": true,
+            "color": "#92d04f"
+        },
+        "nodes": [
+            "dce4bb179705c28b",
+            "20b650629e914eea",
+            "662618524569fbc6",
+            "16faeb961ec1bf39",
+            "eda0c03f08759525",
+            "95d8a68a011bdc6c",
+            "b5f7115f8da75f5a",
+            "77f7fb1af5e3bb02",
+            "2d0b2295ce249f05",
+            "45d7334c4a7d3a34",
+            "4df7444990c143f0"
+        ],
+        "x": 334,
+        "y": 279,
+        "w": 852,
+        "h": 282
+    },
+    {
+        "id": "cbb96dd983baabd8",
+        "type": "group",
+        "z": "5924433263ceb70d",
+        "name": "Manual control motors",
+        "style": {
+            "label": true,
+            "color": "#92d04f"
+        },
+        "nodes": [
+            "4f05d0e436acc7c0",
+            "1528e53340ceac14",
+            "45dd35115125460f",
+            "141a718c4aca75ea",
+            "42c6325966560571",
+            "c01033b112727fe9",
+            "702aeefba5d6d7a4",
+            "2aa592079c263c56",
+            "b46762af1a17c573",
+            "4541eae5ac491f49",
+            "7b2ebdcba29e8f34",
+            "893b35e696c89eb1",
+            "31a3c5b36ad3e791"
+        ],
+        "x": 34,
+        "y": 599,
+        "w": 692,
+        "h": 322
+    },
+    {
+        "id": "e289c04a151c2b21",
+        "type": "group",
+        "z": "5924433263ceb70d",
+        "name": "Shortcut buttons control motors",
+        "style": {
+            "label": true,
+            "color": "#92d04f"
+        },
+        "nodes": [
+            "cf76f4d691c14470",
+            "e0c3e26dcba0a1d0",
+            "030f888e2b794a0f",
+            "fcd487b208f2ef92",
+            "c1634d85e3127ba7",
+            "3b88e350fe5a51cf",
+            "06e1b8aac3611769",
+            "aa73b695851dbf8e"
+        ],
+        "x": 34,
+        "y": 939,
+        "w": 632,
+        "h": 329.5
+    },
+    {
+        "id": "bc455cac092dd743",
+        "type": "group",
+        "z": "5924433263ceb70d",
+        "name": "Example of using CAN nodes",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "87d339d9e90222dd",
+            "4ba6f9f525c85918",
+            "b05400b8dc9abf80",
+            "253630de7cd7906c",
+            "0a455be92c7a44aa",
+            "45ca963c27191100",
+            "a3993838b918ee4e"
+        ],
+        "x": 34,
+        "y": 1299,
+        "w": 712,
+        "h": 182
+    },
+    {
+        "id": "8d2cf2d27a8855ae",
+        "type": "ui-group",
+        "name": "Security",
+        "page": "572548c1b2a5b3e5",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "19fb7bf1c812bd05",
+        "type": "ui-group",
+        "name": "Wi-Fi",
+        "page": "6191aa32100142fb",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "805339df2b9ba50f",
+        "type": "ui-group",
+        "name": "Terminal",
+        "page": "93a8316dd566eca2",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "92c61ece68bb9dd5",
+        "type": "ui-group",
+        "name": "Power",
+        "page": "5e555c40a977cf78",
+        "width": "6",
+        "height": "1",
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "572548c1b2a5b3e5",
+        "type": "ui-page",
+        "name": "Security",
+        "ui": "e2f7615831d73e4b",
+        "path": "/security",
+        "icon": "security",
+        "layout": "grid",
+        "theme": "f5ee49967f8103a8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 5,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6191aa32100142fb",
+        "type": "ui-page",
+        "name": "Network",
+        "ui": "e2f7615831d73e4b",
+        "path": "/network",
+        "icon": "wifi",
+        "layout": "grid",
+        "theme": "f5ee49967f8103a8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "93a8316dd566eca2",
+        "type": "ui-page",
+        "name": "Terminal",
+        "ui": "e2f7615831d73e4b",
+        "path": "/terminal",
+        "icon": "console",
+        "layout": "grid",
+        "theme": "f5ee49967f8103a8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 6,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "7f2745813d799705",
+        "type": "ui-group",
+        "name": "Memory",
+        "page": "5e555c40a977cf78",
+        "width": "6",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "a71db265f099f44c",
+        "type": "ui-group",
+        "name": "Sys Info",
+        "page": "5e555c40a977cf78",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6a7d65728351652c",
+        "type": "ui-group",
+        "name": "Load",
+        "page": "5e555c40a977cf78",
+        "width": "6",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "fea0f6f907349d71",
+        "type": "ui-group",
+        "name": "Storage",
+        "page": "5e555c40a977cf78",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5e555c40a977cf78",
+        "type": "ui-page",
+        "name": "Device Info",
+        "ui": "e2f7615831d73e4b",
+        "path": "/Deviceinfo",
+        "icon": "cog",
+        "layout": "grid",
+        "theme": "f5ee49967f8103a8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "e2f7615831d73e4b",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true
+    },
+    {
+        "id": "f5ee49967f8103a8",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "37a6e7f9304e351c",
+        "type": "ui-group",
+        "name": "Preview",
+        "page": "194edb674718394b",
+        "width": "6",
+        "height": "6",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "c5fbe89b47b4f853",
+        "type": "ui-group",
+        "name": "Different Control Methods",
+        "page": "194edb674718394b",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1c58e9752c4bdfcb",
+        "type": "can-config",
+        "name": "",
+        "baud": "1000000",
+        "interface": "can0"
+    },
+    {
+        "id": "194edb674718394b",
+        "type": "ui-page",
+        "name": "Gimbal_Preview",
+        "ui": "e2f7615831d73e4b",
+        "path": "/page7",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "f5ee49967f8103a8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "af20bfd61d0a6dd1",
+        "type": "sscma",
+        "host": "localhost",
+        "mqttport": "1883",
+        "apiport": "80",
+        "clientid": "recamera",
+        "username": "",
+        "password": ""
+    },
+    {
+        "id": "eb68b89500627338",
+        "type": "ui-group",
+        "name": "Yaw Axis",
+        "page": "c315d27890fbd048",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "944f240637232c4b",
+        "type": "ui-group",
+        "name": "Pitch Axis",
+        "page": "c315d27890fbd048",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "800d559a9f15602f",
+        "type": "ui-group",
+        "name": "Send Config",
+        "page": "c315d27890fbd048",
+        "width": "12",
+        "height": "1",
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "c315d27890fbd048",
+        "type": "ui-page",
+        "name": "PID Control",
+        "ui": "e2f7615831d73e4b",
+        "path": "/pid_control",
+        "icon": "tune",
+        "layout": "grid",
+        "theme": "f5ee49967f8103a8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "4d040b9fa3995f53",
+        "type": "ui-template",
+        "z": "f7d5cf3810421cf3",
+        "group": "8d2cf2d27a8855ae",
+        "page": "",
+        "ui": "",
+        "name": "Security",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": "<template>\n  <div>\n    <div id=\"iframe_block\">\n      <!-- <div v-if=\"isScaning && !iframeUrl\" class=\"skeleton_box\"></div> -->\n      <iframe id=\"iframe_recamera\"  :src=\"iframeUrl\"></iframe>\n      <!-- <div v-else>\n        No website found, please check your network connection and\n        <button @click=\"function(){location.reload()}\">Refresh</button>\n      </div> -->\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      console.log(12312);\n      function getDeviceType() {\n        const userAgent = navigator.userAgent.toLowerCase();\n        return;\n        /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(\n          userAgent\n        )\n          ? \"PC\"\n          : \"mobile\";\n      }\n      return {\n        ipByDevice: \"\",\n        enabledIpList: [],\n        checkAllIps: true,\n        isScaning: false,\n        scanningTimeout: 3000, // ms\n        deviceType: getDeviceType(),\n        iframeUrl: `http://${window.location.hostname}/#/security?disablelayout=1`\n      };\n    },\n    computed: {\n      // iframeUrl: function () {\n      //   if (this.isScaning) {\n      //     return;\n      //   }\n      //   const ipByDevice = this.ipByDevice;\n      //   const ipList = this.enabledIpList;\n\n      //   // 无任何可用\n      //   if (!(ipList.length > 0)) {\n      //     return ipByDevice ? this.getUrl(ipByDevice) : null;\n      //   }\n\n      //   if (ipByDevice && ipList.includes(ipByDevice)) {\n      //     return this.getUrl(ipByDevice);\n      //   }\n\n      //   return this.getUrl(ipList[0]);\n      // }\n    },\n    watch: {\n      msg: function (msg, prevMsg) {\n        try {\n          //debounce 防抖\n          if (\n            prevMsg &&\n            prevMsg.interfaces &&\n            JSON.stringify(prevMsg.interfaces) ===\n              JSON.stringify(msg.interfaces)\n          ) {\n            console.log('🙈🙈 Same msg: Skip....')\n            return;\n          }\n        } catch (e) {\n          console.log(e);\n        }\n        this.scanning(msg);\n      }\n    },\n    methods: {\n      getUrl(ipAddress) {\n        return `http://${window.location.hostname}/#/security?disablelayout=1`;\n      },\n      scanning(msg) {\n        if (!(msg && msg.interfaces)) {\n          return;\n        }\n        this.ipByDevice = this.getIpByDevice(msg.interfaces);\n        this.scaningAddreses(msg.interfaces);\n      },\n      getIpByDevice: function (addresses) {\n        const ipAddress =\n          (this.deviceType === \"PC\"\n            ? addresses[\"usb\"] || addresses[\"wlan\"]\n            : addresses[\"wlan\"] || addresses[\"usb\"]) ||\n          addresses[\"eth\"] ||\n          addresses[\"en\"];\n        if (!ipAddress) {\n          return null;\n        }\n        return ipAddress;\n      },\n\n      scaningAddreses: function (addresses) {\n        if (!addresses || this.isScaning) {\n          return;\n        }\n        console.log(\"scanning addresses\");\n        const self = this;\n        let results = [];\n        var keys = Object.keys(addresses);\n        const len = keys.length;\n        self.isScaning = true;\n\n        let fn = (i) => {\n          if (\n            i >= len ||\n            (!self.checkAllIps && self.enabledIpList.length > 0)\n          ) {\n            self.isScaning = false;\n            self.enabledIpList = results;\n            console.log(\n              `%cScaning Finished ✅\\n✨Enabled Addresses: ${self.enabledIpList.join(\n                \",\"\n              )}`,\n              \"color:#87ba32\"\n            );\n\n            fn = () => {};\n            return;\n          }\n          let src = self.getUrl(addresses[keys[i]]);\n          const xhr = new XMLHttpRequest();\n          xhr.timeout = self.scanningTimeout;\n\n          const errorFn = () => {\n            fn(++i);\n          };\n\n          xhr.onload = function () {\n            if (xhr.status >= 200 && xhr.status < 300) {\n              results.push(addresses[keys[i]]);\n              console.log(\n                `%c✨(${i + 1}/${len})ping test Success: ${src}`,\n                \"color: #87ba32;\"\n              );\n              fn(++i);\n              return;\n            }\n            errorFn();\n          };\n\n          xhr.onerror = function () {\n            errorFn();\n            console.log(\n              `%c🚥(${i + 1}/${len}) ping test error: ${src}`,\n              \"color:red\"\n            );\n          };\n          // 定义超时回调\n          xhr.ontimeout = function () {\n            console.log(\n              `%c🚥(${i + 1}/${len}) ping test timeout: ${src}`,\n              \"color:red;\"\n            );\n            errorFn();\n          };\n\n          console.log(\n            `%c🚥(${i + 1}/${len}) start ping test: ${src}`,\n            \"color: #d8eeff;\"\n          );\n          xhr.open(\"GET\", src, true);\n          // 发送请求\n          xhr.send();\n        };\n        fn(0);\n      },\n\n      // 获取所有可用IP\n      getIpAddresses: function (interfaces) {\n        const reg = /^(wlan|usb|eth|en)/;\n        const addresses = {};\n        for (let iface in interfaces) {\n          for (let i = 0; i < interfaces[iface].length; i++) {\n            let address = interfaces[iface][i];\n            /* Ipv4 & 排除内部接口 & 匹配当前优先级的网口名称 */\n            var matches = iface.match(reg);\n            if (\n              matches &&\n              matches[1] &&\n              address.family === \"IPv4\" &&\n              !address.internal\n            ) {\n              addresses[matches[1]] = address.address;\n            }\n          }\n        }\n        return addresses;\n      }\n    },\n    mounted() {\n      this.scanning(this.msg);\n    }\n  };\n</script>\n<style>\n  body,\n  html {\n    overflow: hidden;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n  }\n\n  #iframe_block {\n    overflow: auto;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n    box-sizing: border-box;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    min-height: 500px;\n    z-index: 10000;\n    background-color: #eee;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  #iframe_block iframe {\n    width: 100%;\n    height: 100%;\n    border: 0;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n    box-sizing: border-box;\n  }\n\n  .skeleton_box {\n    width: 50%;\n    height: 50%;\n    background: #e0e0e0;\n    border-radius: 20px;\n    position: relative;\n    overflow: hidden;\n  }\n\n  .skeleton_box::after {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: -100%;\n    width: 100%;\n    height: 100%;\n    background: linear-gradient(90deg,\n        rgba(255, 255, 255, 0) 0%,\n        rgba(255, 255, 255, 0.5) 50%,\n        rgba(255, 255, 255, 0) 100%);\n    animation: shimmer 1.5s infinite;\n  }\n\n  @keyframes shimmer {\n    0% {\n      left: -100%;\n    }\n\n    100% {\n      left: 100%;\n    }\n  }\n\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "09137b52dd5df373",
+        "type": "ui-template",
+        "z": "f7d5cf3810421cf3",
+        "group": "19fb7bf1c812bd05",
+        "page": "",
+        "ui": "",
+        "name": "Network",
+        "order": 1,
+        "width": "12",
+        "height": "12",
+        "head": "",
+        "format": "<template>\n  <div>\n    <div id=\"iframe_block\">\n      <!-- <div v-if=\"isScaning && !iframeUrl\" class=\"skeleton_box\"></div> -->\n      <iframe id=\"iframe_recamera\" :src=\"iframeUrl\"></iframe>\n      <!-- <div v-else>\n        No website found, please check your network connection and\n        <button @click=\"function(){location.reload()}\">Refresh</button>\n      </div> -->\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      console.log(12312);\n      function getDeviceType() {\n        const userAgent = navigator.userAgent.toLowerCase();\n        return;\n        /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(\n          userAgent\n        )\n          ? \"PC\"\n          : \"mobile\";\n      }\n      return {\n        ipByDevice: \"\",\n        enabledIpList: [],\n        checkAllIps: true,\n        isScaning: false,\n        scanningTimeout: 3000, // ms\n        deviceType: getDeviceType(),\n        iframeUrl: `http://${window.location.hostname}/#/network?disablelayout=1`\n      };\n    },\n    computed: {\n      // iframeUrl: function () {\n      //   if (this.isScaning) {\n      //     return;\n      //   }\n      //   const ipByDevice = this.ipByDevice;\n      //   const ipList = this.enabledIpList;\n\n      //   // 无任何可用\n      //   if (!(ipList.length > 0)) {\n      //     return ipByDevice ? this.getUrl(ipByDevice) : null;\n      //   }\n\n      //   if (ipByDevice && ipList.includes(ipByDevice)) {\n      //     return this.getUrl(ipByDevice);\n      //   }\n\n      //   return this.getUrl(ipList[0]);\n      // }\n    },\n    watch: {\n      msg: function (msg, prevMsg) {\n        try {\n          //debounce 防抖\n          if (\n            prevMsg &&\n            prevMsg.interfaces &&\n            JSON.stringify(prevMsg.interfaces) ===\n              JSON.stringify(msg.interfaces)\n          ) {\n            console.log('🙈🙈 Same msg: Skip....')\n            return;\n          }\n        } catch (e) {\n          console.log(e);\n        }\n        this.scanning(msg);\n      }\n    },\n    methods: {\n      getUrl(ipAddress) {\n        return `http://${ipAddress}/#/network?disablelayout=1`;\n      },\n      scanning(msg) {\n        if (!(msg && msg.interfaces)) {\n          return;\n        }\n        this.ipByDevice = this.getIpByDevice(msg.interfaces);\n        this.scaningAddreses(msg.interfaces);\n        console.log(msg.interfaces, '---msg.interfaces---')\n      },\n      getIpByDevice: function (addresses) {\n        const ipAddress =\n          (this.deviceType === \"PC\"\n            ? addresses[\"usb\"] || addresses[\"wlan\"]\n            : addresses[\"wlan\"] || addresses[\"usb\"]) ||\n          addresses[\"eth\"] ||\n          addresses[\"en\"];\n        if (!ipAddress) {\n          return null;\n        }\n        return ipAddress;\n      },\n\n      scaningAddreses: function (addresses) {\n        if (!addresses || this.isScaning) {\n          return;\n        }\n        console.log(\"scanning addresses\");\n        const self = this;\n        let results = [];\n        var keys = Object.keys(addresses);\n        const len = keys.length;\n        self.isScaning = true;\n\n        let fn = (i) => {\n          if (\n            i >= len ||\n            (!self.checkAllIps && self.enabledIpList.length > 0)\n          ) {\n            self.isScaning = false;\n            self.enabledIpList = results;\n            console.log(\n              `%cScaning Finished ✅\\n✨Enabled Addresses: ${self.enabledIpList.join(\n                \",\"\n              )}`,\n              \"color:#87ba32\"\n            );\n\n            fn = () => {};\n            return;\n          }\n          let src = self.getUrl(addresses[keys[i]]);\n          const xhr = new XMLHttpRequest();\n          xhr.timeout = self.scanningTimeout;\n\n          const errorFn = () => {\n            fn(++i);\n          };\n\n          xhr.onload = function () {\n            if (xhr.status >= 200 && xhr.status < 300) {\n              results.push(addresses[keys[i]]);\n              console.log(\n                `%c✨(${i + 1}/${len})ping test Success: ${src}`,\n                \"color: #87ba32;\"\n              );\n              fn(++i);\n              return;\n            }\n            errorFn();\n          };\n\n          xhr.onerror = function () {\n            errorFn();\n            console.log(\n              `%c🚥(${i + 1}/${len}) ping test error: ${src}`,\n              \"color:red\"\n            );\n          };\n          // 定义超时回调\n          xhr.ontimeout = function () {\n            console.log(\n              `%c🚥(${i + 1}/${len}) ping test timeout: ${src}`,\n              \"color:red;\"\n            );\n            errorFn();\n          };\n\n          console.log(\n            `%c🚥(${i + 1}/${len}) start ping test: ${src}`,\n            \"color: #d8eeff;\"\n          );\n          xhr.open(\"GET\", src, true);\n          // 发送请求\n          xhr.send();\n        };\n        fn(0);\n      },\n\n      // 获取所有可用IP\n      getIpAddresses: function (interfaces) {\n        const reg = /^(wlan|usb|eth|en)/;\n        const addresses = {};\n        for (let iface in interfaces) {\n          for (let i = 0; i < interfaces[iface].length; i++) {\n            let address = interfaces[iface][i];\n            /* Ipv4 & 排除内部接口 & 匹配当前优先级的网口名称 */\n            var matches = iface.match(reg);\n            if (\n              matches &&\n              matches[1] &&\n              address.family === \"IPv4\" &&\n              !address.internal\n            ) {\n              addresses[matches[1]] = address.address;\n            }\n          }\n        }\n        return addresses;\n      }\n    },\n    mounted() {\n      this.scanning(this.msg);\n    }\n  };\n</script>\n<style>\n  body,\n  html {\n    overflow: hidden;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n  }\n\n  #iframe_block {\n    overflow: auto;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n    box-sizing: border-box;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    min-height: 500px;\n    z-index: 10000;\n    background-color: #eee;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  #iframe_block iframe {\n    width: 100%;\n    height: 100%;\n    border: 0;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n    box-sizing: border-box;\n  }\n\n  .skeleton_box {\n    width: 50%;\n    height: 50%;\n    background: #e0e0e0;\n    border-radius: 20px;\n    position: relative;\n    overflow: hidden;\n  }\n\n  .skeleton_box::after {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: -100%;\n    width: 100%;\n    height: 100%;\n    background: linear-gradient(90deg,\n        rgba(255, 255, 255, 0) 0%,\n        rgba(255, 255, 255, 0.5) 50%,\n        rgba(255, 255, 255, 0) 100%);\n    animation: shimmer 1.5s infinite;\n  }\n\n  @keyframes shimmer {\n    0% {\n      left: -100%;\n    }\n\n    100% {\n      left: 100%;\n    }\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7fcfaff22ec5f6b0",
+        "type": "ui-template",
+        "z": "f7d5cf3810421cf3",
+        "group": "805339df2b9ba50f",
+        "page": "",
+        "ui": "",
+        "name": "Terminal",
+        "order": 1,
+        "width": "12",
+        "height": "12",
+        "head": "",
+        "format": "<template>\n  <div>\n    <div id=\"iframe_block\">\n      <!-- <div v-if=\"isScaning && !iframeUrl\" class=\"skeleton_box\"></div> -->\n      <iframe id=\"iframe_recamera\" :src=\"iframeUrl\"></iframe>\n      <!-- <div v-else>\n        No website found, please check your network connection and\n        <button @click=\"function(){location.reload()}\">Refresh</button>\n      </div> -->\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      console.log(12312);\n      function getDeviceType() {\n        const userAgent = navigator.userAgent.toLowerCase();\n        return;\n        /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(\n          userAgent\n        )\n          ? \"PC\"\n          : \"mobile\";\n      }\n      return {\n        ipByDevice: \"\",\n        enabledIpList: [],\n        checkAllIps: true,\n        isScaning: false,\n        scanningTimeout: 3000, // ms\n        deviceType: getDeviceType(),\n        iframeUrl: `http://${window.location.hostname}/#/terminal?disablelayout=1`\n      };\n    },\n    computed: {\n      // iframeUrl: function () {\n      //   if (this.isScaning) {\n      //     return;\n      //   }\n      //   const ipByDevice = this.ipByDevice;\n      //   const ipList = this.enabledIpList;\n\n      //   // 无任何可用\n      //   if (!(ipList.length > 0)) {\n      //     return ipByDevice ? this.getUrl(ipByDevice) : null;\n      //   }\n\n      //   if (ipByDevice && ipList.includes(ipByDevice)) {\n      //     return this.getUrl(ipByDevice);\n      //   }\n\n      //   return this.getUrl(ipList[0]);\n      // }\n    },\n    watch: {\n      msg: function (msg, prevMsg) {\n        try {\n          //debounce 防抖\n          if (\n            prevMsg &&\n            prevMsg.interfaces &&\n            JSON.stringify(prevMsg.interfaces) ===\n              JSON.stringify(msg.interfaces)\n          ) {\n            console.log('🙈🙈 Same msg: Skip....')\n            return;\n          }\n        } catch (e) {\n          console.log(e);\n        }\n        this.scanning(msg);\n      }\n    },\n    methods: {\n      getUrl(ipAddress) {\n        return `http://${ipAddress}/#/terminal?disablelayout=1`;\n      },\n      scanning(msg) {\n        if (!(msg && msg.interfaces)) {\n          return;\n        }\n        this.ipByDevice = this.getIpByDevice(msg.interfaces);\n        this.scaningAddreses(msg.interfaces);\n      },\n      getIpByDevice: function (addresses) {\n        const ipAddress =\n          (this.deviceType === \"PC\"\n            ? addresses[\"usb\"] || addresses[\"wlan\"]\n            : addresses[\"wlan\"] || addresses[\"usb\"]) ||\n          addresses[\"eth\"] ||\n          addresses[\"en\"];\n        if (!ipAddress) {\n          return null;\n        }\n        return ipAddress;\n      },\n\n      scaningAddreses: function (addresses) {\n        if (!addresses || this.isScaning) {\n          return;\n        }\n        console.log(\"scanning addresses\");\n        const self = this;\n        let results = [];\n        var keys = Object.keys(addresses);\n        const len = keys.length;\n        self.isScaning = true;\n\n        let fn = (i) => {\n          if (\n            i >= len ||\n            (!self.checkAllIps && self.enabledIpList.length > 0)\n          ) {\n            self.isScaning = false;\n            self.enabledIpList = results;\n            console.log(\n              `%cScaning Finished ✅\\n✨Enabled Addresses: ${self.enabledIpList.join(\n                \",\"\n              )}`,\n              \"color:#87ba32\"\n            );\n\n            fn = () => {};\n            return;\n          }\n          let src = self.getUrl(addresses[keys[i]]);\n          const xhr = new XMLHttpRequest();\n          xhr.timeout = self.scanningTimeout;\n\n          const errorFn = () => {\n            fn(++i);\n          };\n\n          xhr.onload = function () {\n            if (xhr.status >= 200 && xhr.status < 300) {\n              results.push(addresses[keys[i]]);\n              console.log(\n                `%c✨(${i + 1}/${len})ping test Success: ${src}`,\n                \"color: #87ba32;\"\n              );\n              fn(++i);\n              return;\n            }\n            errorFn();\n          };\n\n          xhr.onerror = function () {\n            errorFn();\n            console.log(\n              `%c🚥(${i + 1}/${len}) ping test error: ${src}`,\n              \"color:red\"\n            );\n          };\n          // 定义超时回调\n          xhr.ontimeout = function () {\n            console.log(\n              `%c🚥(${i + 1}/${len}) ping test timeout: ${src}`,\n              \"color:red;\"\n            );\n            errorFn();\n          };\n\n          console.log(\n            `%c🚥(${i + 1}/${len}) start ping test: ${src}`,\n            \"color: #d8eeff;\"\n          );\n          xhr.open(\"GET\", src, true);\n          // 发送请求\n          xhr.send();\n        };\n        fn(0);\n      },\n\n      // 获取所有可用IP\n      getIpAddresses: function (interfaces) {\n        const reg = /^(wlan|usb|eth|en)/;\n        const addresses = {};\n        for (let iface in interfaces) {\n          for (let i = 0; i < interfaces[iface].length; i++) {\n            let address = interfaces[iface][i];\n            /* Ipv4 & 排除内部接口 & 匹配当前优先级的网口名称 */\n            var matches = iface.match(reg);\n            if (\n              matches &&\n              matches[1] &&\n              address.family === \"IPv4\" &&\n              !address.internal\n            ) {\n              addresses[matches[1]] = address.address;\n            }\n          }\n        }\n        return addresses;\n      }\n    },\n    mounted() {\n      this.scanning(this.msg);\n    }\n  };\n</script>\n<style>\n  body,\n  html {\n    overflow: hidden;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n  }\n\n  #iframe_block {\n    overflow: auto;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n    box-sizing: border-box;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    min-height: 500px;\n    z-index: 10000;\n    background-color: #eee;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  #iframe_block iframe {\n    width: 100%;\n    height: 100%;\n    border: 0;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n    box-sizing: border-box;\n  }\n\n  .skeleton_box {\n    width: 50%;\n    height: 50%;\n    background: #e0e0e0;\n    border-radius: 20px;\n    position: relative;\n    overflow: hidden;\n  }\n\n  .skeleton_box::after {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: -100%;\n    width: 100%;\n    height: 100%;\n    background: linear-gradient(90deg,\n        rgba(255, 255, 255, 0) 0%,\n        rgba(255, 255, 255, 0.5) 50%,\n        rgba(255, 255, 255, 0) 100%);\n    animation: shimmer 1.5s infinite;\n  }\n\n  @keyframes shimmer {\n    0% {\n      left: -100%;\n    }\n\n    100% {\n      left: 100%;\n    }\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd6f8c079532cbd0",
+        "type": "function",
+        "z": "f7d5cf3810421cf3",
+        "name": "Get IP Address",
+        "func": "\n\n\nconst interfaces = os.networkInterfaces()\nmsg.interfaces = context.get('getIpAddresses')(interfaces)\nreturn msg",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "\n\nfunction getIpAddresses(interfaces) {\n    const reg = /^(wlan|usb|eth|en)/;\n    const addresses = {};\n    for (let iface in interfaces) {\n        for (let i = 0; i < interfaces[iface].length; i++) {\n            let address = interfaces[iface][i];\n            /* Ipv4 & 排除内部接口 & 匹配当前优先级的网口名称 */\n            var matches = iface.match(reg);\n            if (\n                matches &&\n                matches[1] &&\n                address.family === \"IPv4\" &&\n                !address.internal\n            ) {\n                addresses[matches[1]] = address.address;\n            }\n        }\n    }\n    return addresses;\n}\ncontext.set(\"getIpAddresses\", getIpAddresses); ",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "os",
+                "module": "os"
+            }
+        ],
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "4d040b9fa3995f53",
+                "09137b52dd5df373",
+                "7fcfaff22ec5f6b0",
+                "2a077bb2499cfd50",
+                "7abb523b6155d2a0"
+            ]
+        ]
+    },
+    {
+        "id": "38189ad19cbf635b",
+        "type": "inject",
+        "z": "f7d5cf3810421cf3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 240,
+        "wires": [
+            [
+                "dd6f8c079532cbd0"
+            ]
+        ]
+    },
+    {
+        "id": "06a611e9632e5064",
+        "type": "comment",
+        "z": "f7d5cf3810421cf3",
+        "name": "Basic Web Functions",
+        "info": "Here are the basic web functions for reCamera.\nPlease notice that if you change this part, the basic functions for the reCamera could be damaged or missing.",
+        "x": 640,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "2a077bb2499cfd50",
+        "type": "ui-template",
+        "z": "f7d5cf3810421cf3",
+        "group": "a71db265f099f44c",
+        "page": "",
+        "ui": "",
+        "name": "System Update",
+        "order": 3,
+        "width": "6",
+        "height": "6",
+        "head": "",
+        "format": "<template>\n  <div>\n    <div id=\"iframe_block\">\n      <!-- <div v-if=\"isScaning && !iframeUrl\" class=\"skeleton_box\"></div> -->\n      <iframe id=\"iframe_recamera\" :src=\"iframeUrl\"></iframe>\n      <!-- <div v-else>\n        No website found, please check your network connection and\n        <button @click=\"function(){location.reload()}\">Refresh</button>\n      </div> -->\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      console.log(12312);\n      function getDeviceType() {\n        const userAgent = navigator.userAgent.toLowerCase();\n        return;\n        /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(\n          userAgent\n        )\n          ? \"PC\"\n          : \"mobile\";\n      }\n      return {\n        ipByDevice: \"\",\n        enabledIpList: [],\n        checkAllIps: true,\n        isScaning: false,\n        scanningTimeout: 3000, // ms\n        deviceType: getDeviceType(),\n        iframeUrl: `http://${window.location.hostname}/#/system?disablelayout=1`\n      };\n    },\n    computed: {\n      // iframeUrl: function () {\n      //   if (this.isScaning) {\n      //     return;\n      //   }\n      //   const ipByDevice = this.ipByDevice;\n      //   const ipList = this.enabledIpList;\n\n      //   // 无任何可用\n      //   if (!(ipList.length > 0)) {\n      //     return ipByDevice ? this.getUrl(ipByDevice) : null;\n      //   }\n\n      //   if (ipByDevice && ipList.includes(ipByDevice)) {\n      //     return this.getUrl(ipByDevice);\n      //   }\n      //   return this.getUrl(ipList[0]);\n      // }\n    },\n    watch: {\n      msg: function (msg, prevMsg) {\n        try {\n          //debounce 防抖\n          if (\n            prevMsg &&\n            prevMsg.interfaces &&\n            JSON.stringify(prevMsg.interfaces) ===\n              JSON.stringify(msg.interfaces)\n          ) {\n            console.log('🙈🙈 Same msg: Skip....')\n            return;\n          }\n        } catch (e) {\n          console.log(e);\n        }\n        this.scanning(msg);\n      }\n    },\n    methods: {\n      getUrl(ipAddress) {\n        return `http://${ipAddress}/#/system?disablelayout=1`;\n      },\n      scanning(msg) {\n        if (!(msg && msg.interfaces)) {\n          return;\n        }\n        this.ipByDevice = this.getIpByDevice(msg.interfaces);\n        this.scaningAddreses(msg.interfaces);\n      },\n      getIpByDevice: function (addresses) {\n        const ipAddress =\n          (this.deviceType === \"PC\"\n            ? addresses[\"usb\"] || addresses[\"wlan\"]\n            : addresses[\"wlan\"] || addresses[\"usb\"]) ||\n          addresses[\"eth\"] ||\n          addresses[\"en\"];\n        if (!ipAddress) {\n          return null;\n        }\n        return ipAddress;\n      },\n\n      scaningAddreses: function (addresses) {\n        if (!addresses || this.isScaning) {\n          return;\n        }\n        console.log(\"scanning addresses\");\n        const self = this;\n        let results = [];\n        var keys = Object.keys(addresses);\n        const len = keys.length;\n        self.isScaning = true;\n\n        let fn = (i) => {\n          if (\n            i >= len ||\n            (!self.checkAllIps && self.enabledIpList.length > 0)\n          ) {\n            self.isScaning = false;\n            self.enabledIpList = results;\n            console.log(\n              `%cScaning Finished ✅\\n✨Enabled Addresses: ${self.enabledIpList.join(\n                \",\"\n              )}`,\n              \"color:#87ba32\"\n            );\n\n            fn = () => {};\n            return;\n          }\n          let src = self.getUrl(addresses[keys[i]]);\n          const xhr = new XMLHttpRequest();\n          xhr.timeout = self.scanningTimeout;\n\n          const errorFn = () => {\n            fn(++i);\n          };\n\n          xhr.onload = function () {\n            if (xhr.status >= 200 && xhr.status < 300) {\n              results.push(addresses[keys[i]]);\n              console.log(\n                `%c✨(${i + 1}/${len})ping test Success: ${src}`,\n                \"color: #87ba32;\"\n              );\n              fn(++i);\n              return;\n            }\n            errorFn();\n          };\n\n          xhr.onerror = function () {\n            errorFn();\n            console.log(\n              `%c🚥(${i + 1}/${len}) ping test error: ${src}`,\n              \"color:red\"\n            );\n          };\n          // 定义超时回调\n          xhr.ontimeout = function () {\n            console.log(\n              `%c🚥(${i + 1}/${len}) ping test timeout: ${src}`,\n              \"color:red;\"\n            );\n            errorFn();\n          };\n\n          console.log(\n            `%c🚥(${i + 1}/${len}) start ping test: ${src}`,\n            \"color: #d8eeff;\"\n          );\n          xhr.open(\"GET\", src, true);\n          // 发送请求\n          xhr.send();\n        };\n        fn(0);\n      },\n\n      // 获取所有可用IP\n      getIpAddresses: function (interfaces) {\n        const reg = /^(wlan|usb|eth|en)/;\n        const addresses = {};\n        for (let iface in interfaces) {\n          for (let i = 0; i < interfaces[iface].length; i++) {\n            let address = interfaces[iface][i];\n            /* Ipv4 & 排除内部接口 & 匹配当前优先级的网口名称 */\n            var matches = iface.match(reg);\n            if (\n              matches &&\n              matches[1] &&\n              address.family === \"IPv4\" &&\n              !address.internal\n            ) {\n              addresses[matches[1]] = address.address;\n            }\n          }\n        }\n        return addresses;\n      }\n    },\n    mounted() {\n      this.scanning(this.msg);\n    }\n  };\n</script>\n<style>\n  body,\n  html {\n    overflow: auto;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n  }\n\n  #iframe_block {\n    overflow: auto;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n    box-sizing: border-box;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    min-height: 500px;\n    z-index: 10000;\n    background-color: #eee;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  #iframe_block iframe {\n    width: 100%;\n    height: 100%;\n    border: 0;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n    box-sizing: border-box;\n  }\n\n  .skeleton_box {\n    width: 50%;\n    height: 50%;\n    background: #e0e0e0;\n    border-radius: 20px;\n    position: relative;\n    overflow: hidden;\n  }\n\n  .skeleton_box::after {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: -100%;\n    width: 100%;\n    height: 100%;\n    background: linear-gradient(90deg,\n        rgba(255, 255, 255, 0) 0%,\n        rgba(255, 255, 255, 0.5) 50%,\n        rgba(255, 255, 255, 0) 100%);\n    animation: shimmer 1.5s infinite;\n  }\n\n  @keyframes shimmer {\n    0% {\n      left: -100%;\n    }\n\n    100% {\n      left: 100%;\n    }\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 620,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7abb523b6155d2a0",
+        "type": "ui-template",
+        "z": "f7d5cf3810421cf3",
+        "group": "92c61ece68bb9dd5",
+        "page": "",
+        "ui": "",
+        "name": "Power",
+        "order": 1,
+        "width": "6",
+        "height": "6",
+        "head": "",
+        "format": "<template>\n  <div>\n    <div id=\"iframe_block\">\n      <!-- <div v-if=\"isScaning && !iframeUrl\" class=\"skeleton_box\"></div> -->\n      <iframe id=\"iframe_recamera\" :src=\"iframeUrl\"></iframe>\n      <!-- <div v-else>\n        No website found, please check your network connection and\n        <button @click=\"function(){location.reload()}\">Refresh</button>\n      </div> -->\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      console.log(12312);\n      function getDeviceType() {\n        const userAgent = navigator.userAgent.toLowerCase();\n        return;\n        /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(\n          userAgent\n        )\n          ? \"PC\"\n          : \"mobile\";\n      }\n      return {\n        ipByDevice: \"\",\n        enabledIpList: [],\n        checkAllIps: true,\n        isScaning: false,\n        scanningTimeout: 3000, // ms\n        deviceType: getDeviceType(),\n        iframeUrl: `http://${window.location.hostname}/#/power?disablelayout=1`\n      };\n    },\n    computed: {\n      // iframeUrl: function () {\n      //   if (this.isScaning) {\n      //     return;\n      //   }\n      //   const ipByDevice = this.ipByDevice;\n      //   const ipList = this.enabledIpList;\n\n      //   // 无任何可用\n      //   if (!(ipList.length > 0)) {\n      //     return ipByDevice ? this.getUrl(ipByDevice) : null;\n      //   }\n\n      //   if (ipByDevice && ipList.includes(ipByDevice)) {\n      //     return this.getUrl(ipByDevice);\n      //   }\n\n      //   return this.getUrl(ipList[0]);\n      // }\n    },\n    watch: {\n      msg: function (msg, prevMsg) {\n        try {\n          //debounce 防抖\n          if (\n            prevMsg &&\n            prevMsg.interfaces &&\n            JSON.stringify(prevMsg.interfaces) ===\n              JSON.stringify(msg.interfaces)\n          ) {\n            console.log('🙈🙈 Same msg: Skip....')\n            return;\n          }\n        } catch (e) {\n          console.log(e);\n        }\n        this.scanning(msg);\n      }\n    },\n    methods: {\n      getUrl(ipAddress) {\n        return `http://${ipAddress}/#/power?disablelayout=1`;\n      },\n      scanning(msg) {\n        if (!(msg && msg.interfaces)) {\n          return;\n        }\n        this.ipByDevice = this.getIpByDevice(msg.interfaces);\n        this.scaningAddreses(msg.interfaces);\n      },\n      getIpByDevice: function (addresses) {\n        const ipAddress =\n          (this.deviceType === \"PC\"\n            ? addresses[\"usb\"] || addresses[\"wlan\"]\n            : addresses[\"wlan\"] || addresses[\"usb\"]) ||\n          addresses[\"eth\"] ||\n          addresses[\"en\"];\n        if (!ipAddress) {\n          return null;\n        }\n        return ipAddress;\n      },\n\n      scaningAddreses: function (addresses) {\n        if (!addresses || this.isScaning) {\n          return;\n        }\n        console.log(\"scanning addresses\");\n        const self = this;\n        let results = [];\n        var keys = Object.keys(addresses);\n        const len = keys.length;\n        self.isScaning = true;\n\n        let fn = (i) => {\n          if (\n            i >= len ||\n            (!self.checkAllIps && self.enabledIpList.length > 0)\n          ) {\n            self.isScaning = false;\n            self.enabledIpList = results;\n            console.log(\n              `%cScaning Finished ✅\\n✨Enabled Addresses: ${self.enabledIpList.join(\n                \",\"\n              )}`,\n              \"color:#87ba32\"\n            );\n\n            fn = () => {};\n            return;\n          }\n          let src = self.getUrl(addresses[keys[i]]);\n          const xhr = new XMLHttpRequest();\n          xhr.timeout = self.scanningTimeout;\n\n          const errorFn = () => {\n            fn(++i);\n          };\n\n          xhr.onload = function () {\n            if (xhr.status >= 200 && xhr.status < 300) {\n              results.push(addresses[keys[i]]);\n              console.log(\n                `%c✨(${i + 1}/${len})ping test Success: ${src}`,\n                \"color: #87ba32;\"\n              );\n              fn(++i);\n              return;\n            }\n            errorFn();\n          };\n\n          xhr.onerror = function () {\n            errorFn();\n            console.log(\n              `%c🚥(${i + 1}/${len}) ping test error: ${src}`,\n              \"color:red\"\n            );\n          };\n          // 定义超时回调\n          xhr.ontimeout = function () {\n            console.log(\n              `%c🚥(${i + 1}/${len}) ping test timeout: ${src}`,\n              \"color:red;\"\n            );\n            errorFn();\n          };\n\n          console.log(\n            `%c🚥(${i + 1}/${len}) start ping test: ${src}`,\n            \"color: #d8eeff;\"\n          );\n          xhr.open(\"GET\", src, true);\n          // 发送请求\n          xhr.send();\n        };\n        fn(0);\n      },\n\n      // 获取所有可用IP\n      getIpAddresses: function (interfaces) {\n        const reg = /^(wlan|usb|eth|en)/;\n        const addresses = {};\n        for (let iface in interfaces) {\n          for (let i = 0; i < interfaces[iface].length; i++) {\n            let address = interfaces[iface][i];\n            /* Ipv4 & 排除内部接口 & 匹配当前优先级的网口名称 */\n            var matches = iface.match(reg);\n            if (\n              matches &&\n              matches[1] &&\n              address.family === \"IPv4\" &&\n              !address.internal\n            ) {\n              addresses[matches[1]] = address.address;\n            }\n          }\n        }\n        return addresses;\n      }\n    },\n    mounted() {\n      this.scanning(this.msg);\n    }\n  };\n</script>\n<style>\n  body,\n  html {\n    overflow: auto;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n  }\n\n  #iframe_block {\n    overflow: auto;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n    box-sizing: border-box;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    min-height: 500px;\n    z-index: 10000;\n    background-color: #eee;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  #iframe_block iframe {\n    width: 100%;\n    height: 100%;\n    border: 0;\n    margin: 0 0 0 0;\n    padding: 0 0 0 0;\n    box-sizing: border-box;\n  }\n\n  .skeleton_box {\n    width: 50%;\n    height: 50%;\n    background: #e0e0e0;\n    border-radius: 20px;\n    position: relative;\n    overflow: hidden;\n  }\n\n  .skeleton_box::after {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: -100%;\n    width: 100%;\n    height: 100%;\n    background: linear-gradient(90deg,\n        rgba(255, 255, 255, 0) 0%,\n        rgba(255, 255, 255, 0.5) 50%,\n        rgba(255, 255, 255, 0) 100%);\n    animation: shimmer 1.5s infinite;\n  }\n\n  @keyframes shimmer {\n    0% {\n      left: -100%;\n    }\n\n    100% {\n      left: 100%;\n    }\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 590,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f368bcfbab683dc7",
+        "type": "inject",
+        "z": "22d80629fd354a7c",
+        "name": "update",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 320,
+        "wires": [
+            [
+                "8fb63507a768078d",
+                "952fd690c1ebb840",
+                "a7504434189b32e7",
+                "ce86ca951d10b0c7",
+                "bfaa44172ab5326f",
+                "be4da931e7ab6f0d"
+            ]
+        ]
+    },
+    {
+        "id": "8abb6db8dffff349",
+        "type": "function",
+        "z": "22d80629fd354a7c",
+        "name": "",
+        "func": "msg.payload = msg.payload.memusage;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 626,
+        "y": 655,
+        "wires": [
+            [
+                "d6c3a7dc48672ee6"
+            ]
+        ]
+    },
+    {
+        "id": "3da76238dafd14a2",
+        "type": "function",
+        "z": "22d80629fd354a7c",
+        "name": "",
+        "func": "function formatBytes(bytes,decimals) {\n   if(bytes === 0) return '0 Byte';\n   var k = 1000; // or 1024 for binary\n   var dm = decimals + 1 || 3;\n   var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];\n   var i = Math.floor(Math.log(bytes) / Math.log(k));\n   return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];\n}\n\nmsg.payload = formatBytes(msg.payload.totalmem);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 626,
+        "y": 695,
+        "wires": [
+            [
+                "63853676b1ff93d4"
+            ]
+        ]
+    },
+    {
+        "id": "9aaf0c77fb404846",
+        "type": "function",
+        "z": "22d80629fd354a7c",
+        "name": "",
+        "func": "function formatBytes(bytes,decimals) {\n   if(bytes === 0) return '0 Byte';\n   var k = 1000; // or 1024 for binary\n   var dm = decimals + 1 || 3;\n   var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];\n   var i = Math.floor(Math.log(bytes) / Math.log(k));\n   return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];\n}\n\nmsg.payload = formatBytes(msg.payload.freemem);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 626,
+        "y": 735,
+        "wires": [
+            [
+                "1e2435457cd568bf"
+            ]
+        ]
+    },
+    {
+        "id": "13d323ceefbfc00f",
+        "type": "function",
+        "z": "22d80629fd354a7c",
+        "name": "",
+        "func": "function timeConversion(millisec) {\n\n    var seconds = (millisec / 1000).toFixed(1);\n\n    var minutes = (millisec / (1000 * 60)).toFixed(1);\n\n    var hours = (millisec / (1000 * 60 * 60)).toFixed(1);\n\n    var days = (millisec / (1000 * 60 * 60 * 24)).toFixed(1);\n\n    if (seconds < 60) {\n        return seconds + \" Sec\";\n    } else if (minutes < 60) {\n        return minutes + \" Min\";\n    } else if (hours < 24) {\n        return hours + \" Hrs\";\n    } else {\n        return days + \" Days\"\n    }\n}\n\nmsg.payload = timeConversion(msg.payload.uptime * 1000);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 607,
+        "y": 155,
+        "wires": [
+            [
+                "605c0ed155d63cba"
+            ]
+        ]
+    },
+    {
+        "id": "4e273569d8ae0ad3",
+        "type": "function",
+        "z": "22d80629fd354a7c",
+        "name": "",
+        "func": "msg.payload = msg.payload.hostname;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 606,
+        "y": 192,
+        "wires": [
+            [
+                "3ec7d36e51bf8ca3"
+            ]
+        ]
+    },
+    {
+        "id": "0bfde21cb53fa9bc",
+        "type": "function",
+        "z": "22d80629fd354a7c",
+        "name": "",
+        "func": "msg.payload = msg.payload.platform;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 608,
+        "y": 230,
+        "wires": [
+            [
+                "3b00269fbf994534"
+            ]
+        ]
+    },
+    {
+        "id": "75183caccd75901e",
+        "type": "function",
+        "z": "22d80629fd354a7c",
+        "name": "",
+        "func": "msg.payload = msg.payload.arch;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 609,
+        "y": 269,
+        "wires": [
+            [
+                "12db460d116ecb26"
+            ]
+        ]
+    },
+    {
+        "id": "0afca53dd8ced5b4",
+        "type": "function",
+        "z": "22d80629fd354a7c",
+        "name": "",
+        "func": "msg.payload = msg.payload.memusage;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 626,
+        "y": 615,
+        "wires": [
+            [
+                "840bf29321f4fb23"
+            ]
+        ]
+    },
+    {
+        "id": "c75d3b4d55305a43",
+        "type": "comment",
+        "z": "22d80629fd354a7c",
+        "name": "Memory Usage",
+        "info": "",
+        "x": 826,
+        "y": 575,
+        "wires": []
+    },
+    {
+        "id": "9b79bda7a969b178",
+        "type": "comment",
+        "z": "22d80629fd354a7c",
+        "name": "System Information",
+        "info": "",
+        "x": 836,
+        "y": 95,
+        "wires": []
+    },
+    {
+        "id": "840bf29321f4fb23",
+        "type": "ui-chart",
+        "z": "22d80629fd354a7c",
+        "group": "7f2745813d799705",
+        "name": "Memory - 24 Hours",
+        "label": "24 Hours",
+        "order": 4,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "HH:mm:ss",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "%",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "86400",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 836,
+        "y": 615,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6c3a7dc48672ee6",
+        "type": "ui-gauge",
+        "z": "22d80629fd354a7c",
+        "name": "Memory Usage",
+        "group": "7f2745813d799705",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "rounded",
+        "title": "1 Minute",
+        "units": "Usage",
+        "icon": "memory",
+        "prefix": "",
+        "suffix": "%",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 826,
+        "y": 655,
+        "wires": []
+    },
+    {
+        "id": "63853676b1ff93d4",
+        "type": "ui-text",
+        "z": "22d80629fd354a7c",
+        "group": "7f2745813d799705",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Total Memory",
+        "label": "Total Memory",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 826,
+        "y": 695,
+        "wires": []
+    },
+    {
+        "id": "1e2435457cd568bf",
+        "type": "ui-text",
+        "z": "22d80629fd354a7c",
+        "group": "7f2745813d799705",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Free Memory",
+        "label": "Free Memory",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 816,
+        "y": 735,
+        "wires": []
+    },
+    {
+        "id": "605c0ed155d63cba",
+        "type": "ui-text",
+        "z": "22d80629fd354a7c",
+        "group": "a71db265f099f44c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Uptime",
+        "label": "Uptime",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 806,
+        "y": 155,
+        "wires": []
+    },
+    {
+        "id": "3ec7d36e51bf8ca3",
+        "type": "ui-text",
+        "z": "22d80629fd354a7c",
+        "group": "a71db265f099f44c",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Hostname",
+        "label": "Hostname",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 816,
+        "y": 195,
+        "wires": []
+    },
+    {
+        "id": "3b00269fbf994534",
+        "type": "ui-text",
+        "z": "22d80629fd354a7c",
+        "group": "a71db265f099f44c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Platform",
+        "label": "Platform",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 801,
+        "y": 242,
+        "wires": []
+    },
+    {
+        "id": "12db460d116ecb26",
+        "type": "ui-text",
+        "z": "22d80629fd354a7c",
+        "group": "a71db265f099f44c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Arch",
+        "label": "Arch",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 791,
+        "y": 282,
+        "wires": []
+    },
+    {
+        "id": "bfaa44172ab5326f",
+        "type": "exec",
+        "z": "22d80629fd354a7c",
+        "command": "top -bn1 | grep \"CPU:\" | awk '{print $2 + $4}' | head -n1",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "name": "CPU Load",
+        "x": 476,
+        "y": 435,
+        "wires": [
+            [
+                "ec0493bfbba1220d",
+                "2be338b2990bb9c0"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e51fd341b68b3af2",
+        "type": "comment",
+        "z": "22d80629fd354a7c",
+        "name": "CPU Load",
+        "info": "",
+        "x": 806,
+        "y": 395,
+        "wires": []
+    },
+    {
+        "id": "ec0493bfbba1220d",
+        "type": "ui-gauge",
+        "z": "22d80629fd354a7c",
+        "name": "CPU",
+        "group": "6a7d65728351652c",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "rounded",
+        "title": "CPU",
+        "units": "Usage",
+        "icon": "cpu-64-bit",
+        "prefix": "",
+        "suffix": "%",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 796,
+        "y": 435,
+        "wires": []
+    },
+    {
+        "id": "2be338b2990bb9c0",
+        "type": "ui-chart",
+        "z": "22d80629fd354a7c",
+        "group": "6a7d65728351652c",
+        "name": "CPU Load%",
+        "label": "CPU Load%",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "HH:mm:ss",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "%",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "5",
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 816,
+        "y": 475,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be4da931e7ab6f0d",
+        "type": "exec",
+        "z": "22d80629fd354a7c",
+        "command": "df -h",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "name": "Disk Usage",
+        "x": 436,
+        "y": 855,
+        "wires": [
+            [
+                "c9217423d15fd7fd"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c9217423d15fd7fd",
+        "type": "function",
+        "z": "22d80629fd354a7c",
+        "name": "function 3",
+        "func": "// Input payload as a string\nlet data = msg.payload;\n\n// Split the input into lines\nlet lines = data.split('\\n');\n\n// Initialize variables\nlet totalSize = 0;       // Total space size in GB\nlet totalUsed = 0.256;       // Used space in GB\nlet totalAvailable = 0;   // Available space in GB\n\n// Updated regex to match both MB and GB, and all filesystem types\nlet regex = /(\\S+)\\s+([\\d.]+)([MKG]?)\\s+([\\d.]+)([MKG]?)\\s+([\\d.]+)([MKG]?)\\s+(\\d+)%/;\n\n// Function to convert MB to GB\nfunction mbToGb(value, unit) {\n    switch (unit) {\n        case 'G':\n            return value;\n        case 'M':\n            return value / 1024;\n        case 'K':\n            return value / 1024 / 1024;\n        default:\n            return 0;\n    }\n}\n\n// Iterate through each line and sum the values\nfor (let line of lines) {\n    let match = line.match(regex);\n\n    if (match && (match[1] === \"/dev/root\" || match[1] === \"/dev/mmcblk0p6\")) {\n        // Extract values and units\n        let size = parseFloat(match[2]);\n        let sizeUnit = match[3];\n        let used = parseFloat(match[4]);\n        let usedUnit = match[5];\n        let available = parseFloat(match[6]);\n        let availUnit = match[7];\n        \n        // Convert all values to GB\n        totalSize += mbToGb(size, sizeUnit);\n        totalUsed += mbToGb(used, usedUnit);\n        totalAvailable += mbToGb(available, availUnit);\n    }\n}\n// Format the results to two decimal places\n// totalSize = totalSize.toFixed(2);         \ntotalUsed = totalUsed.toFixed(2);       \ntotalAvailable = totalAvailable.toFixed(2); \ntotalSize = (Number(totalUsed) + Number(totalAvailable)).toFixed(2);         \n\n// Calculate used and free percentages\nlet usedPercentage = ((totalUsed / totalSize) * 100).toFixed(2);\nlet freePercentage = ((totalAvailable / totalSize) * 100).toFixed(2);\n\n// Create different messages for each output\nlet output1 = { payload: totalSize };           // Total size in GB\nlet output2 = { payload: totalUsed };            // Used space in GB\nlet output3 = { payload: totalAvailable };       // Available space in GB\nlet output4 = { payload: usedPercentage };       // Used percentage\nlet output5 = { payload: freePercentage };       // Free percentage\n\n// Return all five outputs as an array\nreturn [output1, output2, output3, output4, output5];\n",
+        "outputs": 5,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 626,
+        "y": 875,
+        "wires": [
+            [
+                "5649f217373f6705"
+            ],
+            [
+                "e7d6a0ca84bc4a74"
+            ],
+            [
+                "68a0065c07ad9a8f"
+            ],
+            [
+                "0492a5073b5f4979"
+            ],
+            [
+                "c94410a0a1e4a792"
+            ]
+        ]
+    },
+    {
+        "id": "e68159548b2966fe",
+        "type": "comment",
+        "z": "22d80629fd354a7c",
+        "name": "Disk Usage",
+        "info": "",
+        "x": 816,
+        "y": 815,
+        "wires": []
+    },
+    {
+        "id": "5649f217373f6705",
+        "type": "ui-text",
+        "z": "22d80629fd354a7c",
+        "group": "fea0f6f907349d71",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Total Storage",
+        "label": "Total Storage (GB)",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 816,
+        "y": 855,
+        "wires": []
+    },
+    {
+        "id": "e7d6a0ca84bc4a74",
+        "type": "ui-text",
+        "z": "22d80629fd354a7c",
+        "group": "fea0f6f907349d71",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Used Storage",
+        "label": "Used Storage (GB)",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 826,
+        "y": 895,
+        "wires": []
+    },
+    {
+        "id": "68a0065c07ad9a8f",
+        "type": "ui-text",
+        "z": "22d80629fd354a7c",
+        "group": "fea0f6f907349d71",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Free Storage",
+        "label": "Free Storage (GB)",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 816,
+        "y": 935,
+        "wires": []
+    },
+    {
+        "id": "0492a5073b5f4979",
+        "type": "ui-gauge",
+        "z": "22d80629fd354a7c",
+        "name": "Used Storage",
+        "group": "fea0f6f907349d71",
+        "order": 5,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-tank",
+        "gstyle": "needle",
+        "title": "Used Storage",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#a8f5ff"
+            },
+            {
+                "from": "15",
+                "color": "#55dbec"
+            },
+            {
+                "from": "35",
+                "color": "#53b4fd"
+            },
+            {
+                "from": "50",
+                "color": "#2397d1"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 826,
+        "y": 975,
+        "wires": []
+    },
+    {
+        "id": "c94410a0a1e4a792",
+        "type": "ui-gauge",
+        "z": "22d80629fd354a7c",
+        "name": "Free Storage",
+        "group": "fea0f6f907349d71",
+        "order": 4,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-tank",
+        "gstyle": "needle",
+        "title": "Free Storage",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#a8f5ff"
+            },
+            {
+                "from": "15",
+                "color": "#55dbec"
+            },
+            {
+                "from": "35",
+                "color": "#53b4fd"
+            },
+            {
+                "from": "50",
+                "color": "#2397d1"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 816,
+        "y": 1015,
+        "wires": []
+    },
+    {
+        "id": "8fb63507a768078d",
+        "type": "OS",
+        "z": "22d80629fd354a7c",
+        "name": "",
+        "x": 436,
+        "y": 195,
+        "wires": [
+            [
+                "4e273569d8ae0ad3",
+                "0bfde21cb53fa9bc",
+                "75183caccd75901e"
+            ]
+        ]
+    },
+    {
+        "id": "952fd690c1ebb840",
+        "type": "Uptime",
+        "z": "22d80629fd354a7c",
+        "name": "",
+        "x": 446,
+        "y": 155,
+        "wires": [
+            [
+                "13d323ceefbfc00f"
+            ]
+        ]
+    },
+    {
+        "id": "a7504434189b32e7",
+        "type": "CPUs",
+        "z": "22d80629fd354a7c",
+        "name": "",
+        "x": 435,
+        "y": 245,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce86ca951d10b0c7",
+        "type": "Memory",
+        "z": "22d80629fd354a7c",
+        "name": "",
+        "x": 446,
+        "y": 615,
+        "wires": [
+            [
+                "8abb6db8dffff349",
+                "3da76238dafd14a2",
+                "9aaf0c77fb404846",
+                "0afca53dd8ced5b4"
+            ]
+        ]
+    },
+    {
+        "id": "9e3e342695458112",
+        "type": "ui-slider",
+        "z": "5924433263ceb70d",
+        "g": "38da0acbee7571dc",
+        "group": "37a6e7f9304e351c",
+        "name": "Confidence",
+        "label": "Confidence",
+        "tooltip": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": false,
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "f40cb9db86bef8a5"
+            ]
+        ]
+    },
+    {
+        "id": "5c78727dc73b9fa9",
+        "type": "ui-slider",
+        "z": "5924433263ceb70d",
+        "g": "38da0acbee7571dc",
+        "group": "37a6e7f9304e351c",
+        "name": "IoU",
+        "label": "IoU",
+        "tooltip": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": false,
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "54283c013e16973b"
+            ]
+        ]
+    },
+    {
+        "id": "f40cb9db86bef8a5",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "38da0acbee7571dc",
+        "name": "send_confidence",
+        "func": "const tscore = Number((Number(msg.payload)/100).toFixed(2))\nmsg.payload = {tscore}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 180,
+        "wires": [
+            [
+                "4df7444990c143f0"
+            ]
+        ]
+    },
+    {
+        "id": "54283c013e16973b",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "38da0acbee7571dc",
+        "name": "send_iou",
+        "func": "const tiou = Number((Number(msg.payload)/100).toFixed(2))\nmsg.payload = {tiou}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "4df7444990c143f0"
+            ]
+        ]
+    },
+    {
+        "id": "44cbf08499fa0e50",
+        "type": "comment",
+        "z": "5924433263ceb70d",
+        "name": "Preview Demo",
+        "info": "This is the demo for reCamera Gimbal.\n\nWe created a dashboard for gimbal for users \nto get a idea of how you can use nodes to \ncontrol the gimbal. Feel free to modify\nthe flow at your wish.\n\nJust be mindful that the device does have\nsome CPU limitation.\n\nPrinting out multiple debugs or using multiple\nCAN nodes will result in a high CPU and cause\nthe crash of the device.",
+        "x": 110,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "dce4bb179705c28b",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "get_target_box",
+        "func": "const TRACK_TARGETS = {\n    PERSON: 0,\n    CAT: 15,\n    DOG: 16,\n    BOTTLE: 39,\n    CUP: 41,\n    CELLPHONE: 67,\n    CAR: 2\n};\nconst trackEnabled = global.get('trackEnabled');\nif (!trackEnabled) {\n    return null;\n}\nlet currentTarget = global.get(\"trackTarget\");\nif (currentTarget === undefined) {\n    currentTarget = TRACK_TARGETS.PERSON\n}\n\n// check current topic and payload\nconst topic = msg.topic;\nconst payload = msg.payload;\n\n// get all the boxes\nlet boxes = payload.data?.boxes;\n\n// check if all boxes and not null\nif (!boxes || boxes.length === 0) {\n    payload.selectedBox = false; // if no boxes detected，set selectedBox to false\n    return msg;\n}\n// filtered out the desired detecting object with options\nlet filteredBoxes = boxes.filter(box => box[5] === parseInt(currentTarget)); // box[5] is the class ID\n\nif (filteredBoxes.length === 0) {\n    payload.selectedBox = false; \n    return msg;\n}\n\n// Calculate box area and select max box\nlet maxAreaBox = filteredBoxes.reduce((maxBox, currentBox) => {\n    // calculate current box area\n    let currentArea = currentBox[2] * currentBox[3]; // box[2] is width，box[3] is height\n    let maxArea = maxBox[2] * maxBox[3]; // maxBox's area\n\n    return currentArea > maxArea ? currentBox : maxBox; // comparison area\n}, filteredBoxes[0]);\n\n// parse info for after process in the next node\nmsg.payload.selectedBox = maxAreaBox;\nmsg.payload.resolution = payload.data?.resolution;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 320,
+        "wires": [
+            [
+                "77f7fb1af5e3bb02"
+            ]
+        ]
+    },
+    {
+        "id": "16faeb961ec1bf39",
+        "type": "ui-button-group",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "Track Enable",
+        "group": "c5fbe89b47b4f853",
+        "order": 6,
+        "width": "0",
+        "height": "0",
+        "label": "Target Track Enable",
+        "className": "",
+        "rounded": true,
+        "useThemeColors": false,
+        "passthru": false,
+        "options": [
+            {
+                "label": "Start Tracking",
+                "icon": "",
+                "value": "true",
+                "valueType": "bool",
+                "color": "#009933"
+            },
+            {
+                "label": "Stop Tracking",
+                "icon": "",
+                "value": "false",
+                "valueType": "bool",
+                "color": "#999999"
+            }
+        ],
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 650,
+        "y": 460,
+        "wires": [
+            [
+                "95d8a68a011bdc6c"
+            ]
+        ]
+    },
+    {
+        "id": "eda0c03f08759525",
+        "type": "ui-dropdown",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "group": "c5fbe89b47b4f853",
+        "name": "Track Target",
+        "label": "Track Object Option:",
+        "tooltip": "",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [
+            {
+                "label": "Person",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Cat",
+                "value": 15,
+                "type": "num"
+            },
+            {
+                "label": "Dog",
+                "value": 16,
+                "type": "num"
+            },
+            {
+                "label": "Bottle",
+                "value": "39",
+                "type": "str"
+            },
+            {
+                "label": "Cup",
+                "value": 41,
+                "type": "num"
+            },
+            {
+                "label": "Cell Phone",
+                "value": 67,
+                "type": "num"
+            },
+            {
+                "label": "car",
+                "value": "2",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": true,
+        "msgTrigger": "onChange",
+        "x": 650,
+        "y": 400,
+        "wires": [
+            [
+                "b5f7115f8da75f5a"
+            ]
+        ]
+    },
+    {
+        "id": "b5f7115f8da75f5a",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "save_track_target",
+        "func": "global.set(\"trackTarget\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f05d0e436acc7c0",
+        "type": "ui-text",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "group": "c5fbe89b47b4f853",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Manual Control",
+        "label": "Manual Control",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 140,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "cf76f4d691c14470",
+        "type": "ui-text",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "group": "c5fbe89b47b4f853",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "Shortcut Button",
+        "label": "Shortcut Button",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 140,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "c8d1127a5f52ba11",
+        "type": "subflow:22d80629fd354a7c",
+        "z": "5924433263ceb70d",
+        "name": "",
+        "x": 130,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "082ed11c01eb9001",
+        "type": "subflow:f7d5cf3810421cf3",
+        "z": "5924433263ceb70d",
+        "name": "",
+        "x": 110,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "e0c3e26dcba0a1d0",
+        "type": "ui-button",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "group": "c5fbe89b47b4f853",
+        "name": "Sleep",
+        "label": "Sleep",
+        "order": 9,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"yaw_angle\":180, \"yaw_speed\":360, \"pitch_angle\":175, \"pitch_speed\":360}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 110,
+        "y": 1040,
+        "wires": [
+            [
+                "aa73b695851dbf8e",
+                "45d7334c4a7d3a34"
+            ]
+        ]
+    },
+    {
+        "id": "1528e53340ceac14",
+        "type": "ui-slider",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "group": "c5fbe89b47b4f853",
+        "name": "Yaw",
+        "label": "Yaw Absolute Angle",
+        "tooltip": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "true",
+        "min": "1",
+        "max": "345",
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": true,
+        "x": 350,
+        "y": 700,
+        "wires": [
+            [
+                "45d7334c4a7d3a34",
+                "c01033b112727fe9"
+            ]
+        ]
+    },
+    {
+        "id": "45dd35115125460f",
+        "type": "ui-slider",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "group": "c5fbe89b47b4f853",
+        "name": "Pitch",
+        "label": "Pitch Absolute Angle",
+        "tooltip": "",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "true",
+        "min": "1",
+        "max": "175",
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": true,
+        "x": 350,
+        "y": 760,
+        "wires": [
+            [
+                "45d7334c4a7d3a34",
+                "702aeefba5d6d7a4"
+            ]
+        ]
+    },
+    {
+        "id": "141a718c4aca75ea",
+        "type": "ui-slider",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "group": "c5fbe89b47b4f853",
+        "name": "Speed",
+        "label": "Motors Speed",
+        "tooltip": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "true",
+        "min": "1",
+        "max": "720",
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": true,
+        "x": 350,
+        "y": 820,
+        "wires": [
+            [
+                "2aa592079c263c56",
+                "b46762af1a17c573"
+            ]
+        ]
+    },
+    {
+        "id": "030f888e2b794a0f",
+        "type": "ui-button",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "group": "c5fbe89b47b4f853",
+        "name": "Standby",
+        "label": "Standby",
+        "order": 10,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"yaw_angle\":180, \"yaw_speed\":360,\"pitch_angle\":90, \"pitch_speed\":360}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 120,
+        "y": 1100,
+        "wires": [
+            [
+                "aa73b695851dbf8e",
+                "45d7334c4a7d3a34"
+            ]
+        ]
+    },
+    {
+        "id": "42c6325966560571",
+        "type": "ui-template",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "group": "c5fbe89b47b4f853",
+        "page": "",
+        "ui": "",
+        "name": "joystick",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": "<template>\n  <div>\n    <div id=\"joystick-container\" class=\"joystick-container\" />\n    <div v-if=\"errorMessage\" class=\"error-message\" @click=\"retryLoading\">{{ errorMessage }}</div>\n  </div>\n</template>\n\n<script>\n  export default {\n  name: 'JoystickControl',\n\n  data() {\n    return {\n      // Motor angle range constants\n      YAW_MIN_ANGLE: -20,    // Min yaw angle offset from center\n      YAW_MAX_ANGLE: 20,     // Max yaw angle offset from center\n      PITCH_MIN_ANGLE: -10,  // Min pitch angle offset from center\n      PITCH_MAX_ANGLE: 10,   // Max pitch angle offset from center\n      joystick: null,        // Joystick instance\n      errorMessage: null,    // Error message for loading failure\n      throttleInterval: 200, // Throttle interval in milliseconds\n      intervalId: null,      // Timer ID for continuous output\n      isActive: false,       // Joystick active state\n      lastPosition: null,    // Last known joystick position\n      lastMoveTime: 0,       // Timestamp of last move event\n      lastSentTime: 0,       // Timestamp of last sent position\n      pendingMove: false,    // Flag to track if there's a pending move to process\n    }\n  },\n\n  mounted() {\n    this.loadNippleJS();\n  },\n\n  beforeDestroy() {\n    this.cleanup();\n  },\n\n  methods: {\n    loadNippleJS() {\n      // Check if already loaded\n      if (window.nipplejs) {\n        this.initializeJoystick();\n        return;\n      }\n\n      const script = document.createElement('script');\n      script.src = '/nipplejs.min.js';\n      script.onload = () => {\n        this.errorMessage = null;\n        this.initializeJoystick();\n      };\n      script.onerror = () => {\n        this.errorMessage = \"Failed to load joystick. Click here to retry.\";\n      };\n      document.head.appendChild(script);\n    },\n\n    retryLoading() {\n      if (this.errorMessage) {\n        this.errorMessage = \"Retrying to load joystick...\";\n        this.loadNippleJS();\n      }\n    },\n\n    initializeJoystick() {\n      if (!window.nipplejs) return;\n      const container = document.getElementById('joystick-container');\n      if (!container) return;\n\n      // Destroy existing instance if any\n      if (this.joystick) {\n        this.joystick.destroy();\n      }\n\n      this.joystick = nipplejs.create({\n        zone: container,\n        mode: 'static',\n        position: { left: '50%', top: '50%' },\n        color: 'green',\n        size: 96,\n        lockX: false,\n        lockY: false\n      });\n\n      // Event listeners\n      this.joystick\n        .on('start', this.handleStart)\n        .on('move', this.throttledHandleMove)\n        .on('end', this.handleEnd);\n    },\n\n    // Throttled version of handleMove\n    throttledHandleMove(evt, data) {\n      const now = Date.now();\n      \n      // Always update the last position\n      if (data?.vector) {\n        this.lastPosition = {\n          x: data.vector.x,\n          y: data.vector.y\n        };\n        this.lastMoveTime = now;\n      }\n      \n      // Check if we should throttle this event\n      if (now - this.lastSentTime < this.throttleInterval) {\n        // If we're throttling, mark that there's a pending move\n        this.pendingMove = true;\n        return;\n      }\n      \n      // Process the move and update sent time\n      this.processMove();\n    },\n    \n    // Process the actual move and send position\n    processMove() {\n      if (!this.lastPosition) return;\n      \n      // Send the position\n      this.sendPosition(this.lastPosition);\n      \n      // Update the last sent time\n      this.lastSentTime = Date.now();\n      \n      // Clear the pending flag\n      this.pendingMove = false;\n      \n      // If there was a move during throttle period, schedule another send\n      if (this.pendingMove) {\n        setTimeout(() => {\n          this.processMove();\n        }, this.throttleInterval);\n      }\n    },\n\n    handleStart() {\n      this.isActive = true;\n      // Start continuous output\n      this.startContinuousOutput();\n    },\n\n    handleEnd() {\n      this.isActive = false;\n      this.stopContinuousOutput();\n      \n      this.lastPosition = null;\n      this.lastMoveTime = 0;\n      this.pendingMove = false;\n    },\n\n    startContinuousOutput() {\n      // Clear any existing interval first\n      this.stopContinuousOutput();\n      \n      this.intervalId = setInterval(() => {\n        if (this.lastPosition && this.isActive) {\n          // Only send from interval if no recent move event\n          const now = Date.now();\n          if (now - this.lastMoveTime > this.throttleInterval && \n              now - this.lastSentTime > this.throttleInterval) {\n            this.sendPosition(this.lastPosition);\n            this.lastSentTime = now;\n          }\n        }\n      }, this.throttleInterval);\n    },\n\n    stopContinuousOutput() {\n      if (this.intervalId) {\n        clearInterval(this.intervalId);\n        this.intervalId = null;\n      }\n    },\n\n    clampAngle(angle, minAngle, maxAngle) {\n      return Math.max(minAngle, Math.min(maxAngle, angle));\n    },\n\n    calculateOffsets(vector) {\n      if (!vector) return { yaw: 0, pitch: 0 };\n\n      return {\n        yaw: Math.round(vector.x * Math.abs(this.YAW_MAX_ANGLE)),\n        pitch: Math.round(-vector.y * Math.abs(this.PITCH_MAX_ANGLE))\n      };\n    },\n\n    sendPosition(vector) {\n      const offsets = this.calculateOffsets(vector);\n      const yawOffset = -this.clampAngle(offsets.yaw, this.YAW_MIN_ANGLE, this.YAW_MAX_ANGLE);\n      const pitchOffset = this.clampAngle(offsets.pitch, this.PITCH_MIN_ANGLE, this.PITCH_MAX_ANGLE);\n\n      this.send({\n        payload: {\n          yaw_angle: yawOffset,\n          pitch_angle: pitchOffset\n        }\n      });\n    },\n\n    cleanup() {\n      if (this.joystick) {\n        this.joystick.destroy();\n        this.joystick = null;\n      }\n      this.stopContinuousOutput();\n    }\n  }\n};\n</script>\n\n<style scoped>\n  .joystick-container {\n    display: flex;\n    width: 100px;\n    height: 100px;\n    position: relative;\n    margin: auto;\n    border: 0px solid #0094CE;\n    background-color: #ffffff;\n    border-radius: 50%;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n    cursor: pointer;\n  }\n\n  .error-message {\n    color: red;\n    text-align: center;\n    margin: auto;\n    cursor: pointer;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "45d7334c4a7d3a34",
+                "4541eae5ac491f49"
+            ]
+        ]
+    },
+    {
+        "id": "95d8a68a011bdc6c",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "save_track_enabled",
+        "func": "global.set('trackEnabled', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "662618524569fbc6",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "get_track_enabled",
+        "func": "let trackEnabled = global.get('trackEnabled') ? true : false;\nglobal.set(\"trackEnabled\", trackEnabled);\nmsg.payload = trackEnabled;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "16faeb961ec1bf39"
+            ]
+        ]
+    },
+    {
+        "id": "20b650629e914eea",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "get_track_target",
+        "func": "let trackTarget = global.get('trackTarget')\nconst TRACK_TARGETS = {\n    PERSON: 0,\n    CAT: 15,\n    DOG: 16,\n    BOTTLE: 39,\n    CUP: 41,\n    CELLPHONE: 67\n};\n\nif (trackTarget === undefined) {\n    trackTarget = TRACK_TARGETS.PERSON\n    global.set(\"trackTarget\", trackTarget);\n}\nmsg.payload = trackTarget;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 400,
+        "wires": [
+            [
+                "eda0c03f08759525"
+            ]
+        ]
+    },
+    {
+        "id": "3abd7a7f8c64fdaf",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "name": "get_init_motor_state",
+        "func": "let initState = context.get('initState')\nif (!initState) {\n    context.set(\"initState\", true);\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 480,
+        "wires": [
+            [
+                "20b650629e914eea",
+                "662618524569fbc6",
+                "31a3c5b36ad3e791",
+                "893b35e696c89eb1",
+                "7b2ebdcba29e8f34"
+            ]
+        ]
+    },
+    {
+        "id": "77f7fb1af5e3bb02",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "control_motor",
+        "func": "// Constants\nconst DEFAULT_CENTER_X = 320;   // Default center X coordinate\nconst DEFAULT_CENTER_Y = 320;   // Default center Y coordinate\nconst THROTTLE_INTERVAL = 300;  // Reduced throttle interval for more responsive control\nconst DEAD_ZONE = 5;          // Increased dead zone for better stability\nconst MAX_SPEED = 2000;          // Maximum movement speed\nconst MIN_SPEED = 10;          // Minimum movement speed\n\n// Camera parameters for smoother motion\nconst HORIZONTAL_FOV = 60;     // Horizontal field of view in degrees\nconst VERTICAL_FOV = 40;       // Vertical field of view in degrees\nconst ANGLE_SCALE_FAR = 0.4;   // Scale factor for targets far from center\nconst ANGLE_SCALE_NEAR = 0.2;  // Scale factor for targets near center\nconst MAX_ANGLE = 15;          // Reduced maximum angle for more precise control\nconst TRANSITION_ZONE = 10;   // Pixel distance for transition between far and near scaling\n\n// PID control parameters\nconst KP = 0.8;                // Proportional gain\nconst KI = 0.05;               // Integral gain\nconst KD = 0.2;                // Derivative gain\nconst MAX_INTEGRAL = 10;       // Maximum integral value to prevent windup\n\n// Convert pixel offset to angle with adaptive scaling\nconst pixelToAngle = (pixelOffset, fov, resolution) => {\n    // Calculate base angle using tangent relationship\n    const fovRadians = (fov * Math.PI) / 180;\n    const angleRadians = Math.atan(pixelOffset * 2 * Math.tan(fovRadians / 2) / resolution);\n    const baseAngle = (angleRadians * 180 / Math.PI);\n\n    // Apply adaptive scaling based on distance from center\n    const absOffset = Math.abs(pixelOffset);\n    let scale;\n    if (absOffset <= DEAD_ZONE) {\n        return 0; // Inside dead zone, no movement\n    } else if (absOffset <= TRANSITION_ZONE) {\n        // Linear interpolation between near and far scaling factors\n        const t = (absOffset - DEAD_ZONE) / (TRANSITION_ZONE - DEAD_ZONE);\n        scale = ANGLE_SCALE_NEAR + t * (ANGLE_SCALE_FAR - ANGLE_SCALE_NEAR);\n    } else {\n        scale = ANGLE_SCALE_FAR;\n    }\n\n    return baseAngle * scale;\n};\n\n// Calculate speed based on offset with exponential curve for better control\nconst calculateSpeed = (offset, maxOffset) => {\n    const normalizedOffset = Math.abs(offset) / maxOffset;\n    // Exponential curve gives more precise control for small movements\n    const speed = Math.round((Math.pow(normalizedOffset, 1.5) * (MAX_SPEED - MIN_SPEED)) + MIN_SPEED);\n    return Math.min(Math.max(speed, MIN_SPEED), MAX_SPEED);\n};\n\n// Apply PID control to angle offset\nconst applyPIDControl = (offset, axis) => {\n    // Get previous values from context\n    const prevError = context.get(`prev_error_${axis}`) || 0;\n    const integral = context.get(`integral_${axis}`) || 0;\n\n    // Calculate PID terms\n    const error = offset;\n    const newIntegral = Math.max(-MAX_INTEGRAL, Math.min(MAX_INTEGRAL, integral + error));\n    const derivative = error - prevError;\n\n    // Calculate PID output\n    const output = (KP * error) + (KI * newIntegral) + (KD * derivative);\n\n    // Store values for next iteration\n    context.set(`prev_error_${axis}`, error);\n    context.set(`integral_${axis}`, newIntegral);\n\n    return output;\n};\n\n// Calculate angle offset with dead zone, limits and PID control\nconst calculateAngleOffset = (offset, fov, resolution, axis) => {\n    if (Math.abs(offset) <= DEAD_ZONE) {\n        // Reset integral when in dead zone to prevent drift\n        context.set(`integral_${axis}`, 0);\n        return 0;\n    }\n\n    const angle = pixelToAngle(offset, fov, resolution);\n    const pidAngle = applyPIDControl(angle, axis);\n\n    return Math.max(-MAX_ANGLE, Math.min(MAX_ANGLE, pidAngle));\n};\n\n// Get selected bounding box\nconst selectedBox = msg.payload.selectedBox;\nif (!selectedBox) return null;\n\n// Get resolution or use defaults\nconst resolution = msg.payload.resolution || [DEFAULT_CENTER_X * 2, DEFAULT_CENTER_Y * 2];\nconst [imageCenterX, imageCenterY] = resolution.map(dim => Math.round(dim / 2));\n\n// Calculate center point offsets\nconst [boxCenterX, boxCenterY] = selectedBox;\nconst offsetX = boxCenterX - imageCenterX;\nconst offsetY = boxCenterY - imageCenterY;\n\n// Generate control data with more precise rounding\nconst generateControl = () => {\n    // Calculate yaw (horizontal) and pitch (vertical) offsets with PID control\n    const yawOffset = -calculateAngleOffset(offsetX, HORIZONTAL_FOV, resolution[0], 'yaw');\n    const pitchOffset = calculateAngleOffset(offsetY, VERTICAL_FOV, resolution[1], 'pitch');\n\n    return {\n        yaw_angle: Math.round(yawOffset * 100) / 100,\n        yaw_speed: calculateSpeed(offsetX, imageCenterX),\n        pitch_angle: Math.round(pitchOffset * 100) / 100,\n        pitch_speed: calculateSpeed(offsetY, imageCenterY),\n        // // Add debug info\n        // debug: {\n        //     offsetX,\n        //     offsetY,\n        //     inDeadZone: Math.abs(offsetX) <= DEAD_ZONE && Math.abs(offsetY) <= DEAD_ZONE\n        // }\n    };\n};\n\n// Throttle control output\nconst now = Date.now();\nconst lastSendTime = context.get('lastSendTime') || 0;\n\nif (now - lastSendTime >= THROTTLE_INTERVAL) {\n    context.set('lastSendTime', now);\n    return { payload: generateControl() };\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 320,
+        "wires": [
+            [
+                "2d0b2295ce249f05"
+            ]
+        ]
+    },
+    {
+        "id": "45d7334c4a7d3a34",
+        "type": "function",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "disable_auto_tracking",
+        "func": "//When manually controlling gimbal, de-select auto tracking.\n\nglobal.set('trackEnabled', false);\nmsg.payload = false;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 520,
+        "wires": [
+            [
+                "16faeb961ec1bf39"
+            ]
+        ]
+    },
+    {
+        "id": "a8516ce533be8ea5",
+        "type": "comment",
+        "z": "5924433263ceb70d",
+        "name": "Can delete if no needs",
+        "info": "This is the basic webs of reCamera gimbal\nsuch as Wi-Fi, ssh, or terminal.\n\nYou can delete this two subflows if you \ndo not need them to show in the dashboard.",
+        "x": 140,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "fcd487b208f2ef92",
+        "type": "ui-button",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "group": "c5fbe89b47b4f853",
+        "name": "Calibrate",
+        "label": "Calibrate",
+        "order": 11,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 120,
+        "y": 1160,
+        "wires": [
+            [
+                "3b88e350fe5a51cf",
+                "45d7334c4a7d3a34"
+            ]
+        ]
+    },
+    {
+        "id": "c1634d85e3127ba7",
+        "type": "ui-button",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "group": "c5fbe89b47b4f853",
+        "name": "Emergency Stop",
+        "label": "Emergency Stop",
+        "order": 12,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "#DB544D",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 1220,
+        "wires": [
+            [
+                "06e1b8aac3611769",
+                "45d7334c4a7d3a34"
+            ]
+        ]
+    },
+    {
+        "id": "3b88e350fe5a51cf",
+        "type": "exec",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "command": "gimbal cali",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 470,
+        "y": 1160,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "06e1b8aac3611769",
+        "type": "exec",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "command": "gimbal stop 1; gimbal stop 2",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 520,
+        "y": 1220,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c01033b112727fe9",
+        "type": "set-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "set yaw angle",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "0",
+        "unit": "0",
+        "x": 580,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "702aeefba5d6d7a4",
+        "type": "set-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "set pitch angle",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "2",
+        "unit": "0",
+        "x": 580,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "2aa592079c263c56",
+        "type": "set-motor-speed",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "set yaw speed",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "0",
+        "x": 580,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "b46762af1a17c573",
+        "type": "set-motor-speed",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "set pitch speed",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "1",
+        "x": 580,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "87d339d9e90222dd",
+        "type": "can-read",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "",
+        "client": "1c58e9752c4bdfcb",
+        "filter": "A8",
+        "x": 140,
+        "y": 1380,
+        "wires": [
+            [
+                "b05400b8dc9abf80"
+            ]
+        ]
+    },
+    {
+        "id": "4541eae5ac491f49",
+        "type": "set-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "set dual motor offset",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "5",
+        "unit": "0",
+        "x": 600,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "aa73b695851dbf8e",
+        "type": "set-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "e289c04a151c2b21",
+        "name": "set dual motor angle",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "4",
+        "unit": "0",
+        "x": 500,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "a932a077674095f2",
+        "type": "ui-template",
+        "z": "5924433263ceb70d",
+        "g": "6a5cf1c769c6da07",
+        "group": "37a6e7f9304e351c",
+        "page": "",
+        "ui": "",
+        "name": "Get Current Model",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "head": "",
+        "format": "<div style=\"margin-left: 8px; margin-right: 8px; display: flex;\">\n    <div style=\"font-size: 1rem; font-weight: 400; align-self: center;\">\n        Current Model is: <span id=\"model-name\" style=\"font-weight: bold;\">Loading...</span>\n    </div>\n</div>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n    fetchModelInfo();\n});\n\nif (document.readyState === 'complete' || document.readyState === 'interactive') {\n    setTimeout(fetchModelInfo, 100);\n}\n\n// 获取模型信息的函数\nasync function fetchModelInfo() {\n    try {\n        // 获取当前主机名\n        const hostname = window.location.hostname || \"192.168.42.1\";\n        \n        // 显示加载状态\n        document.getElementById(\"model-name\").textContent = \"Loading...\";\n        \n        // 发起API请求\n        const response = await fetch(`http://${hostname}/api/deviceMgr/getModelInfo`);\n        \n        // 检查请求是否成功\n        if (!response.ok) {\n            throw new Error(`HTTP error! status: ${response.status}`);\n        }\n        \n        // 解析响应数据\n        const data = await response.json();\n        \n        // 解析模型信息\n        if (data && data.data && data.data.model_info) {\n            const modelInfo = JSON.parse(data.data.model_info);\n            const modelName = modelInfo.model_name || \"Unknown\";\n            \n            // 更新显示\n            document.getElementById(\"model-name\").textContent = modelName;\n            \n        } else {\n            throw new Error(\"Invalid response format\");\n        }\n    } catch (error) {\n        // 显示错误消息\n        document.getElementById(\"model-name\").textContent = \"Error loading model\";\n        console.error(\"Error fetching model info:\", error);\n    }\n}\n</script>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 590,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60a867cb500cf15d",
+        "type": "ui-template",
+        "z": "5924433263ceb70d",
+        "g": "6a5cf1c769c6da07",
+        "group": "37a6e7f9304e351c",
+        "page": "",
+        "ui": "",
+        "name": "Preview Page",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div :id=\"containerId\" style=\"width: 100%; height: 100%\">\n        <svg :id=\"svgId\" viewBox=\"0 50 640 640\"></svg>\n        <p v-if=\"connectionStatus\" :style=\"{ color: connectionStatus === 'Connected' ? 'green' : 'red' }\">\n            WebSocket: {{ connectionStatus }}\n        </p>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                ws: null,\n                connectionStatus: 'Disconnected',\n                socketURL: `ws://${window.location.hostname}:8090`,\n                previewData: null\n            }\n        },\n        computed: {\n            containerId() {\n                return `container`;\n            },\n            svgId() {\n                return `svg`;\n            },\n        },\n        methods: {\n            // WebSocket相关方法\n            initializeWebSocket() {\n                if (this.ws) {\n                    this.ws.close();\n                }\n\n                this.ws = new WebSocket(this.socketURL);\n                this.ws.binaryType = 'arraybuffer';\n\n                this.ws.addEventListener('open', () => {\n                    this.connectionStatus = 'Connected';\n                });\n\n                this.ws.addEventListener('message', (event) => {\n                    try {\n                        const buffer = event.data;\n                        const uint8Array = new Uint8Array(buffer);\n                        \n                        // 将 Uint8Array 转换为字符串\n                        const string = new TextDecoder().decode(uint8Array);\n                        \n                        const obj = JSON.parse(string);\n                        // 更新预览数据并触发渲染\n                        this.previewData = obj.data || obj;\n                        this.$nextTick(() => {\n                            this.renderAll();\n                        });\n                    } catch (e) {\n                        console.error('Error processing data:', e);\n                    }\n                });\n\n                this.ws.addEventListener('error', (e) => {\n                    console.error('WebSocket Error:', e);\n                    this.connectionStatus = 'Error';\n                });\n\n                this.ws.addEventListener('close', () => {\n                    this.connectionStatus = 'Disconnected';\n                    setTimeout(() => this.initializeWebSocket(), 5000);\n                });\n            },\n\n            // SVG绘图相关方法\n            createSVGElement(type, attributes = {}) {\n                const element = document.createElementNS(\"http://www.w3.org/2000/svg\", type);\n                Object.keys(attributes).forEach((attr) => element.setAttribute(attr, attributes[attr]));\n                return element;\n            },\n            getColor(index, opacity = 1) {\n                const COLORS = [\n                    \"#FF0000\",\n                    \"#FF4500\",\n                    \"#FF6347\",\n                    \"#FF8C00\",\n                    \"#FFA500\",\n                    \"#FFD700\",\n                    \"#32CD32\",\n                    \"#006400\",\n                    \"#4169E1\",\n                    \"#0000FF\",\n                    \"#1E90FF\",\n                    \"#00FFFF\",\n                    \"#00CED1\",\n                    \"#20B2AA\",\n                    \"#FF1493\",\n                    \"#FF69B4\",\n                    \"#800080\",\n                    \"#8A2BE2\",\n                    \"#9400D3\",\n                    \"#9932CC\",\n                ];\n                const color = COLORS[index % COLORS.length];\n                if (opacity < 1 && opacity >= 0) {\n                    const r = parseInt(color.slice(1, 3), 16);\n                    const g = parseInt(color.slice(3, 5), 16);\n                    const b = parseInt(color.slice(5, 7), 16);\n                    return `rgba(${r}, ${g}, ${b}, ${opacity})`;\n                }\n                return color;\n            },\n            renderImage(container, group, data) {\n                if (data.image) {\n                    let img = document.getElementById(`image-output-img`);\n                    if (!img) {\n                        img = this.createSVGElement(\"image\", {\n                            id: `image-output-img`,\n                            x: \"0\",\n                            y: \"50\",\n                        });\n                        img.addEventListener(\"click\", () => this.removeGroup(group), { once: false });\n                        container.prepend(img);\n                    }\n                    img.setAttribute(\"href\", `data:image/jpeg;base64,${data.image}`);\n                } else if (data?.resolution) {\n                    const rect = this.createSVGElement(\"rect\", {\n                        x: \"0\",\n                        y: \"0\",\n                        width: data.resolution[0],\n                        height: data.resolution[1],\n                        fill: \"black\",\n                    });\n                    const text = this.createSVGElement(\"text\", {\n                        x: 10,\n                        y: 20,\n                        \"font-size\": \"16\",\n                        fill: \"yellow\",\n                        stroke: \"yellow\",\n                        \"font-family\": \"Arial\",\n                    });\n                    text.textContent = \"Warning: Please enable the model node's debug mode to display the actual image.\";\n                    group.appendChild(rect);\n                    group.appendChild(text);\n                }\n            },\n            renderLines(group, data) {\n                if (data?.lines) {\n                    data.lines.forEach((line, i) => {\n                        const x1 = line[0] * 0.01 * data.resolution[0];\n                        const y1 = line[1] * 0.01 * data.resolution[1];\n                        const x2 = line[2] * 0.01 * data.resolution[0];\n                        const y2 = line[3] * 0.01 * data.resolution[1];\n                        const color = this.getColor(i);\n                        const lineElement = this.createSVGElement(\"line\", {\n                            x1,\n                            y1,\n                            x2,\n                            y2,\n                            stroke: color,\n                            \"stroke-width\": \"1\",\n                        });\n                        group.appendChild(lineElement);\n                    });\n                }\n            },\n            renderBoxes(group, data) {\n                if (data?.boxes) {\n                    data.boxes.forEach((box, i) => {\n                        if (box?.length === 6) {\n                            const [x, y, w, h, score, tar] = box;\n                            const color = this.getColor(tar);\n                            const tarStr = data.labels?.[i] ?? `NA-${tar}`;\n                            const rect = this.createSVGElement(\"rect\", {\n                                x: x - w / 2,\n                                y: y - h / 2,\n                                width: w,\n                                height: h,\n                                fill: \"none\",\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(rect);\n\n                            const rectText = this.createSVGElement(\"rect\", {\n                                x: x - w / 2,\n                                y: y - h / 2 - 14,\n                                width: w,\n                                height: 16,\n                                fill: color,\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(rectText);\n\n                            const text = this.createSVGElement(\"text\", {\n                                x: x - w / 2 + 5,\n                                y: y - h / 2 - 2,\n                                \"font-size\": \"14\",\n                                fill: \"white\",\n                                \"font-family\": \"Arial\",\n                            });\n                            text.textContent = data?.tracks ? `#${data.tracks[i]}: ${tarStr}(${score})` : `${tarStr}(${score})`;\n                            group.appendChild(text);\n                        }\n                    });\n                }\n            },\n            renderClasses(group, data) {\n                if (data?.classes) {\n                    const rectHeight = data.resolution[1] / 16;\n                    data.classes.forEach(([score, tar], i) => {\n                        const tarStr = data.labels?.[i] ?? `NA-${tar}`;\n                        const rectWidth = data.resolution[0] / data.classes.length;\n                        const rect = this.createSVGElement(\"rect\", {\n                            x: rectWidth * i,\n                            y: 0,\n                            width: rectWidth,\n                            height: rectHeight,\n                            fill: this.getColor(tar),\n                            \"fill-opacity\": 0.3,\n                        });\n                        group.appendChild(rect);\n\n                        const text = this.createSVGElement(\"text\", {\n                            x: rectWidth * i,\n                            y: data.resolution[1] / 24,\n                            \"font-size\": data.resolution[1] / 24,\n                            \"font-weight\": \"bold\",\n                            \"font-family\": \"arial\",\n                            fill: \"#ffffff\",\n                        });\n                        text.textContent = `${tarStr}: ${score}`;\n                        group.appendChild(text);\n                    });\n                }\n            },\n            renderSegments(group, data) {\n                if (data?.segments) {\n                    data.segments.forEach((segment, i) => {\n                        const box = segment[0];\n                        const polygon = segment[1];\n                        let color = this.getColor(i);\n                        let rgba = this.getColor(i, 0.3);\n                        if (box?.length === 6) {\n                            const [x, y, w, h, score, tar] = box;\n                            color = this.getColor(tar);\n                            rgba = this.getColor(tar, 0.3);\n                            const tarStr = data.labels?.[i] ?? `NA-${tar}`;\n                            const rect = this.createSVGElement(\"rect\", {\n                                x: x - w / 2,\n                                y: y - h / 2,\n                                width: w,\n                                height: h,\n                                fill: \"none\",\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(rect);\n\n                            const rectText = this.createSVGElement(\"rect\", {\n                                x: x - w / 2,\n                                y: y - h / 2 - 14,\n                                width: w,\n                                height: 16,\n                                fill: color,\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(rectText);\n\n                            const text = this.createSVGElement(\"text\", {\n                                x: x - w / 2 + 5,\n                                y: y - h / 2 - 2,\n                                \"font-size\": \"14\",\n                                fill: \"white\",\n                                \"font-family\": \"Arial\",\n                            });\n                            text.textContent = data?.tracks ? `#${data.tracks[i]}: ${tarStr}(${score})` : `${tarStr}(${score})`;\n                            group.appendChild(text);\n                        }\n                        if (polygon) {\n                            function convertToPoints(polygon) {\n                                let points = \"\";\n                                for (let i = 0; i < polygon.length; i += 2) {\n                                    points += `${polygon[i]},${polygon[i + 1]} `;\n                                }\n                                return points.trim();\n                            }\n\n                            // Convert the data array to SVG points format\n                            const points = convertToPoints(polygon);\n\n                            const polygonElement = this.createSVGElement(\"polygon\", {\n                                points: points,\n                                fill: rgba,\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(polygonElement);\n                        }\n                    });\n                }\n            },\n            renderKeypoints(group, data) {\n                if (!data?.keypoints) {\n                    return;\n                }\n                data.keypoints.forEach((keypoint, i) => {\n                    const box = keypoint[0];\n                    const keypoints = keypoint[1];\n                    let points = new Set();\n                    if (box?.length === 6) {\n                        const [x, y, w, h, score, tar] = box;\n                        const color = this.getColor(tar);\n                        const tarStr = data.labels?.[i] ?? `NA-${tar}`;\n                        const rect = this.createSVGElement(\"rect\", {\n                            x: x - w / 2,\n                            y: y - h / 2,\n                            width: w,\n                            height: h,\n                            fill: \"none\",\n                            stroke: color,\n                            \"stroke-width\": \"2\",\n                        });\n                        group.appendChild(rect);\n\n                        const rectText = this.createSVGElement(\"rect\", {\n                            x: x - w / 2,\n                            y: y - h / 2 - 14,\n                            width: w,\n                            height: 16,\n                            fill: color,\n                            stroke: color,\n                            \"stroke-width\": \"2\",\n                        });\n                        group.appendChild(rectText);\n\n                        const text = this.createSVGElement(\"text\", {\n                            x: x - w / 2 + 5,\n                            y: y - h / 2 - 2,\n                            \"font-size\": \"14\",\n                            fill: \"white\",\n                            stroke: \"white\",\n                            \"font-family\": \"Arial\",\n                        });\n                        text.textContent = data?.tracks ? `#${data.tracks[i]}: ${tarStr}(${score})` : `${tarStr}(${score})`;\n                        group.appendChild(text);\n                    }\n\n                    for (let j = 0; j < keypoints.length; j += 1) {\n                        const point = keypoints[j];\n                        const x = point[0];\n                        const y = point[1];\n                        const target = point[3] ? point[3] : j;\n                        // draw if point in the box\n                        if (x > box[0] - box[2] / 2 && x < box[0] + box[2] / 2 && y > box[1] - box[3] / 2 && y < box[1] + box[3] / 2) {\n                            points.add(target);\n                        }\n                    }\n\n                    if (keypoints?.length === 17) {\n                        // 绘制人体骨架连接线 (COCO格式)\n                        // 这里保留了原代码中的所有连接线逻辑\n                        // nose to left eye\n                        if (points.has(0) && points.has(1)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[0][0],\n                                y1: keypoints[0][1],\n                                x2: keypoints[1][0],\n                                y2: keypoints[1][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // 其他连接线代码保持不变...\n                        // nose to right eye\n                        if (points.has(0) && points.has(2)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[0][0],\n                                y1: keypoints[0][1],\n                                x2: keypoints[2][0],\n                                y2: keypoints[2][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left eye to left ear\n                        if (points.has(1) && points.has(3)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[1][0],\n                                y1: keypoints[1][1],\n                                x2: keypoints[3][0],\n                                y2: keypoints[3][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right eye to right ear\n                        if (points.has(2) && points.has(4)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[2][0],\n                                y1: keypoints[2][1],\n                                x2: keypoints[4][0],\n                                y2: keypoints[4][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left ear to left shoulder\n                        if (points.has(3) && points.has(5)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[3][0],\n                                y1: keypoints[3][1],\n                                x2: keypoints[5][0],\n                                y2: keypoints[5][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right ear to right shoulder\n                        if (points.has(4) && points.has(6)) {\n                            const color = this.getColor(0);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[4][0],\n                                y1: keypoints[4][1],\n                                x2: keypoints[6][0],\n                                y2: keypoints[6][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left shoulder to right shoulder\n                        if (points.has(5) && points.has(6)) {\n                            const color = this.getColor(1);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[5][0],\n                                y1: keypoints[5][1],\n                                x2: keypoints[6][0],\n                                y2: keypoints[6][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left shoulder to left hip\n                        if (points.has(5) && points.has(11)) {\n                            const color = this.getColor(2);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[5][0],\n                                y1: keypoints[5][1],\n                                x2: keypoints[11][0],\n                                y2: keypoints[11][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right shoulder to right hip\n                        if (points.has(6) && points.has(12)) {\n                            const color = this.getColor(2);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[6][0],\n                                y1: keypoints[6][1],\n                                x2: keypoints[12][0],\n                                y2: keypoints[12][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left hip to right hip\n                        if (points.has(11) && points.has(12)) {\n                            const color = this.getColor(2);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[11][0],\n                                y1: keypoints[11][1],\n                                x2: keypoints[12][0],\n                                y2: keypoints[12][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left shoulder to left elbow\n                        if (points.has(5) && points.has(7)) {\n                            const color = this.getColor(1);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[5][0],\n                                y1: keypoints[5][1],\n                                x2: keypoints[7][0],\n                                y2: keypoints[7][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left elbow to left wrist\n                        if (points.has(7) && points.has(9)) {\n                            const color = this.getColor(1);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[7][0],\n                                y1: keypoints[7][1],\n                                x2: keypoints[9][0],\n                                y2: keypoints[9][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right shoulder to right elbow\n                        if (points.has(6) && points.has(8)) {\n                            const color = this.getColor(6);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[6][0],\n                                y1: keypoints[6][1],\n                                x2: keypoints[8][0],\n                                y2: keypoints[8][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right elbow to right wrist\n                        if (points.has(8) && points.has(10)) {\n                            const color = this.getColor(1);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[8][0],\n                                y1: keypoints[8][1],\n                                x2: keypoints[10][0],\n                                y2: keypoints[10][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left hip to left knee\n                        if (points.has(11) && points.has(13)) {\n                            const color = this.getColor(3);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[11][0],\n                                y1: keypoints[11][1],\n                                x2: keypoints[13][0],\n                                y2: keypoints[13][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // left knee to left ankle\n                        if (points.has(13) && points.has(15)) {\n                            const color = this.getColor(3);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[13][0],\n                                y1: keypoints[13][1],\n                                x2: keypoints[15][0],\n                                y2: keypoints[15][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right hip to right knee\n                        if (points.has(12) && points.has(14)) {\n                            const color = this.getColor(3);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[12][0],\n                                y1: keypoints[12][1],\n                                x2: keypoints[14][0],\n                                y2: keypoints[14][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                        // right knee to right ankle\n                        if (points.has(14) && points.has(16)) {\n                            const color = this.getColor(3);\n                            const line = this.createSVGElement(\"line\", {\n                                x1: keypoints[14][0],\n                                y1: keypoints[14][1],\n                                x2: keypoints[16][0],\n                                y2: keypoints[16][1],\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                            });\n                            group.appendChild(line);\n                        }\n                    }\n\n                    // 绘制关键点\n                    for (let j = 0; j < keypoints.length; j += 1) {\n                        const point = keypoints[j];\n                        const x = point[0];\n                        const y = point[1];\n                        const target = point[3] ? point[3] : j;\n                        // draw if point in the box\n                        if (x > box[0] - box[2] / 2 && x < box[0] + box[2] / 2 && y > box[1] - box[3] / 2 && y < box[1] + box[3] / 2) {\n                            const color = this.getColor(target);\n                            const circle = this.createSVGElement(\"circle\", {\n                                cx: x,\n                                cy: y,\n                                r: 3,\n                                stroke: color,\n                                \"stroke-width\": \"2\",\n                                fill: color,\n                            });\n                            group.appendChild(circle);\n                        }\n                    }\n                });\n            },\n            renderAll() {\n                const container = document.getElementById(this.containerId);\n                const svg = document.getElementById(this.svgId);\n                if (!container || !svg) return;\n\n                let group = document.getElementById(`image-output-group`);\n                if (!group) {\n                    group = this.createSVGElement(\"g\", {\n                        id: `image-output-group`,\n                        transform: \"translate(0, 50)\",\n                    });\n                    svg.appendChild(group);\n                }\n                group.innerHTML = \"\"; // Clear existing content\n\n                if (!this.previewData) {\n                    return;\n                }\n                \n                this.renderImage(svg, group, this.previewData);\n                this.renderLines(group, this.previewData);\n                this.renderBoxes(group, this.previewData);\n                this.renderClasses(group, this.previewData);\n                this.renderSegments(group, this.previewData);\n                this.renderKeypoints(group, this.previewData);\n            },\n            removeGroup(group) {\n                if (group && group.parentNode) {\n                    group.parentNode.removeChild(group);\n                }\n            }\n        },\n        mounted() {\n            this.initializeWebSocket();\n        },\n        unmounted() {\n            if (this.ws) {\n                this.ws.close();\n                this.ws = null;\n            }\n        }\n    };\n</script>\n\n<style>\n    #container {\n        position: relative;\n        width: 100%;\n        height: 100%;\n    }\n\n    svg {\n        width: 100%;\n        height: 100%;\n        background-color: #000;\n    }\n\n    p {\n        position: absolute;\n        bottom: 10px;\n        left: 10px;\n        margin: 0;\n        padding: 5px;\n        background-color: rgba(0, 0, 0, 0.5);\n        border-radius: 4px;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ba6f9f525c85918",
+        "type": "angle-to-can",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "1",
+        "unit": "0",
+        "x": 470,
+        "y": 1440,
+        "wires": [
+            [
+                "0a455be92c7a44aa"
+            ]
+        ]
+    },
+    {
+        "id": "b05400b8dc9abf80",
+        "type": "can-to-angle",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "",
+        "input": "payload",
+        "input-type": "msg",
+        "unit": "0",
+        "x": 350,
+        "y": 1380,
+        "wires": [
+            [
+                "45ca963c27191100"
+            ]
+        ]
+    },
+    {
+        "id": "253630de7cd7906c",
+        "type": "inject",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "Move 30 degrees counterclockwise",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "30",
+        "payloadType": "num",
+        "x": 220,
+        "y": 1440,
+        "wires": [
+            [
+                "4ba6f9f525c85918"
+            ]
+        ]
+    },
+    {
+        "id": "0a455be92c7a44aa",
+        "type": "can-write",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "",
+        "client": "1c58e9752c4bdfcb",
+        "x": 660,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d0b2295ce249f05",
+        "type": "set-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "set dual motor offset",
+        "input": "payload",
+        "input-type": "msg",
+        "output": "5",
+        "unit": "0",
+        "x": 1060,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "7b2ebdcba29e8f34",
+        "type": "get-motor-speed",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "get init motor speed",
+        "output": "0",
+        "x": 160,
+        "y": 820,
+        "wires": [
+            [
+                "141a718c4aca75ea"
+            ]
+        ]
+    },
+    {
+        "id": "893b35e696c89eb1",
+        "type": "get-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "get init pitch angle",
+        "output": "1",
+        "unit": "0",
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "45dd35115125460f"
+            ]
+        ]
+    },
+    {
+        "id": "31a3c5b36ad3e791",
+        "type": "get-motor-angle",
+        "z": "5924433263ceb70d",
+        "g": "cbb96dd983baabd8",
+        "name": "get init yaw angle",
+        "output": "0",
+        "unit": "0",
+        "x": 150,
+        "y": 700,
+        "wires": [
+            [
+                "1528e53340ceac14"
+            ]
+        ]
+    },
+    {
+        "id": "4df7444990c143f0",
+        "type": "model",
+        "z": "5924433263ceb70d",
+        "g": "119948d614ce5694",
+        "name": "",
+        "uri": "",
+        "model": "YOLO11n Detection",
+        "tscore": 0.45,
+        "tiou": 0.25,
+        "debug": false,
+        "trace": false,
+        "counting": false,
+        "classes": "person,bicycle,car,motorcycle,airplane,bus,train,truck,boat,traffic light,fire hydrant,stop sign,parking meter,bench,bird,cat,dog,horse,sheep,cow,elephant,bear,zebra,giraffe,backpack,umbrella,handbag,tie,suitcase,frisbee,skis,snowboard,sports ball,kite,baseball bat,baseball glove,skateboard,surfboard,tennis racket,bottle,wine glass,cup,fork,knife,spoon,bowl,banana,apple,sandwich,orange,broccoli,carrot,hot dog,pizza,donut,cake,chair,couch,potted plant,bed,dining table,toilet,tv,laptop,mouse,remote,keyboard,cell phone,microwave,oven,toaster,sink,refrigerator,book,clock,vase,scissors,teddy bear,hair drier,toothbrush",
+        "splitter": "0,0,0,0",
+        "client": "af20bfd61d0a6dd1",
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "dce4bb179705c28b"
+            ]
+        ]
+    },
+    {
+        "id": "a914565b1ca6c076",
+        "type": "camera",
+        "z": "5924433263ceb70d",
+        "option": 0,
+        "client": "af20bfd61d0a6dd1",
+        "audio": true,
+        "volume": 80,
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "4df7444990c143f0",
+                "3abd7a7f8c64fdaf"
+            ]
+        ]
+    },
+    {
+        "id": "45ca963c27191100",
+        "type": "debug",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "a3993838b918ee4e",
+        "type": "comment",
+        "z": "5924433263ceb70d",
+        "g": "bc455cac092dd743",
+        "name": "141 means yaw (motor 1), 142 means pitch (motor 2)",
+        "info": "",
+        "x": 270,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "486ca54827378f08",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "name": "Yaw angle kp",
+        "label": "Yaw angle kp",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "topic": "yawAngleKp",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "b4f5a7c749aaf50b",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "name": "Yaw angle ki",
+        "label": "Yaw angle ki",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "topic": "yawAngleKi",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "9bbda02a3f464b9c",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "name": "Yaw angle kd",
+        "label": "Yaw angle kd",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "yawAngleKd",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "Usually not needed",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "238754ae8ef4fe4d",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "name": "Yaw speed kp",
+        "label": "Yaw speed kp",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "topic": "yawSpeedKp",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "4b84ecf3ba7ec5fe",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "name": "Yaw speed ki",
+        "label": "Yaw speed ki",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "topic": "yawSpeedKi",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 150,
+        "y": 320,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "887584e5c2a1a232",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "name": "Yaw speed kd",
+        "label": "Yaw speed kd",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "topic": "yawSpeedKd",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "Usually not needed",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 360,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "372914c6ec32df4e",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "name": "Pitch angle kp",
+        "label": "Pitch angle kp",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "topic": "pitchAngleKp",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 460,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "6efa572a3dce8635",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "name": "Pitch angle ki",
+        "label": "Pitch angle ki",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "topic": "pitchAngleKi",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 500,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "ed858ab093332ace",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "name": "Pitch angle kd",
+        "label": "Pitch angle kd",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "pitchAngleKd",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "Usually not needed",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 540,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "9ec2abda6b790f54",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "name": "Pitch speed kp",
+        "label": "Pitch speed kp",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "topic": "pitchSpeedKp",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 660,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "8e84cd5ae33d92e2",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "name": "Pitch speed ki",
+        "label": "Pitch speed ki",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "topic": "pitchSpeedKi",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 700,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "59d46006e8c6d39b",
+        "type": "ui-text-input",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "name": "Pitch speed kd",
+        "label": "Pitch speed kd",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "topic": "pitchSpeedKd",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "Usually not needed",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 740,
+        "wires": [
+            [
+                "d1f3c8b3.9c3b9"
+            ]
+        ]
+    },
+    {
+        "id": "4d5a3b8e.4c1b3",
+        "type": "ui-button",
+        "z": "cc4fa65c792db7e2",
+        "group": "800d559a9f15602f",
+        "name": "Save PID Settings",
+        "label": "Save PID Settings",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "save_pid",
+        "topicType": "str",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "e51b9162051b9a96"
+            ]
+        ]
+    },
+    {
+        "id": "d1f3c8b3.9c3b9",
+        "type": "function",
+        "z": "cc4fa65c792db7e2",
+        "name": "Generate PID Config",
+        "func": "// 初始化 PID 参数对象（存储在 context 中，避免全局污染）\ncontext.global.pidParams = context.global.pidParams || {\n    yawAngle: { Kp: 50, Ki: 0, Kd: 0 },\n    yawSpeed: { Kp: 200, Ki: 20, Kd: 0 },\n    pitchAngle: { Kp: 50, Ki: 0, Kd: 0 },\n    pitchSpeed: { Kp: 100, Ki: 20, Kd: 0 }\n};\n\n// 提取 msg.topic 中的参数类型（例如 \"yawAngleKp\" -> [\"yawAngle\", \"Kp\"]）\nconst topicParts = msg.topic.match(/(yaw|pitch)(Angle|Speed)(Kp|Ki|Kd)/i);\nif (topicParts) {\n    const [_, type, mode, param] = topicParts; // 解构匹配结果\n    const key = `${type.toLowerCase()}${mode}`; // 例如 \"yawAngle\"\n\n    // 动态更新对应的 PID 参数（如果输入为空，则设置为 '^'）\n    if (context.global.pidParams[key]) {\n        const value = msg.payload.trim(); // 去除前后空格\n        context.global.pidParams[key][param] = (value === \"\") ? \"^\" : parseFloat(value);\n    }\n}\n\n// 生成配置行（处理可能的 '^' 符号）\nconst { yawAngle, yawSpeed, pitchAngle, pitchSpeed } = context.global.pidParams;\n\n// 辅助函数：将值转换为字符串（如果是 '^' 则直接使用，否则转为数字）\nconst formatValue = (val) => (val === \"^\") ? \"^\" : val;\n\nconst yawAnglePIDLine = `1 0A ${formatValue(yawAngle.Kp)} ${formatValue(yawAngle.Ki)} ${formatValue(yawAngle.Kd)}`;\nconst yawSpeedPIDLine = `1 0B ${formatValue(yawSpeed.Kp)} ${formatValue(yawSpeed.Ki)} ${formatValue(yawSpeed.Kd)}`;\nconst pitchAnglePIDLine = `2 0A ${formatValue(pitchAngle.Kp)} ${formatValue(pitchAngle.Ki)} ${formatValue(pitchAngle.Kd)}`;\nconst pitchSpeedPIDLine = `2 0B ${formatValue(pitchSpeed.Kp)} ${formatValue(pitchSpeed.Ki)} ${formatValue(pitchSpeed.Kd)}`;\n\n// 合并为多行字符串\nmsg.payload = [\n    yawAnglePIDLine,\n    yawSpeedPIDLine,\n    pitchAnglePIDLine,\n    pitchSpeedPIDLine\n].join(\"\\n\");\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1b2c3d4.5678e9",
+        "type": "file",
+        "z": "cc4fa65c792db7e2",
+        "name": "Save PID Config",
+        "filename": "/home/recamera/.gimbal_pid",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 500,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e51b9162051b9a96",
+        "type": "function",
+        "z": "cc4fa65c792db7e2",
+        "name": "Send PID Config",
+        "func": "// 生成配置行\nconst { yawAngle, yawSpeed, pitchAngle, pitchSpeed } = context.global.pidParams;\n// 生成四行配置\nconst yawAnglePIDLine = `1 0A ${yawAngle.Kp} ${yawAngle.Ki} ${yawAngle.Kd}`;\nconst yawSpeedPIDLine = `1 0B ${yawSpeed.Kp} ${yawSpeed.Ki} ${yawSpeed.Kd}`;\nconst pitchAnglePIDLine = `2 0A ${pitchAngle.Kp} ${pitchAngle.Ki} ${pitchAngle.Kd}`;\nconst pitchSpeedPIDLine = `2 0B ${pitchSpeed.Kp} ${pitchSpeed.Ki} ${pitchSpeed.Kd}`;\n\n// 合并为多行字符串\nmsg.payload = [\n    yawAnglePIDLine,\n    yawSpeedPIDLine,\n    pitchAnglePIDLine,\n    pitchSpeedPIDLine\n].join(\"\\n\"); // 用换行符连接\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 500,
+        "wires": [
+            [
+                "a1b2c3d4.5678e9"
+            ]
+        ]
+    },
+    {
+        "id": "63a60476f1f25797",
+        "type": "ui-text",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Yaw Angle Recommend PID",
+        "label": "Angle PID Recommended: Kp = 50; Ki = 0; Kd = 0; If leave empty, it will use the current motor pid parameter.",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 200,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "6e6a453706f099be",
+        "type": "ui-text",
+        "z": "cc4fa65c792db7e2",
+        "group": "eb68b89500627338",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Yaw Speed Recommend PID",
+        "label": "Speed PID Recommended: Kp = 260; Ki = 20; Kd = 0; If leave empty, it will use the current motor pid parameter.",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 200,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "986642415d11c6f2",
+        "type": "ui-text",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Pitch Angle Recommend PID",
+        "label": "Angle PID Recommended: Kp = 50; Ki = 0; Kd = 0; If leave empty, it will use the current motor pid parameter.",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 200,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "1798f80fcc4b79b0",
+        "type": "ui-text",
+        "z": "cc4fa65c792db7e2",
+        "group": "944f240637232c4b",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Pitch Speed Recommend PID",
+        "label": "Speed PID Recommended: Kp = 100; Ki = 20; Kd = 0; If leave empty, it will use the current motor pid parameter.",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 210,
+        "y": 620,
+        "wires": []
+    }
+]

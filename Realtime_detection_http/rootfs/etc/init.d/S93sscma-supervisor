@@ -1,0 +1,103 @@
+#!/bin/sh
+
+DAEMON=supervisor
+DAEMON_PATH=/usr/local/bin
+
+SRC_FLOW="/usr/share/supervisor/flows.json"
+SRC_FLOW_GIMBAL="/usr/share/supervisor/flows_gimbal.json"
+DST_FLOW="/home/recamera/.node-red/flows.json"
+
+JOYSTICK_SRC="/usr/share/supervisor/nipplejs.min.js"
+JOYSTICK_DIR="/home/recamera/.node-red/public"
+JOYSTICK="$JOYSTICK_DIR/nipplejs.min.js"
+
+SRC_MODEL="/usr/share/supervisor/models/yolo11n_detection_cv181x_int8.cvimodel"
+SRC_INFO="/usr/share/supervisor/models/yolo11n_detection_cv181x_int8.json"
+DST_MODEL="/userdata/MODEL/model.cvimodel"
+DST_INFO="/userdata/MODEL/model.json"
+
+SERVICE_FILE="/etc/avahi/services/sscma.service"
+
+if [ ! -f $DST_FLOW ] || [ ! -s $DST_FLOW ]; then
+    check_can=$(ifconfig can0 2>/dev/null | grep "HWaddr")
+    if [ ! -z "$check_can" ]; then
+        if [ -f $SRC_FLOW_GIMBAL ]; then
+            SRC_FLOW=$SRC_FLOW_GIMBAL
+        fi
+    fi
+
+    if [ -f $SRC_FLOW ]; then
+        mkdir -p /userdata/MODEL
+        cp -f $SRC_FLOW $DST_FLOW
+        cp -f $SRC_MODEL $DST_MODEL
+        cp -f $SRC_INFO $DST_INFO
+        sync
+    fi
+fi
+
+if [ -f $JOYSTICK_SRC ]; then
+    mkdir -p $JOYSTICK_DIR
+    cp -f $JOYSTICK_SRC $JOYSTICK
+fi
+
+if [ -d /userdata/ ] && [ ! -f $DST_MODEL ]; then
+    if [ -f $SRC_MODEL ]; then
+        mkdir -p /userdata/MODEL
+        cp $SRC_MODEL $DST_MODEL
+        cp $SRC_INFO $DST_INFO
+        sync
+    fi
+fi
+
+sn_value=$(fw_printenv sn | awk -F'=' '{print $NF}')
+
+if [ -z "$sn_value" ]; then
+    sn_value="0000000000000000"
+fi
+
+txt_record="<txt-record>sn=$sn_value</txt-record>"
+
+if ! grep -q "$txt_record" "$SERVICE_FILE"; then
+    sed -i '/<type>_sscma._tcp<\/type>/a \ \ \ \ '"$txt_record" "$SERVICE_FILE"
+fi
+
+/etc/init.d/S50avahi-daemon stop
+sleep 0.1
+/etc/init.d/S50avahi-daemon start
+
+start() {
+    printf 'Starting Supervisor Service: '
+    PID="`pidof $DAEMON`"
+
+    if [ "$PID" ]; then
+        echo "$DAEMON is already running."
+    else
+        $DAEMON_PATH/$DAEMON >/dev/null 2>&1 &
+        [ $? = 0 ] && echo "OK" || echo "FAIL"
+    fi
+}
+
+stop() {
+    printf 'Stopping Supervisor Service: '
+    PID="`pidof $DAEMON`"
+
+    if [ "$PID" ]; then
+        kill $PID
+        [ $? = 0 ] && echo "OK" || echo "FAIL"
+    else
+        echo "$DAEMON is not running."
+    fi
+}
+
+restart() {
+    stop
+    start
+}
+
+case "$1" in
+    start|stop|restart)
+        "$1";;
+    *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac

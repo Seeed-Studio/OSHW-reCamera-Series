@@ -1,0 +1,14 @@
+{
+    "model_id": "10003",
+    "version": "1.0.0",
+    "model_name": "YOLO11n Pose",
+    "model_format": "cvimodel",
+    "ai_framwork": "6",
+    "pic_url": "https://ultralytics.com/assets/yolo11n-pose.jpg",
+    "description": "YOLO11n Pose official model from Ultralytics",
+    "author": "Ultralytics",
+    "classes": [
+        "person"
+    ],
+    "checksum": "6c5b3acd04aff7a4503600e6e83776aa"
+}
