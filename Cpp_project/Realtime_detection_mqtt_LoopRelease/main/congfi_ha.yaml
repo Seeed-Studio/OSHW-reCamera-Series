@@ -1,0 +1,170 @@
+mqtt:
+  sensor:
+    - name: "recamera_modeldetector_code"
+      state_topic: "recamera/modeldetector"
+      value_template: >-
+        {% set raw = msg.payload.decode() %}
+        {{ raw.split('Code:')[1].split(',')[0] if 'Code:' in raw else 'None' }}
+      unique_id: "recamera_modeldetector_code"
+      icon: "mdi:Done"
+
+    - name: "recamera_modeldetector_timestamp"
+      state_topic: "recamera/modeldetector"
+      value_template: >-
+        {% set raw = msg.payload.decode() %}
+        {{ raw.split('Timestamp:')[1].split('}')[0] if 'Timestamp:' in raw else 'None' }}
+      unique_id: "recamera_modeldetector_timestamp"
+      icon: "mdi:History Toggle Off"
+
+    - name: "recamera_modeldetector_targets"
+      state_topic: "recamera/modeldetector"
+      value_template: >-
+        {% set raw = msg.payload.decode() %}
+        {% set targets = [] %}
+        {% for target in raw.split('Target:')[1:] %}
+          {% set target_data = target.split(',')[0].strip() %}
+          {% set _ = targets.append(target_data) %}
+        {% endfor %}
+        {{ targets | to_json if targets else '["None"]' }}
+      unique_id: "recamera_modeldetector_targets"
+      icon: "mdi:Image Search"
+
+    - name: "recamera_modeldetector_scores"
+      state_topic: "recamera/modeldetector"
+      value_template: >-
+        {% set raw = msg.payload.decode() %}
+        {% set scores = [] %}
+        {% for part in raw.split('Score:')[1:] %}
+          {% set score = part.split(',')[0].strip() %}
+          {% set _ = scores.append(score) %}
+        {% endfor %}
+        {{ scores | to_json if scores else '["None"]' }}
+      unique_id: "recamera_modeldetector_scores"
+      icon: "mdi:Align Vertical Bottom"
+
+    - name: "recamera_modeldetector_image"
+      state_topic: "recamera/modeldetector"
+      value_template: >-
+        {% set raw = msg.payload.decode() %}
+        {{ raw.split('Image:')[1].split(',,')[0] if 'Image:' in raw else 'None' }}
+      unique_id: "recamera_modeldetector_image"
+      icon: "mdi:Image"
+
+    - name: "recamera_modeldetector_duration"
+      state_topic: "recamera/modeldetector"
+      value_template: >-
+        {% set raw = msg.payload.decode() %}
+        {{ raw.split('Duration:')[1].split(',')[0] if 'Duration:' in raw else 'None' }}
+      unique_id: "recamera_modeldetector_duration"
+      icon: "mdi:clock-outline"
+      unit_of_measurement: "ms"
+
+    - name: "recamera_modeldetector_release_duration"
+      state_topic: "recamera/modeldetector"
+      value_template: >-
+        {% set raw = msg.payload.decode() %}
+        {{ raw.split('Release_duration:')[1].split(',')[0] if 'Release_duration:' in raw else 'None' }}
+      unique_id: "recamera_modeldetector_release_duration"
+      icon: "mdi:timer-sand"
+      unit_of_measurement: "ms"
+
+    - name: "recamera_modeldetector_capture_duration"
+      state_topic: "recamera/modeldetector"
+      value_template: >-
+        {% set raw = msg.payload.decode() %}
+        {{ raw.split('Capture_duration:')[1].split(',')[0] if 'Capture_duration:' in raw else 'None' }}
+      unique_id: "recamera_modeldetector_capture_duration"
+      icon: "mdi:timer-sand"
+      unit_of_measurement: "ms"
+
+    - name: "recamera_modeldetector_preprocess_duration"
+      state_topic: "recamera/modeldetector"
+      value_template: >-
+        {% set raw = msg.payload.decode() %}
+        {{ raw.split('Image_preprocessing_duration:')[1].split(',')[0] if 'Image_preprocessing_duration:' in raw else 'None' }}
+      unique_id: "recamera_modeldetector_preprocess_duration"
+      icon: "mdi:timer-sand"
+      unit_of_measurement: "ms"
+
+    - name: "recamera_modeldetector_detection_duration"
+      state_topic: "recamera/modeldetector"
+      value_template: >-
+        {% set raw = msg.payload.decode() %}
+        {{ raw.split('Detection_duration:')[1].split(',')[0] if 'Detection_duration:' in raw else 'None' }}
+      unique_id: "recamera_modeldetector_detection_duration"
+      icon: "mdi:timer-sand"
+      unit_of_measurement: "ms"
+
+    - name: "recamera_modeldetector_msg"
+      state_topic: "recamera/modeldetector"
+      value_template: >-
+        {% set raw = msg.payload.decode() %}
+        {{ raw.split('Msg:')[1].split(',')[0] if 'Msg:' in raw else 'None' }}
+      unique_id: "Error-msg"
+      icon: "mdi:Error"
+
+
+# 备份
+
+# Loads default set of integrations. Do not remove.
+default_config:
+mqtt:
+  broker: 192.168.49.239  # 替换为你的MQTT代理地址
+  port: 1883
+  username: liangyuxin
+  password: rrrrrrrr.1
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+
+sensor:
+    - platform: time_date
+      display_options:
+        - 'time'
+        - 'date'
+        - 'date_time'
+        - 'date_time_utc'
+        - 'date_time_iso'
+        - 'time_date'
+        - 'time_utc'
+        - 'beat'
+android_ip_webcam:
+  - host: 192.168.98.130
+    port: 8080
+    name: cam_mi
+    username: admin
+    password: 123
+    sensors:
+      - audio_connections
+      - battery_level
+      - battery_temp
+      - battery_voltage
+      - light
+      - motion
+      - pressure
+      - proximity
+      - sound
+      - video_connections
+    switches:
+      - exposure_lock
+      - ffc
+      - focus
+      - gps_active
+      - motion_detect
+      - night_vision
+      - overlay
+      - torch
+      - whitebalance_lock
+      - video_recording
+    motion_sensor: true
+
