@@ -4,11 +4,11 @@
 #include <numeric>
 #include <stdio.h>
 #include <string>
+
 #include <opencv2/opencv.hpp>
 #include <sscma.h>
 #include <vector>
-#include <thread>       // 解决std::this_thread错误
-
+#include <thread>       
 #include <ClassMapper.h>    
 #include <unistd.h>
 
@@ -221,15 +221,15 @@ const std::vector<std::string> ClassMapper::classes= {
         "hair drier", "toothbrush"
     };
 
-std::string model_detector(ma::Model*& model,ma::Camera*& camera,int& i) {
+hv::Json model_detector(ma::Model*& model,ma::Camera*& camera,int& i) {
 
     static char buf[8*1024*1024];
     uint32_t count = 0;
 
-    std::string rest="";
     cv::Mat image_catch;
     cv::Mat image;
-    
+
+    hv::Json rest;
     ma_img_t jpe;
     ma_img_t jpeg;
 
@@ -239,7 +239,7 @@ std::string model_detector(ma::Model*& model,ma::Camera*& camera,int& i) {
     MA_LOGI(MA_TAG, "Memory usage: %d",  memory_samples[0],"KB");
 
     auto start_relea = std::chrono::steady_clock::now();
-    for (int k = 0; k <= times; k++) {
+    for (int k = 0; k <times; k++) {
         ma_err_t ret = camera->retrieveFrame(jpe, MA_PIXEL_FORMAT_JPEG);
         if (ret != MA_OK) {
             MA_LOGE(TAG, "retrieveFrame failed");
@@ -252,10 +252,9 @@ std::string model_detector(ma::Model*& model,ma::Camera*& camera,int& i) {
         // if (jpe.data != nullptr) {
         //     free(jpe.data);  // 或 delete[] img.data
         jpe.data = nullptr;
+        std::this_thread::sleep_for(std::chrono::milliseconds(20));
         // }
         // memset(&jpe, 0, sizeof(jpe));
-
-        std::this_thread::sleep_for(std::chrono::milliseconds(20));
 
         memory_samples[k+1] = getCurrentRSS(); // 直接调用
         MA_LOGI(MA_TAG, "Memory usage_during_: %d",  memory_samples[k+1],"KB");
@@ -266,6 +265,7 @@ std::string model_detector(ma::Model*& model,ma::Camera*& camera,int& i) {
 
     auto start_retrieve = std::chrono::steady_clock::now();
     camera->retrieveFrame(jpeg, MA_PIXEL_FORMAT_JPEG);
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     MA_LOGI(MA_TAG, "jpeg size: %d", jpeg.size);
     auto duration_retrieve  =std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now()-start_retrieve).count();
 
@@ -281,17 +281,19 @@ std::string model_detector(ma::Model*& model,ma::Camera*& camera,int& i) {
     
     if (image_catch.empty()) {
         MA_LOGE(TAG, "read image failed");
-        return "read image failed";
+        rest["Target"]="read image failed";
+        return rest;
     }
 
     image = preprocessImage(image_catch, model);
 
     if (image.empty()) {  // 检查图像是否为空
         printf("preprocessed image is empty");
-        return "preprocessed image is empty";
+        rest["Target"]="preprocessed image is empty";
+        return rest;
     }
 
-
+    
     ma_img_t img;
     img.data   = (uint8_t*)image.data;
     img.size   = image.rows * image.cols * image.channels();
@@ -311,22 +313,31 @@ std::string model_detector(ma::Model*& model,ma::Camera*& camera,int& i) {
     detector->run(&img);
     auto _results = detector->getResults();
     if (_results.empty()) {
-        rest+="No objects detected\n";  // 检测结果为空时的输出
+        rest["Target"]="No objects detected";  // 检测结果为空时的输出
     } else {
+        rest["Target"] = nlohmann::json::array();
+        rest["Score"] = nlohmann::json::array();
+        int k=0;
         for (auto result : _results) {
             float x1 = (result.x - result.w / 2.0) * image.cols;
             float y1 = (result.y - result.h / 2.0) * image.rows;
             float x2 = (result.x + result.w / 2.0) * image.cols;
             float y2 = (result.y + result.h / 2.0) * image.rows;
             std::string class_name = ClassMapper::get_class(result.target);
-            rest+="Score: " + std::to_string(result.score)+",Target: " + class_name+
-                   "  Box: [" + std::to_string(x1) + ", " + std::to_string(y1) + ", " + std::to_string(x2) + ", " + std::to_string(y2) + "]"+"   Center:[" + std::to_string(result.x) + ", " + std::to_string(result.y) + "]   Size:[" + std::to_string(result.w) + ", " + std::to_string(result.h)+"]";
+            rest["Score"].push_back(std::to_string(result.score));
+            rest["Target"].push_back(class_name);
             cv::rectangle(image, cv::Point(x1, y1), cv::Point(x2, y2), ColorPalette::getColor(result.target), 3, 8, 0);
             cv::putText(image, class_name, cv::Point(x1, y1 - 10), cv::FONT_HERSHEY_SIMPLEX, 0.6, ColorPalette::getColor(result.target), 2, cv::LINE_AA);
+            k++;
         }
         cv::cvtColor(image, image, cv::COLOR_RGB2BGR);
-        
+        std::vector<uchar> byte_array; // 假设已包含图像数据
+        cv::imencode(".png", image, byte_array);
+        std::ofstream out_file("image_detected_bin.png", std::ios::binary);
+        out_file.write(reinterpret_cast<const char*>(byte_array.data()), byte_array.size());
+        out_file.close();
     }
+
     std::string filename2 = "image_detected_"+std::to_string(i)+".jpg";
     cv::imwrite(filename2, image);
 
@@ -336,7 +347,10 @@ std::string model_detector(ma::Model*& model,ma::Camera*& camera,int& i) {
     auto perf = model->getPerf();
     MA_LOGI(TAG, "pre: %ldms, infer: %ldms, post: %ldms", perf.preprocess, perf.inference, perf.postprocess);
     auto duration_detector  =std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now()-start_detector).count();
-    rest+="Release_duration:"+std::to_string(duration_relea)+"Capture_duration:" + std::to_string(duration_retrieve)+"Image_preprocessing_duration:" + std::to_string(duration_preprocess) + "Detection_duration: " + std::to_string(duration_detector) + "\n";
+    rest["Release_duration"] = std::to_string(duration_relea);
+    rest["Capture_duration"] = std::to_string(duration_retrieve);
+    rest["Image_preprocessing_duration"] = std::to_string(duration_preprocess);
+    rest["Detection_duration"] = std::to_string(duration_detector);
     return rest;
 
 }
