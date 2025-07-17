@@ -139,15 +139,74 @@ The engineering focus on modularity, high performance, and ease of use ensures t
 
 We've taken care of the intricate hardware work, freeing up time for user innovation. The modular design enables users to rapidly switch cameras and customize interfaces, transforming development from months to weeks only!
 
+### 🚀 Launch Notification--reCamera POE&&GC2053
+
+🛒**reCamera POE and a new Sensor board are coming soon.**
+
+<a href="url"><img src="./statics/POE_overall.JPG" height="auto" width="600" style="border-radius:40px"></a>
+
+We launched a POE base board and GC2053Sensor integrated device, of course, we will also sell POE module and the new Sensor module separately, the new module is adapted to the Core board, you can freely match according to your needs.
+
+<a href="url"><img src="./statics/POE_separation.JPG" height="auto" width="600" style="border-radius:40px"></a>
+
+GC2053 is used in the Sensor module, and considering the user's feedback on the unclear imaging of ov5647 Sensor, we choose a light sensor with larger Optical Format and Pixel Size.
+
+##### ⚙️ Features:
+
+<div>
+
+<table ><tbody>
+<tr >
+    <td style="font-weight: bold;">Sensor</td>
+    <td class="dbon">GC2053</td>
+    <td style="font-weight: bold;">CMOS Size</td>
+    <td class="dbon">1/2.9"</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Pixels</td>
+    <td class="dbon">2MP</td>
+    <td style="font-weight: bold;">Aperture</td>
+    <td class="dbon">F2.8</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Focal Length</td>
+    <td class="dbon">2.9mm ±0.5%</td>
+    <td style="font-weight: bold;">Field of View</td>
+    <td >DFOV 93°   HFOV 84°  VFOV 54°</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Distortion</td>
+    <td ><0.5 %</td>
+    <td style="font-weight: bold;">Relative Illumination</td>
+    <td >30% ± 5%</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Focusing rane</td>
+    <td >39~69.5 CM </td>
+    <td style="font-weight: bold;">Height of focus</td>
+    <td >50 CM</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Video</td>
+    <td  colspan="3">1920 x 1080p @30fps, 1280 x 720p @30fps</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Interfaces</td>
+    <td  colspan="3">- 1 x microphone<br />
+                    - 1 x speaker<br />
+                    - 3 x LED indicator</td>
+</tr></tbody>
+</table>
+</div>
+
+POE module We adjusted the placement of the type-c port and the POE port so that they were opened on either side to avoid interference between the 1/2.5-inch ports. Due to the high heat generation of the POE module, we installed a large passive heat dissipation fin at the back end. The thickness of the module including the housing is up to 28mm. The user needs to take this thickness into account for installation.
+
+<a href="url"><img src="./statics/reCamera_Core&POE_Temp.png" height="auto" width="600" style="border-radius:40px"></a>
+
 
 ### 🚀 Launch Notification--reCamera Gimbal
 
-The reCamera Gimbal is now available for pre-order with 10% OFF EARLY-BIRD COUPON! 🎫
-
-🛒 Be among the first 200 to grab 10% OFF with code **Gimbal10** at checkout! Don’t miss this limited-time deal—perfect for AI, Camera and Gimbal developers and enthusiasts.
-
-
-🌟 Pre-order Now:
+🌟 Get One Now:
 
 - [reCamera Gimbal 8GB](https://www.seeedstudio.com/reCamera-Gimbal-2002w-8GB-p-6402.html)
 
@@ -156,16 +215,6 @@ The reCamera Gimbal is now available for pre-order with 10% OFF EARLY-BIRD COUPO
 - [reCamera Gimbal Bundle Option](https://www.seeedstudio.com/reCamera-gimbal-2002w-optional-accessories.html) (🔌Power Adapter + USB Cable)
 
 Don’t miss out on the first open-source AI camera gimbal with 360° yaw & 180° pitch coverage!
-
-⏰ EARLY-BIRD DETAILS:
-
-✅ 200 coupons only (first-come, first-served!)
-
-✅ Apply code **Gimbal10** at checkout for 10% OFF
-
-✅ Valid on all reCamera Gimbal versions & the bundle—no minimum purchase!
-
-✅ Available from April 10th to May 10th
 
 📲 Follow [Seeed Studio official website](https://www.seeedstudio.com/) for updates and technical resources.
 
