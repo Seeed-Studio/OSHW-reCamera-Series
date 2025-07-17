@@ -145,7 +145,7 @@ We've taken care of the intricate hardware work, freeing up time for user innova
 
 <a href="url"><img src="./statics/POE_overall.JPG" height="auto" width="600" style="border-radius:40px"></a>
 
-We launched a POE base board and GC2053Sensor integrated device, of course, we will also sell POE module and the new Sensor module separately, the new module is adapted to the Core core board, you can freely match according to your needs.
+We launched a POE base board and GC2053Sensor integrated device, of course, we will also sell POE module and the new Sensor module separately, the new module is adapted to the Core board, you can freely match according to your needs.
 
 <a href="url"><img src="./statics/POE_separation.JPG" height="auto" width="600" style="border-radius:40px"></a>
 
