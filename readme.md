@@ -139,17 +139,17 @@ The engineering focus on modularity, high performance, and ease of use ensures t
 
 We've taken care of the intricate hardware work, freeing up time for user innovation. The modular design enables users to rapidly switch cameras and customize interfaces, transforming development from months to weeks only!
 
-### 🚀 Launch Notification--reCamera POE&&GC2053
+### 🚀 Launch Notification--reCamera POE&&GC2053--Expected to Launch Within 2025 Q3
 
 🛒**reCamera POE and a new Sensor board are coming soon.**
 
 <a href="url"><img src="./statics/POE_overall.JPG" height="auto" width="600" style="border-radius:40px"></a>
 
-We launched a POE base board and GC2053Sensor integrated device, of course, we will also sell POE module and the new Sensor module separately, the new module is adapted to the Core board, you can freely match according to your needs.
+We launched a POE base board and a GC2053 sensor-integrated device. Of course, we will also sell POE module and the new Sensor module separately, the new module is adapted to the Core board, you can freely match according to your needs.
 
 <a href="url"><img src="./statics/POE_separation.JPG" height="auto" width="600" style="border-radius:40px"></a>
 
-GC2053 is used in the Sensor module, and considering the user's feedback on the unclear imaging of ov5647 Sensor, we choose a light sensor with larger Optical Format and Pixel Size.
+GC2053 is used in the Sensor module, and considering the user's feedback on the unclear imaging of the ov5647 Sensor, we choose a light sensor with a larger Optical Format and Pixel Size.
 
 ##### ⚙️ Features:
 
