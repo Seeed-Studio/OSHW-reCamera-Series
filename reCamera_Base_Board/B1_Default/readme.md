@@ -9,8 +9,3 @@ You can use this project to make your own PCB, and the design drawing can also b
 ![image](./static/model.png)
 
 ![image](./static/pcb.png)
-
-
-### ⚙️ schematic
-
-![img](../statics/B1_Default_sch.png)
