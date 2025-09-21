@@ -10,6 +10,7 @@
 
 ![image](./static/pcb.png)
 
+
 ### ⚙️ schematic
 
-![img](../statics/B3_POE_sch.png)
+![alt text](./static/sch.png)
