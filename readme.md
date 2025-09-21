@@ -139,17 +139,17 @@ The engineering focus on modularity, high performance, and ease of use ensures t
 
 We've taken care of the intricate hardware work, freeing up time for user innovation. The modular design enables users to rapidly switch cameras and customize interfaces, transforming development from months to weeks only!
 
-### 🚀 Launch Notification--reCamera POE&&GC2053
+### 🚀 Launch Notification--reCamera POE&&GC2053--Expected to Launch Within 2025 Q3
 
 🛒**reCamera POE and a new Sensor board are coming soon.**
 
 <a href="url"><img src="./statics/POE_overall.JPG" height="auto" width="600" style="border-radius:40px"></a>
 
-We launched a POE base board and GC2053Sensor integrated device, of course, we will also sell POE module and the new Sensor module separately, the new module is adapted to the Core board, you can freely match according to your needs.
+We launched a POE base board and a GC2053 sensor-integrated device. Of course, we will also sell POE module and the new Sensor module separately, the new module is adapted to the Core board, you can freely match according to your needs.
 
 <a href="url"><img src="./statics/POE_separation.JPG" height="auto" width="600" style="border-radius:40px"></a>
 
-GC2053 is used in the Sensor module, and considering the user's feedback on the unclear imaging of ov5647 Sensor, we choose a light sensor with larger Optical Format and Pixel Size.
+GC2053 is used in the Sensor module, and considering the user's feedback on the unclear imaging of the ov5647 Sensor, we choose a light sensor with a larger Optical Format and Pixel Size.
 
 ##### ⚙️ Features:
 
@@ -237,8 +237,8 @@ For more information, please visit [reCamera Gimbal](reCamera_Gimbal/readme.md) 
 
 | Board         | Features                           | Version |
 | ------------- | ---------------------------------- | ------------ |
-| [C1_2002w](./reCamera_Core_Board/C1_2002/)    | - eMMC <br /> - WiFi/BLE module <br /> - Onboard antenna <br /> - External antenna connector| 1.2 |
-| [C1_2002](./reCamera_Core_Board/C1_2002/)       | - eMMC <br /> - Extra SDIO to base board <br /> - Extra UART to base board | 1.2 |
+| [C1_2002w](./reCamera_Core_Board/C1_2002/readme.md) | - eMMC <br /> - WiFi/BLE module <br /> - Onboard antenna <br /> - External antenna connector| 1.2 |
+| [C1_2002](./reCamera_Core_Board/C1_2002/readme.md) | - eMMC <br /> - Extra SDIO to base board <br /> - Extra UART to base board | 1.2 |
 
 
   
@@ -253,11 +253,11 @@ Top View             |  Bottom View
 
 | Board         | Features                           | Latest Version                                                   |
 | ------------- | ---------------------------------- | ------------------------------------------------------------ |
-| [S1_OV5647](./reCamera_Sensor_Board/S1_OV5647/S1_Readme.md) | - 5MP  <br /> - Rolling Shutter | 1.2 |
-| [S2_IMX335](./reCamera_Sensor_Board/S2_IMX335/)     | - 5MP  <br /> - Rolling Shutter | 1.0 |
-| [S3_SC130GS](./reCamera_Sensor_Board/S3_SC130GS/)    | - 1MP <br /> - Global Shutter    | 1.0 |
+| [S1_OV5647](./reCamera_Sensor_Board/S1_OV5647/readme.md) | - 5MP  <br /> - Rolling Shutter | 1.2 |
+| [S2_IMX335](./reCamera_Sensor_Board/S2_IMX335/readme.md) | - 5MP  <br /> - Rolling Shutter | 1.0 |
+| [S3_SC130GS](./reCamera_Sensor_Board/S3_SC130GS/readme.md) | - 1MP <br /> - Global Shutter | 1.0 |
 
-#### 💡 [S1_OV5647](./reCamera_Sensor_Board/S1_OV5647/S1_Readme.md)
+#### 💡 [S1_OV5647](./reCamera_Sensor_Board/S1_OV5647/readme.md)
 
 
 Top View             |  Bottom View
@@ -407,7 +407,7 @@ Top View             |  Bottom View
 | B301_POE    | - Power over Ethernet(POE) <br /> - UART| 0.1 |
 | B401_CAN      | - DC-DC converter <br /> - CAN port <br /> - UART | 0.1 |
 
-#### 💡 [B1_Default](./reCamera_Base_Board/B1_Default/B1_Readme.md)
+#### 💡 [B1_Default](./reCamera_Base_Board/B1_Default/readme.md)
 
 
 Top View             |  Bottom View
@@ -422,7 +422,7 @@ Top View             |  Bottom View
 - 1 x Single Port Transformer Module for Ethernet communication support.
 - 1 x SD card reader for data storage and exchange.
 
-#### 💡 [B2_Vertical-mounted Type-C](./reCamera_Base_Board/B2_Vertical%20Type-C/B2_Readme.md)
+#### 💡 [B2_Vertical-mounted Type-C](./reCamera_Base_Board/B2_Vertical%20Type-C/readme.md)
 
 Top View             |  Bottom View
 :-------------------------:|:-------------------------:
@@ -435,7 +435,7 @@ Top View             |  Bottom View
 - 1 x Single Port Transformer Module for Ethernet communication support.
 - 1 x SD card reader for data storage and exchange.
 
-#### 💡 [B3_POE](./reCamera_Base_Board/B3_POE/B3_Readme.md)
+#### 💡 [B3_POE](./reCamera_Base_Board/B3_POE/readme.md)
 
 
 Up             |  Bottom
@@ -448,7 +448,7 @@ Up             |  Bottom
 - 1 x RJ45 port for 802.3af PSE.
 - 1 x UART port.
 
-#### 💡 [B4_CAN](./reCamera_Base_Board/B4_CAN/B4_Readme.md)
+#### 💡 [B4_CAN](./reCamera_Base_Board/B4_CAN/readme.md)
 
 Up             |  Bottom
 :-------------------------:|:-------------------------:

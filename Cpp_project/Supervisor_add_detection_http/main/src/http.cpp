@@ -4,6 +4,7 @@
 #include <sscma.h>
 #include <chrono>
 #include <fstream>
+
 #include <iostream>
 #include <string>
 #include <syslog.h>
@@ -154,52 +155,61 @@ static void registerWebSocket(HttpService& router) {
 
 
 
-std::mutex detector_mutex;
+
 ma::Camera* global_camera = nullptr;
 ma::Model* global_model = nullptr;
 ma::engine::EngineCVI* global_engine = nullptr;
-
 bool isInitialized = false;
-int i =1;
+int i = 1;
 static void registermodeldetector(HttpService& router) {
     router.GET("/modeldetector", [](HttpRequest* req, HttpResponse* resp) {
         hv::Json res;
-        res["Code"] = 1;
-        res["Msg"]  = "";
+        res["Code"] = "1";
+        res["Msg"]  = "0";
+        size_t memory_samples_main[3];
+        memory_samples_main[0] = getCurrentRSS(); // 直接调用
+        MA_LOGI(MA_TAG, "Memory usage before initialization: %d",  memory_samples_main[0],"KB");
         if(!isInitialized){
-
             // 2. 初始化相机
             auto initialize_camera_start = std::chrono::steady_clock::now();
             global_camera = initialize_camera();
             if (!global_camera) {
                 res["Msg"]  = "Camera initialization failed123";
-                return resp->Json(res);
+                return -1;
             }
             auto initialize_camera_end = std::chrono::steady_clock::now();
             res["Initialize_camera_duration"]  =std::chrono::duration_cast<std::chrono::milliseconds>(initialize_camera_end-initialize_camera_start).count();
-            
+            memory_samples_main[1] = getCurrentRSS(); // 直接调用
+            MA_LOGI(MA_TAG, "Memory usage after camera initialization: %d",  memory_samples_main[1],"KB");
             // 3. 初始化模型
             auto initialize_model_start = std::chrono::steady_clock::now();
             global_model = initialize_model("yolo11n_cv181x_int8.cvimodel");
+            memory_samples_main[2] = getCurrentRSS(); // 直接调用
+            MA_LOGI(MA_TAG, "Memory usage after model initialization: %d",  memory_samples_main[2],"KB");
             if (!global_model) {
                 release_camera(global_camera);
                 res["Msg"]  = "Model initialization failed";
-                return resp->Json(res);
+                return -1;
             }
             auto initialize_model_end = std::chrono::steady_clock::now();
             res["Initialize_model_duration"]  =std::chrono::duration_cast<std::chrono::milliseconds>(initialize_model_end-initialize_model_start).count();
             isInitialized = true;
+
         }
-        
+            
 
         auto start = std::chrono::steady_clock::now();
-        res["Data"] = model_detector(global_model, global_camera,i);
+        auto model = model_detector(global_model, global_camera,i);
+        res["Target"] = nlohmann::json::array();
+        res["Score"] = nlohmann::json::array();
+        res["Target"] = model["Target"];
+        res["Score"] = model["Score"];
+        res["Release_duration"] = model["Release_duration"];
+        res["Capture_duration"] = model["Capture_duration"];
+        res["Image_preprocessing_duration"] = model["Image_preprocessing_duration"];
+        res["Detection_duration"] = model["Detection_duration"];
         res["Duration"] = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - start).count();
-        res["Timestamp"] = getTimestamp();
         i++;
-
-        // release_camera(global_camera);
-        // release_model(global_model, global_engine);
 
         return resp->Json(res);
 
