@@ -30,4 +30,4 @@ ma::Camera* initialize_camera() noexcept;
 ma::Model* initialize_model(const std::string& model_path) noexcept;
 
 // 目标检测主函数
-std::string model_detector(ma::Model*& model, ma::Camera*& camera,int& i);
+hv::Json model_detector(ma::Model*& model,ma::Camera*& camera,int& i);
