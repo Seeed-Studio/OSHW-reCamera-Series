@@ -509,6 +509,8 @@ Up             |  Bottom
 - 1 x Debug port.
 - 3 x IO port.
 
+![IO](./statics/POE_top_IO.png)
+
 #### 💡 [B4_CAN](./reCamera_Base_Board/B4_CAN/readme.md)
 
 Up             |  Bottom
