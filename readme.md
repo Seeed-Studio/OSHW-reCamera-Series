@@ -395,6 +395,65 @@ Top View             |  Bottom View
 </table>
 </div>
 
+#### 💡 [S4_GC2053](./reCamera_Sensor_Board/S4_GC2053/readme.md)
+
+
+Top View             |  Bottom View
+:-------------------------:|:-------------------------:
+![Top](./statics/GC2053_top.png)  |  ![Bottom](./statics/GC2053_bottom.png)
+
+
+
+##### ⚙️ Features:
+
+<div>
+
+<table ><tbody>
+<tr >
+    <td style="font-weight: bold;">Sensor</td>
+    <td class="dbon">GC2053</td>
+    <td style="font-weight: bold;">CMOS Size</td>
+    <td class="dbon">1/2.9"</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Pixels</td>
+    <td class="dbon">2MP</td>
+    <td style="font-weight: bold;">Aperture</td>
+    <td class="dbon">F2.8</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Focal Length</td>
+    <td class="dbon">2.9mm ±0.5%</td>
+    <td style="font-weight: bold;">Field of View</td>
+    <td >DFOV 93°   HFOV 84°  VFOV 54°</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Distortion</td>
+    <td ><0.5 %</td>
+    <td style="font-weight: bold;">Relative Illumination</td>
+    <td >30% ± 5%</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Focusing rane</td>
+    <td >39~69.5 CM </td>
+    <td style="font-weight: bold;">Height of focus</td>
+    <td >50 CM</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Video</td>
+    <td  colspan="3">1920 x 1080p @30fps, 1280 x 720p @30fps</td>
+</tr>
+<tr >
+    <td style="font-weight: bold;">Interfaces</td>
+    <td  colspan="3">- 1 x microphone<br />
+                    - 1 x speaker<br />
+                    - 3 x LED indicator</td>
+</tr></tbody>
+</table>
+</div>
+
+
+
 
 ### Base Board
 
@@ -440,13 +499,15 @@ Top View             |  Bottom View
 
 Up             |  Bottom
 :-------------------------:|:-------------------------:
-![Up](./statics/B3_POE_Upper.png)  |  ![Bottom](./statics/B3_POE_Bottom.png)
+![Up](./statics/POE_top.png)  |  ![Bottom](./statics/POE_bottom.png)
 
 
 ##### ⚙️ Features:
 
-- 1 x RJ45 port for 802.3af PSE.
+- 1 x RJ45 port for **802.3af PSE**.
 - 1 x UART port.
+- 1 x Debug port.
+- 3 x IO port.
 
 #### 💡 [B4_CAN](./reCamera_Base_Board/B4_CAN/readme.md)
 
