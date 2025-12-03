@@ -145,10 +145,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -262,7 +263,168 @@
       "mpn": ""
     },
     "layer_pairs": [],
-    "layer_presets": [],
+    "layer_presets": [
+      {
+        "activeLayer": -2,
+        "layers": [
+          0,
+          5,
+          25
+        ],
+        "name": "01_top",
+        "renderLayers": [
+          "vias",
+          "footprint_text",
+          "footprint_anchors",
+          "ratsnest",
+          "grid",
+          "footprints_front",
+          "footprints_back",
+          "tracks",
+          "drc_errors",
+          "drawing_sheet",
+          "bitmaps",
+          "pads",
+          "zones",
+          "drc_warnings",
+          "locked_item_shadows",
+          "conflict_shadows"
+        ]
+      },
+      {
+        "activeLayer": -2,
+        "layers": [
+          2,
+          7,
+          25
+        ],
+        "name": "02_bottom",
+        "renderLayers": [
+          "vias",
+          "footprint_text",
+          "footprint_anchors",
+          "ratsnest",
+          "grid",
+          "footprints_front",
+          "footprints_back",
+          "tracks",
+          "drc_errors",
+          "drawing_sheet",
+          "bitmaps",
+          "pads",
+          "zones",
+          "drc_warnings",
+          "locked_item_shadows",
+          "conflict_shadows"
+        ]
+      },
+      {
+        "activeLayer": -2,
+        "layers": [
+          0,
+          2,
+          5,
+          7,
+          25
+        ],
+        "name": "03_normal",
+        "renderLayers": [
+          "vias",
+          "footprint_text",
+          "footprint_anchors",
+          "ratsnest",
+          "grid",
+          "footprints_front",
+          "footprints_back",
+          "tracks",
+          "drc_errors",
+          "drawing_sheet",
+          "bitmaps",
+          "pads",
+          "zones",
+          "drc_warnings",
+          "locked_item_shadows",
+          "conflict_shadows"
+        ]
+      },
+      {
+        "activeLayer": -2,
+        "layers": [
+          25
+        ],
+        "name": "04_outline",
+        "renderLayers": [
+          "vias",
+          "footprint_text",
+          "footprint_anchors",
+          "ratsnest",
+          "grid",
+          "footprints_front",
+          "footprints_back",
+          "tracks",
+          "drc_errors",
+          "drawing_sheet",
+          "bitmaps",
+          "pads",
+          "zones",
+          "drc_warnings",
+          "locked_item_shadows",
+          "conflict_shadows"
+        ]
+      },
+      {
+        "activeLayer": -2,
+        "layers": [
+          5,
+          25,
+          35
+        ],
+        "name": "05_Assembly_top",
+        "renderLayers": [
+          "footprint_text",
+          "ratsnest",
+          "grid",
+          "footprints_front",
+          "footprints_back",
+          "footprint_references",
+          "tracks",
+          "drc_errors",
+          "drawing_sheet",
+          "bitmaps",
+          "pads",
+          "zones",
+          "drc_warnings",
+          "locked_item_shadows",
+          "conflict_shadows"
+        ]
+      },
+      {
+        "activeLayer": -2,
+        "layers": [
+          7,
+          25,
+          33
+        ],
+        "name": "06_Assembly_bottom",
+        "renderLayers": [
+          "footprint_text",
+          "ratsnest",
+          "grid",
+          "footprints_front",
+          "footprints_back",
+          "footprint_references",
+          "tracks",
+          "drc_errors",
+          "drawing_sheet",
+          "bitmaps",
+          "pads",
+          "zones",
+          "drc_warnings",
+          "locked_item_shadows",
+          "conflict_shadows"
+        ]
+      }
+    ],
     "viewports": []
   },
   "boards": [],
@@ -496,7 +658,7 @@
   },
   "meta": {
     "filename": "reCamera 2002 POE Board.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -511,6 +673,7 @@
         "microvia_drill": 0.1016,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.156464,
         "via_diameter": 0.4064,
@@ -521,13 +684,13 @@
         "bus_width": 12,
         "clearance": 0.1016,
         "diff_pair_gap": 0.1524,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.108966,
         "line_style": 0,
         "microvia_diameter": 0.254,
         "microvia_drill": 0.1016,
         "name": "100R",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1016,
         "via_diameter": 0.4064,
@@ -538,13 +701,13 @@
         "bus_width": 12,
         "clearance": 0.1016,
         "diff_pair_gap": 0.1524,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.141986,
         "line_style": 0,
         "microvia_diameter": 0.254,
         "microvia_drill": 0.1016,
         "name": "90R",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1016,
         "via_diameter": 0.4064,
@@ -553,7 +716,7 @@
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -569,8 +732,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "GERBER/",
-      "pos_files": "Gerber/",
+      "plot": "../reCamera 2002 B3 PoE Base Board_EVT_V1.2_打板文件_250904/gg/",
+      "pos_files": "./",
       "specctra_dsn": "",
       "step": "reCamera B101 v1.1.step",
       "svg": "",
@@ -905,6 +1068,14 @@
     [
       "6eb8287b-7437-4bdf-8d44-2b28d9753710",
       "Root"
+    ],
+    [
+      "1d75cc8d-330b-40b2-aadd-b310a78d0707",
+      "01 Descriptions"
+    ],
+    [
+      "b6042525-c341-4807-9a15-b792f49a7e10",
+      "POE Board"
     ]
   ],
   "text_variables": {}
