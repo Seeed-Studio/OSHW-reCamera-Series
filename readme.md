@@ -1,10 +1,11 @@
-# Introduction
+# reCamera Introduction
 
 <a href="url"><img src="./statics/reCamera_landingpage.jpeg" height="auto" width="auto" style="border-radius:40px"></a>
 
 <div align="center">
 <a href="https://discord.gg/agHdBMYGZK"><img alt="Discord" src="https://img.shields.io/discord/862602258452578314?label=Join%20Community"></a>
 <a href="https://x.com/seeedstudio" ><img src="https://img.shields.io/twitter/follow/seeedstudio.svg?style=social" /> </a>
+​​​​​​​​​  
 <br>
 <a href="https://www.reddit.com/r/Seeed_Studio/submit/?type=TEXT" target="_blank"><img alt="Share on Reddit" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fwww.reddit.com%2Fr%2FSeeed_Studio%2F&style=social&logo=Reddit&label=Reddit"></a>&nbsp;
 <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//github.com/Seeed-Studio/OSHW-reCamera-Series" target="_blank"><img alt="Share on LinkedIn" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F1475165%2Fadmin%2Fdashboard%2F&style=social&logo=LinkedIn&label=LinkedIn"></a>&nbsp;
