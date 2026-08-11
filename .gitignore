@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# KiCad local/generated state
+*.kicad_prl
+*-backups/
+~*.lck
+
+# Editor metadata
+.idea/
+*.code-workspace
+
+# Local secrets
+.env
+.env.*
+!.env.example
