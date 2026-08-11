@@ -25,10 +25,14 @@ Seeed Studio 官方页面为准。
 
 ### reCamera 2002 / 2002w
 
-![reCamera 2002w](hardware/recamera-2002/images/recamera-2002w.jpg)
+| 标准版 reCamera 2002 | reCamera 2002 HQ PoE | reCamera Gimbal 2002w |
+| --- | --- | --- |
+| [![reCamera 2002w](hardware/recamera-2002/images/recamera-2002w.jpg)](https://www.seeedstudio.com/reCamera-2002-64GB-p-6252.html) | [![reCamera 2002 HQ PoE](hardware/recamera-2002/products/hq-poe/images/product.jpg)](https://www.seeedstudio.com/reCamera-2002-HQ-PoE-64GB-p-6557.html) | [![reCamera Gimbal 2002w](hardware/recamera-2002/products/gimbal/images/product.jpg)](https://www.seeedstudio.com/reCamera-Gimbal-2002w-64GB-p-6403.html) |
+| 固定式摄像头；B101 底板 | GC2053 传感器；以太网与 PoE | 双轴无刷云台；B401 CAN 底板 |
 
 仓库保留 C1 核心板、S 系列传感器板和 B 系列底板的 KiCad 源文件、
-原理图 PDF、机械文件和版本说明。
+原理图 PDF、机械文件和版本说明，并恢复云台机械结构与电源板硬件资料。详见
+[第一代在售产品索引](hardware/recamera-2002/products/)。
 
 ### reCamera Pro
 
@@ -58,8 +62,8 @@ Seeed Studio 官方页面为准。
 演示项目和 SDK 示例均不放在本仓库。请从官方
 [reCamera 文档](https://wiki.seeedstudio.com/cn/recamera/)和 Seeed Studio 软件仓库获取这些资源。
 
-Gimbal、Microscope 等成品衍生项目不作为独立硬件代际收录；其共用的
-reCamera 2002 标准模块仍归入第一代平台。
+Gimbal 与 HQ PoE 是第一代 reCamera 2002 平台的产品变体，而不是独立代际。
+它们的专用硬件归入 `hardware/recamera-2002/products/`，并关联共用板卡资料。
 
 ## 信息优先级
 

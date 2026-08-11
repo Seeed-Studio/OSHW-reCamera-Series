@@ -7,7 +7,17 @@ layers: a C1 core board, an S-series sensor board, and a B-series base board.
 
 ![reCamera 2002w](images/recamera-2002w.jpg)
 
-## Standard configurations
+## Currently sold product forms
+
+| Product form | Key hardware difference | Product documentation |
+| --- | --- | --- |
+| reCamera 2002 / 2002w | Fixed camera using S101 and B101 | [Standard camera](products/#standard-recamera-2002--2002w) |
+| reCamera 2002 HQ PoE | S401 GC2053, M12 lens, B301 Ethernet/PoE base | [HQ PoE](products/hq-poe/) |
+| reCamera Gimbal 2002w | S101, B401 CAN base, two-axis brushless gimbal and power board | [Gimbal](products/gimbal/) |
+
+These are three product forms within the same first-generation SG2002 platform.
+
+## Standard fixed-camera configurations
 
 | Product | Core | eMMC | Wireless | Sensor | Base |
 | --- | --- | ---: | --- | --- | --- |
@@ -28,6 +38,7 @@ layers: a C1 core board, an S-series sensor board, and a B-series base board.
 | Base | B101 | Standard shipped base | [base/b101-default](base/b101-default/) |
 | Base | B201 vertical USB-C | Reference/prototype design | [base/b201-vertical-usb-c](base/b201-vertical-usb-c/) |
 | Base | B301 PoE | Reference design; verify against commercial revision | [base/b301-poe](base/b301-poe/) |
+| Base | B401 CAN | Gimbal CAN base; source files use earlier B4 naming | [base/b401-can](base/b401-can/) |
 
 See [SENSOR_COMPATIBILITY.md](SENSOR_COMPATIBILITY.md) for the SG2002
 driver-level sensor snapshot. Driver presence does not guarantee a purchasable

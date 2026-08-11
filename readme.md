@@ -26,11 +26,15 @@ and currently sold configurations follow Seeed Studio's official pages.
 
 ### reCamera 2002 / 2002w
 
-![reCamera 2002w](hardware/recamera-2002/images/recamera-2002w.jpg)
+| Standard reCamera 2002 | reCamera 2002 HQ PoE | reCamera Gimbal 2002w |
+| --- | --- | --- |
+| [![reCamera 2002w](hardware/recamera-2002/images/recamera-2002w.jpg)](https://www.seeedstudio.com/reCamera-2002-64GB-p-6252.html) | [![reCamera 2002 HQ PoE](hardware/recamera-2002/products/hq-poe/images/product.jpg)](https://www.seeedstudio.com/reCamera-2002-HQ-PoE-64GB-p-6557.html) | [![reCamera Gimbal 2002w](hardware/recamera-2002/products/gimbal/images/product.jpg)](https://www.seeedstudio.com/reCamera-Gimbal-2002w-64GB-p-6403.html) |
+| Fixed camera; B101 base | GC2053 sensor; Ethernet and PoE | Two-axis brushless gimbal; B401 CAN base |
 
 The repository contains editable KiCad sources, schematic PDFs, mechanical
-files, and revision notes for the C1 core, S-series sensor boards, and B-series
-base boards.
+files, and revision notes for the C1 core, S-series sensor boards, B-series base
+boards, and Gimbal mechanical/power hardware. See the
+[first-generation product index](hardware/recamera-2002/products/).
 
 ### reCamera Pro
 
@@ -63,9 +67,9 @@ flows, AI models, training data, demos, and SDK examples are intentionally not
 stored here. Use the official [reCamera documentation](https://wiki.seeedstudio.com/recamera/)
 and Seeed Studio software repositories for those resources.
 
-Gimbal, Microscope, and other finished-product derivatives are not separate
-hardware generations in this repository. Shared reCamera 2002 modules remain
-documented under the first-generation platform.
+Gimbal and HQ PoE are product variants of the first-generation reCamera 2002
+platform, not separate hardware generations. Their product-specific hardware is
+documented under `hardware/recamera-2002/products/` and linked to shared boards.
 
 ## Source of truth
 

@@ -7,7 +7,17 @@ B 系列底板。
 
 ![reCamera 2002w](images/recamera-2002w.jpg)
 
-## 标准配置
+## 当前在售产品形态
+
+| 产品形态 | 主要硬件差异 | 产品说明 |
+| --- | --- | --- |
+| reCamera 2002 / 2002w | 使用 S101 与 B101 的固定式摄像头 | [标准版](products/#standard-recamera-2002--2002w) |
+| reCamera 2002 HQ PoE | S401 GC2053、M12 镜头、B301 以太网/PoE 底板 | [HQ PoE](products/hq-poe/) |
+| reCamera Gimbal 2002w | S101、B401 CAN 底板、双轴无刷云台与电源板 | [Gimbal](products/gimbal/) |
+
+三者都是第一代 SG2002 平台下的产品形态。
+
+## 标准固定式摄像头配置
 
 | 产品 | 核心板 | eMMC | 无线 | 传感器 | 底板 |
 | --- | --- | ---: | --- | --- | --- |
@@ -28,6 +38,7 @@ B 系列底板。
 | 底板 | B101 | 标准出货底板 | [base/b101-default](base/b101-default/) |
 | 底板 | B201 垂直 USB-C | 参考/原型设计 | [base/b201-vertical-usb-c](base/b201-vertical-usb-c/) |
 | 底板 | B301 PoE | 参考设计；需与商用版本核对 | [base/b301-poe](base/b301-poe/) |
+| 底板 | B401 CAN | 云台 CAN 底板；源文件沿用早期 B4 命名 | [base/b401-can](base/b401-can/) |
 
 SG2002 驱动层传感器快照见 [SENSOR_COMPATIBILITY-CN.md](SENSOR_COMPATIBILITY-CN.md)。
 存在驱动不代表一定有可购买模块，也不代表一定与 reCamera 板对板接口电气兼容。

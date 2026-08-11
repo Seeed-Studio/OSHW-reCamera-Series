@@ -1,0 +1,170 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "35101730-b39c-4f85-9829-ee8a0f4a4272")
+	(paper "A3")
+	(title_block
+		(title "reCamera Gimbal")
+		(date "2024-10-22")
+		(rev "v0.9")
+	)
+	(lib_symbols)
+	(sheet
+		(at 31.75 50.165)
+		(size 25.4 13.335)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0d09a803-6659-4c7d-add4-827d1eb9c975")
+		(property "Sheetname" "02 Block"
+			(at 31.75 49.4534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "02 Block.kicad_sch"
+			(at 31.75 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "reCamera Gimbal"
+				(path "/35101730-b39c-4f85-9829-ee8a0f4a4272"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 31.75 88.9)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "57ae9e4f-f8a3-493c-bda2-8291748b9492")
+		(property "Sheetname" "04 CAN"
+			(at 31.75 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "04 CAN.kicad_sch"
+			(at 31.75 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "reCamera Gimbal"
+				(path "/35101730-b39c-4f85-9829-ee8a0f4a4272"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 31.75 31.75)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6f7b0825-76c5-4523-a765-f10420d34e13")
+		(property "Sheetname" "01 Description"
+			(at 31.75 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "01 Description.kicad_sch"
+			(at 31.75 45.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "reCamera Gimbal"
+				(path "/35101730-b39c-4f85-9829-ee8a0f4a4272"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 31.75 69.85)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ccd00fef-f34d-462c-9a9c-e9a475e0c708")
+		(property "Sheetname" "03 Power"
+			(at 31.75 69.1384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "03 Power.kicad_sch"
+			(at 31.75 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "reCamera Gimbal"
+				(path "/35101730-b39c-4f85-9829-ee8a0f4a4272"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
