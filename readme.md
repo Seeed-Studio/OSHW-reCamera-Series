@@ -2,7 +2,7 @@
 
 English | [简体中文](README-CN.md)
 
-![reCamera Pro](assets\recamera_series.jpg)
+![reCamera Pro](assets/recamera_series.jpg)
 
 This repository is the hardware documentation and design-resource hub for the
 Seeed Studio reCamera product matrix:

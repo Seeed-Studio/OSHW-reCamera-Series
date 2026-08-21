@@ -2,7 +2,7 @@
 
 [English](README.md) | 简体中文
 
-![reCamera Pro](assets\recamera_series.jpg)
+![reCamera Pro](assets/recamera_series.jpg)
 
 本仓库是 Seeed Studio reCamera 产品矩阵的硬件说明与设计资料中心：
 
