@@ -6,10 +6,10 @@ English | [简体中文](README-CN.md)
 
 [Buy reCamera Pro 2GB from Seeed Studio](https://www.seeedstudio.com/reCamera-Pro-2GB.html)
 
-reCamera Pro is the second-generation reCamera platform based on the Rockchip
-RV1126B. Unlike the three-board modular reCamera 2002 architecture, Pro is
-documented here as an integrated camera with onboard sensing, audio, networking,
-power, and expansion interfaces.
+reCamera Pro is the higher-performance integrated product family based on the
+Rockchip RV1126B. Unlike the three-board modular architecture of the concurrently
+sold reCamera 2002 family, Pro integrates sensing, audio, networking, power, and
+expansion interfaces in one camera platform.
 
 ## Official hardware specifications
 

@@ -4,7 +4,7 @@
 
 [![reCamera 2002 HQ PoE](images/product.jpg)](https://www.seeedstudio.com/reCamera-2002-HQ-PoE-64GB-p-6557.html)
 
-HQ PoE 是第一代 reCamera 2002 平台面向网络部署的固定式产品，由 SG2002
+HQ PoE 是 reCamera 2002 系列面向网络部署的固定式产品，由 SG2002
 核心板、S401 GC2053 传感器板与 B301 PoE 底板组成。
 
 | 项目 | 硬件 |

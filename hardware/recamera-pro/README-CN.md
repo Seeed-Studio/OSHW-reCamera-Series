@@ -6,9 +6,8 @@
 
 [前往 Seeed Studio 购买 reCamera Pro 2GB](https://www.seeedstudio.com/reCamera-Pro-2GB.html)
 
-reCamera Pro 是基于 Rockchip RV1126B 的第二代 reCamera 平台。它不同于
-reCamera 2002 的三板模块化结构，在本仓库中按集成了传感、音频、网络、供电和
-扩展接口的整机记录。
+reCamera Pro 是基于 Rockchip RV1126B 的高性能集成式产品系列。它不同于并行在售的
+reCamera 2002 三板模块化结构，将传感、音频、网络、供电和扩展接口集成在同一摄像头平台中。
 
 ## 官方硬件规格
 

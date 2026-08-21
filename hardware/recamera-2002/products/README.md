@@ -1,10 +1,10 @@
-# First-generation products
+# reCamera 2002 / 2002w products
 
 English | [简体中文](README-CN.md)
 
-The SG2002-based first generation is sold in three main hardware forms. They
-share the reCamera 2002 platform but combine different sensor, base, and motion
-hardware.
+The SG2002-based reCamera 2002 / 2002w family is sold in three main hardware
+forms. They share the same modular platform but combine different sensor, base,
+and motion hardware.
 
 | Product | Camera hardware | Connectivity / motion | Hardware resources |
 | --- | --- | --- | --- |

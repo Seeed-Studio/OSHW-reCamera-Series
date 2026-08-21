@@ -2,7 +2,7 @@
 
 [English](README.md) | 简体中文
 
-第一代 reCamera 平台由三层可互换模块组成：C1 核心板、S 系列传感器板与
+reCamera 2002 / 2002w 平台由三层可互换模块组成：C1 核心板、S 系列传感器板与
 B 系列底板。
 
 ![reCamera 2002w](images/recamera-2002w.jpg)
@@ -15,7 +15,7 @@ B 系列底板。
 | reCamera 2002 HQ PoE | S401 GC2053、M12 镜头、B301 以太网/PoE 底板 | [HQ PoE](products/hq-poe/) |
 | reCamera Gimbal 2002w | S101、B401 CAN 底板、双轴无刷云台与电源板 | [Gimbal](products/gimbal/) |
 
-三者都是第一代 SG2002 平台下的产品形态。
+三者都是基于 SG2002 的 reCamera 2002 系列产品形态。
 
 ## 标准固定式摄像头配置
 

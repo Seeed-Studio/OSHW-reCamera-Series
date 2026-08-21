@@ -4,7 +4,7 @@ English | [简体中文](README-CN.md)
 
 [![reCamera Gimbal 2002w](images/product.jpg)](https://www.seeedstudio.com/reCamera-Gimbal-2002w-64GB-p-6403.html)
 
-Gimbal is the motion-enabled form of the first-generation reCamera 2002w. Its
+Gimbal is the motion-enabled form of the reCamera 2002w family. Its
 two brushless motors provide 360° yaw and 180° pitch, while the B401 base board
 uses CAN to connect the camera and motor system.
 

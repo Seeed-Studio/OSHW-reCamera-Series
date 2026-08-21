@@ -4,8 +4,8 @@ English | [简体中文](README-CN.md)
 
 [![reCamera 2002 HQ PoE](images/product.jpg)](https://www.seeedstudio.com/reCamera-2002-HQ-PoE-64GB-p-6557.html)
 
-HQ PoE is the network-oriented fixed-camera form of the first-generation
-reCamera 2002 platform. It combines the SG2002 core with the S401 GC2053 sensor
+HQ PoE is the network-oriented fixed-camera form of the reCamera 2002 family.
+It combines the SG2002 core with the S401 GC2053 sensor
 board and B301 PoE base.
 
 | Item | Hardware |

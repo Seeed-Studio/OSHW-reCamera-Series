@@ -6,8 +6,8 @@ English | [简体中文](CONTRIBUTING-CN.md)
 
 This repository accepts hardware documentation and design resources for:
 
-- reCamera 2002 / 2002w and compatible first-generation modules.
-- reCamera Pro and approved second-generation hardware resources.
+- reCamera 2002 / 2002w and compatible modular hardware.
+- reCamera Pro and approved integrated hardware resources.
 
 Application code, firmware images, Node-RED flows, AI models, datasets, and
 software demos belong in their dedicated repositories and will not be accepted

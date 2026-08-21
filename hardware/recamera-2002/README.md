@@ -2,8 +2,8 @@
 
 English | [简体中文](README-CN.md)
 
-The first-generation reCamera platform is built from three interchangeable
-layers: a C1 core board, an S-series sensor board, and a B-series base board.
+The reCamera 2002 / 2002w platform is built from three interchangeable layers:
+a C1 core board, an S-series sensor board, and a B-series base board.
 
 ![reCamera 2002w](images/recamera-2002w.jpg)
 
@@ -15,7 +15,7 @@ layers: a C1 core board, an S-series sensor board, and a B-series base board.
 | reCamera 2002 HQ PoE | S401 GC2053, M12 lens, B301 Ethernet/PoE base | [HQ PoE](products/hq-poe/) |
 | reCamera Gimbal 2002w | S101, B401 CAN base, two-axis brushless gimbal and power board | [Gimbal](products/gimbal/) |
 
-These are three product forms within the same first-generation SG2002 platform.
+These are three product forms within the same SG2002-based reCamera 2002 family.
 
 ## Standard fixed-camera configurations
 

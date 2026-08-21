@@ -2,20 +2,22 @@
 
 English | [简体中文](README-CN.md)
 
-This repository is the hardware documentation and design-resource hub for two
-generations of Seeed Studio reCamera:
+![reCamera Pro](assets\recamera_series.jpg)
 
-- **reCamera 2002 / 2002w** (SG2002), the first-generation modular platform.
-- **reCamera Pro** (RV1126B), the second-generation higher-performance platform.
+This repository is the hardware documentation and design-resource hub for the
+Seeed Studio reCamera product matrix:
 
-The generation labels describe this repository's organization. Product names
-and currently sold configurations follow Seeed Studio's official pages.
+- **reCamera 2002 / 2002w** (SG2002), a modular platform.
+- **reCamera Pro** (RV1126B), a higher-performance integrated platform.
 
-## Product generations
+reCamera 2002 / 2002w and reCamera Pro are concurrently sold product families
+for different application and performance requirements. This repository does
+not describe them as replacement generations.
 
-| | First generation | Second generation |
+## Product matrix
+
+| | reCamera 2002 / 2002w | reCamera Pro |
 | --- | --- | --- |
-| Product family | reCamera 2002 / 2002w | reCamera Pro |
 | Processor | Sophgo SG2002 | Rockchip RV1126B |
 | CPU | Dual C906 RISC-V cores | Quad-core Cortex-A53 at 1.2GHz |
 | AI acceleration | 1 TOPS INT8 | 3 TOPS NPU |
@@ -34,7 +36,7 @@ and currently sold configurations follow Seeed Studio's official pages.
 The repository contains editable KiCad sources, schematic PDFs, mechanical
 files, and revision notes for the C1 core, S-series sensor boards, B-series base
 boards, and Gimbal mechanical/power hardware. See the
-[first-generation product index](hardware/recamera-2002/products/).
+[reCamera 2002 / 2002w product index](hardware/recamera-2002/products/).
 
 ### reCamera Pro
 
@@ -52,8 +54,8 @@ is available.
 ```text
 .
 |-- hardware/
-|   |-- recamera-2002/       # First-generation board and mechanical sources
-|   `-- recamera-pro/        # Second-generation specification and images
+|   |-- recamera-2002/       # reCamera 2002 family board and mechanical sources
+|   `-- recamera-pro/        # reCamera Pro family specifications and images
 |-- docs/                    # Official sources and maintenance policy
 |-- .github/workflows/       # Repository administration
 |-- CONTRIBUTING.md
@@ -62,14 +64,13 @@ is available.
 
 ## Scope
 
-This is a **hardware-only repository**. Firmware, application code, Node-RED
-flows, AI models, training data, demos, and SDK examples are intentionally not
-stored here. Use the official [reCamera documentation](https://wiki.seeedstudio.com/recamera/)
-and Seeed Studio software repositories for those resources.
+This is a **pure hardware repository**. 
+If you need to access software-related repositories, please visit the official website.
+[reCamera document](https://wiki.seeedstudio.com/recamera/)Obtain these resources from the Seeed Studio software repository.
 
-Gimbal and HQ PoE are product variants of the first-generation reCamera 2002
-platform, not separate hardware generations. Their product-specific hardware is
-documented under `hardware/recamera-2002/products/` and linked to shared boards.
+Gimbal and HQ PoE are product forms within the reCamera 2002 family. Their
+product-specific hardware is documented under `hardware/recamera-2002/products/`
+and linked to shared boards.
 
 ## Source of truth
 

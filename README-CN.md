@@ -2,19 +2,19 @@
 
 [English](README.md) | 简体中文
 
-本仓库是 Seeed Studio reCamera 两代产品的硬件说明与设计资料中心：
+![reCamera Pro](assets\recamera_series.jpg)
 
-- **reCamera 2002 / 2002w**（SG2002）：第一代模块化平台。
-- **reCamera Pro**（RV1126B）：第二代高性能平台。
+本仓库是 Seeed Studio reCamera 产品矩阵的硬件说明与设计资料中心：
 
-“第一代/第二代”用于本仓库的资料组织；产品正式名称和当前在售配置以
-Seeed Studio 官方页面为准。
+- **reCamera 2002 / 2002w**（SG2002）：基于 SG2002 模块化平台。
+- **reCamera Pro**（RV1126B）：基于 RV1126B 高性能平台。
+reCamera 2002 / 2002w 与 reCamera Pro 是面向不同应用和性能需求、持续并行
+销售的产品系列；这里不使用代际或替代关系描述它们。
 
-## 产品代际
+## 产品矩阵
 
-| | 第一代 | 第二代 |
+| | reCamera 2002 / 2002w | reCamera Pro |
 | --- | --- | --- |
-| 产品系列 | reCamera 2002 / 2002w | reCamera Pro |
 | 处理器 | Sophgo SG2002 | Rockchip RV1126B |
 | CPU | 双 C906 RISC-V 核心 | 1.2GHz 四核 Cortex-A53 |
 | AI 算力 | 1 TOPS INT8 | 3 TOPS NPU |
@@ -32,7 +32,7 @@ Seeed Studio 官方页面为准。
 
 仓库保留 C1 核心板、S 系列传感器板和 B 系列底板的 KiCad 源文件、
 原理图 PDF、机械文件和版本说明，并恢复云台机械结构与电源板硬件资料。详见
-[第一代在售产品索引](hardware/recamera-2002/products/)。
+[reCamera 2002 / 2002w 在售产品索引](hardware/recamera-2002/products/)。
 
 ### reCamera Pro
 
@@ -48,8 +48,8 @@ Seeed Studio 官方页面为准。
 ```text
 .
 |-- hardware/
-|   |-- recamera-2002/       # 第一代板卡与机械源文件
-|   `-- recamera-pro/        # 第二代规格与官方图片
+|   |-- recamera-2002/       # reCamera 2002 系列板卡与机械源文件
+|   `-- recamera-pro/        # reCamera Pro 系列规格与官方图片
 |-- docs/                    # 官方信息源与维护规范
 |-- .github/workflows/       # 仓库管理
 |-- CONTRIBUTING.md
@@ -58,12 +58,11 @@ Seeed Studio 官方页面为准。
 
 ## 范围
 
-这是一个**纯硬件仓库**。固件、应用代码、Node-RED 流程、AI 模型、训练数据、
-演示项目和 SDK 示例均不放在本仓库。请从官方
+这是一个**纯硬件仓库**，如果需要访问软件相关仓库，请从官方
 [reCamera 文档](https://wiki.seeedstudio.com/cn/recamera/)和 Seeed Studio 软件仓库获取这些资源。
 
-Gimbal 与 HQ PoE 是第一代 reCamera 2002 平台的产品变体，而不是独立代际。
-它们的专用硬件归入 `hardware/recamera-2002/products/`，并关联共用板卡资料。
+Gimbal 与 HQ PoE 是 reCamera 2002 系列的产品形态。它们的专用硬件归入
+`hardware/recamera-2002/products/`，并关联共用板卡资料。
 
 ## 信息优先级
 

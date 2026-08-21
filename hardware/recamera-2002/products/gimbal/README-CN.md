@@ -4,7 +4,7 @@
 
 [![reCamera Gimbal 2002w](images/product.jpg)](https://www.seeedstudio.com/reCamera-Gimbal-2002w-64GB-p-6403.html)
 
-Gimbal 是第一代 reCamera 2002w 的运动云台形态。双无刷电机提供 360° 水平
+Gimbal 是 reCamera 2002w 系列的运动云台形态。双无刷电机提供 360° 水平
 旋转与 180° 俯仰，B401 底板通过 CAN 连接摄像头与电机系统。
 
 | 项目 | 硬件 |
