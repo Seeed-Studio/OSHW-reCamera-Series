@@ -17,10 +17,12 @@ uses CAN to connect the camera and motor system.
 | Power | 12V DC jack to XT30 through the dedicated power board |
 | Mechanical source | [STEP/3MF files](mechanical/) |
 | Power-board source | [KiCad and schematic files](power-board/PCB/) |
+| Motor protocol | [CAN communication protocol V2.36](motor-docs/) |
 
-Only hardware design resources are stored here. Motor utilities, binaries,
-firmware, Node-RED flows, and control examples remain outside this repository's
-scope.
+The motor protocol is retained as hardware-interface documentation required to
+integrate the Gimbal motors. It is a third-party supplier document rather than
+a Seeed-defined CAN protocol. Motor utilities, binaries, firmware, Node-RED
+flows, and control examples remain outside this repository's scope.
 
 - [Buy reCamera Gimbal 2002w](https://www.seeedstudio.com/reCamera-Gimbal-2002w-64GB-p-6403.html)
 - [Official hardware Wiki](https://wiki.seeedstudio.com/recamera_gimbal_hardware_and_specs/)

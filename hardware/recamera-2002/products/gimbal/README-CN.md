@@ -16,9 +16,11 @@ Gimbal 是 reCamera 2002w 系列的运动云台形态。双无刷电机提供 36
 | 供电 | 12V DC 经专用电源板连接 XT30 |
 | 机械源文件 | [STEP/3MF 文件](mechanical/) |
 | 电源板源文件 | [KiCad 与原理图](power-board/PCB/) |
+| 电机协议 | [CAN 通信协议 V2.36](motor-docs/) |
 
-这里只保留硬件设计资料。电机工具、可执行文件、固件、Node-RED 流程和控制
-示例不属于本仓库范围。
+电机协议作为连接和控制云台电机所需的硬件接口资料予以保留。它是第三方供应商
+文档，并非 Seeed 自定义的 CAN 协议。电机工具、可执行文件、固件、Node-RED
+流程和控制示例仍不属于本仓库范围。
 
 - [购买 reCamera Gimbal 2002w](https://www.seeedstudio.com/reCamera-Gimbal-2002w-64GB-p-6403.html)
 - [官方硬件 Wiki](https://wiki.seeedstudio.com/recamera_gimbal_hardware_and_specs/)
